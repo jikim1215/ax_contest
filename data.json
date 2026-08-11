@@ -1,0 +1,600 @@
+{
+  "generatedAt": "2026-08-11T01:22:54.594Z",
+  "sample": true,
+  "contest": {
+    "title": "KISA AX 공모전 진행 현황",
+    "subtitle": "AI 업무개선 PoC 트랙 · 10개 과제 · 3개월",
+    "kickoff": "2026-07-06",
+    "finale": "2026-10-02",
+    "activeDays": 14,
+    "refreshNote": "매일 09:00 / 15:00 자동 갱신",
+    "notice": {
+      "label": "다음 일정",
+      "text": "8월의 AX 엔진룸 — 중간점검 및 멘토링 2차: 8월 17일(월) 14:00, 대회의실"
+    },
+    "milestones": [
+      {
+        "date": "2026-07-06",
+        "label": "킥오프"
+      },
+      {
+        "date": "2026-07-20",
+        "label": "멘토링 1차"
+      },
+      {
+        "date": "2026-08-17",
+        "label": "중간점검"
+      },
+      {
+        "date": "2026-09-14",
+        "label": "멘토링 3차"
+      },
+      {
+        "date": "2026-10-02",
+        "label": "최종발표"
+      }
+    ],
+    "resources": [
+      {
+        "label": "공모전 운영계획(안)",
+        "url": "#"
+      },
+      {
+        "label": "AI 도구 보안 이용 가이드",
+        "url": "#"
+      },
+      {
+        "label": "구독료 실비 지원 안내",
+        "url": "#"
+      },
+      {
+        "label": "강의자료 모음",
+        "url": "#"
+      },
+      {
+        "label": "참가자 오픈채팅방",
+        "url": "#"
+      }
+    ],
+    "footnote": "KISA AX 공모전 운영사무국 · gitlab.aigov.go.kr 저장소 기준 일 2회 자동 집계",
+    "totalWeeks": 13
+  },
+  "weeklyCommits": [
+    57,
+    47,
+    54,
+    62,
+    53,
+    46,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "projects": [
+    {
+      "repo": "kisa-ax/team01",
+      "name": "118 민원 답변 도우미",
+      "team": "KISA 상담혁신팀",
+      "field": "민원·상담",
+      "description": "118 상담 FAQ 기반 민원 답변 초안 자동 생성",
+      "webUrl": "https://gitlab.aigov.go.kr/kisa-ax/team01",
+      "active": true,
+      "progress": 55,
+      "updates": [
+        {
+          "date": "2026-08-07",
+          "note": "FAQ 200건 학습 프롬프트 v2 완성, 답변 초안 품질 자체평가 통과"
+        }
+      ],
+      "gitlab": {
+        "commits": 38,
+        "weeklyCommits": [
+          6,
+          9,
+          5,
+          3,
+          7,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 3,
+        "closedIssues": 9,
+        "stars": 4,
+        "lastActivity": "2026-08-10T16:30:00+09:00"
+      },
+      "recentCommits": [
+        {
+          "title": "feat: 118 상담 FAQ 기반 민원 답변 초안",
+          "date": "2026-08-10T16:30:00+09:00",
+          "url": "#"
+        }
+      ],
+      "recentIssues": [
+        {
+          "title": "118 상담 FAQ 기반 민원 답 개선",
+          "state": "opened",
+          "date": "2026-08-08T11:00:00+09:00",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "repo": "kisa-ax/team02",
+      "name": "시큐어브리핑",
+      "team": "KISA 침해대응본부",
+      "field": "보안업무",
+      "description": "보안공지·취약점 정보 요약 및 배포 자동화",
+      "webUrl": "https://gitlab.aigov.go.kr/kisa-ax/team02",
+      "active": true,
+      "progress": 60,
+      "updates": [
+        {
+          "date": "2026-08-07",
+          "note": "공개 CVE 피드 요약 파이프라인 동작 확인, 요약 정확도 검수 중"
+        }
+      ],
+      "gitlab": {
+        "commits": 37,
+        "weeklyCommits": [
+          7,
+          3,
+          8,
+          11,
+          5,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 2,
+        "closedIssues": 11,
+        "stars": 6,
+        "lastActivity": "2026-08-10T16:30:00+09:00"
+      },
+      "recentCommits": [
+        {
+          "title": "feat: 보안공지·취약점 정보 요약 및 배포 자동",
+          "date": "2026-08-10T16:30:00+09:00",
+          "url": "#"
+        }
+      ],
+      "recentIssues": [
+        {
+          "title": "보안공지·취약점 정보 요약 및 배 개선",
+          "state": "closed",
+          "date": "2026-08-08T11:00:00+09:00",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "repo": "kisa-ax/team03",
+      "name": "신고 트리아지",
+      "team": "KISA 침해대응본부",
+      "field": "보안업무",
+      "description": "침해사고 신고 접수 자동 분류",
+      "webUrl": "https://gitlab.aigov.go.kr/kisa-ax/team03",
+      "active": true,
+      "progress": 40,
+      "updates": [
+        {
+          "date": "2026-08-07",
+          "note": "분류 정확도 미달로 분류체계 재설계 중 — 멘토 세션 추가 요청"
+        }
+      ],
+      "gitlab": {
+        "commits": 21,
+        "weeklyCommits": [
+          3,
+          5,
+          3,
+          1,
+          4,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 5,
+        "closedIssues": 4,
+        "stars": 2,
+        "lastActivity": "2026-08-10T16:30:00+09:00"
+      },
+      "recentCommits": [
+        {
+          "title": "feat: 침해사고 신고 접수 자동 분류",
+          "date": "2026-08-10T16:30:00+09:00",
+          "url": "#"
+        }
+      ],
+      "recentIssues": [
+        {
+          "title": "침해사고 신고 접수 자동 분류 개선",
+          "state": "closed",
+          "date": "2026-08-08T11:00:00+09:00",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "repo": "kisa-ax/team04",
+      "name": "규정박사",
+      "team": "KISA 경영기획본부",
+      "field": "문서·지식",
+      "description": "내부 규정·지침 Q&A 챗봇 (출처 표시)",
+      "webUrl": "https://gitlab.aigov.go.kr/kisa-ax/team04",
+      "active": true,
+      "progress": null,
+      "updates": [],
+      "gitlab": {
+        "commits": 24,
+        "weeklyCommits": [
+          5,
+          2,
+          5,
+          7,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 4,
+        "closedIssues": 7,
+        "stars": 5,
+        "lastActivity": "2026-08-10T16:30:00+09:00"
+      },
+      "recentCommits": [
+        {
+          "title": "feat: 내부 규정·지침 Q&A 챗봇 (출처 표시",
+          "date": "2026-08-10T16:30:00+09:00",
+          "url": "#"
+        }
+      ],
+      "recentIssues": [
+        {
+          "title": "내부 규정·지침 Q&A 챗봇 (출 개선",
+          "state": "opened",
+          "date": "2026-08-08T11:00:00+09:00",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "repo": "kisa-ax/team05",
+      "name": "홍보문 초안 생성기",
+      "team": "KISA 대외협력실",
+      "field": "문서·지식",
+      "description": "기관 톤앤매너를 반영한 보도자료·홍보문 초안 생성",
+      "webUrl": "https://gitlab.aigov.go.kr/kisa-ax/team05",
+      "active": true,
+      "progress": 65,
+      "updates": [
+        {
+          "date": "2026-08-07",
+          "note": "톤앤매너 가이드 반영 v3 시연, 홍보실 파일럿 사용 시작"
+        }
+      ],
+      "gitlab": {
+        "commits": 57,
+        "weeklyCommits": [
+          8,
+          14,
+          8,
+          4,
+          10,
+          13,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 1,
+        "closedIssues": 14,
+        "stars": 8,
+        "lastActivity": "2026-08-10T16:30:00+09:00"
+      },
+      "recentCommits": [
+        {
+          "title": "feat: 기관 톤앤매너를 반영한 보도자료·홍보문 ",
+          "date": "2026-08-10T16:30:00+09:00",
+          "url": "#"
+        }
+      ],
+      "recentIssues": [
+        {
+          "title": "기관 톤앤매너를 반영한 보도자료· 개선",
+          "state": "closed",
+          "date": "2026-08-08T11:00:00+09:00",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "repo": "kisa-ax/team06",
+      "name": "미닛츠",
+      "team": "KISA 경영지원실",
+      "field": "업무자동화",
+      "description": "회의록 자동 작성·요약, 결정사항/할일 추출",
+      "webUrl": "https://gitlab.aigov.go.kr/kisa-ax/team06",
+      "active": true,
+      "progress": 45,
+      "updates": [
+        {
+          "date": "2026-08-07",
+          "note": "발화자 구분 정확도 개선, 결정사항 추출 템플릿 적용"
+        }
+      ],
+      "gitlab": {
+        "commits": 20,
+        "weeklyCommits": [
+          4,
+          1,
+          4,
+          6,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 3,
+        "closedIssues": 6,
+        "stars": 3,
+        "lastActivity": "2026-08-10T16:30:00+09:00"
+      },
+      "recentCommits": [
+        {
+          "title": "feat: 회의록 자동 작성·요약, 결정사항/할일 ",
+          "date": "2026-08-10T16:30:00+09:00",
+          "url": "#"
+        }
+      ],
+      "recentIssues": [
+        {
+          "title": "회의록 자동 작성·요약, 결정사항 개선",
+          "state": "closed",
+          "date": "2026-08-08T11:00:00+09:00",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "repo": "kisa-ax/team07",
+      "name": "오토리포트",
+      "team": "KISA 정책기획팀",
+      "field": "업무자동화",
+      "description": "사업 통계 보고서 자동 생성",
+      "webUrl": "https://gitlab.aigov.go.kr/kisa-ax/team07",
+      "active": false,
+      "progress": 30,
+      "updates": [
+        {
+          "date": "2026-08-07",
+          "note": "데이터 정제 난항 — 범위 축소(월간 1종 우선) 협의 중"
+        }
+      ],
+      "gitlab": {
+        "commits": 9,
+        "weeklyCommits": [
+          1,
+          2,
+          1,
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 6,
+        "closedIssues": 2,
+        "stars": 1,
+        "lastActivity": "2026-07-20T10:00:00+09:00"
+      },
+      "recentCommits": [
+        {
+          "title": "feat: 사업 통계 보고서 자동 생성",
+          "date": "2026-07-20T10:00:00+09:00",
+          "url": "#"
+        }
+      ],
+      "recentIssues": [
+        {
+          "title": "사업 통계 보고서 자동 생성 개선",
+          "state": "opened",
+          "date": "2026-08-08T11:00:00+09:00",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "repo": "kisa-ax/team08",
+      "name": "문서요정",
+      "team": "KISA 총무팀",
+      "field": "업무자동화",
+      "description": "공문·서식 작성 도우미 (스타일 검사 포함)",
+      "webUrl": "https://gitlab.aigov.go.kr/kisa-ax/team08",
+      "active": true,
+      "progress": 70,
+      "updates": [
+        {
+          "date": "2026-08-07",
+          "note": "서식 8종 지원 완료, 부서 내 베타 사용자 5명 피드백 수집"
+        }
+      ],
+      "gitlab": {
+        "commits": 43,
+        "weeklyCommits": [
+          9,
+          3,
+          8,
+          13,
+          7,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 2,
+        "closedIssues": 12,
+        "stars": 7,
+        "lastActivity": "2026-08-10T16:30:00+09:00"
+      },
+      "recentCommits": [
+        {
+          "title": "feat: 공문·서식 작성 도우미 (스타일 검사 포",
+          "date": "2026-08-10T16:30:00+09:00",
+          "url": "#"
+        }
+      ],
+      "recentIssues": [
+        {
+          "title": "공문·서식 작성 도우미 (스타일  개선",
+          "state": "closed",
+          "date": "2026-08-08T11:00:00+09:00",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "repo": "kisa-ax/team09",
+      "name": "안티스팸랩",
+      "team": "KISA 디지털이용자보호단",
+      "field": "데이터분석",
+      "description": "스팸 신고 데이터 분석 자동화",
+      "webUrl": "https://gitlab.aigov.go.kr/kisa-ax/team09",
+      "active": false,
+      "progress": null,
+      "updates": [],
+      "gitlab": {
+        "commits": 17,
+        "weeklyCommits": [
+          2,
+          4,
+          3,
+          1,
+          3,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 4,
+        "closedIssues": 3,
+        "stars": 2,
+        "lastActivity": "2026-07-20T10:00:00+09:00"
+      },
+      "recentCommits": [
+        {
+          "title": "feat: 스팸 신고 데이터 분석 자동화",
+          "date": "2026-07-20T10:00:00+09:00",
+          "url": "#"
+        }
+      ],
+      "recentIssues": [
+        {
+          "title": "스팸 신고 데이터 분석 자동화 개선",
+          "state": "closed",
+          "date": "2026-08-08T11:00:00+09:00",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "repo": "kisa-ax/team10",
+      "name": "퀴즈메이커",
+      "team": "KISA 인재개발실",
+      "field": "교육·문화",
+      "description": "교육자료 기반 사이버보안 퀴즈 자동 생성",
+      "webUrl": "https://gitlab.aigov.go.kr/kisa-ax/team10",
+      "active": true,
+      "progress": 75,
+      "updates": [
+        {
+          "date": "2026-08-07",
+          "note": "난이도 3단계 자동 생성 완성, 8월 신입교육 시범 적용 확정"
+        }
+      ],
+      "gitlab": {
+        "commits": 53,
+        "weeklyCommits": [
+          12,
+          4,
+          9,
+          15,
+          9,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 1,
+        "closedIssues": 16,
+        "stars": 9,
+        "lastActivity": "2026-08-10T16:30:00+09:00"
+      },
+      "recentCommits": [
+        {
+          "title": "feat: 교육자료 기반 사이버보안 퀴즈 자동 생성",
+          "date": "2026-08-10T16:30:00+09:00",
+          "url": "#"
+        }
+      ],
+      "recentIssues": [
+        {
+          "title": "교육자료 기반 사이버보안 퀴즈 자 개선",
+          "state": "opened",
+          "date": "2026-08-08T11:00:00+09:00",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+  "showcase": []
+}

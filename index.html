@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KISA AX 공모전 진행 현황</title>
+<style>
+  :root{
+    --bg:#eef3f9; --panel:#ffffff; --line:#d7e0eb; --text:#10233d; --muted:#66768d;
+    --blue:#245fdf; --blue-soft:#edf3ff;
+    --green:#1f9d55; --green-soft:#e9f8ef;
+    --orange:#d97706; --orange-soft:#fff4e4;
+    --purple:#6d4bd1; --purple-soft:#f2edff;
+    --gray:#64748b; --gray-soft:#eef1f5;
+    --shadow:0 10px 24px rgba(23,43,77,.06);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:linear-gradient(180deg,#f4f7fb 0%,var(--bg) 100%);
+    color:var(--text); line-height:1.55;
+    font-family:"Malgun Gothic","맑은 고딕",Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+  }
+  .wrap{max-width:1180px; margin:0 auto; padding:0 20px 60px;}
+  header{
+    background:linear-gradient(135deg,#0f2a4a,#1c3f66 60%,#245fdf);
+    color:#fff; padding:30px 20px 26px; margin-bottom:24px;
+  }
+  header .inner{max-width:1180px; margin:0 auto; display:flex; flex-wrap:wrap; gap:16px; align-items:flex-end; justify-content:space-between;}
+  header h1{margin:0; font-size:24px; font-weight:800;}
+  header .sub{margin:6px 0 0; font-size:13px; opacity:.85;}
+  .dday{
+    background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.3);
+    border-radius:12px; padding:10px 18px; text-align:center;
+  }
+  .dday b{display:block; font-size:22px; font-weight:800;}
+  .dday span{font-size:11.5px; opacity:.85;}
+
+  .status-msg{
+    background:var(--orange-soft); border:1px solid #f3ddb7; color:#7a4d07;
+    border-radius:14px; padding:14px 18px; margin-bottom:20px; font-size:13.5px;
+  }
+  .notice{
+    background:linear-gradient(90deg,var(--blue-soft),#f6f9ff); border:1px solid #cbdcf8;
+    border-radius:14px; padding:12px 18px; margin-bottom:20px;
+    display:flex; gap:12px; align-items:center; flex-wrap:wrap; font-size:13.5px;
+  }
+  .notice .tag{background:var(--blue); color:#fff; font-size:11px; font-weight:800; border-radius:12px; padding:3px 10px; white-space:nowrap;}
+  .notice b{color:#1c3f66;}
+
+  .metrics{display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin-bottom:20px;}
+  @media(max-width:900px){.metrics{grid-template-columns:repeat(2,1fr);}}
+  .metric{
+    background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    padding:16px 18px; box-shadow:var(--shadow);
+  }
+  .metric .label{font-size:12px; font-weight:700; color:var(--muted);}
+  .metric .value{font-size:26px; font-weight:800; margin:4px 0 2px;}
+  .metric .hint{font-size:11.5px; color:var(--muted);}
+  .metric.green .value{color:var(--green);} .metric.orange .value{color:var(--orange);}
+  .metric.blue .value{color:var(--blue);} .metric.purple .value{color:var(--purple);}
+
+  .panel{
+    background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    padding:18px 20px; box-shadow:var(--shadow); margin-bottom:20px;
+  }
+  .panel h2{margin:0 0 14px; font-size:15.5px; color:#26415f;}
+  .panel-head{display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;}
+  .panel-head h2{margin:0;}
+  .muted{color:var(--muted); font-size:12px;}
+  a{color:var(--blue); font-weight:700; text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  /* timeline */
+  .timeline{position:relative; margin:34px 8px 46px;}
+  .timeline .track{height:10px; border-radius:6px; background:#e3eaf3; position:relative; overflow:hidden;}
+  .timeline .fill{position:absolute; inset:0 auto 0 0; background:linear-gradient(90deg,#4f83ec,#245fdf); border-radius:6px;}
+  .timeline .today{
+    position:absolute; top:-24px; transform:translateX(-50%);
+    font-size:11px; font-weight:800; color:var(--blue); text-align:center; white-space:nowrap;
+  }
+  .timeline .today::after{content:""; display:block; width:2px; height:26px; background:var(--blue); margin:2px auto 0;}
+  .ms{position:absolute; top:-1px; transform:translateX(-50%);}
+  .ms .dot{width:12px; height:12px; border-radius:50%; background:#fff; border:3px solid #8aa7d6; margin:0 auto;}
+  .ms.done .dot{border-color:var(--blue); background:var(--blue);}
+  .ms .lbl{font-size:11px; color:var(--muted); font-weight:700; margin-top:12px; text-align:center; white-space:nowrap;}
+  .ms .date{font-size:10px; color:#9aa8bb; text-align:center; white-space:nowrap;}
+
+  /* filters */
+  .filters{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:16px;}
+  .filters select,.filters input{
+    border:1px solid #c8d4e3; border-radius:10px; min-height:38px; padding:6px 10px;
+    font:inherit; font-size:13px; background:#fff; color:var(--text); outline:none;
+  }
+  .filters input{flex:1 1 220px;}
+  .filters select:focus,.filters input:focus{border-color:#7fa3f3; box-shadow:0 0 0 3px rgba(37,99,235,.11);}
+
+  /* project cards */
+  .cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:14px;}
+  .card{
+    background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px 18px;
+    box-shadow:var(--shadow); display:flex; flex-direction:column; gap:8px;
+  }
+  .card .top{display:flex; justify-content:space-between; align-items:flex-start; gap:8px;}
+  .card h3{margin:0; font-size:14.5px; line-height:1.4;}
+  .card h3 a{color:inherit;}
+  .card .team{font-size:12px; color:var(--muted);}
+  .card .desc{font-size:12.5px; color:#43556f; margin:0;}
+  .badge{font-size:11px; font-weight:800; padding:3px 10px; border-radius:12px; white-space:nowrap;}
+  .badge.활성{background:var(--green-soft); color:var(--green);}
+  .badge.비활성{background:var(--gray-soft); color:var(--gray);}
+  .field-pill{display:inline-block; font-size:11px; font-weight:700; background:var(--purple-soft); color:var(--purple); border-radius:12px; padding:2px 10px;}
+  .prog{display:flex; align-items:center; gap:10px;}
+  .prog .track{flex:1; height:8px; background:#e9eef5; border-radius:5px; overflow:hidden;}
+  .prog .fill{height:100%; border-radius:5px; background:linear-gradient(90deg,#4f83ec,#245fdf);}
+  .prog b{font-size:13px; min-width:38px; text-align:right;}
+  .prog .lbl{font-size:11px; color:var(--muted); white-space:nowrap;}
+  .git-meta{display:flex; gap:12px; flex-wrap:wrap; font-size:11.5px; color:var(--muted);}
+  .git-meta b{color:#43556f;}
+  .card .note{
+    font-size:12px; background:#f6f9fd; border:1px solid #e3ebf4; border-radius:10px;
+    padding:8px 10px; color:#43556f;
+  }
+  .card .note .d{color:#9aa8bb; font-size:11px; margin-right:6px;}
+
+  /* lower grid */
+  .grid2{display:grid; grid-template-columns:1.4fr 1fr; gap:20px;}
+  @media(max-width:900px){.grid2{grid-template-columns:1fr;}}
+
+  /* bar chart */
+  .weekchart{display:flex; align-items:flex-end; gap:6px; height:150px; padding-top:8px;}
+  .weekchart .col{flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; gap:6px; min-width:0; height:100%;}
+  .weekchart .bar{width:70%; max-width:34px; background:linear-gradient(180deg,#4f83ec,#245fdf); border-radius:6px 6px 2px 2px;}
+  .weekchart .bar.future{background:#e3eaf3;}
+  .weekchart .cnt{font-size:10.5px; font-weight:800; color:var(--blue);}
+  .weekchart .wk{font-size:10px; color:var(--muted); white-space:nowrap;}
+
+  /* donut */
+  .donut-wrap{display:grid; grid-template-columns:130px 1fr; gap:16px; align-items:center;}
+  .donut{width:120px; height:120px; border-radius:50%; display:grid; place-items:center;}
+  .donut-center{width:66px; height:66px; border-radius:50%; background:#fff; display:grid; place-items:center; font-weight:800; font-size:18px; text-align:center; line-height:1.1;}
+  .donut-center span{display:block; font-size:10px; color:var(--muted); font-weight:700;}
+  .legend{display:grid; gap:6px; font-size:12.5px;}
+  .legend .row{display:flex; justify-content:space-between; gap:8px;}
+  .legend .dot{display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:6px;}
+
+  /* feed */
+  .feed{display:grid; gap:10px;}
+  .feed .item{border-bottom:1px solid #eef2f7; padding-bottom:9px; font-size:12.5px;}
+  .feed .item:last-child{border-bottom:0; padding-bottom:0;}
+  .feed .who{font-weight:800; color:#26415f;}
+  .feed .when{color:#9aa8bb; font-size:11px; margin-left:6px;}
+  .feed .kind{font-size:10px; font-weight:800; border-radius:8px; padding:1px 7px; margin-right:6px; vertical-align:1px;}
+  .feed .kind.커밋{background:var(--green-soft); color:var(--green);}
+  .feed .kind.이슈{background:var(--orange-soft); color:var(--orange);}
+  .feed .kind.보고{background:var(--blue-soft); color:var(--blue);}
+
+  /* showcase */
+  .show-list{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px;}
+  .show-item{
+    border:1px solid var(--line); border-radius:12px; padding:12px 14px; background:#fbfdff;
+    font-size:12.5px;
+  }
+  .show-item b{display:block; font-size:13px; margin-bottom:2px;}
+  .show-item .muted{display:block; margin-bottom:6px;}
+
+  /* resources */
+  .res-list{display:flex; flex-wrap:wrap; gap:10px;}
+  .res-list a{
+    border:1px solid #cbdcf8; background:var(--blue-soft); border-radius:20px;
+    padding:7px 16px; font-size:12.5px;
+  }
+
+  footer{margin-top:10px; font-size:11.5px; color:var(--muted); text-align:center;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <div>
+      <h1 id="contestTitle">KISA AX 공모전 진행 현황</h1>
+      <p class="sub" id="contestSub"></p>
+    </div>
+    <div style="display:flex; gap:10px;">
+      <div class="dday"><b id="weekNow">-</b><span>진행 주차</span></div>
+      <div class="dday"><b id="dday">-</b><span>최종발표까지</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="status-msg" id="statusMsg">대시보드 데이터를 불러오는 중입니다...</div>
+
+  <div id="app" hidden>
+    <div class="notice" id="notice"></div>
+
+    <section class="metrics" id="metrics"></section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>전체 일정</h2>
+        <span class="muted" id="updatedAt"></span>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>공모전 과제 현황</h2>
+        <span class="muted" id="resultCount"></span>
+      </div>
+      <div class="filters">
+        <select id="fieldFilter"></select>
+        <select id="statusFilter">
+          <option value="all">상태 전체</option>
+          <option>활성</option><option>비활성</option>
+        </select>
+        <input type="search" id="searchInput" placeholder="과제명·팀·설명 검색">
+      </div>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <div class="grid2">
+      <section class="panel">
+        <h2>주차별 커밋 활동</h2>
+        <div class="weekchart" id="weekChart"></div>
+      </section>
+      <section class="panel">
+        <h2>분야 분포</h2>
+        <div id="fieldDonut"></div>
+      </section>
+    </div>
+
+    <div class="grid2">
+      <section class="panel">
+        <h2>최근 활동</h2>
+        <div class="feed" id="feed"></div>
+      </section>
+      <section class="panel">
+        <h2>과제 상태 비율</h2>
+        <div id="statusDonut"></div>
+      </section>
+    </div>
+
+    <section class="panel" id="showcasePanel">
+      <div class="panel-head">
+        <h2>PoC 쇼케이스</h2>
+        <span class="muted">시연 가능한 결과물이 나오는 대로 추가됩니다</span>
+      </div>
+      <div class="show-list" id="showcase"></div>
+    </section>
+
+    <section class="panel">
+      <h2>참가자 자료실</h2>
+      <div class="res-list" id="resources"></div>
+    </section>
+  </div>
+
+  <footer id="footNote"></footer>
+</div>
+
+<script>
+/* 데이터는 collect.mjs가 일 2회(09:00/15:00) gitlab.aigov.go.kr에서 수집해
+ * 생성하는 data.json에서 로드된다. 과제명·팀·설명·분야는 GitLab 프로젝트
+ * 메타데이터가 원본이다. 이 파일은 수정할 일이 거의 없다. */
+const COLORS = ["#2563eb", "#22c55e", "#fbbf24", "#ec4899", "#8b5cf6", "#06b6d4", "#f97316"];
+const STATUS_COLORS = { "활성": "#1f9d55", "비활성": "#64748b" };
+const DAY = 86400000;
+
+function esc(v) {
+  return String(v ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
+}
+function fmtDateShort(s) {
+  const d = new Date(String(s).length <= 10 ? s + "T00:00:00+09:00" : s);
+  return (d.getMonth() + 1) + "/" + d.getDate();
+}
+function fmtDateTime(iso) {
+  if (!iso) return "-";
+  return new Intl.DateTimeFormat("ko-KR", {
+    timeZone: "Asia/Seoul", year: "numeric", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit", hour12: false,
+  }).format(new Date(iso));
+}
+function relTime(iso) {
+  if (!iso) return "-";
+  const sec = Math.max(0, Math.floor((Date.now() - new Date(iso).getTime()) / 1000));
+  if (sec < 3600) return Math.max(1, Math.floor(sec / 60)) + "분 전";
+  if (sec < 86400) return Math.floor(sec / 3600) + "시간 전";
+  return Math.floor(sec / 86400) + "일 전";
+}
+function conic(entries, colorFor) {
+  const total = entries.reduce((s, e) => s + e[1], 0) || 1;
+  let cur = 0;
+  return entries.map((e, i) => {
+    const start = cur, end = cur + (e[1] / total) * 100;
+    cur = end;
+    return colorFor(e[0], i) + " " + start + "% " + end + "%";
+  }).join(", ");
+}
+function renderDonut(sel, entries, colorFor) {
+  const total = entries.reduce((s, e) => s + e[1], 0) || 1;
+  const legend = entries.map((e, i) =>
+    '<div class="row"><span><span class="dot" style="background:' + colorFor(e[0], i) + '"></span>' +
+    esc(e[0]) + "</span><b>" + e[1] + " (" + Math.round((e[1] / total) * 100) + "%)</b></div>").join("");
+  document.querySelector(sel).innerHTML =
+    '<div class="donut-wrap">' +
+      '<div class="donut" style="background:conic-gradient(' + conic(entries, colorFor) + ')">' +
+        '<div class="donut-center">' + total + "<span>과제</span></div></div>" +
+      '<div class="legend">' + legend + "</div></div>";
+}
+
+function renderAll(data) {
+  const C = data.contest;
+  const P = data.projects;
+  const kickoff = new Date(C.kickoff + "T00:00:00+09:00");
+  const finale = new Date(C.finale + "T00:00:00+09:00");
+  const today = new Date();
+  const totalDays = Math.max(1, Math.round((finale - kickoff) / DAY));
+  const totalWeeks = C.totalWeeks || Math.ceil(totalDays / 7);
+  const elapsedDays = Math.min(totalDays, Math.max(0, Math.round((today - kickoff) / DAY)));
+  const weekNow = Math.min(totalWeeks, Math.floor(elapsedDays / 7) + 1);
+  const ddayNum = Math.ceil((finale - today) / DAY);
+  const statusOf = (p) => p.active ? "활성" : "비활성";
+
+  document.querySelector("#contestTitle").textContent = C.title;
+  document.querySelector("#contestSub").textContent = C.subtitle;
+  document.querySelector("#weekNow").textContent = weekNow + " / " + totalWeeks + "주";
+  document.querySelector("#dday").textContent = ddayNum > 0 ? "D-" + ddayNum : (ddayNum === 0 ? "D-DAY" : "종료");
+  document.querySelector("#updatedAt").textContent =
+    "기준시각: " + fmtDateTime(data.generatedAt) + " · " + C.refreshNote + (data.sample ? " · 예시 데이터" : "");
+  document.querySelector("#footNote").textContent = C.footnote;
+  const noticeEl = document.querySelector("#notice");
+  if (C.notice && C.notice.text) {
+    noticeEl.innerHTML =
+      '<span class="tag">' + esc(C.notice.label || "공지") + "</span><b>" + esc(C.notice.text) + "</b>";
+  } else {
+    noticeEl.hidden = true;
+  }
+
+  /* metrics */
+  const activeCount = P.filter((p) => p.active).length;
+  const totalCommits = P.reduce((s, p) => s + (p.gitlab.commits || 0), 0);
+  const weekCommits = data.weeklyCommits[weekNow - 1] || 0;
+  const openIssues = P.reduce((s, p) => s + (p.gitlab.openIssues || 0), 0);
+  const closedIssues = P.reduce((s, p) => s + (p.gitlab.closedIssues || 0), 0);
+  const totalStars = P.reduce((s, p) => s + (p.gitlab.stars || 0), 0);
+  const card = (label, value, hint, cls) =>
+    '<article class="metric ' + cls + '">' +
+      '<div class="label">' + esc(label) + "</div>" +
+      '<div class="value">' + esc(value) + "</div>" +
+      '<div class="hint">' + esc(hint) + "</div></article>";
+  document.querySelector("#metrics").innerHTML = [
+    card("공모전 과제", P.length, new Set(P.map((p) => p.team)).size + "개 팀·부서", "blue"),
+    card("활성 과제", activeCount, "최근 " + (C.activeDays || 14) + "일 저장소 활동", "green"),
+    card("누적 커밋", totalCommits.toLocaleString("ko-KR"), "이번 주 " + weekCommits + "건", "purple"),
+    card("전체 이슈", (openIssues + closedIssues).toLocaleString("ko-KR"), "진행 " + openIssues + " / 완료 " + closedIssues, "orange"),
+    card("Star", totalStars.toLocaleString("ko-KR"), "직원 관심도(로그인 사용자)", ""),
+  ].join("");
+
+  /* timeline */
+  const pct = (d) => Math.min(100, Math.max(0, ((new Date(d + "T00:00:00+09:00") - kickoff) / DAY / totalDays) * 100));
+  const todayPct = (elapsedDays / totalDays) * 100;
+  document.querySelector("#timeline").innerHTML =
+    '<div class="track"><div class="fill" style="width:' + todayPct + '%"></div></div>' +
+    '<div class="today" style="left:' + todayPct + '%">오늘</div>' +
+    C.milestones.map((m) =>
+      '<div class="ms ' + (new Date(m.date + "T00:00:00+09:00") <= today ? "done" : "") + '" style="left:' + pct(m.date) + '%">' +
+        '<div class="dot"></div><div class="lbl">' + esc(m.label) + "</div>" +
+        '<div class="date">' + esc(fmtDateShort(m.date)) + "</div></div>").join("");
+
+  /* filters + cards */
+  const els = {
+    field: document.querySelector("#fieldFilter"),
+    status: document.querySelector("#statusFilter"),
+    search: document.querySelector("#searchInput"),
+    cards: document.querySelector("#cards"),
+    count: document.querySelector("#resultCount"),
+  };
+  const fields = [...new Set(P.map((p) => p.field))].sort((a, b) => a.localeCompare(b, "ko"));
+  els.field.innerHTML = ['<option value="all">분야 전체</option>']
+    .concat(fields.map((f) => "<option>" + esc(f) + "</option>")).join("");
+
+  function renderCards() {
+    const kw = els.search.value.trim().toLowerCase();
+    const field = els.field.value;
+    const status = els.status.value;
+    const list = P.filter((p) => {
+      const hay = [p.name, p.team, p.description, p.field].join(" ").toLowerCase();
+      return (field === "all" || p.field === field)
+        && (status === "all" || statusOf(p) === status)
+        && (!kw || hay.includes(kw));
+    });
+    els.count.textContent = list.length + " / " + P.length + "개 과제";
+    els.cards.innerHTML = list.map((p) => {
+      const g = p.gitlab || {};
+      const latest = (p.updates || [])[0];
+      const st = statusOf(p);
+      return '<article class="card">' +
+        '<div class="top"><div>' +
+          '<h3><a href="' + esc(p.webUrl || "#") + '" target="_blank" rel="noreferrer">' + esc(p.name) + "</a></h3>" +
+          '<div class="team">' + esc(p.team) + "</div>" +
+        '</div><span class="badge ' + st + '">' + st + "</span></div>" +
+        '<div><span class="field-pill">' + esc(p.field) + "</span></div>" +
+        (p.description ? '<p class="desc">' + esc(p.description) + "</p>" : "") +
+        (p.progress != null
+          ? '<div class="prog"><span class="lbl">진척률</span>' +
+            '<div class="track"><div class="fill" style="width:' + Number(p.progress) + '%"></div></div>' +
+            "<b>" + Number(p.progress) + "%</b></div>"
+          : "") +
+        '<div class="git-meta">' +
+          "<span>커밋 <b>" + Number(g.commits || 0).toLocaleString("ko-KR") + "</b></span>" +
+          "<span>이슈 <b>" + Number(g.openIssues || 0) + "</b> / 완료 <b>" + Number(g.closedIssues || 0) + "</b></span>" +
+          "<span>★ <b>" + Number(g.stars || 0) + "</b></span>" +
+          "<span>최근활동 <b>" + esc(relTime(g.lastActivity)) + "</b></span>" +
+        "</div>" +
+        (latest
+          ? '<div class="note"><span class="d">' + esc(latest.date) + "</span>" + esc(latest.note) + "</div>"
+          : "") +
+        "</article>";
+    }).join("") || '<div class="muted">조건에 맞는 과제가 없습니다.</div>';
+  }
+  els.search.addEventListener("input", renderCards);
+  els.field.addEventListener("change", renderCards);
+  els.status.addEventListener("change", renderCards);
+  renderCards();
+
+  /* week chart (commits) */
+  const wc = data.weeklyCommits;
+  const max = Math.max(1, ...wc);
+  document.querySelector("#weekChart").innerHTML = wc.map((c, i) => {
+    const h = Math.max(4, Math.round((c / max) * 100));
+    const future = i + 1 > weekNow;
+    return '<div class="col">' +
+      (future ? "" : '<span class="cnt">' + c + "</span>") +
+      '<div class="bar' + (future ? " future" : "") + '" style="height:' + (future ? 4 : h) + '%"></div>' +
+      '<span class="wk">' + (i + 1) + "주</span></div>";
+  }).join("");
+
+  /* donuts */
+  renderDonut("#fieldDonut",
+    Object.entries(P.reduce((m, p) => { m[p.field] = (m[p.field] || 0) + 1; return m; }, {}))
+      .sort((a, b) => b[1] - a[1]),
+    (k, i) => COLORS[i % COLORS.length]);
+  renderDonut("#statusDonut",
+    ["활성", "비활성"]
+      .map((s) => [s, P.filter((p) => statusOf(p) === s).length])
+      .filter((e) => e[1] > 0),
+    (k) => STATUS_COLORS[k]);
+
+  /* feed: 커밋 + 이슈 + 자기보고 통합 */
+  const commitItems = P.flatMap((p) => (p.recentCommits || []).map((c) => ({
+    kind: "커밋", team: p.name, sort: c.date || "", when: relTime(c.date), note: c.title, url: c.url,
+  })));
+  const issueItems = P.flatMap((p) => (p.recentIssues || []).map((i) => ({
+    kind: "이슈", team: p.name, sort: i.date || "", when: relTime(i.date),
+    note: (i.state === "closed" ? "[완료] " : "") + i.title, url: i.url,
+  })));
+  const reportItems = P.flatMap((p) => (p.updates || []).map((u) => ({
+    kind: "보고", team: p.name, sort: u.date, when: u.date, note: u.note, url: null,
+  })));
+  const feed = commitItems.concat(issueItems, reportItems)
+    .sort((a, b) => String(b.sort).localeCompare(String(a.sort)))
+    .slice(0, 10);
+  document.querySelector("#feed").innerHTML = feed.map((it) =>
+    '<div class="item"><span class="kind ' + it.kind + '">' + it.kind + "</span>" +
+    '<span class="who">' + esc(it.team) + "</span>" +
+    '<span class="when">' + esc(it.when) + "</span><br>" +
+    (it.url && it.url !== "#"
+      ? '<a href="' + esc(it.url) + '" target="_blank" rel="noreferrer">' + esc(it.note) + "</a>"
+      : esc(it.note)) +
+    "</div>").join("") || '<div class="muted">활동 내역이 없습니다.</div>';
+
+  /* showcase — 등록된 항목이 없으면 패널 자체를 숨김 */
+  const show = data.showcase || [];
+  document.querySelector("#showcasePanel").hidden = !show.length;
+  document.querySelector("#showcase").innerHTML = show.map((s) =>
+    '<div class="show-item"><b>' + esc(s.name) + "</b>" +
+    '<span class="muted">' + esc(s.team) + "</span>" + esc(s.desc) +
+    (s.url && s.url !== "#" ? '<br><a href="' + esc(s.url) + '" target="_blank" rel="noreferrer">시연 보기 →</a>' : "") +
+    "</div>").join("");
+
+  /* resources */
+  document.querySelector("#resources").innerHTML = (C.resources || []).map((r) =>
+    '<a href="' + esc(r.url) + '">' + esc(r.label) + "</a>").join("");
+}
+
+async function boot() {
+  const msg = document.querySelector("#statusMsg");
+  try {
+    const res = await fetch("./data.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    renderAll(data);
+    msg.hidden = true;
+    document.querySelector("#app").hidden = false;
+  } catch (e) {
+    msg.hidden = false;
+    msg.textContent = "데이터를 불러오지 못했습니다 (" + e.message + "). " +
+      "data.json이 같은 경로에 있는지 확인하세요. 로컬 미리보기는 파일 직접 열기가 아닌 " +
+      "간이 웹서버(예: npx serve 또는 python -m http.server)로 접속해야 합니다.";
+  }
+}
+boot();
+</script>
+</body>
+</html>
