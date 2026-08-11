@@ -10,27 +10,27 @@
     "refreshNote": "매일 09:00 / 15:00 자동 갱신",
     "notice": {
       "label": "다음 일정",
-      "text": "8월의 AX 엔진룸 — 중간점검 및 멘토링 2차: 8월 17일(월) 14:00, 대회의실"
+      "text": "26년 AX 공모전 — 중간점검 및 멘토링 1차: 9월 7일(월) 14:00, 중회의실"
     },
     "milestones": [
       {
-        "date": "2026-07-06",
+        "date": "2026-09-07",
         "label": "킥오프"
       },
       {
-        "date": "2026-07-20",
+        "date": "2026-09-20",
         "label": "멘토링 1차"
       },
       {
-        "date": "2026-08-17",
+        "date": "2026-10-17",
         "label": "중간점검"
       },
       {
-        "date": "2026-09-14",
+        "date": "2026-11-14",
         "label": "멘토링 3차"
       },
       {
-        "date": "2026-10-02",
+        "date": "2026-12-02",
         "label": "최종발표"
       }
     ],
@@ -41,10 +41,6 @@
       },
       {
         "label": "AI 도구 보안 이용 가이드",
-        "url": "#"
-      },
-      {
-        "label": "구독료 실비 지원 안내",
         "url": "#"
       },
       {
@@ -76,12 +72,12 @@
   ],
   "projects": [
     {
-      "repo": "kisa-ax/team01",
-      "name": "118 민원 답변 도우미",
-      "team": "KISA 상담혁신팀",
-      "field": "민원·상담",
-      "description": "118 상담 FAQ 기반 민원 답변 초안 자동 생성",
-      "webUrl": "https://gitlab.aigov.go.kr/kisa-ax/team01",
+      "repo": "jikim/rack",
+      "name": "정보자산관리를 위한 랙실장도",
+      "team": "KISA AX혁신팀",
+      "field": "자산관리, 행정효율화",
+      "description": "물리적인 정보시스템과 IP현황 관리 시스템",
+      "webUrl": "https://gitlab.aigov.go.kr/jikim/rack",
       "active": true,
       "progress": 55,
       "updates": [
