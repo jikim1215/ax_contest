@@ -4,33 +4,33 @@
   "contest": {
     "title": "KISA AX 공모전 진행 현황",
     "subtitle": "AI 업무개선 PoC 트랙 · 10개 과제 · 3개월",
-    "kickoff": "2026-07-06",
-    "finale": "2026-10-02",
+    "kickoff": "2026-09-07",
+    "finale": "2026-12-02",
     "activeDays": 14,
     "refreshNote": "매일 09:00 / 15:00 자동 갱신",
     "notice": {
       "label": "다음 일정",
-      "text": "8월의 AX 엔진룸 — 중간점검 및 멘토링 2차: 8월 17일(월) 14:00, 대회의실"
+      "text": "AX 앰버서더 — 킥오프: 9월 7일(월) 14:00, 중회의실"
     },
     "milestones": [
       {
-        "date": "2026-07-06",
+        "date": "2026-09-07",
         "label": "킥오프"
       },
       {
-        "date": "2026-07-20",
+        "date": "2026-09-20",
         "label": "멘토링 1차"
       },
       {
-        "date": "2026-08-17",
+        "date": "2026-10-17",
         "label": "중간점검"
       },
       {
-        "date": "2026-09-14",
+        "date": "2026-11-14",
         "label": "멘토링 3차"
       },
       {
-        "date": "2026-10-02",
+        "date": "2026-12-02",
         "label": "최종발표"
       }
     ],
@@ -44,11 +44,11 @@
         "url": "#"
       },
       {
-        "label": "구독료 실비 지원 안내",
+        "label": "인공지능 윤리 가이드",
         "url": "#"
       },
       {
-        "label": "강의자료 모음",
+        "label": "AI 강의자료 모음",
         "url": "#"
       },
       {
@@ -56,7 +56,7 @@
         "url": "#"
       }
     ],
-    "footnote": "KISA AX 공모전 운영사무국 · gitlab.aigov.go.kr 저장소 기준 일 2회 자동 집계",
+    "footnote": "KISA 경영기획본부 ESG추진팀 · gitlab.aigov.go.kr 저장소 기준 일 2회 자동 집계",
     "totalWeeks": 13
   },
   "weeklyCommits": [
@@ -76,14 +76,14 @@
   ],
   "projects": [
     {
-      "repo": "kisa-ax/team01",
-      "name": "118 민원 답변 도우미",
-      "team": "KISA 상담혁신팀",
+      "repo": "jikim/rack",
+      "name": "정보시스템 자산관리",
+      "team": "AX혁신팀",
       "field": "민원·상담",
-      "description": "118 상담 FAQ 기반 민원 답변 초안 자동 생성",
-      "webUrl": "https://gitlab.aigov.go.kr/kisa-ax/team01",
+      "description": "정보시스템의 랙실장, IP, 포트맵, 반출입 관리도구",
+      "webUrl": "https://gitlab.aigov.go.kr/jikim/rack",
       "active": true,
-      "progress": 55,
+      "progress": 10,
       "updates": [
         {
           "date": "2026-08-07",

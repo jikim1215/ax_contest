@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codex — AI를 검색창이 아니라 ‘동료’로 — KISA AX 공모전 · AI 교육</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --paper:oklch(97% 0.012 95); --paper-2:oklch(94% 0.016 95);
+    --ink:oklch(20% 0.012 250); --ink-2:oklch(28% 0.014 250); --muted:oklch(50% 0.014 90);
+    --rule:oklch(86% 0.014 90);
+    --accent:oklch(56% 0.20 235); --accent-soft:oklch(66% 0.18 235 / 0.14);
+    --edge:color-mix(in oklab, oklch(56% 0.20 235), black 20%);
+    --font-display:"Plus Jakarta Sans","Pretendard","Malgun Gothic","맑은 고딕",ui-sans-serif,system-ui,sans-serif;
+    --font-body:"Plus Jakarta Sans","Pretendard","Malgun Gothic","맑은 고딕",ui-sans-serif,system-ui,sans-serif;
+    --font-label:"JetBrains Mono","Pretendard","Malgun Gothic",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  body{font-family:var(--font-body); color:var(--ink-2); line-height:1.7; max-width:800px; margin:0 auto;
+    padding:0 24px 76px; background:var(--paper); -webkit-font-smoothing:antialiased;
+    font-feature-settings:"ss01" on; font-variant-numeric:tabular-nums;}
+  .strip{height:5px; margin:0 -24px 34px; background:var(--accent);}
+  .no-print{margin:0 0 24px; text-align:right;}
+  .no-print button{font-family:var(--font-display); font-weight:600; font-size:14.5px; color:#fff; background:var(--accent);
+    border:0; border-radius:999px; padding:12px 24px; cursor:pointer;
+    box-shadow:0 4px 0 0 var(--edge), 0 6px 12px -3px oklch(20% 0.012 250 / .3);
+    transition:transform 140ms cubic-bezier(0.2,0.7,0.3,1), box-shadow 140ms cubic-bezier(0.2,0.7,0.3,1);}
+  .no-print button:hover{transform:translateY(-2px); box-shadow:0 6px 0 0 var(--edge), 0 12px 22px -4px oklch(20% 0.012 250 / .3);}
+  .no-print button:active{transform:translateY(3px); box-shadow:0 1px 0 0 var(--edge);}
+  .head{padding-top:6px;}
+  .brand{display:flex; gap:15px; align-items:center;}
+  .mark{flex:none; width:54px; height:54px; border-radius:16px; display:grid; place-items:center;
+    background:var(--accent-soft); font-size:26px; box-shadow:inset 0 0 0 1px var(--rule);}
+  .eyebrow{margin:0; font-family:var(--font-label); font-size:11px; font-weight:500; letter-spacing:.12em; text-transform:uppercase; color:var(--accent);}
+  .head h1{margin:16px 0 0; font-family:var(--font-display); font-size:28px; font-weight:700; line-height:1.3; letter-spacing:-.02em; color:var(--ink);}
+  .lead{margin:0; color:var(--ink-2); font-size:15.5px;}
+  .lead-box{background:var(--accent-soft); border:1px solid var(--rule); border-radius:20px; padding:18px 22px; margin:22px 0 8px;}
+  .pt{padding:20px 0; border-bottom:1px solid var(--rule);}
+  .pt:last-of-type{border-bottom:0;}
+  .pt h2{font-family:var(--font-display); font-size:18px; font-weight:700; color:var(--ink); margin:0 0 9px; display:flex; align-items:center; gap:11px; letter-spacing:-.01em;}
+  .pt h2 .n{flex:none; width:28px; height:28px; border-radius:9px; background:var(--accent); color:#fff;
+    font-family:var(--font-display); font-size:14px; font-weight:700; display:inline-grid; place-items:center; box-shadow:0 3px 0 0 var(--edge);}
+  .pt p{margin:0; color:var(--ink-2); font-size:15.5px; line-height:1.75;}
+  ul.check{margin:0; padding:0; list-style:none; display:grid; gap:10px;}
+  ul.check li{position:relative; padding-left:28px; font-size:15px; color:var(--ink-2); line-height:1.6;}
+  ul.check li::before{content:"✓"; position:absolute; left:0; top:0; color:var(--accent); font-weight:800;}
+  footer{margin-top:36px; padding-top:18px; border-top:1px solid var(--rule); font-family:var(--font-label); font-size:12px; letter-spacing:.02em; color:var(--muted);}
+  footer b{color:var(--ink-2);}
+  @media print{.no-print,.strip{display:none;} body{background:#fff; padding:0;}}
+</style>
+</head>
+<body>
+<div class="strip"></div>
+<div class="no-print"><button onclick="window.print()">인쇄 / PDF로 저장</button></div>
+<div class="head">
+  <div class="brand">
+    <div class="mark">🎓</div>
+    <div>
+      <p class="eyebrow">KISA AX · AI 교육</p>
+    </div>
+  </div>
+  <h1>Codex — AI를 검색창이 아니라 ‘동료’로</h1>
+</div>
+<div class="lead-box"><p class="lead">AI를 &#039;검색창&#039;이 아니라 &#039;함께 일하는 똑똑한 신입 동료&#039;로 대하면 업무가 달라집니다. 일을 맡기고 검토하는 방식을 익혀 봅니다.</p></div>
+<section class="pt"><h2><span class="n">1</span>관점을 바꾸세요</h2><p>검색은 내가 다 찾고 정리하지만, AI 동료에게는 &#039;이 일을 이렇게 해줘&#039;라고 맡기고 결과를 검토합니다. 무가치해지는 게 아니라, &#039;잘 맡기고 검증하는&#039; 능력이 새로 중요해지는 것입니다.</p></section>
+<section class="pt"><h2><span class="n">2</span>이런 일을 맡깁니다</h2><p>보고서·공문 초안, 흩어진 파일 정리, 반복 작업 자동화, 자료 분석과 표 만들기 등. 처음부터 완벽을 기대하지 말고, 초안을 받아 내가 다듬는 흐름으로 씁니다.</p></section>
+<section class="pt"><h2><span class="n">3</span>믿기 전에 확인</h2><p>AI는 그럴듯하게 틀릴 수 있습니다(환각). 숫자·출처·최신성은 사람이 확인한 뒤 사용하고, 민감정보는 입력하지 않습니다.</p></section>
+<section class="pt"><h2><span class="n">✓</span>실무 체크리스트</h2><ul class="check"><li>‘무엇을·어떤 형식으로’ 원하는지 구체적으로 맡긴다</li><li>초안을 받아 내가 검토·수정한다</li><li>숫자·출처·최신성을 사람이 확인한다</li><li>개인정보·대외비는 입력하지 않는다</li></ul></section>
+<footer>
+  KISA 경영기획본부 ESG추진팀
+</footer>
+</body>
+</html>

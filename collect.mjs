@@ -65,7 +65,7 @@ const CONTEST = {
     { label: "강의자료 모음", url: "#" },
     { label: "참가자 오픈채팅방", url: "#" },
   ],
-  footnote: "KISA AX 공모전 운영사무국 · gitlab.aigov.go.kr 저장소 기준 일 2회 자동 집계",
+  footnote: "KISA 경영기획본부 ESG추진팀 · gitlab.aigov.go.kr 저장소 기준 일 2회 자동 집계",
 };
 
 /* 시연 가능 PoC — 사무국이 수동 큐레이션 */

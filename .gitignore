@@ -7,3 +7,16 @@ AI공모전_추진검토_보고서.html
 # 수집 로그·의존성
 collect.log
 node_modules/
+
+# 스킬/도구 설치 산출물 (로컬 전용)
+.agents/
+.claude/
+skills-lock.json
+
+# 원본 강의·가이드 PDF (요약본 guides/*.html 로 대체 · 배포 불필요 · 대용량)
+edu/
+ethics/
+security/
+
+# 내부 계획(안) 문서
+*.hwpx
