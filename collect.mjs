@@ -39,24 +39,26 @@ const GROUP_PATH = ""; // 예: "kisa-ax"
 
 /* 그룹을 쓰지 않을 때 저장소 경로 10개를 명시 (path_with_namespace). */
 const PROJECT_REPOS = [
-  "kisa-ax/team01", "kisa-ax/team02", "kisa-ax/team03", "kisa-ax/team04", "kisa-ax/team05",
-  "kisa-ax/team06", "kisa-ax/team07", "kisa-ax/team08", "kisa-ax/team09", "kisa-ax/team10",
+  "jikim/rack",
+  // TODO(사무국): 나머지 참가 과제의 실제 저장소 경로(path_with_namespace)를 아래에 추가하면 자동 수집됩니다.
+  //   예: "someuser/project", "team-a/poc-repo", ...
+  // 참가 저장소를 하나의 GitLab 그룹으로 묶었다면, 위 GROUP_PATH에 그룹경로만 지정해도 전체 자동 발견됩니다.
 ];
 
 const CONTEST = {
   title: "KISA AX 공모전 진행 현황",
   subtitle: "AI 업무개선 PoC 트랙 · 10개 과제 · 3개월",
-  kickoff: "2026-07-06",
-  finale: "2026-10-02",
+  kickoff: "2026-09-07",
+  finale: "2026-12-02",
   activeDays: 14, // 최근 N일 내 활동 시 "활성"
   refreshNote: "매일 09:00 / 15:00 자동 갱신",
-  notice: { label: "다음 일정", text: "8월의 AX 엔진룸 — 중간점검 및 멘토링 2차: 8월 17일(월) 14:00, 대회의실" },
+  notice: { label: "다음 일정", text: "AX 앰버서더 — 킥오프: 9월 7일(월) 14:00, 중회의실" },
   milestones: [
-    { date: "2026-07-06", label: "킥오프" },
-    { date: "2026-07-20", label: "멘토링 1차" },
-    { date: "2026-08-17", label: "중간점검" },
-    { date: "2026-09-14", label: "멘토링 3차" },
-    { date: "2026-10-02", label: "최종발표" },
+    { date: "2026-09-07", label: "킥오프" },
+    { date: "2026-09-20", label: "멘토링 1차" },
+    { date: "2026-10-17", label: "중간점검" },
+    { date: "2026-11-14", label: "멘토링 3차" },
+    { date: "2026-12-02", label: "최종발표" },
   ],
   resources: [
     { label: "공모전 운영계획(안)", url: "#" },
