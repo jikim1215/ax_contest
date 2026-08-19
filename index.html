@@ -362,6 +362,7 @@
       <button class="nav-btn" data-view="security">AI 도구 보안</button>
       <button class="nav-btn" data-view="ethics">인공지능 윤리</button>
       <button class="nav-btn" data-view="edu">AI 강의자료</button>
+      <button class="nav-btn" data-view="refs">참고사이트</button>
       <button class="nav-btn" data-view="chat">오픈채팅방</button>
     </div>
   </div>
@@ -443,6 +444,8 @@
   <section class="tabview" data-view="ethics" id="viewEthics" hidden></section>
   <!-- AI 강의자료 모음 -->
   <section class="tabview" data-view="edu" id="viewEdu" hidden></section>
+  <!-- 참고사이트 -->
+  <section class="tabview" data-view="refs" id="viewRefs" hidden></section>
   <!-- 참가자 오픈채팅방 -->
   <section class="tabview" data-view="chat" id="viewChat" hidden></section>
 
@@ -678,6 +681,7 @@ function renderAll(data) {
 
   /* 메뉴별 안내 뷰 (data.json resources 구성과 연동) */
   renderPlan(C, P);
+  renderRefs();
   renderChat(C);
 }
 
@@ -914,6 +918,44 @@ function renderPlan(C, P) {
     "</section>";
 }
 
+/* --- 참고사이트 뷰 (정적 큐레이션 — data.json·수집과 무관) --- */
+const REF_GROUPS = [
+  { h: "공공·공개 데이터", note: "과제에 활용할 데이터를 찾는 곳", items: [
+    ["https://www.data.go.kr", "공공데이터포털 (data.go.kr)", "정부·공공기관 개방 데이터·오픈API"],
+    ["https://aihub.or.kr", "AI-Hub (aihub.or.kr)", "AI 학습용 데이터셋(음성·이미지·텍스트)"],
+    ["https://kosis.kr", "국가통계포털 KOSIS (kosis.kr)", "국내 통계 지표·시계열"],
+    ["https://www.localdata.go.kr", "지방행정 인허가데이터 (localdata.go.kr)", "인허가·업종 개방 데이터"],
+    ["https://www.sharedata.go.kr/", "공공데이터 공동활용 (sharedata.go.kr)", "기관 간 행정·공공데이터 공동활용 창구"],
+    ["https://www.safetydata.go.kr/", "국가안전데이터 (safetydata.go.kr)", "재난·안전 분야 공공데이터·오픈API"],
+  ]},
+  { h: "AI 도구 · 스킬 · MCP", note: "AI에 도구·데이터를 연결하는 표준(MCP)과 카탈로그", items: [
+    ["https://modelcontextprotocol.io", "Model Context Protocol 공식 (modelcontextprotocol.io)", "MCP 표준 문서·사양"],
+    ["https://github.com/modelcontextprotocol/servers", "MCP 공식 서버 모음 (github.com/modelcontextprotocol)", "레퍼런스 MCP 서버 목록(GitHub)"],
+    ["https://smithery.ai", "Smithery (smithery.ai)", "MCP 서버 검색·설치 카탈로그"],
+    ["https://mcp.so", "MCP.so (mcp.so)", "MCP 서버·클라이언트 디렉터리"],
+  ]},
+  { h: "AI 활용 참고", note: "직접 만들고 코드를 다루는 도구", items: [
+    ["https://lovable.dev", "Lovable (lovable.dev)", "말로 만드는 노코드 웹앱"],
+    ["https://github.com", "GitHub (github.com)", "코드 저장·버전관리·오픈소스 탐색"],
+  ]},
+];
+function renderRefs() {
+  const el = document.querySelector("#viewRefs");
+  if (!el) return;
+  const row = (url, name, desc) =>
+    '<li><a href="' + esc(url) + '" target="_blank" rel="noreferrer">' + esc(name) + ' ↗</a>' +
+    (desc ? ' <span class="muted">— ' + esc(desc) + '</span>' : "") + "</li>";
+  el.innerHTML =
+    '<section class="panel"><div class="panel-head"><h2>참고사이트</h2>' +
+      '<span class="muted">데이터·도구 찾기</span></div>' +
+      '<p class="lead">과제에 바로 쓸 수 있는 공개 데이터와, AI에 도구를 연결하는 스킬·MCP 카탈로그를 모았습니다.</p></section>' +
+    REF_GROUPS.map((g) =>
+      '<section class="panel"><div class="panel-head"><h2>' + esc(g.h) + '</h2>' +
+        '<span class="muted">' + esc(g.note) + '</span></div>' +
+        '<ul class="plain">' + g.items.map((it) => row(it[0], it[1], it[2])).join("") + '</ul></section>'
+    ).join("");
+}
+
 /* --- 참가자 오픈채팅방 뷰 --- */
 function stepRow(n, t) {
   return '<div class="tl-row"><span class="step-n">' + n + '</span><span class="tl-label">' + esc(t) + "</span></div>";
@@ -943,7 +985,13 @@ function renderChat(C) {
       '<li>개인정보·대외비는 채팅방에도 올리지 않습니다. → <a href="#security">보안 가이드</a></li>' +
       "<li>공지방 내용은 캡처 후 외부 공유를 삼갑니다.</li>" +
       "<li>운영시간 외 문의는 다음 근무일에 순차 답변됩니다.</li>" +
-    "</ul></section>";
+    "</ul></section>" +
+    '<section class="panel"><div class="panel-head"><h2>AI·언론 동향 뉴스</h2>' +
+      '<span class="muted">매일 스크랩 채널</span></div>' +
+      '<p class="lead">기관 언론 동향과 AI 동향을 매일 뉴스로 정리해주는 텔레그램 채널입니다. 과제 방향·트렌드 파악에 참고하세요.</p>' +
+      '<div class="join-box">' +
+        '<a class="join-btn" href="https://t.me/digitalnewstest" target="_blank" rel="noreferrer">뉴스 채널 열기 ↗</a>' +
+      "</div></section>";
 }
 
 function downloadGuide(id) {
