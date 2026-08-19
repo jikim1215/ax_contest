@@ -344,7 +344,7 @@
       </div>
     </div>
     <div class="dday-wrap">
-      <div class="dday"><b id="weekNow">-</b><span>진행 주차</span></div>
+      <div class="dday"><b id="weekNow">-</b><span id="weekNowLabel">진행 주차</span></div>
       <div class="dday"><b id="dday">-</b><span>최종발표</span></div>
     </div>
   </div>
@@ -510,13 +510,17 @@ function renderAll(data) {
   const totalDays = Math.max(1, Math.round((finale - kickoff) / DAY));
   const totalWeeks = C.totalWeeks || Math.ceil(totalDays / 7);
   const elapsedDays = Math.min(totalDays, Math.max(0, Math.round((today - kickoff) / DAY)));
-  const weekNow = Math.min(totalWeeks, Math.floor(elapsedDays / 7) + 1);
+  const daysToKickoff = Math.ceil((kickoff - today) / DAY);
+  const notStarted = daysToKickoff > 0; // 킥오프 전 준비 기간
+  const weekNow = notStarted ? 0 : Math.min(totalWeeks, Math.floor(elapsedDays / 7) + 1);
   const ddayNum = Math.ceil((finale - today) / DAY);
   const statusOf = (p) => p.active ? "활성" : "비활성";
 
   document.querySelector("#contestTitle").textContent = C.title;
   document.querySelector("#contestSub").textContent = C.subtitle;
-  document.querySelector("#weekNow").textContent = weekNow + " / " + totalWeeks + "주";
+  document.querySelector("#weekNow").textContent =
+    notStarted ? "D-" + daysToKickoff : (weekNow + " / " + totalWeeks + "주");
+  document.querySelector("#weekNowLabel").textContent = notStarted ? "킥오프까지" : "진행 주차";
   document.querySelector("#dday").textContent = ddayNum > 0 ? "D-" + ddayNum : (ddayNum === 0 ? "D-DAY" : "종료");
   document.querySelector("#updatedAt").textContent =
     "기준시각: " + fmtDateTime(data.generatedAt) + " · " + C.refreshNote + (data.sample ? " · 예시 데이터" : "");
@@ -650,8 +654,9 @@ function renderAll(data) {
   const reportItems = P.flatMap((p) => (p.updates || []).map((u) => ({
     kind: "보고", team: p.name, sort: u.date, when: u.date, note: u.note, url: null,
   })));
+  const ts = (v) => { const t = Date.parse(v); return Number.isNaN(t) ? 0 : t; };
   const feed = commitItems.concat(issueItems, reportItems)
-    .sort((a, b) => String(b.sort).localeCompare(String(a.sort)))
+    .sort((a, b) => ts(b.sort) - ts(a.sort))
     .slice(0, 10);
   document.querySelector("#feed").innerHTML = feed.map((it) =>
     '<div class="item"><span class="kind ' + it.kind + '">' + it.kind + "</span>" +

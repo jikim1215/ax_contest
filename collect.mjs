@@ -139,12 +139,20 @@ async function fetchSelfReport(projectId, ref) {
 }
 
 async function collectProject(info) {
-  const [stats, commits, issues, report] = await Promise.all([
+  const [statsR, commitsR, issuesR, reportR] = await Promise.allSettled([
     api(`/projects/${info.id}/issues_statistics`),
     fetchCommits(info.id),
     api(`/projects/${info.id}/issues?per_page=3&order_by=created_at&sort=desc`),
     fetchSelfReport(info.id, info.default_branch || "main"),
   ]);
+
+  // 커밋 수집은 과제 데이터의 근간이므로 실패 시 과제를 제외(FAIL)한다.
+  if (commitsR.status === "rejected") throw commitsR.reason;
+  const commits = commitsR.value;
+  // 이슈 기능이 비활성/권한제한(403·404)이어도 과제는 유지하고 0건·빈배열로 처리한다.
+  const stats = statsR.status === "fulfilled" ? statsR.value : null;
+  const issues = issuesR.status === "fulfilled" ? issuesR.value : [];
+  const report = reportR.status === "fulfilled" ? reportR.value : { progress: null, updates: [] };
 
   const weeklyCommits = Array.from({ length: totalWeeks }, () => 0);
   for (const c of commits) {
