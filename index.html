@@ -697,14 +697,7 @@ const GUIDES = [
     ],
     sections: [
       { h: "AX가 뭐예요? (AI 활용과 다른 점)",
-        p: "AI 활용은 도구를 '써보는' 것이고, AX(AI Transformation)는 AI를 업무 흐름·의사결정·협업 방식에 연결해 '일하는 방식 자체를 재설계'하는 것입니다. 기술보다 문제, 구축보다 검증, 외주보다 내부 주도가 핵심입니다." },
-      { h: "이번 교육에서 배우는 것 (강의 한눈에)",
-        items: [
-          "<b>0. AX 앰버서더</b> — 왜 지금 AX인가, 문제 정의부터 시작하기",
-          "<b>1·2. Lovable</b> — 코딩 없이 말로 웹앱·대시보드 만들기(노코드)",
-          "<b>3·4. Codex</b> — AI로 코드를 직접 작성·수정하는 심화 활용",
-          "<b>5. AX 조직·확산</b> — 작은 PoC를 팀·기관 성과로 키우기",
-        ] },
+        p: "AI 활용은 개별 도구를 써보는 것이라면, AX(AI Transformation)는 업무 프로세스와 의사결정에 AI를 녹여 일하는 방식 자체를 일구어내는 것입니다. 거창한 시스템 구축보다 현장의 문제 정의와 신속한 검토·검증이 본질입니다." },
       { h: "바이브 코딩, 한마디로",
         p: "사람이 자연어로 '의도·느낌(Vibe)'을 설명하면 AI가 해석해 코드를 자동으로 만들고 고쳐주는 방식입니다. 10~30분이면 간단한 시범도 가능해, 비전공·비개발자도 오늘부터 해볼 수 있습니다. 목표는 '개발자 되기'가 아니라 '아이디어를 직접 구현해보기'입니다." },
       { h: "성공하는 PoC 3원칙",
@@ -726,14 +719,6 @@ const GUIDES = [
           "사내에서 승인한 AI 도구·계정만 사용합니다.",
           "개인정보·대외비 문서는 입력 금지 (자세한 내용은 정보보안 안내 참고)",
         ] },
-    ],
-    docs: [
-      { label: "AX, 왜 지금 필요한가", file: "guides/edu-0-ax-engineroom.html" },
-      { label: "Lovable — 코딩 없이 말로 만들기", file: "guides/edu-1-lovable-basic.html" },
-      { label: "Lovable 심화 — 기본기", file: "guides/edu-2-lovable-advanced.html" },
-      { label: "Codex — AI를 '동료'로", file: "guides/edu-3-codex-basic.html" },
-      { label: "Codex 심화 — 자동화·도구 연결", file: "guides/edu-4-codex-advanced.html" },
-      { label: "작은 PoC를 조직의 성과로", file: "guides/edu-5-ax-organization.html" },
     ],
   },
   {
@@ -780,7 +765,7 @@ const GUIDES = [
     tag: "입력하기 전에 3초 — 새어나가면 되돌릴 수 없어요",
     summary: [
       "대외 AI에 개인정보·대외비·미공개 자료 입력 금지",
-      "사내에서 승인된 AI 도구·계정만 사용",
+      "사내에서 승인된 도구·계정만 사용",
       "계정 비밀번호·API 키는 화면·코드에 노출 금지",
     ],
     sections: [
@@ -909,11 +894,13 @@ function renderPlan(C, P) {
         statCell(fields, "업무 분야") + statCell(months + "개월", "운영 기간") +
       "</div></section>" +
     '<section class="panel"><h2>추진 일정</h2><div class="tl-list">' + rows + "</div></section>" +
-    '<section class="panel"><h2>진행 방식</h2><ul class="plain">' +
-      "<li><b>킥오프</b> — 트랙 안내·팀 매칭·과제 확정, 승인된 AI 도구 계정 발급</li>" +
-      "<li><b>멘토링</b> — 전문 멘토가 과제별 문제정의·프롬프트·구현을 다회차 코칭</li>" +
-      "<li><b>중간점검</b> — PoC 진척 공유와 범위 조정·리스크 점검</li>" +
-      "<li><b>최종발표</b> — 결과 시연·성과 공유, 우수 과제 시상 및 확산 논의</li>" +
+    '<section class="panel"><h2>추진 방향</h2><ul class="plain">' +
+      "<li><b>개발 목적</b> — 생성형 AI 또는 자동화 도구를 활용하여 업무혁신 사례가 실제 업무 현장에 적용될 수 있는 사례(서비스) 개발</li>" +
+      "<li><b>추진 분야</b> — ① 행정업무 효율화 &nbsp; ② 국민 편익 증진 &nbsp; ③ 근로자 안전 확보 (3개 분야)</li>" +
+      "<li><b>참가 자격</b> — 직원 누구나 신청 가능 (팀당 2명 이상 4명 이하로 구성)</li>" +
+      "<li><b>과제 선정 및 교육</b> — 서류 심사를 통해 10개 팀을 선정하여 전문교육 실시</li>" +
+      "<li><b>시상 및 표창</b> — 참가팀 중 3개 팀을 선정하여 기관장 표창 및 시상금 지급</li>" +
+      '<li><b>개발 저장공간</b> — 행정안전부 AI 정부 실험실 공공 GitLab 활용 (<a href="https://gitlab.aigov.go.kr" target="_blank" rel="noreferrer">gitlab.aigov.go.kr</a>)</li>' +
     "</ul></section>" +
     '<section class="panel"><h2>참가자가 지켜야 할 것</h2><ul class="plain">' +
       '<li>승인된 AI 도구·계정만 사용합니다. → <a href="#security">AI 도구 보안 이용 가이드</a></li>' +
@@ -922,7 +909,7 @@ function renderPlan(C, P) {
     "</ul>" +
       (planRes && planRes.url && planRes.url !== "#"
         ? '<p><a href="' + esc(planRes.url) + '" target="_blank" rel="noreferrer">운영계획(안) 원문 열람 ↗</a></p>'
-        : '<p class="muted">운영계획(안) 원문 링크는 ESG추진팀에서 준비 중입니다.</p>') +
+        : "") +
     '<p class="muted">문의: ESG추진팀 · esg@kisa.or.kr</p>' +
     "</section>";
 }
