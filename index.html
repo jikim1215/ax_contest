@@ -208,8 +208,12 @@
   .card .note .d{font-family:var(--font-label); color:var(--color-muted); font-size:11.5px; margin-right:7px;}
 
   /* ===== Lower grid ===== */
-  .grid2{display:grid; grid-template-columns:1.4fr 1fr; gap:20px;}
+  .grid2{display:grid; grid-template-columns:1.4fr 1fr; gap:20px; align-items:stretch;}
   @media(max-width:900px){.grid2{grid-template-columns:1fr;}}
+  /* 2x2 grid: equal row height + vertical centering of panel content */
+  .grid2 .panel{display:flex; flex-direction:column; margin-bottom:0;}
+  .grid2 .panel > :not(h2){flex:1;}
+  #fieldDonut,#statusDonut{display:flex; align-items:center;}
 
   /* ===== Week chart ===== */
   .weekchart{display:flex; align-items:flex-end; gap:8px; height:170px; padding-top:8px;}

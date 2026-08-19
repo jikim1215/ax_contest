@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T12:47:44.185Z",
+  "generatedAt": "2026-08-19T13:06:28.659Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 10개 과제 · 3개월",
@@ -92,7 +92,7 @@
       "repo": "jikim/rack",
       "name": "정보시스템 자산관리",
       "team": "한국인터넷진흥원 김주일",
-      "field": "미분류",
+      "field": "공공행정",
       "description": "정보시스템 자산관리 - 서버/네트워크/보안장비 자산관리, 랙실장도, 네트워크 포트맵",
       "webUrl": "https://gitlab.aigov.go.kr/jikim/rack",
       "active": true,
@@ -119,7 +119,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-08-19T11:01:31.939Z"
+        "lastActivity": "2026-08-19T13:04:32.359Z"
       },
       "recentCommits": [
         {
