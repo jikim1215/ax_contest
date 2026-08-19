@@ -453,7 +453,7 @@
 </div>
 
 <script>
-/* 데이터는 collect.mjs가 일 2회(09:00/15:00) gitlab.aigov.go.kr에서 수집해
+/* 데이터는 collect.mjs가 매일 1회(09:00) gitlab.aigov.go.kr에서 수집해
  * 생성하는 data.json에서 로드된다. 과제명·팀·설명·분야는 GitLab 프로젝트
  * 메타데이터가 원본이다. 이 파일은 수정할 일이 거의 없다. */
 /* Hum 다중 강조 팔레트 — 도넛/차트용 (OKLCH, 크림 배경에서 구분되는 색) */
@@ -914,7 +914,7 @@ function renderPlan(C, P) {
       (planRes && planRes.url && planRes.url !== "#"
         ? '<p><a href="' + esc(planRes.url) + '" target="_blank" rel="noreferrer">운영계획(안) 원문 열람 ↗</a></p>'
         : "") +
-    '<p class="muted">문의: ESG추진팀 · esg@kisa.or.kr</p>' +
+    '<p class="muted">문의: ESG성과단 · esg@kisa.or.kr</p>' +
     "</section>";
 }
 
@@ -968,12 +968,12 @@ function renderChat(C) {
   el.innerHTML =
     '<section class="panel"><div class="panel-head"><h2>참가자 오픈채팅방</h2>' +
       '<span class="muted">공지·질문·자료 공유 채널</span></div>' +
-      '<p class="lead">참가자와 ESG추진팀이 실시간으로 소통하는 공식 오픈채팅방입니다. 일정 공지, 질문 답변, 도구·자료 공유가 이곳에서 이뤄집니다.</p>' +
+      '<p class="lead">참가자와 ESG성과단이 실시간으로 소통하는 공식 오픈채팅방입니다. 일정 공지, 질문 답변, 도구·자료 공유가 이곳에서 이뤄집니다.</p>' +
       '<div class="join-box">' +
         (ready
           ? '<a class="join-btn" href="' + esc(res.url) + '" target="_blank" rel="noreferrer">오픈채팅방 입장하기 ↗</a>'
           : '<span class="join-btn disabled">입장 링크 준비 중</span>') +
-        (ready ? '<p class="muted">링크가 열리지 않으면 ESG추진팀에 문의하세요.</p>' : "") +
+        (ready ? '<p class="muted">링크가 열리지 않으면 ESG성과단에 문의하세요.</p>' : "") +
       "</div></section>" +
     '<section class="panel"><h2>참여 방법</h2><div class="tl-list">' +
       stepRow(1, "위 ‘입장하기’ 버튼(또는 안내된 링크·QR)으로 접속합니다.") +
@@ -1033,7 +1033,7 @@ function downloadGuide(id) {
 '<p class="meta">KISA AX 공모전 참가자 필수 안내 · 내려받은 날짜: ' + esc(today) + "</p></div>" +
 "<h2>한눈에 보기</h2>" + sum + secs +
 ((g.docs && g.docs.length) ? "<h2>관련 자료</h2><ul>" + g.docs.map((d) => "<li>" + esc(d.label) + "</li>").join("") + "</ul><p>위 자료는 대시보드 '참가자 필수 안내'의 [열람]에서 열람·다운로드할 수 있습니다.</p>" : "") +
-"<footer>KISA 경영기획본부 ESG추진팀</footer>" +
+"<footer>KISA 경영기획본부 ESG성과단</footer>" +
 "</body></html>";
   const blob = new Blob([doc], { type: "text/html;charset=utf-8" });
   const url = URL.createObjectURL(blob);

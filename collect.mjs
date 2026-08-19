@@ -3,7 +3,7 @@
  *
  * 개념: 공모전 10개 과제는 gitlab.aigov.go.kr에 저장소로 존재한다.
  *       과제명·설명·팀은 GitLab 프로젝트 메타데이터가 원본이며, 이 수집기는
- *       그것을 일 2회 읽어 data.json으로 만들고 index.html이 렌더링한다.
+ *       그것을 매일 1회 읽어 data.json으로 만들고 index.html이 렌더링한다.
  *
  * 과제 식별(둘 중 하나):
  *   - GROUP_PATH: 공모전 그룹 경로를 지정하면 소속 프로젝트 자동 발견(권장)
@@ -23,10 +23,9 @@
  *   GITLAB_TOKEN  비공개 저장소 접근용 read_api PAT (공개 저장소면 불필요)
  *   DATA_OUT      data.json 출력 경로 (기본 ./data.json, 웹서버 문서경로 지정)
  *
- * 일 2회 스케줄:
+ * 매일 1회 스케줄:
  *   [Windows] schtasks /Create /TN "AX대시보드_0900" /TR "node D:\경로\collect.mjs" /SC DAILY /ST 09:00
- *             schtasks /Create /TN "AX대시보드_1500" /TR "node D:\경로\collect.mjs" /SC DAILY /ST 15:00
- *   [Linux]   0 9,15 * * * cd /var/www/ax-dashboard && /usr/bin/node collect.mjs >> collect.log 2>&1
+ *   [Linux]   0 9 * * * cd /var/www/ax-dashboard && /usr/bin/node collect.mjs >> collect.log 2>&1
  * ========================================================================== */
 
 import { writeFileSync } from "node:fs";
@@ -52,6 +51,7 @@ const CONTEST = {
   finale: "2026-11-25",
   activeDays: 14, // 최근 N일 내 활동 시 "활성"
   refreshNote: "매일 09:00 자동 갱신",
+  collectSince: "2026-08-01", // 커밋 집계 시작일(준비기간 포함). 비우면 kickoff부터.
   notice: { label: "다음 일정", text: "참가자 선정" },
   milestones: [
     { date: "2026-08-24", label: "AX 공모전 접수" },
@@ -70,7 +70,7 @@ const CONTEST = {
     { label: "AI 강의자료 모음", url: "#" },
     { label: "참가자 오픈채팅방", url: "#" },
   ],
-  footnote: "KISA 경영기획본부 ESG추진팀 · gitlab.aigov.go.kr 저장소 기준 일 2회 자동 집계",
+  footnote: "KISA 경영기획본부 ESG성과단 · gitlab.aigov.go.kr 저장소 기준 매일 1회 자동 집계",
 };
 
 /* 시연 가능 PoC — 사무국이 수동 큐레이션 */
@@ -110,9 +110,10 @@ function parseDescription(rawDescription) {
 
 async function fetchCommits(projectId) {
   const commits = [];
+  const since = CONTEST.collectSince || CONTEST.kickoff;
   for (let page = 1; page <= 10; page++) {
     const batch = await api(
-      `/projects/${projectId}/repository/commits?since=${CONTEST.kickoff}T00:00:00%2B09:00&per_page=100&page=${page}`
+      `/projects/${projectId}/repository/commits?since=${since}T00:00:00%2B09:00&per_page=100&page=${page}`
     );
     commits.push(...batch);
     if (batch.length < 100) break;
@@ -159,8 +160,9 @@ async function collectProject(info) {
 
   const weeklyCommits = Array.from({ length: totalWeeks }, () => 0);
   for (const c of commits) {
-    const w = weekOf(c.committed_date);
-    if (w >= 1 && w <= totalWeeks) weeklyCommits[w - 1] += 1;
+    // 준비기간(킥오프 이전) 커밋은 1주차, 최종발표 이후 커밋은 마지막 주차로 clamp → 누적==주차합 유지
+    const w = Math.min(totalWeeks, Math.max(1, weekOf(c.committed_date)));
+    weeklyCommits[w - 1] += 1;
   }
   const counts = stats?.statistics?.counts || {};
   const parsed = parseDescription(info.description);

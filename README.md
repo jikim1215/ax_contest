@@ -4,13 +4,13 @@
 단일 웹페이지로 공개하기 위한 정적 대시보드입니다.
 
 과제 정보의 원본은 **gitlab.aigov.go.kr의 각 과제 저장소**입니다.
-수집기가 하루 2회 GitLab API를 읽어 `data.json`을 만들고, `index.html`이 이를 렌더링합니다.
+수집기가 매일 1회 GitLab API를 읽어 `data.json`을 만들고, `index.html`이 이를 렌더링합니다.
 
 ```
 [10개 과제 저장소]  gitlab.aigov.go.kr
         │  REST API (커밋 · 이슈 · 설명 · Star · 최근활동)
         ▼
-[collect.mjs]  매일 09:00 / 15:00 스케줄 실행
+[collect.mjs]  매일 09:00 스케줄 실행
         │  data.json 생성
         ▼
 [index.html + data.json]  기관 인터넷망 웹서버에 정적 배치
@@ -24,7 +24,7 @@
 | --- | --- |
 | `index.html` | 대시보드 화면. 수정할 일이 거의 없습니다. |
 | `collect.mjs` | GitLab 수집기 + 사무국 설정(과제 식별·공지·일정·자료실). |
-| `data.json` | 수집 결과. 하루 2회 자동 재생성됩니다. |
+| `data.json` | 수집 결과. 매일 1회 자동 재생성됩니다. |
 | `dashboard.sample.json` | 참가팀 배포용 자기보고 양식(선택 사항). |
 
 ## 참가자 필수 안내 (AI 교육 · 윤리 · 정보보안)
@@ -77,10 +77,9 @@ npx serve -l 3000 .   # http://localhost:3000
 ```bash
 # Windows 작업 스케줄러
 schtasks /Create /TN "AX대시보드_0900" /TR "node D:\경로\collect.mjs" /SC DAILY /ST 09:00
-schtasks /Create /TN "AX대시보드_1500" /TR "node D:\경로\collect.mjs" /SC DAILY /ST 15:00
 
 # Linux cron
-0 9,15 * * * cd /var/www/ax-dashboard && /usr/bin/node collect.mjs >> collect.log 2>&1
+0 9 * * * cd /var/www/ax-dashboard && /usr/bin/node collect.mjs >> collect.log 2>&1
 ```
 
 ### 환경변수
