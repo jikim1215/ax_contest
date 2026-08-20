@@ -1,0 +1,145 @@
+{
+  "generatedAt": "2026-08-19T13:14:40.437Z",
+  "contest": {
+    "title": "KISA AX 앰버서더 공모전 진행 현황",
+    "subtitle": "AI 활용 혁신PoC 트랙 · 10개 과제 · 3개월",
+    "kickoff": "2026-08-24",
+    "finale": "2026-11-25",
+    "activeDays": 14,
+    "refreshNote": "매일 09:00 자동 갱신",
+    "collectSince": "2026-08-01",
+    "notice": {
+      "label": "다음 일정",
+      "text": "참가자 선정"
+    },
+    "milestones": [
+      {
+        "date": "2026-08-24",
+        "label": "AX 공모전 접수"
+      },
+      {
+        "date": "2026-09-09",
+        "label": "참가자 선정"
+      },
+      {
+        "date": "2026-09-15",
+        "label": "멘토링 1차"
+      },
+      {
+        "date": "2026-09-28",
+        "label": "멘토링 2차"
+      },
+      {
+        "date": "2026-10-14",
+        "label": "멘토링 3차"
+      },
+      {
+        "date": "2026-10-28",
+        "label": "멘토링 4차"
+      },
+      {
+        "date": "2026-11-20",
+        "label": "산출물 제출"
+      },
+      {
+        "date": "2026-11-25",
+        "label": "최종발표"
+      }
+    ],
+    "resources": [
+      {
+        "label": "공모전 운영계획(안)",
+        "url": "#"
+      },
+      {
+        "label": "AI 도구 보안 이용 가이드",
+        "url": "#"
+      },
+      {
+        "label": "인공지능 윤리 가이드",
+        "url": "#"
+      },
+      {
+        "label": "AI 강의자료 모음",
+        "url": "#"
+      },
+      {
+        "label": "참가자 오픈채팅방",
+        "url": "#"
+      }
+    ],
+    "footnote": "KISA 경영기획본부 ESG성과단 · gitlab.aigov.go.kr 저장소 기준 매일 1회 자동 집계",
+    "totalWeeks": 14
+  },
+  "weeklyCommits": [
+    12,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "projects": [
+    {
+      "repo": "jikim/rack",
+      "name": "정보시스템 자산관리",
+      "team": "한국인터넷진흥원 김주일",
+      "field": "공공행정",
+      "description": "[행정효율화] 정보시스템 자산관리 - 서버/네트워크/보안장비 자산관리, 랙실장도, 네트워크 포트맵",
+      "webUrl": "https://gitlab.aigov.go.kr/jikim/rack",
+      "active": true,
+      "progress": null,
+      "updates": [],
+      "gitlab": {
+        "commits": 12,
+        "weeklyCommits": [
+          12,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 0,
+        "closedIssues": 0,
+        "stars": 4,
+        "lastActivity": "2026-08-19T13:07:59.009Z"
+      },
+      "recentCommits": [
+        {
+          "title": "merge: GitLab 웹에서 삭제된 hwpx(78d3952) 통합 + 로컬 보안정리(07eb703)",
+          "date": "2026-08-14T11:14:15.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/642315d1e27bf2b4ed985dd7666aaa27fd36b4f5"
+        },
+        {
+          "title": "chore(security): 원격에서 민감/불필요 파일 추적 해제 + gitignore 보강",
+          "date": "2026-08-14T11:12:51.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/07eb70329156f02e6eea3265768640c18a066afc"
+        },
+        {
+          "title": "[양식]전산장비_반입반출_확인서_v1.2.hwpx 삭제",
+          "date": "2026-08-14T02:08:57.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/78d3952e1e287942efa7604eb578cdfa32f5d0b7"
+        }
+      ],
+      "recentIssues": []
+    }
+  ],
+  "showcase": []
+}
