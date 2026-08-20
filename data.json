@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T13:14:40.437Z",
+  "generatedAt": "2026-08-20T09:42:47.252Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 10개 과제 · 3개월",
@@ -72,7 +72,7 @@
     "totalWeeks": 14
   },
   "weeklyCommits": [
-    12,
+    1,
     0,
     0,
     0,
@@ -99,9 +99,9 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 12,
+        "commits": 1,
         "weeklyCommits": [
-          12,
+          1,
           0,
           0,
           0,
@@ -119,23 +119,13 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-08-19T13:07:59.009Z"
+        "lastActivity": "2026-08-20T08:22:30.214Z"
       },
       "recentCommits": [
         {
-          "title": "merge: GitLab 웹에서 삭제된 hwpx(78d3952) 통합 + 로컬 보안정리(07eb703)",
-          "date": "2026-08-14T11:14:15.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/642315d1e27bf2b4ed985dd7666aaa27fd36b4f5"
-        },
-        {
-          "title": "chore(security): 원격에서 민감/불필요 파일 추적 해제 + gitignore 보강",
-          "date": "2026-08-14T11:12:51.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/07eb70329156f02e6eea3265768640c18a066afc"
-        },
-        {
-          "title": "[양식]전산장비_반입반출_확인서_v1.2.hwpx 삭제",
-          "date": "2026-08-14T02:08:57.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/78d3952e1e287942efa7604eb578cdfa32f5d0b7"
+          "title": "chore: 저장소 초기화 (민감정보 유출 히스토리 제거 후 현재 상태 재커밋)",
+          "date": "2026-08-20T10:15:08.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/f4f8868493a3306fa93983b6b403d39b99fcf271"
         }
       ],
       "recentIssues": []
