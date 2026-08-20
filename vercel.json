@@ -3,5 +3,8 @@
   "cleanUrls": true,
   "rewrites": [
     { "source": "/data.json", "destination": "/api/data" }
+  ],
+  "crons": [
+    { "path": "/api/data", "schedule": "0 0 * * *" }
   ]
 }
