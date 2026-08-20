@@ -1,0 +1,47 @@
+name: sync-data
+
+# 매일 1회 gitlab.aigov.go.kr에서 data.json을 수집해 gh-pages에 커밋한다.
+# 커밋되면 GitHub Pages(및 연결 시 Vercel)가 자동으로 재배포하여 라이브에 반영된다.
+on:
+  schedule:
+    - cron: "0 0 * * *"   # 00:00 UTC = 09:00 KST (매일)
+  workflow_dispatch: {}    # 수동 실행 버튼
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-data
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Collect data.json
+        env:
+          # 공개 저장소면 불필요. 비공개 저장소 집계 시 리포 Secret에 등록.
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        run: node collect.mjs
+
+      - name: Commit & push if changed
+        run: |
+          if git diff --quiet -- data.json; then
+            echo "data.json 변경 없음 — 커밋 생략"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git commit -m "chore(data): 일일 자동 동기화 $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
