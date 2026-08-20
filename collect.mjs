@@ -16,6 +16,7 @@
  */
 
 import { writeFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
 
 /* ============================ 사무국 설정 ============================ */
 const GITLAB_BASE = "https://gitlab.aigov.go.kr/api/v4";
@@ -258,6 +259,44 @@ function buildSample() {
   return { generatedAt: now, sample: true, contest: CONTEST, weeklyCommits, projects, showcase: SHOWCASE };
 }
 
+/* 전체 수집: 대상 저장소를 병렬로 모아 data.json 객체를 반환한다.
+ * 파일을 쓰지 않으므로 CLI(collect.mjs)와 Vercel 서버리스 함수(api/data.mjs)가 함께 재사용한다. */
+export async function collectAll() {
+  const repos = await discoverRepos();
+  console.log(`대상 저장소 ${repos.length}개: ${repos.join(", ") || "(없음)"}`);
+  const settled = await Promise.all(
+    repos.map(async (r) => {
+      try {
+        return { ok: true, r, project: await collectRepo(r) };
+      } catch (e) {
+        return { ok: false, r, error: e.message };
+      }
+    }),
+  );
+  const projects = [];
+  const errors = [];
+  for (const s of settled) {
+    if (s.ok) projects.push(s.project);
+    else {
+      errors.push(`${s.r}: ${s.error}`);
+      console.error("WARN", s.r, s.error);
+    }
+  }
+  if (projects.length === 0 && repos.length > 0) {
+    throw new Error("수집된 과제가 없습니다 — " + errors.join(" | "));
+  }
+  const weeklyCommits = weekBuckets();
+  for (const p of projects) p.gitlab.weeklyCommits.forEach((v, i) => (weeklyCommits[i] += v));
+  if (errors.length) console.error(`(경고 ${errors.length}건) ` + errors.join(" | "));
+  return {
+    generatedAt: new Date().toISOString(),
+    contest: CONTEST,
+    weeklyCommits,
+    projects,
+    showcase: SHOWCASE,
+  };
+}
+
 async function main() {
   const args = process.argv.slice(2);
 
@@ -274,37 +313,16 @@ async function main() {
     return;
   }
 
-  const repos = await discoverRepos();
-  console.log(`대상 저장소 ${repos.length}개: ${repos.join(", ") || "(없음)"}`);
-  const projects = [];
-  const errors = [];
-  for (const r of repos) {
-    try {
-      projects.push(await collectRepo(r));
-    } catch (e) {
-      errors.push(`${r}: ${e.message}`);
-      console.error("WARN", r, e.message);
-    }
-  }
-  if (projects.length === 0 && repos.length > 0) {
-    console.error("ERROR: 수집된 과제가 없습니다.\n" + errors.join("\n"));
-    process.exit(1);
-  }
-
-  const weeklyCommits = weekBuckets();
-  for (const p of projects) p.gitlab.weeklyCommits.forEach((v, i) => (weeklyCommits[i] += v));
-
-  writeOut({
-    generatedAt: new Date().toISOString(),
-    contest: CONTEST,
-    weeklyCommits,
-    projects,
-    showcase: SHOWCASE,
-  });
-  if (errors.length) console.error(`(경고 ${errors.length}건) ` + errors.join(" | "));
+  writeOut(await collectAll());
 }
 
-main().catch((e) => {
-  console.error("FATAL", e && e.stack ? e.stack : e);
-  process.exit(1);
-});
+// 직접 실행(CLI)일 때만 main()을 돈다. import(서버리스 함수)될 때는 실행하지 않는다.
+const isMain = process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1];
+if (isMain) {
+  main().catch((e) => {
+    console.error("FATAL", e && e.stack ? e.stack : e);
+    process.exit(1);
+  });
+}
+
+export { CONTEST, collectRepo };

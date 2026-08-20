@@ -1,0 +1,4 @@
+# Vercel 배포에서 정적 data.json 을 제외한다.
+# 제외해야 /data.json 요청이 정적 파일에 가로채이지 않고 rewrite → /api/data(서버리스)로 간다.
+# (GitHub Pages 는 .vercelignore 를 무시하므로 커밋된 정적 data.json 을 그대로 사용한다.)
+data.json
