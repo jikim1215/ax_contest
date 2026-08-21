@@ -182,16 +182,8 @@
   /* 전체 일정 패널 컴팩트 (과제별 추진현황을 더 부각) */
   .sched{padding:22px 24px;}
   .sched .panel-head{margin-bottom:4px;}
-  /* 전체 일정 가로 스크롤 안내 — JS가 실제 스크롤 가능할 때만 is-scrollable 부여 */
+  /* 전체 일정 가로 스크롤 우측 페이드 — JS가 실제 스크롤 가능할 때만 is-scrollable 부여 */
   .timeline-wrap{position:relative;}
-  .timeline-cue{display:none;}
-  .timeline-wrap.is-scrollable .timeline-cue{
-    display:flex; align-items:center; justify-content:flex-end; gap:6px;
-    margin:0 2px 4px 0; font-family:var(--font-label); font-size:11.5px; font-weight:600;
-    letter-spacing:.02em; color:var(--color-accent-2-deep); transition:opacity var(--dur-short);}
-  .timeline-wrap.is-scrollable.at-end .timeline-cue{opacity:.35;}
-  .timeline-cue .tc-arrow{font-size:14px; line-height:1; animation:tcbob 1.5s ease-in-out infinite;}
-  @keyframes tcbob{0%,100%{transform:translateX(-3px);} 50%{transform:translateX(3px);}}
   .timeline-wrap::after{content:""; position:absolute; top:26px; right:0; bottom:8px; width:44px;
     background:linear-gradient(to right, transparent, var(--color-paper)); pointer-events:none;
     opacity:0; transition:opacity var(--dur-short) var(--ease-push);}
@@ -452,7 +444,6 @@
     .scroll-hint{animation:none;}
     .metric,.card{transition:none;}
     .metric:hover,.card:hover{transform:none;}
-    .timeline-cue .tc-arrow{animation:none;}
     .g-btn,.join-btn,.nav-btn{transition:none;}
     .g-btn.view:hover,.join-btn:hover,.g-btn.view:active,.join-btn:active{transform:none;}
   }
@@ -513,7 +504,6 @@
             <span class="muted" id="updatedAt"></span>
           </div>
           <div class="timeline-wrap">
-            <p class="timeline-cue" aria-hidden="true"><span class="tc-arrow">↔</span> 좌우로 밀어서 전체 일정 보기</p>
             <div class="timeline-scroll"><div class="timeline" id="timeline"></div></div>
           </div>
         </section>
