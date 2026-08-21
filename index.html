@@ -27,15 +27,15 @@
     --color-accent:      oklch(86% 0.18 95);
     --color-accent-deep: oklch(76% 0.20 95);
     --color-accent-2:      oklch(66% 0.18 235);
-    --color-accent-2-deep: oklch(54% 0.20 235);
+    --color-accent-2-deep: oklch(50% 0.19 235);
     --color-accent-3:      oklch(68% 0.24 18);
-    --color-accent-3-deep: oklch(56% 0.26 18);
+    --color-accent-3-deep: oklch(48% 0.24 18);
     --color-mint:        oklch(80% 0.16 150);
-    --color-mint-deep:   oklch(62% 0.17 150);
+    --color-mint-deep:   oklch(48% 0.15 150);
     --color-lavender:      oklch(74% 0.16 305);
-    --color-lavender-deep: oklch(58% 0.18 305);
+    --color-lavender-deep: oklch(48% 0.16 305);
     --color-accent-ink: oklch(20% 0.012 250);
-    --color-focus:      oklch(54% 0.20 235);
+    --color-focus:      oklch(48% 0.20 235);
     --tint-pear:     oklch(86% 0.18 95 / 0.18);
     --tint-cyan:     oklch(66% 0.18 235 / 0.14);
     --tint-coral:    oklch(68% 0.24 18 / 0.12);
@@ -43,8 +43,8 @@
     --tint-lavender: oklch(74% 0.16 305 / 0.14);
     --accent: var(--color-accent-2); --accent-soft: var(--tint-cyan);
 
-    --font-display:"Plus Jakarta Sans","Pretendard","Malgun Gothic","맑은 고딕",ui-sans-serif,system-ui,sans-serif;
-    --font-body:"Plus Jakarta Sans","Pretendard","Malgun Gothic","맑은 고딕",ui-sans-serif,system-ui,-apple-system,sans-serif;
+    --font-display:"Pretendard","Plus Jakarta Sans","Malgun Gothic","맑은 고딕",ui-sans-serif,system-ui,sans-serif;
+    --font-body:"Pretendard","Plus Jakarta Sans","Malgun Gothic","맑은 고딕",ui-sans-serif,system-ui,-apple-system,sans-serif;
     --font-label:"JetBrains Mono","Pretendard","Malgun Gothic",ui-monospace,"SFMono-Regular",Menlo,monospace;
 
     --radius-card:20px; --radius-input:12px; --radius-pill:999px;
@@ -64,7 +64,7 @@
     -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
     font-feature-settings:"ss01" on, "cv11" on; font-variant-numeric:tabular-nums;
   }
-  .wrap{max-width:1200px; margin:0 auto; padding:0 24px 96px;}
+  .wrap{max-width:1200px; margin:0 auto; padding:28px 24px 96px;}
   a{color:var(--color-accent-2-deep); font-weight:600; text-decoration:none;}
   a:hover{text-decoration:underline; text-underline-offset:3px;}
   .muted{color:var(--color-muted); font-family:var(--font-label); font-size:13px; letter-spacing:.02em;}
@@ -114,7 +114,7 @@
   /* full-page scroll-snap 제거 — 탭 전환 시 화면이 아래로 밀리는 현상 방지 */
   .page{min-height:calc(100vh - var(--nav-h)); display:flex; flex-direction:column; justify-content:center; gap:22px; padding:56px 0;}
   .page--start{justify-content:flex-start; padding-top:40px;}
-  .page-kicker{margin:0; font-family:var(--font-label); font-size:13px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--color-accent-2-deep);}
+  .page-kicker{margin:0 0 4px; font-family:var(--font-label); font-size:14px; font-weight:600; letter-spacing:.02em; color:var(--color-accent-2-deep);}
   .scroll-hint{margin:12px 0 0; text-align:center; font-family:var(--font-label); font-size:12.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--color-muted); animation:bob 1.7s ease-in-out infinite;}
   @keyframes bob{0%,100%{transform:translateY(0); opacity:.55;} 50%{transform:translateY(6px); opacity:1;}}
 
@@ -124,7 +124,7 @@
 
   /* ===== Panels ===== */
   .panel{background:var(--color-paper); border:1px solid var(--color-rule); border-radius:var(--radius-card);
-    box-shadow:var(--shadow-card); padding:28px; margin-bottom:20px;}
+    box-shadow:var(--shadow-card); padding:24px; margin-bottom:20px;}
   .panel:last-child{margin-bottom:0;}
   .panel-head{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:18px;}
   .panel-head h2{margin:0;}
@@ -134,9 +134,9 @@
 
   /* ===== Notice / status ===== */
   .status-msg{background:var(--color-paper-2); border:1px solid var(--color-rule); color:var(--color-neutral);
-    border-radius:var(--radius-card); padding:16px 22px; margin-bottom:20px; font-size:15px;}
+    border-radius:var(--radius-card); padding:18px 20px; margin-bottom:20px; font-size:15px;}
   .notice{background:var(--tint-pear); border:1px solid var(--color-rule); border-radius:var(--radius-card);
-    padding:16px 20px; display:flex; gap:13px; align-items:center; flex-wrap:wrap; font-size:15.5px;}
+    padding:18px 20px; display:flex; gap:13px; align-items:center; flex-wrap:wrap; font-size:15.5px;}
   .notice .tag{font-family:var(--font-label); font-size:11.5px; font-weight:500; letter-spacing:.05em; text-transform:uppercase;
     background:var(--color-accent); color:var(--color-ink); border-radius:var(--radius-pill); padding:5px 13px; white-space:nowrap;
     box-shadow:0 3px 0 0 var(--color-accent-deep);}
@@ -146,7 +146,7 @@
   .metrics{display:grid; grid-template-columns:repeat(5,1fr); gap:16px;}
   @media(max-width:900px){.metrics{grid-template-columns:repeat(2,1fr);}}
   .metric{position:relative; background:var(--color-paper); border:1px solid var(--color-rule); border-radius:var(--radius-card);
-    box-shadow:var(--shadow-card); padding:14px 18px;
+    box-shadow:var(--shadow-card); padding:18px;
     transition:transform var(--dur-short) var(--ease-spring), box-shadow var(--dur-short);}
   .metric:hover{transform:translateY(-4px); box-shadow:var(--shadow-card-hover);}
   .metric::before{content:""; position:absolute; top:12px; right:12px; width:9px; height:9px; border-radius:50%; background:var(--color-accent);}
@@ -160,7 +160,7 @@
   .metric.green .value,.metric.blue .value,.metric.purple .value,.metric.orange .value{color:var(--color-ink);}
 
   /* ===== Timeline (가로형) ===== */
-  .timeline{position:relative; margin:26px 8px 32px;}
+  .timeline{position:relative; margin:22px 8px 40px;}
   .timeline .track{height:10px; border-radius:var(--radius-pill); background:var(--color-paper-3); position:relative; overflow:hidden;}
   .timeline .fill{position:absolute; inset:0 auto 0 0; background:var(--color-mint); border-radius:var(--radius-pill);}
   .timeline .today{position:absolute; top:-22px; transform:translateX(-50%);
@@ -169,10 +169,18 @@
   .ms{position:absolute; top:-3px; transform:translateX(-50%);}
   .ms .dot{width:14px; height:14px; border-radius:50%; background:var(--color-paper); border:3px solid var(--color-rule-2); margin:0 auto;}
   .ms.done .dot{border-color:var(--color-mint-deep); background:var(--color-mint);}
-  .ms .lbl{font-size:12px; color:var(--color-ink-2); font-weight:600; margin-top:9px; text-align:center; white-space:nowrap;}
-  .ms .date{font-family:var(--font-label); font-size:10.5px; color:var(--color-muted); text-align:center; white-space:nowrap;}
+  .ms .lbl,.ms-range .lbl{position:relative; font-size:12px; line-height:1.2; color:var(--color-ink-2); font-weight:600; margin-top:8px; text-align:center; white-space:nowrap;}
+  .ms.ms--far .lbl{margin-top:30px;}
+  .ms.ms--far .lbl::before{content:""; position:absolute; left:50%; top:-28px; transform:translateX(-50%); width:2px; height:26px; background:var(--color-rule-2); border-radius:1px;}
+  .ms .date,.ms-range .date{font-family:var(--font-label); font-size:10.5px; line-height:1.2; color:var(--color-muted); text-align:center; white-space:nowrap;}
+  .ms-range{position:absolute; top:0;}
+  .ms-range .rbar{height:10px; border-radius:var(--radius-pill); background:var(--color-accent-2); box-shadow:inset 0 0 0 1px var(--color-accent-2-deep);}
+  .ms-range.done .rbar{background:var(--color-mint); box-shadow:inset 0 0 0 1px var(--color-mint-deep);}
+  .ms-range .dot{position:absolute; top:-2px; left:-1px; width:14px; height:14px; border-radius:50%; background:var(--color-paper); border:3px solid var(--color-accent-2-deep); box-sizing:border-box; margin:0;}
+  .ms-range.done .dot{border-color:var(--color-mint-deep); background:var(--color-mint);}
+  .ms-range .lbl{margin-top:10px;}
   /* 전체 일정 패널 컴팩트 (과제별 추진현황을 더 부각) */
-  .sched{padding:18px 24px;}
+  .sched{padding:22px 24px;}
   .sched .panel-head{margin-bottom:4px;}
 
   /* ===== Filters ===== */
@@ -184,10 +192,18 @@
 
   /* ===== Project cards ===== */
   .cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(350px,1fr)); gap:18px;}
-  .card{background:var(--color-paper); border:1px solid var(--color-rule); border-radius:var(--radius-card); box-shadow:var(--shadow-card);
-    padding:20px 22px; display:flex; flex-direction:column; gap:10px;
-    transition:transform var(--dur-short) var(--ease-spring), box-shadow var(--dur-short);}
+  .card{position:relative; background:var(--color-paper); border:1px solid var(--color-rule); border-radius:var(--radius-card); box-shadow:var(--shadow-card);
+    padding:22px; display:flex; flex-direction:column; gap:10px;
+    transition:transform var(--dur-short) var(--ease-spring), box-shadow var(--dur-short), border-color var(--dur-short);}
   .card:hover{transform:translateY(-4px); box-shadow:var(--shadow-card-hover);}
+  .card--link{cursor:pointer;}
+  .card--link h3 a::after{content:""; position:absolute; inset:0; z-index:1; border-radius:var(--radius-card);}
+  .card--link:hover{border-color:var(--color-accent-2);}
+  .card--link:hover h3 a{text-decoration:underline; text-underline-offset:3px;}
+  .card--link:focus-within{outline:3px solid var(--color-focus); outline-offset:2px;}
+  .card-go{margin-top:auto; padding-top:6px; font-family:var(--font-label); font-size:12px; font-weight:600; color:var(--color-accent-2-deep); display:flex; align-items:center; gap:5px;}
+  .card-go span{transition:transform var(--dur-micro) var(--ease-push);}
+  .card--link:hover .card-go span{transform:translate(2px,-2px);}
   .card .top{display:flex; justify-content:space-between; align-items:flex-start; gap:10px;}
   .card h3{margin:0; font-family:var(--font-display); font-size:17px; font-weight:700; line-height:1.4; letter-spacing:-.01em; color:var(--color-ink);}
   .card h3 a{color:inherit; font-weight:700;}
@@ -243,7 +259,7 @@
   .feed .kind{font-family:var(--font-label); font-size:10.5px; font-weight:500; letter-spacing:.03em; text-transform:uppercase; border-radius:var(--radius-pill); padding:3px 10px; margin-right:8px; vertical-align:1px;}
   .feed .kind.커밋{background:var(--tint-mint); color:var(--color-mint-deep);}
   .feed .kind.이슈{background:var(--tint-coral); color:var(--color-accent-3-deep);}
-  .feed .kind.보고{background:var(--tint-cyan); color:var(--color-accent-2-deep);}
+  .feed .kind.보고{background:var(--tint-cyan); color:oklch(46% 0.18 235);}
 
   /* ===== Showcase ===== */
   .show-list{display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:14px;}
@@ -311,6 +327,36 @@
   .tl-label{font-size:16px; color:var(--color-ink);}
   .step-n{flex:none; width:32px; height:32px; border-radius:12px; background:var(--color-accent); color:var(--color-ink); font-family:var(--font-display); font-size:15px; font-weight:700; display:grid; place-items:center;}
 
+  /* ===== 추진 일정 로드맵 (좌→우 · 턴 · 우→좌 serpentine) ===== */
+  .roadmap{position:relative; margin-top:18px;}
+  .rm-lane{position:relative; height:150px;}
+  .rm-road{position:absolute; left:0; right:0; top:38px; height:6px; background:var(--color-rule-2); border-radius:3px;}
+  .rm-turn{position:absolute; top:38px; width:40px; height:156px; border:6px solid var(--color-rule-2); box-sizing:border-box;}
+  .rm-turn.right{right:0; border-left:0; border-radius:0 26px 26px 0;}
+  .rm-turn.left{left:0; border-right:0; border-radius:26px 0 0 26px;}
+  .rm-pins{position:relative; z-index:1; display:flex; justify-content:space-around; height:100%;}
+  .rm-pins.rev{flex-direction:row-reverse;}
+  .rm-pin{position:relative; flex:1; min-width:0; display:flex; flex-direction:column; align-items:center; padding-top:18px;}
+  .rm-badge{flex:none; width:46px; height:46px; border-radius:50%; background:var(--color-paper); border:3px solid var(--color-rule-2);
+    display:grid; place-items:center; box-shadow:0 3px 8px -2px oklch(20% 0.012 250 / .22);}
+  .rm-badge span{font-family:var(--font-display); font-weight:700; font-size:16px; color:var(--color-ink);}
+  .rm-badge.hl{background:var(--color-mint); border-color:var(--color-mint-deep);}
+  .rm-badge.done{background:var(--tint-mint); border-color:var(--color-mint-deep);}
+  .rm-badge.done span{color:var(--color-mint-deep);}
+  .rm-today{position:absolute; top:-6px; left:50%; transform:translateX(-50%); z-index:2; display:flex; flex-direction:column; align-items:center; gap:1px; pointer-events:none;}
+  .rm-today b{font-family:var(--font-label); font-size:10px; font-weight:700; letter-spacing:.04em; color:var(--color-accent-3-deep);}
+  .rm-today i{width:2px; height:12px; background:var(--color-accent-3); border-radius:1px;}
+  .rm-info{margin-top:12px; text-align:center; padding:0 6px;}
+  .rm-info b{display:block; font-size:14px; font-weight:600; color:var(--color-ink); line-height:1.3;}
+  .rm-info span{font-family:var(--font-label); font-size:11.5px; font-weight:600; color:var(--color-accent-2-deep);}
+  @media(max-width:720px){
+    .rm-road,.rm-turn{display:none;}
+    .rm-lane{height:auto;}
+    .rm-pins,.rm-pins.rev{flex-direction:column; gap:14px; margin-bottom:14px;}
+    .rm-pin{flex-direction:row; align-items:center; gap:12px; padding-top:0;}
+    .rm-info{text-align:left;}
+  }
+
   /* ===== Open-chat ===== */
   .join-box{margin-top:18px; padding:28px; border:1px solid var(--color-rule); border-radius:var(--radius-card); background:var(--color-paper-2); text-align:center;}
   .join-btn{--edge:var(--color-accent-deep); display:inline-block; background:var(--color-accent); color:var(--color-ink);
@@ -320,6 +366,29 @@
   .join-btn:active{transform:translateY(3px); box-shadow:0 1px 0 0 var(--edge); transition-duration:70ms;}
   .join-btn.disabled{background:var(--color-paper-3); color:var(--color-muted); box-shadow:none; cursor:default; border:1px solid var(--color-rule-2);}
   .join-box .muted{margin:14px 0 0; font-size:13.5px;}
+
+  /* ===== 접근성 유틸 ===== */
+  .sr-only{position:absolute!important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
+  .skip-link{position:absolute; left:12px; top:-64px; z-index:100; background:var(--color-ink); color:#fff;
+    font-family:var(--font-display); font-weight:700; font-size:15px; padding:12px 20px; border-radius:0 0 12px 12px;
+    transition:top .16s var(--ease-push);}
+  .skip-link:focus{top:0; text-decoration:none;}
+  #mainContent{outline:none;}
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible{
+    outline:3px solid var(--color-focus); outline-offset:2px; border-radius:6px;}
+
+  /* ===== 검색 필드 + 지우기 ===== */
+  .search-field{position:relative; flex:1 1 240px; display:flex;}
+  .search-field input{flex:1; padding-right:44px;}
+  .search-clear{position:absolute; right:6px; top:50%; transform:translateY(-50%); width:34px; height:34px;
+    border:0; background:transparent; color:var(--color-neutral); font-size:15px; border-radius:50%; cursor:pointer; line-height:1;}
+  .search-clear:hover{background:var(--color-paper-3); color:var(--color-ink);}
+
+  /* ===== 로딩 스피너 ===== */
+  .spinner{display:inline-block; width:16px; height:16px; margin-right:9px; vertical-align:-3px;
+    border:2.5px solid var(--color-rule-2); border-top-color:var(--color-accent-2-deep); border-radius:50%;
+    animation:spin .8s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
 
   footer{margin-top:32px; padding-top:22px; border-top:1px solid var(--color-rule);
     font-family:var(--font-label); font-size:13px; letter-spacing:.02em; color:var(--color-muted); text-align:center;}
@@ -336,6 +405,7 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#mainContent">본문 바로가기</a>
 
 <header>
   <div class="inner">
@@ -354,11 +424,11 @@
   </div>
 </header>
 
-<nav class="mainnav" id="mainNav">
+<nav class="mainnav" id="mainNav" aria-label="주요 메뉴">
   <div class="nav-inner">
     <div class="nav-group">
       <span class="nav-group-label">대회 진행</span>
-      <button class="nav-btn active" data-view="dashboard">전체 일정 · 추진현황</button>
+      <button class="nav-btn active" data-view="dashboard" aria-current="page">전체 일정 · 추진현황</button>
       <button class="nav-btn" data-view="plan">공모전 운영계획</button>
     </div>
     <div class="nav-group">
@@ -372,11 +442,11 @@
   </div>
 </nav>
 
-<div class="wrap">
+<main id="mainContent" class="wrap" tabindex="-1">
 
   <!-- 전체 일정 · 과제별 추진현황 -->
   <section class="tabview" data-view="dashboard" id="viewDashboard">
-    <div class="status-msg" id="statusMsg">대시보드 데이터를 불러오는 중입니다...</div>
+    <div class="status-msg" id="statusMsg" role="status" aria-live="polite"><span class="spinner" aria-hidden="true"></span>대시보드 데이터를 불러오는 중입니다...</div>
     <div id="app" hidden>
       <div class="dash">
         <p class="page-kicker">한눈에 보는 현황</p>
@@ -394,15 +464,21 @@
         <section class="panel">
           <div class="panel-head">
             <h2>과제별 추진현황</h2>
-            <span class="muted" id="resultCount"></span>
+            <span class="muted" id="resultCount" role="status" aria-live="polite"></span>
           </div>
-          <div class="filters">
+          <div class="filters" role="search">
+            <label class="sr-only" for="fieldFilter">분야별 필터</label>
             <select id="fieldFilter"></select>
+            <label class="sr-only" for="statusFilter">상태별 필터</label>
             <select id="statusFilter">
               <option value="all">상태 전체</option>
               <option>활성</option><option>비활성</option>
             </select>
-            <input type="search" id="searchInput" placeholder="과제명·팀·설명 검색">
+            <div class="search-field">
+              <label class="sr-only" for="searchInput">과제명·팀·설명 검색</label>
+              <input type="search" id="searchInput" placeholder="과제명·팀·설명 검색">
+              <button type="button" class="search-clear" id="searchClear" aria-label="검색어 지우기" hidden>✕</button>
+            </div>
           </div>
           <div class="cards" id="cards"></div>
         </section>
@@ -410,7 +486,7 @@
         <div class="grid2">
           <section class="panel">
             <h2>주차별 커밋 활동</h2>
-            <div class="weekchart" id="weekChart"></div>
+            <div id="weekChart"></div>
           </section>
           <section class="panel">
             <h2>분야 분포</h2>
@@ -454,7 +530,7 @@
   <section class="tabview" data-view="chat" id="viewChat" hidden></section>
 
   <footer id="footNote"></footer>
-</div>
+</main>
 
 <script>
 /* 데이터는 collect.mjs가 매일 1회(09:00) gitlab.aigov.go.kr에서 수집해
@@ -496,16 +572,24 @@ function conic(entries, colorFor) {
     return colorFor(e[0], i) + " " + start + "% " + end + "%";
   }).join(", ");
 }
-function renderDonut(sel, entries, colorFor) {
+function renderDonut(sel, entries, colorFor, caption) {
   const total = entries.reduce((s, e) => s + e[1], 0) || 1;
   const legend = entries.map((e, i) =>
     '<div class="row"><span><span class="dot" style="background:' + colorFor(e[0], i) + '"></span>' +
     esc(e[0]) + "</span><b>" + e[1] + " (" + Math.round((e[1] / total) * 100) + "%)</b></div>").join("");
+  const rows = entries.map((e) =>
+    '<tr><th scope="row">' + esc(e[0]) + '</th><td>' + e[1] + '개</td><td>' +
+    Math.round((e[1] / total) * 100) + '%</td></tr>').join("");
+  const table = '<table class="sr-only"><caption>' + esc(caption || "") + ' (총 ' + total + '개 과제)</caption>' +
+    '<thead><tr><th scope="col">구분</th><th scope="col">과제 수</th><th scope="col">비율</th></tr></thead>' +
+    '<tbody>' + rows + '</tbody></table>';
   document.querySelector(sel).innerHTML =
     '<div class="donut-wrap">' +
-      '<div class="donut" style="background:conic-gradient(' + conic(entries, colorFor) + ')">' +
-        '<div class="donut-center">' + total + "<span>과제</span></div></div>" +
-      '<div class="legend">' + legend + "</div></div>";
+      '<div class="donut" role="img" aria-label="' + esc(caption || "분포") + ' 도넛 차트, 총 ' + total + '개 과제" ' +
+        'style="background:conic-gradient(' + conic(entries, colorFor) + ')">' +
+        '<div class="donut-center" aria-hidden="true">' + total + "<span>과제</span></div></div>" +
+      '<div class="legend" aria-hidden="true">' + legend + "</div>" +
+      table + "</div>";
 }
 
 function renderAll(data) {
@@ -566,10 +650,19 @@ function renderAll(data) {
   document.querySelector("#timeline").innerHTML =
     '<div class="track"><div class="fill" style="width:' + todayPct + '%"></div></div>' +
     '<div class="today" style="left:' + todayPct + '%">오늘</div>' +
-    C.milestones.map((m) =>
-      '<div class="ms ' + (new Date(m.date + "T00:00:00+09:00") <= today ? "done" : "") + '" style="left:' + pct(m.date) + '%">' +
+    C.milestones.map((m, i) => {
+      if (m.end) {
+        const a = pct(m.date), b = pct(m.end);
+        const done = new Date(m.end + "T00:00:00+09:00") <= today;
+        return '<div class="ms-range' + (done ? " done" : "") + '" style="left:' + a + '%; width:' + Math.max(0, b - a) + '%">' +
+          '<div class="rbar"></div><div class="dot"></div>' +
+          '<div class="lbl">' + esc(m.label) + '</div>' +
+          '<div class="date">' + esc(fmtDateShort(m.date)) + ' ~ ' + esc(fmtDateShort(m.end)) + '</div></div>';
+      }
+      return '<div class="ms ' + (new Date(m.date + "T00:00:00+09:00") <= today ? "done" : "") + (i % 2 ? " ms--far" : "") + '" style="left:' + pct(m.date) + '%">' +
         '<div class="dot"></div><div class="lbl">' + esc(m.label) + "</div>" +
-        '<div class="date">' + esc(fmtDateShort(m.date)) + "</div></div>").join("");
+        '<div class="date">' + esc(fmtDateShort(m.date)) + "</div></div>";
+    }).join("");
 
   /* filters + cards */
   const els = {
@@ -598,9 +691,10 @@ function renderAll(data) {
       const g = p.gitlab || {};
       const latest = (p.updates || [])[0];
       const st = statusOf(p);
-      return '<article class="card">' +
+      const hasLink = p.webUrl && p.webUrl !== "#";
+      return '<article class="card' + (hasLink ? " card--link" : "") + '">' +
         '<div class="top"><div>' +
-          '<h3><a href="' + esc(p.webUrl || "#") + '" target="_blank" rel="noreferrer">' + esc(p.name) + "</a></h3>" +
+          '<h3><a href="' + esc(p.webUrl || "#") + '" target="_blank" rel="noreferrer"' + (hasLink ? ' aria-label="' + esc(p.name) + ' 저장소 새 창에서 열기"' : "") + '>' + esc(p.name) + "</a></h3>" +
           '<div class="team">' + esc(p.team) + "</div>" +
         '</div><span class="badge ' + st + '">' + st + "</span></div>" +
         '<div><span class="field-pill">' + esc(p.field) + "</span></div>" +
@@ -619,18 +713,25 @@ function renderAll(data) {
         (latest
           ? '<div class="note"><span class="d">' + esc(latest.date) + "</span>" + esc(latest.note) + "</div>"
           : "") +
+        (hasLink ? '<div class="card-go" aria-hidden="true">GitLab에서 열기 <span>↗</span></div>' : "") +
         "</article>";
     }).join("") || '<div class="muted">조건에 맞는 과제가 없습니다.</div>';
   }
-  els.search.addEventListener("input", renderCards);
+  const clearBtn = document.querySelector("#searchClear");
+  const syncClear = () => { if (clearBtn) clearBtn.hidden = !els.search.value; };
+  els.search.addEventListener("input", () => { syncClear(); renderCards(); });
   els.field.addEventListener("change", renderCards);
   els.status.addEventListener("change", renderCards);
+  if (clearBtn) clearBtn.addEventListener("click", () => {
+    els.search.value = ""; syncClear(); renderCards(); els.search.focus();
+  });
+  syncClear();
   renderCards();
 
   /* week chart (commits) */
   const wc = data.weeklyCommits;
   const max = Math.max(1, ...wc);
-  document.querySelector("#weekChart").innerHTML = wc.map((c, i) => {
+  const bars = wc.map((c, i) => {
     const h = Math.max(4, Math.round((c / max) * 100));
     const future = i + 1 > weekNow;
     return '<div class="col">' +
@@ -638,17 +739,24 @@ function renderAll(data) {
       '<div class="bar' + (future ? " future" : "") + '" style="height:' + (future ? 4 : h) + '%"></div>' +
       '<span class="wk">' + (i + 1) + "주</span></div>";
   }).join("");
+  const wkRows = wc.map((c, i) => (i + 1 <= weekNow)
+    ? '<tr><th scope="row">' + (i + 1) + '주차</th><td>' + c + '건</td></tr>' : "").join("");
+  document.querySelector("#weekChart").innerHTML =
+    '<div class="weekchart" aria-hidden="true">' + bars + "</div>" +
+    '<table class="sr-only"><caption>주차별 커밋 활동</caption>' +
+    '<thead><tr><th scope="col">주차</th><th scope="col">커밋 수</th></tr></thead>' +
+    '<tbody>' + wkRows + "</tbody></table>";
 
   /* donuts */
   renderDonut("#fieldDonut",
     Object.entries(P.reduce((m, p) => { m[p.field] = (m[p.field] || 0) + 1; return m; }, {}))
       .sort((a, b) => b[1] - a[1]),
-    (k, i) => COLORS[i % COLORS.length]);
+    (k, i) => COLORS[i % COLORS.length], "분야 분포");
   renderDonut("#statusDonut",
     ["활성", "비활성"]
       .map((s) => [s, P.filter((p) => statusOf(p) === s).length])
       .filter((e) => e[1] > 0),
-    (k) => STATUS_COLORS[k]);
+    (k) => STATUS_COLORS[k], "과제 상태 비율");
 
   /* feed: 커밋 + 이슈 + 자기보고 통합 */
   const commitItems = P.flatMap((p) => (p.recentCommits || []).map((c) => ({
@@ -831,7 +939,11 @@ function guideDocsHTML(g) {
 /* --- 메뉴 전환 --- */
 function showView(name) {
   document.querySelectorAll(".tabview").forEach((v) => { v.hidden = v.dataset.view !== name; });
-  document.querySelectorAll(".nav-btn").forEach((b) => b.classList.toggle("active", b.dataset.view === name));
+  document.querySelectorAll(".nav-btn").forEach((b) => {
+    const on = b.dataset.view === name;
+    b.classList.toggle("active", on);
+    if (on) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current");
+  });
   if (location.hash.slice(1) !== name) history.replaceState(null, "", "#" + name);
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -880,6 +992,37 @@ function bindDownloads() {
 function statCell(v, label) {
   return '<div class="stat-cell"><b>' + esc(v) + "</b><span>" + esc(label) + "</span></div>";
 }
+function roadmapHTML(ms) {
+  if (!ms || !ms.length) return "";
+  const COLS = 4;
+  const lanes = Math.ceil(ms.length / COLS);
+  const today = new Date();
+  const endKey = (m) => new Date((m.end || m.date) + "T23:59:59+09:00");
+  let curIdx = ms.findIndex((m) => endKey(m) >= today);
+  if (curIdx < 0) curIdx = ms.length - 1;
+  let html = "";
+  const ROAD_INSET = 30;
+  for (let k = 0; k < lanes; k++) {
+    const slice = ms.slice(k * COLS, k * COLS + COLS);
+    const rev = k % 2 === 1;
+    const rightConnect = (k % 2 === 0 && k < lanes - 1) || (k % 2 === 1 && k > 0);
+    const leftConnect = (k % 2 === 1 && k < lanes - 1) || (k % 2 === 0 && k > 0);
+    const roadStyle = "left:" + (leftConnect ? ROAD_INSET : 0) + "px; right:" + (rightConnect ? ROAD_INSET : 0) + "px";
+    const pins = slice.map((m, j) => {
+      const i = k * COLS + j;
+      const date = esc(fmtDateShort(m.date)) + (m.end ? " ~ " + esc(fmtDateShort(m.end)) : "");
+      const cls = i < curIdx ? " done" : (i === curIdx ? " hl" : "");
+         return '<div class="rm-pin">' +
+           (i === curIdx ? '<div class="rm-today"><b>오늘</b><i></i></div>' : "") +
+           '<div class="rm-badge' + cls + '"><span>' + (i + 1) + '</span></div>' +
+           '<div class="rm-info"><b>' + esc(m.label) + '</b><span>' + date + '</span></div></div>';
+    }).join("");
+    const turn = (k < lanes - 1) ? '<div class="rm-turn ' + (rev ? "left" : "right") + '"></div>' : "";
+    html += '<div class="rm-lane"><div class="rm-road" style="' + roadStyle + '"></div>' +
+      '<div class="rm-pins' + (rev ? " rev" : "") + '">' + pins + '</div>' + turn + '</div>';
+  }
+  return '<div class="roadmap">' + html + "</div>";
+}
 function renderPlan(C, P) {
   const el = document.querySelector("#viewPlan");
   if (!el) return;
@@ -889,9 +1032,7 @@ function renderPlan(C, P) {
   const finale = new Date(C.finale + "T00:00:00+09:00");
   const months = Math.max(1, Math.round((finale - kickoff) / DAY / 30));
   const planRes = (C.resources || []).find((r) => /운영계획/.test(r.label));
-  const rows = (C.milestones || []).map((m) =>
-    '<div class="tl-row"><span class="tl-date">' + esc(fmtDateShort(m.date)) + "</span>" +
-    '<span class="tl-dot"></span><span class="tl-label">' + esc(m.label) + "</span></div>").join("");
+  const roadmap = roadmapHTML(C.milestones || []);
   el.innerHTML =
     '<section class="panel"><div class="panel-head"><h2>공모전 운영계획</h2>' +
       '<span class="muted">' + esc(C.subtitle || "") + "</span></div>" +
@@ -901,7 +1042,7 @@ function renderPlan(C, P) {
         statCell(P.length, "참가 과제") + statCell(teams, "참여 팀·부서") +
         statCell(fields, "업무 분야") + statCell(months + "개월", "운영 기간") +
       "</div></section>" +
-    '<section class="panel"><h2>추진 일정</h2><div class="tl-list">' + rows + "</div></section>" +
+    '<section class="panel"><h2>추진 일정</h2>' + roadmap + "</section>" +
     '<section class="panel"><h2>추진 방향</h2><ul class="plain">' +
       "<li><b>개발 목적</b> — 생성형 AI 또는 자동화 도구를 활용하여 업무혁신 사례가 실제 업무 현장에 적용될 수 있는 사례(서비스) 개발</li>" +
       "<li><b>추진 분야</b> — ① 행정업무 효율화 &nbsp; ② 국민 편익 증진 &nbsp; ③ 근로자 안전 확보 (3개 분야)</li>" +
@@ -924,23 +1065,26 @@ function renderPlan(C, P) {
 
 /* --- 참고사이트 뷰 (정적 큐레이션 — data.json·수집과 무관) --- */
 const REF_GROUPS = [
-  { h: "공공·공개 데이터", note: "과제에 활용할 데이터를 찾는 곳", items: [
+  { h: "공공·공개 데이터 · 국내", note: "국내 정부·공공기관 개방 데이터", items: [
     ["https://www.data.go.kr", "공공데이터포털 (data.go.kr)", "정부·공공기관 개방 데이터·오픈API"],
     ["https://aihub.or.kr", "AI-Hub (aihub.or.kr)", "AI 학습용 데이터셋(음성·이미지·텍스트)"],
     ["https://kosis.kr", "국가통계포털 KOSIS (kosis.kr)", "국내 통계 지표·시계열"],
-    ["https://www.localdata.go.kr", "지방행정 인허가데이터 (localdata.go.kr)", "인허가·업종 개방 데이터"],
+    ["https://www.index.go.kr", "지표누리 (index.go.kr)", "국가 주요 지표·통계 서비스"],
     ["https://www.sharedata.go.kr/", "공공데이터 공동활용 (sharedata.go.kr)", "기관 간 행정·공공데이터 공동활용 창구"],
     ["https://www.safetydata.go.kr/", "국가안전데이터 (safetydata.go.kr)", "재난·안전 분야 공공데이터·오픈API"],
   ]},
+  { h: "공공·공개 데이터 · 국외", note: "해외 데이터셋 허브·검색", items: [
+    ["https://huggingface.co/datasets", "Hugging Face Datasets (huggingface.co)", "AI 학습용 오픈 데이터셋 허브"],
+    ["https://www.kaggle.com", "Kaggle (kaggle.com)", "데이터셋·경진대회·노트북 플랫폼"],
+    ["https://datasetsearch.research.google.com/", "Google Dataset Search (datasetsearch.research.google.com)", "전 세계 공개 데이터셋 검색"],
+  ]},
   { h: "AI 도구 · 스킬 · MCP", note: "AI에 도구·데이터를 연결하는 표준(MCP)과 카탈로그", items: [
+    ["https://lovable.dev", "Lovable (lovable.dev)", "말로 만드는 노코드 웹앱"],
+    ["https://www.skills.sh/", "Skills.sh (skills.sh)", "에이전트 스킬 카탈로그·공유"],
     ["https://modelcontextprotocol.io", "Model Context Protocol 공식 (modelcontextprotocol.io)", "MCP 표준 문서·사양"],
     ["https://github.com/modelcontextprotocol/servers", "MCP 공식 서버 모음 (github.com/modelcontextprotocol)", "레퍼런스 MCP 서버 목록(GitHub)"],
     ["https://smithery.ai", "Smithery (smithery.ai)", "MCP 서버 검색·설치 카탈로그"],
     ["https://mcp.so", "MCP.so (mcp.so)", "MCP 서버·클라이언트 디렉터리"],
-  ]},
-  { h: "AI 활용 참고", note: "직접 만들고 코드를 다루는 도구", items: [
-    ["https://lovable.dev", "Lovable (lovable.dev)", "말로 만드는 노코드 웹앱"],
-    ["https://github.com", "GitHub (github.com)", "코드 저장·버전관리·오픈소스 탐색"],
   ]},
 ];
 function renderRefs() {

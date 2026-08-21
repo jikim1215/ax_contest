@@ -36,10 +36,10 @@ const CONTEST = {
   activeDays: 14,
   refreshNote: "매일 09:00 자동 갱신",
   collectSince: "2026-08-01",
-  notice: { label: "다음 일정", text: "참가자 선정" },
+  notice: { label: "다음 일정", text: "참가자 선정 발표" },
   milestones: [
-    { date: "2026-08-24", label: "AX 공모전 접수" },
-    { date: "2026-09-09", label: "참가자 선정" },
+    { date: "2026-08-24", end: "2026-09-04", label: "AX 공모전 접수" },
+    { date: "2026-09-10", label: "참가자 선정 발표" },
     { date: "2026-09-15", label: "멘토링 1차" },
     { date: "2026-09-28", label: "멘토링 2차" },
     { date: "2026-10-14", label: "멘토링 3차" },
