@@ -182,6 +182,20 @@
   /* 전체 일정 패널 컴팩트 (과제별 추진현황을 더 부각) */
   .sched{padding:22px 24px;}
   .sched .panel-head{margin-bottom:4px;}
+  /* 전체 일정 가로 스크롤 안내 — JS가 실제 스크롤 가능할 때만 is-scrollable 부여 */
+  .timeline-wrap{position:relative;}
+  .timeline-cue{display:none;}
+  .timeline-wrap.is-scrollable .timeline-cue{
+    display:flex; align-items:center; justify-content:flex-end; gap:6px;
+    margin:0 2px 4px 0; font-family:var(--font-label); font-size:11.5px; font-weight:600;
+    letter-spacing:.02em; color:var(--color-accent-2-deep); transition:opacity var(--dur-short);}
+  .timeline-wrap.is-scrollable.at-end .timeline-cue{opacity:.35;}
+  .timeline-cue .tc-arrow{font-size:14px; line-height:1; animation:tcbob 1.5s ease-in-out infinite;}
+  @keyframes tcbob{0%,100%{transform:translateX(-3px);} 50%{transform:translateX(3px);}}
+  .timeline-wrap::after{content:""; position:absolute; top:26px; right:0; bottom:8px; width:44px;
+    background:linear-gradient(to right, transparent, var(--color-paper)); pointer-events:none;
+    opacity:0; transition:opacity var(--dur-short) var(--ease-push);}
+  .timeline-wrap.is-scrollable:not(.at-end)::after{opacity:1;}
 
   /* ===== Filters ===== */
   .filters{display:flex; gap:12px; flex-wrap:wrap; margin-bottom:18px;}
@@ -191,7 +205,7 @@
   .filters select:focus,.filters input:focus{border-color:var(--color-accent-2); box-shadow:0 0 0 3px var(--tint-cyan);}
 
   /* ===== Project cards ===== */
-  .cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(350px,1fr)); gap:18px;}
+  .cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr)); gap:18px;}
   .card{position:relative; background:var(--color-paper); border:1px solid var(--color-rule); border-radius:var(--radius-card); box-shadow:var(--shadow-card);
     padding:22px; display:flex; flex-direction:column; gap:10px;
     transition:transform var(--dur-short) var(--ease-spring), box-shadow var(--dur-short), border-color var(--dur-short);}
@@ -227,7 +241,7 @@
   .grid2{display:grid; grid-template-columns:1.4fr 1fr; gap:20px; align-items:stretch;}
   @media(max-width:900px){.grid2{grid-template-columns:1fr;}}
   /* 2x2 grid: equal row height + vertical centering of panel content */
-  .grid2 .panel{display:flex; flex-direction:column; margin-bottom:0;}
+  .grid2 .panel{display:flex; flex-direction:column; margin-bottom:0; min-width:0;}
   .grid2 .panel > :not(h2){flex:1;}
   #fieldDonut,#statusDonut{display:flex; align-items:center;}
 
@@ -262,7 +276,7 @@
   .feed .kind.보고{background:var(--tint-cyan); color:oklch(46% 0.18 235);}
 
   /* ===== Showcase ===== */
-  .show-list{display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:14px;}
+  .show-list{display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr)); gap:14px;}
   .show-item{border:1px solid var(--color-rule); border-radius:var(--radius-card); padding:16px 18px; background:var(--color-paper); box-shadow:var(--shadow-card); font-size:14px; color:var(--color-ink-2);}
   .show-item b{display:block; font-family:var(--font-display); font-size:15px; color:var(--color-ink); margin-bottom:4px;}
   .show-item .muted{display:block; margin-bottom:7px;}
@@ -393,12 +407,52 @@
   footer{margin-top:32px; padding-top:22px; border-top:1px solid var(--color-rule);
     font-family:var(--font-label); font-size:13px; letter-spacing:.02em; color:var(--color-muted); text-align:center;}
 
+  /* ===== 모바일 최적화 (태블릿 → 폰) ===== */
+  /* 태블릿 폭: metrics 5개를 3+2로 */
+  @media(min-width:641px) and (max-width:900px){
+    .metrics{grid-template-columns:repeat(3,1fr);}
+  }
+  @media(max-width:820px){
+    .wrap{padding:22px 16px 72px;}
+    header .inner{padding:22px 16px 20px;}
+    .nav-inner{padding:10px 16px;}
+    .panel{padding:20px 18px;}
+    .sched{padding:18px 18px;}
+    /* 가로 타임라인: 라벨 겹침 방지 — 좁은 폭에서는 가로 스크롤 */
+    .timeline-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch; padding:26px 0 56px;}
+    .timeline{min-width:600px; margin:0 16px;}
+  }
+  @media(max-width:640px){
+    body{font-size:16px;}
+    header .inner{gap:16px;}
+    header h1{font-size:22px;}
+    header .sub{font-size:13.5px;}
+    .mark{width:46px; height:46px; font-size:17px;}
+    .dday-wrap{width:100%; gap:10px;}
+    .dday{min-width:0; flex:1; padding:10px 14px;}
+    .dday b{font-size:22px;}
+    .metrics{gap:12px;}
+    .metric .value{font-size:26px;}
+    /* 14주 커밋 차트: 좁은 폭에서 라벨 겹침 방지 — 가로 스크롤 */
+    #weekChart{overflow-x:auto; -webkit-overflow-scrolling:touch; padding-bottom:4px;}
+    .weekchart{min-width:460px;}
+    .panel h2{font-size:19px;}
+    .stat-cell b{font-size:28px;}
+    .guide-view .gv-head{gap:12px;}
+    .gv-dl{width:100%;}
+  }
+  @media(max-width:420px){
+    .donut-wrap{grid-template-columns:1fr; justify-items:center; text-align:center;}
+    .donut-wrap .legend{width:100%;}
+  }
+
   @media(prefers-reduced-motion:reduce){
     html{scroll-behavior:auto;}
     .tabview{animation:none;}
     .scroll-hint{animation:none;}
     .metric,.card{transition:none;}
     .metric:hover,.card:hover{transform:none;}
+    .timeline-cue .tc-arrow{animation:none;}
     .g-btn,.join-btn,.nav-btn{transition:none;}
     .g-btn.view:hover,.join-btn:hover,.g-btn.view:active,.join-btn:active{transform:none;}
   }
@@ -458,7 +512,10 @@
             <h2>전체 일정</h2>
             <span class="muted" id="updatedAt"></span>
           </div>
-          <div class="timeline" id="timeline"></div>
+          <div class="timeline-wrap">
+            <p class="timeline-cue" aria-hidden="true"><span class="tc-arrow">↔</span> 좌우로 밀어서 전체 일정 보기</p>
+            <div class="timeline-scroll"><div class="timeline" id="timeline"></div></div>
+          </div>
         </section>
 
         <section class="panel">
@@ -1194,6 +1251,22 @@ function downloadGuide(id) {
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
+/* --- 전체 일정 가로 스크롤 안내 토글 --- */
+function updateTimelineCue() {
+  const wrap = document.querySelector(".timeline-wrap");
+  const sc = wrap && wrap.querySelector(".timeline-scroll");
+  if (!wrap || !sc) return;
+  const scrollable = sc.scrollWidth - sc.clientWidth > 4;
+  wrap.classList.toggle("is-scrollable", scrollable);
+  wrap.classList.toggle("at-end", scrollable && sc.scrollLeft >= sc.scrollWidth - sc.clientWidth - 4);
+}
+function initTimelineCue() {
+  const sc = document.querySelector(".timeline-scroll");
+  if (!sc) return;
+  sc.addEventListener("scroll", updateTimelineCue, { passive: true });
+  window.addEventListener("resize", updateTimelineCue);
+}
+
 async function boot() {
   const msg = document.querySelector("#statusMsg");
   try {
@@ -1203,6 +1276,7 @@ async function boot() {
     renderAll(data);
     msg.hidden = true;
     document.querySelector("#app").hidden = false;
+    requestAnimationFrame(updateTimelineCue);
   } catch (e) {
     msg.hidden = false;
     msg.textContent = "데이터를 불러오지 못했습니다 (" + e.message + "). " +
@@ -1212,6 +1286,7 @@ async function boot() {
 }
 renderGuideViews();
 initNav();
+initTimelineCue();
 boot();
 </script>
 </body>
