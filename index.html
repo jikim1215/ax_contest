@@ -163,9 +163,6 @@
   .timeline{position:relative; margin:22px 8px 40px;}
   .timeline .track{height:10px; border-radius:var(--radius-pill); background:var(--color-paper-3); position:relative; overflow:hidden;}
   .timeline .fill{position:absolute; inset:0 auto 0 0; background:var(--color-mint); border-radius:var(--radius-pill);}
-  .timeline .today{position:absolute; top:-22px; transform:translateX(-50%);
-    font-family:var(--font-label); font-size:11px; font-weight:600; letter-spacing:.04em; color:var(--color-accent-3-deep); text-align:center; white-space:nowrap;}
-  .timeline .today::after{content:""; display:block; width:2px; height:22px; background:var(--color-accent-3); margin:2px auto 0; border-radius:2px;}
   .ms{position:absolute; top:-3px; transform:translateX(-50%);}
   .ms .dot{width:14px; height:14px; border-radius:50%; background:var(--color-paper); border:3px solid var(--color-rule-2); margin:0 auto;}
   .ms.done .dot{border-color:var(--color-mint-deep); background:var(--color-mint);}
@@ -349,9 +346,6 @@
   .rm-badge.hl{background:var(--color-mint); border-color:var(--color-mint-deep);}
   .rm-badge.done{background:var(--tint-mint); border-color:var(--color-mint-deep);}
   .rm-badge.done span{color:var(--color-mint-deep);}
-  .rm-today{position:absolute; top:-6px; left:50%; transform:translateX(-50%); z-index:2; display:flex; flex-direction:column; align-items:center; gap:1px; pointer-events:none;}
-  .rm-today b{font-family:var(--font-label); font-size:10px; font-weight:700; letter-spacing:.04em; color:var(--color-accent-3-deep);}
-  .rm-today i{width:2px; height:12px; background:var(--color-accent-3); border-radius:1px;}
   .rm-info{margin-top:12px; text-align:center; padding:0 6px;}
   .rm-info b{display:block; font-size:14px; font-weight:600; color:var(--color-ink); line-height:1.3;}
   .rm-info span{font-family:var(--font-label); font-size:11.5px; font-weight:600; color:var(--color-accent-2-deep);}
@@ -696,7 +690,6 @@ function renderAll(data) {
   const todayPct = (elapsedDays / totalDays) * 100;
   document.querySelector("#timeline").innerHTML =
     '<div class="track"><div class="fill" style="width:' + todayPct + '%"></div></div>' +
-    '<div class="today" style="left:' + todayPct + '%">오늘</div>' +
     C.milestones.map((m, i) => {
       if (m.end) {
         const a = pct(m.date), b = pct(m.end);
@@ -1060,7 +1053,6 @@ function roadmapHTML(ms) {
       const date = esc(fmtDateShort(m.date)) + (m.end ? " ~ " + esc(fmtDateShort(m.end)) : "");
       const cls = i < curIdx ? " done" : (i === curIdx ? " hl" : "");
          return '<div class="rm-pin">' +
-           (i === curIdx ? '<div class="rm-today"><b>오늘</b><i></i></div>' : "") +
            '<div class="rm-badge' + cls + '"><span>' + (i + 1) + '</span></div>' +
            '<div class="rm-info"><b>' + esc(m.label) + '</b><span>' + date + '</span></div></div>';
     }).join("");

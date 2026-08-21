@@ -34,7 +34,7 @@ const CONTEST = {
   kickoff: "2026-08-24",
   finale: "2026-11-25",
   activeDays: 14,
-  refreshNote: "매일 09:00 자동 갱신",
+  refreshNote: "매일 09:00 갱신",
   collectSince: "2026-08-01",
   notice: { label: "다음 일정", text: "참가자 선정 발표" },
   milestones: [
@@ -54,7 +54,7 @@ const CONTEST = {
     { label: "AI 강의자료 모음", url: "#" },
     { label: "참가자 오픈채팅방", url: "#" },
   ],
-  footnote: "KISA 경영기획본부 ESG성과단 · gitlab.aigov.go.kr 저장소 기준 매일 1회 자동 집계",
+  footnote: "KISA 경영기획본부 ESG성과단 · gitlab.aigov.go.kr 저장소 기준 매일 1회 집계",
   totalWeeks: 14,
 };
 
