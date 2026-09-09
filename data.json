@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T03:40:38.234Z",
+  "generatedAt": "2026-09-09T03:45:38.734Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 10개 과제 · 3개월",
@@ -96,7 +96,7 @@
       "field": "공공행정",
       "description": "[행정효율화] 정보시스템 자산관리 - 서버/네트워크/보안장비 자산관리, 랙실장도, 네트워크 포트맵",
       "webUrl": "https://gitlab.aigov.go.kr/jikim/rack-deletion_scheduled-309",
-      "active": true,
+      "active": false,
       "progress": null,
       "updates": [],
       "gitlab": {
