@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T03:59:44.275Z",
+  "generatedAt": "2026-09-15T03:59:15.856Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 10개 과제 · 3개월",
@@ -75,8 +75,8 @@
   "weeklyCommits": [
     1,
     0,
-    0,
-    0,
+    5,
+    1,
     0,
     0,
     0,
@@ -90,22 +90,22 @@
   ],
   "projects": [
     {
-      "repo": "jikim/rack-deletion_scheduled-309",
-      "name": "정보시스템 자산관리-deletion_scheduled-309",
+      "repo": "jikim/rack",
+      "name": "rack",
       "team": "한국인터넷진흥원 김주일",
-      "field": "공공행정",
-      "description": "[행정효율화] 정보시스템 자산관리 - 서버/네트워크/보안장비 자산관리, 랙실장도, 네트워크 포트맵",
-      "webUrl": "https://gitlab.aigov.go.kr/jikim/rack-deletion_scheduled-309",
-      "active": false,
+      "field": "미분류",
+      "description": "",
+      "webUrl": "https://gitlab.aigov.go.kr/jikim/rack",
+      "active": true,
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 1,
+        "commits": 7,
         "weeklyCommits": [
           1,
           0,
-          0,
-          0,
+          5,
+          1,
           0,
           0,
           0,
@@ -119,14 +119,24 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 5,
-        "lastActivity": "2026-08-25T10:28:33.639Z"
+        "stars": 0,
+        "lastActivity": "2026-09-14T14:05:28.118Z"
       },
       "recentCommits": [
         {
-          "title": "chore: 저장소 초기화 (민감정보 유출 히스토리 제거 후 현재 상태 재커밋)",
-          "date": "2026-08-20T10:15:08.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jikim/rack-deletion_scheduled-309/-/commit/f4f8868493a3306fa93983b6b403d39b99fcf271"
+          "title": "배포 절차 결함 수정 및 문서 현행화",
+          "date": "2026-09-14T09:55:18.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/4e569b29e67905deabb8c63c0ee715d73eeecbcf"
+        },
+        {
+          "title": "운영 결함 수정 및 현행화 기능 추가",
+          "date": "2026-09-13T23:48:48.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/b75287f2869d933a8477d85c0a8a8cb5b9e2dcd8"
+        },
+        {
+          "title": "2단계 인증 QR 등록",
+          "date": "2026-09-11T21:47:32.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/21e5d2f62f83b1869dedc1688a9dc59fd6256c65"
         }
       ],
       "recentIssues": []
