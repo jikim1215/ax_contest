@@ -52,7 +52,7 @@ const CONTEST = {
     { label: "AI 도구 보안 이용 가이드", url: "#" },
     { label: "인공지능 윤리 가이드", url: "#" },
     { label: "AI 강의자료 모음", url: "#" },
-    { label: "참가자 오픈채팅방", url: "#" },
+    { label: "참가자 오픈채팅방", url: "https://open.kakao.com/o/gEgM4vNi" },
   ],
   footnote: "KISA 경영기획본부 ESG성과단 · gitlab.aigov.go.kr 저장소 기준 매일 1회 집계",
   totalWeeks: 14,
