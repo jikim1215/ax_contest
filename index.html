@@ -322,13 +322,6 @@
   .stat-cell{background:var(--color-paper); border:1px solid var(--color-rule); border-radius:var(--radius-card); box-shadow:var(--shadow-card); padding:20px 22px;}
   .stat-cell b{display:block; font-family:var(--font-display); font-size:34px; font-weight:700; letter-spacing:-.02em; color:var(--color-ink); line-height:1;}
   .stat-cell span{font-family:var(--font-label); font-size:11.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--color-muted); display:block; margin-top:8px;}
-  .tl-list{display:grid; gap:0;}
-  .tl-row{display:flex; align-items:center; gap:16px; padding:15px 0; border-bottom:1px solid var(--color-rule);}
-  .tl-row:last-child{border-bottom:0;}
-  .tl-date{flex:none; width:58px; font-family:var(--font-label); font-size:14px; font-weight:500; color:var(--color-accent-2-deep);}
-  .tl-dot{flex:none; width:13px; height:13px; border-radius:50%; background:var(--color-mint); box-shadow:0 0 0 5px var(--tint-mint);}
-  .tl-label{font-size:16px; color:var(--color-ink);}
-  .step-n{flex:none; width:32px; height:32px; border-radius:12px; background:var(--color-accent); color:var(--color-ink); font-family:var(--font-display); font-size:15px; font-weight:700; display:grid; place-items:center;}
 
   /* ===== 추진 일정 로드맵 (좌→우 · 턴 · 우→좌 serpentine) ===== */
   .roadmap{position:relative; margin-top:18px;}
@@ -1149,9 +1142,6 @@ function renderRefs() {
 }
 
 /* --- 참가자 오픈채팅방 뷰 --- */
-function stepRow(n, t) {
-  return '<div class="tl-row"><span class="step-n">' + n + '</span><span class="tl-label">' + esc(t) + "</span></div>";
-}
 function renderChat(C) {
   const el = document.querySelector("#viewChat");
   if (!el) return;
@@ -1167,17 +1157,6 @@ function renderChat(C) {
           : '<span class="join-btn disabled">입장 링크 준비 중</span>') +
         (ready ? '<p class="muted">링크가 열리지 않으면 ESG성과단에 문의하세요.</p>' : "") +
       "</div></section>" +
-    '<section class="panel"><h2>참여 방법</h2><div class="tl-list">' +
-      stepRow(1, "위 ‘입장하기’ 버튼(또는 안내된 링크·QR)으로 접속합니다.") +
-      stepRow(2, "닉네임을 ‘이름/부서’ 형식으로 설정합니다. (예: 김서연/AX혁신팀)") +
-      stepRow(3, "상단 공지를 먼저 확인하고 질문은 자유롭게 남깁니다.") +
-    "</div></section>" +
-    '<section class="panel"><h2>이용 규칙</h2><ul class="plain">' +
-      "<li>실명·부서를 밝혀 서로 신뢰할 수 있게 합니다.</li>" +
-      '<li>개인정보·대외비는 채팅방에도 올리지 않습니다. → <a href="#security">보안 가이드</a></li>' +
-      "<li>공지방 내용은 캡처 후 외부 공유를 삼갑니다.</li>" +
-      "<li>운영시간 외 문의는 다음 근무일에 순차 답변됩니다.</li>" +
-    "</ul></section>" +
     '<section class="panel"><div class="panel-head"><h2>AI·언론 동향 뉴스</h2>' +
       '<span class="muted">매일 스크랩 채널</span></div>' +
       '<p class="lead">기관 언론 동향과 AI 동향을 매일 뉴스로 정리해주는 텔레그램 채널입니다. 과제 방향·트렌드 파악에 참고하세요.</p>' +
