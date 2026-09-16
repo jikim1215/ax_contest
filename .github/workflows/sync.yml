@@ -1,10 +1,11 @@
 name: sync-data
 
-# 매일 1회 gitlab.aigov.go.kr에서 data.json을 수집해 gh-pages에 커밋한다.
-# 커밋되면 GitHub Pages(및 연결 시 Vercel)가 자동으로 재배포하여 라이브에 반영된다.
+# 매일 2회(09:00·15:00 KST) gitlab.aigov.go.kr에서 data.json을 수집해 main에 커밋한다.
+# 커밋되면 GitHub Pages와 Vercel(Git 연동)이 main을 자동 재배포해 라이브에 반영된다.
 on:
   schedule:
-    - cron: "0 0 * * *"   # 00:00 UTC = 09:00 KST (매일)
+    - cron: "0 0 * * *"   # 00:00 UTC = 09:00 KST
+    - cron: "0 6 * * *"   # 06:00 UTC = 15:00 KST
   workflow_dispatch: {}    # 수동 실행 버튼
 
 permissions:
@@ -18,10 +19,10 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout gh-pages
+      - name: Checkout main
         uses: actions/checkout@v4
         with:
-          ref: gh-pages
+          ref: main
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -34,14 +35,16 @@ jobs:
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         run: node collect.mjs
 
-      - name: Commit & push if changed
+      - name: Commit & push
         run: |
-          if git diff --quiet -- data.json; then
-            echo "data.json 변경 없음 — 커밋 생략"
-            exit 0
-          fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data.json
-          git commit -m "chore(data): 일일 자동 동기화 $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          git push
+          if git diff --cached --quiet; then
+            echo "data.json 변경 없음 — 커밋 생략"
+            exit 0
+          fi
+          git commit -m "sync"
+          # 수집 중 main에 다른 커밋이 올라왔을 수 있으므로 rebase 후 push
+          git pull --rebase origin main
+          git push origin HEAD:main

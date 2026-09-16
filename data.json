@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-16T02:13:06.203Z",
+  "generatedAt": "2026-09-16T12:31:47.350Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
-    "subtitle": "AI 활용 혁신PoC 트랙 · 10개 과제 · 3개월",
+    "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
     "kickoff": "2026-08-24",
     "finale": "2026-11-25",
     "activeDays": 14,
-    "refreshNote": "매일 09:00 갱신",
+    "refreshNote": "매일 09:00·15:00 갱신",
     "collectSince": "2026-08-01",
     "milestones": [
       {
@@ -49,30 +49,18 @@
         "url": "#"
       },
       {
-        "label": "AI 도구 보안 이용 가이드",
-        "url": "#"
-      },
-      {
-        "label": "인공지능 윤리 가이드",
-        "url": "#"
-      },
-      {
-        "label": "AI 강의자료 모음",
-        "url": "#"
-      },
-      {
         "label": "참가자 오픈채팅방",
         "url": "https://open.kakao.com/o/gEgM4vNi"
       }
     ],
-    "footnote": "KISA 경영기획본부 ESG성과단 · gitlab.aigov.go.kr 저장소 기준 매일 1회 집계",
+    "footnote": "KISA 경영기획본부 ESG성과단 · gitlab.aigov.go.kr 저장소 기준 매일 2회(09:00·15:00) 집계",
     "totalWeeks": 14
   },
   "weeklyCommits": [
-    1,
     0,
-    5,
-    8,
+    0,
+    0,
+    7,
     0,
     0,
     0,
@@ -86,64 +74,13 @@
   ],
   "projects": [
     {
-      "repo": "jikim/rack",
-      "name": "rack",
-      "team": "한국인터넷진흥원 김주일",
-      "field": "미분류",
-      "description": "",
-      "webUrl": "https://gitlab.aigov.go.kr/jikim/rack",
-      "active": true,
-      "progress": null,
-      "updates": [],
-      "gitlab": {
-        "commits": 7,
-        "weeklyCommits": [
-          1,
-          0,
-          5,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "openIssues": 0,
-        "closedIssues": 0,
-        "stars": 0,
-        "lastActivity": "2026-09-14T14:05:28.118Z"
-      },
-      "recentCommits": [
-        {
-          "title": "배포 절차 결함 수정 및 문서 현행화",
-          "date": "2026-09-14T09:55:18.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/4e569b29e67905deabb8c63c0ee715d73eeecbcf"
-        },
-        {
-          "title": "운영 결함 수정 및 현행화 기능 추가",
-          "date": "2026-09-13T23:48:48.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/b75287f2869d933a8477d85c0a8a8cb5b9e2dcd8"
-        },
-        {
-          "title": "2단계 인증 QR 등록",
-          "date": "2026-09-11T21:47:32.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/21e5d2f62f83b1869dedc1688a9dc59fd6256c65"
-        }
-      ],
-      "recentIssues": []
-    },
-    {
       "repo": "lmj6706/pr_kisa",
       "name": "pr_kisa",
       "team": "한국인터넷진흥원 국민소통팀 임민지",
       "field": "미분류",
       "description": "",
       "webUrl": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa",
+      "reference": false,
       "active": true,
       "progress": null,
       "updates": [],
@@ -191,6 +128,7 @@
       "field": "미분류",
       "description": "",
       "webUrl": "https://gitlab.aigov.go.kr/118/118ai-agent",
+      "reference": false,
       "active": true,
       "progress": null,
       "updates": [],
@@ -233,6 +171,7 @@
       "field": "미분류",
       "description": "",
       "webUrl": "https://gitlab.aigov.go.kr/KISA_thkim/kisa_workmate",
+      "reference": false,
       "active": true,
       "progress": null,
       "updates": [],
@@ -277,7 +216,61 @@
         }
       ],
       "recentIssues": []
+    },
+    {
+      "repo": "jikim/rack",
+      "name": "rack",
+      "team": "한국인터넷진흥원 김주일",
+      "field": "미분류",
+      "description": "",
+      "webUrl": "https://gitlab.aigov.go.kr/jikim/rack",
+      "reference": true,
+      "active": true,
+      "progress": null,
+      "updates": [],
+      "gitlab": {
+        "commits": 7,
+        "weeklyCommits": [
+          1,
+          0,
+          5,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 0,
+        "closedIssues": 0,
+        "stars": 0,
+        "lastActivity": "2026-09-14T14:05:28.118Z"
+      },
+      "recentCommits": [
+        {
+          "title": "배포 절차 결함 수정 및 문서 현행화",
+          "date": "2026-09-14T09:55:18.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/4e569b29e67905deabb8c63c0ee715d73eeecbcf"
+        },
+        {
+          "title": "운영 결함 수정 및 현행화 기능 추가",
+          "date": "2026-09-13T23:48:48.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/b75287f2869d933a8477d85c0a8a8cb5b9e2dcd8"
+        },
+        {
+          "title": "2단계 인증 QR 등록",
+          "date": "2026-09-11T21:47:32.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/21e5d2f62f83b1869dedc1688a9dc59fd6256c65"
+        }
+      ],
+      "recentIssues": []
     }
   ],
+  "warnings": [],
   "showcase": []
 }

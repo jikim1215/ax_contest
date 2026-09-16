@@ -3,7 +3,8 @@
  * collect.mjs — KISA AX 공모전 대시보드 데이터 수집기
  * -----------------------------------------------------------------------------
  * gitlab.aigov.go.kr 공개 REST API를 읽어 index.html이 렌더링하는 data.json을 만든다.
- * 의존성 없음(Node 18+ 내장 fetch). 인터넷망(GitHub Actions·Vercel 등)에서 그대로 실행된다.
+ * 의존성 없음(Node 18+ 내장 fetch). GitHub Actions(.github/workflows/sync.yml)가 매일 09:00·15:00(KST)에
+ * 실행해 main 브랜치에 커밋하고, GitHub Pages·Vercel이 그 커밋을 자동 배포한다.
  *
  * 사용법
  *   node collect.mjs                 실제 수집 → data.json
@@ -16,7 +17,6 @@
  */
 
 import { writeFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
 
 /* ============================ 사무국 설정 ============================ */
 const GITLAB_BASE = "https://gitlab.aigov.go.kr/api/v4";
@@ -27,19 +27,24 @@ const GITLAB_BASE = "https://gitlab.aigov.go.kr/api/v4";
  * 참가팀 저장소가 개설되면 아래 목록(또는 GROUP_PATH)만 갱신하면 된다. */
 const GROUP_PATH = "";                       // 예: "ax-contest"
 const PROJECT_REPOS = [                      // 예: ["team1/proj", "team2/proj", ...]
-  "jikim/rack",
   "lmj6706/pr_kisa",
   "118/118ai-agent",
   "KISA_thkim/kisa_workmate",
 ];
+/* 참가 과제가 아닌 참고용 저장소(사무국 예시 등). GROUP_PATH 사용 여부와 무관하게 항상 수집한다.
+ * 카드에 '참고' 표시가 붙고 과제 수·커밋·이슈·차트·최근활동 집계에서는 제외된다. */
+const REFERENCE_REPOS = [
+  "jikim/rack",
+];
 
 const CONTEST = {
   title: "KISA AX 앰버서더 공모전 진행 현황",
-  subtitle: "AI 활용 혁신PoC 트랙 · 10개 과제 · 3개월",
+  subtitle: "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
   kickoff: "2026-08-24",
   finale: "2026-11-25",
   activeDays: 14,
-  refreshNote: "매일 09:00 갱신",
+  refreshNote: "매일 09:00·15:00 갱신",
+  /* 이 날짜 이후 커밋을 누적 커밋에 포함한다. 킥오프 이전 커밋은 누적에는 들어가되 주차별 차트에서는 제외된다. */
   collectSince: "2026-08-01",
   /* 공지(다음 일정) 문구는 index.html이 milestones + 오늘 날짜로 계산한다. 별도 설정 불필요. */
   milestones: [
@@ -52,14 +57,12 @@ const CONTEST = {
     { date: "2026-11-20", label: "산출물 제출" },
     { date: "2026-11-25", label: "최종발표" },
   ],
+  /* index.html이 label로 찾는다: /운영계획/ → 운영계획 원문 링크, /오픈채팅|채팅/ → 오픈채팅방 입장 버튼. "#"이면 비활성. */
   resources: [
     { label: "공모전 운영계획(안)", url: "#" },
-    { label: "AI 도구 보안 이용 가이드", url: "#" },
-    { label: "인공지능 윤리 가이드", url: "#" },
-    { label: "AI 강의자료 모음", url: "#" },
     { label: "참가자 오픈채팅방", url: "https://open.kakao.com/o/gEgM4vNi" },
   ],
-  footnote: "KISA 경영기획본부 ESG성과단 · gitlab.aigov.go.kr 저장소 기준 매일 1회 집계",
+  footnote: "KISA 경영기획본부 ESG성과단 · gitlab.aigov.go.kr 저장소 기준 매일 2회(09:00·15:00) 집계",
   totalWeeks: 14,
 };
 
@@ -79,21 +82,22 @@ async function gl(path, { raw = false, tries = 3 } = {}) {
   if (TOKEN) headers["PRIVATE-TOKEN"] = TOKEN;
   let lastErr;
   for (let i = 0; i < tries; i++) {
+    let waitMs = 400 * (i + 1);
     try {
       const res = await fetch(url, { headers });
-      if (!res.ok) {
-        const e = new Error(`GitLab ${res.status} ${res.statusText} @ ${url}`);
-        e.status = res.status;
-        if (res.status === 404 || res.status === 403) throw e; // 재시도 무의미
-        lastErr = e;
-      } else {
-        return raw ? res : res.json();
-      }
+      if (res.ok) return raw ? res : res.json();
+      const e = new Error(`GitLab ${res.status} ${res.statusText} @ ${url}`);
+      e.status = res.status;
+      // 429(요청 제한)와 5xx만 재시도. 그 외 4xx(401/403/404/422 등)는 재시도해도 결과가 같다.
+      if (res.status < 500 && res.status !== 429) throw e;
+      const retryAfter = Number(res.headers.get("retry-after"));
+      if (res.status === 429 && retryAfter > 0) waitMs = retryAfter * 1000;
+      lastErr = e;
     } catch (e) {
-      if (e.status === 404 || e.status === 403) throw e;
+      if (e.status && e.status < 500 && e.status !== 429) throw e;
       lastErr = e;
     }
-    await new Promise((r) => setTimeout(r, 400 * (i + 1)));
+    await new Promise((r) => setTimeout(r, waitMs));
   }
   throw lastErr;
 }
@@ -137,14 +141,31 @@ function parseDesc(descRaw) {
 function weekBuckets() {
   return new Array(CONTEST.totalWeeks).fill(0);
 }
+/* 킥오프 기준 주차 인덱스(0부터). 대회 기간 밖(킥오프 이전·totalWeeks 이후)은 -1. */
 function bucketIndex(dateIso, kickoffMs) {
-  let idx = Math.floor((new Date(dateIso).getTime() - kickoffMs) / WEEK);
-  if (idx < 0) idx = 0;
-  if (idx > CONTEST.totalWeeks - 1) idx = CONTEST.totalWeeks - 1;
-  return idx;
+  const idx = Math.floor((new Date(dateIso).getTime() - kickoffMs) / WEEK);
+  return idx >= 0 && idx < CONTEST.totalWeeks ? idx : -1;
 }
 
-async function collectRepo(repoPath) {
+/* 팀 자기보고 dashboard.json 정규화: progress는 0~100 정수, updates는 날짜 내림차순. */
+function normalizeReport(rep) {
+  let progress = null;
+  let updates = [];
+  if (!rep || typeof rep !== "object") return { progress, updates };
+  const n = Number(rep.progress);
+  if (rep.progress !== null && rep.progress !== "" && Number.isFinite(n)) {
+    progress = Math.min(100, Math.max(0, Math.round(n)));
+  }
+  if (Array.isArray(rep.updates)) {
+    updates = rep.updates
+      .filter((u) => u && u.date && u.note && !Number.isNaN(Date.parse(u.date)))
+      .map((u) => ({ date: String(u.date), note: String(u.note) }))
+      .sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
+  }
+  return { progress, updates };
+}
+
+async function collectRepo(repoPath, { reference = false, warnings = [] } = {}) {
   const p = await gl(`/projects/${enc(repoPath)}`);
   const { field, description } = parseDesc(p.description);
   const team = await resolveTeam(p.namespace);
@@ -152,12 +173,20 @@ async function collectRepo(repoPath) {
   const kickoffMs = new Date(CONTEST.kickoff + "T00:00:00+09:00").getTime();
   const sinceIso = new Date(CONTEST.collectSince + "T00:00:00+09:00").toISOString();
 
-  // 커밋
-  const commits = await glAll(
-    `/projects/${p.id}/repository/commits?since=${enc(sinceIso)}&ref_name=${enc(branch)}`,
-  );
+  // 커밋 — 조회 실패(빈 저장소·일시 장애)해도 과제 자체는 남기고 0건으로 둔다.
+  let commits = [];
+  try {
+    commits = await glAll(
+      `/projects/${p.id}/repository/commits?since=${enc(sinceIso)}&ref_name=${enc(branch)}`,
+    );
+  } catch (e) {
+    warnings.push(`${repoPath}: 커밋 조회 실패 (${e.message})`);
+  }
   const weekly = weekBuckets();
-  for (const c of commits) weekly[bucketIndex(c.created_at, kickoffMs)]++;
+  for (const c of commits) {
+    const idx = bucketIndex(c.created_at, kickoffMs);
+    if (idx >= 0) weekly[idx]++;
+  }
   const recentCommits = commits.slice(0, 3).map((c) => ({
     title: c.title, date: c.created_at, url: c.web_url,
   }));
@@ -166,7 +195,9 @@ async function collectRepo(repoPath) {
   let issues = [];
   try {
     issues = await glAll(`/projects/${p.id}/issues?scope=all&order_by=updated_at&sort=desc`);
-  } catch { /* 이슈 비활성 저장소 */ }
+  } catch (e) {
+    warnings.push(`${repoPath}: 이슈 조회 실패 (${e.message})`);
+  }
   const openIssues = issues.filter((i) => i.state === "opened").length;
   const closedIssues = issues.filter((i) => i.state === "closed").length;
   const recentIssues = issues.slice(0, 5).map((i) => ({
@@ -177,23 +208,16 @@ async function collectRepo(repoPath) {
   }));
 
   // 팀 자기보고(선택): 저장소 루트 dashboard.json
-  let progress = null;
-  let updates = [];
+  let report = { progress: null, updates: [] };
   try {
     const res = await gl(
       `/projects/${p.id}/repository/files/${enc("dashboard.json")}/raw?ref=${enc(branch)}`,
       { raw: true },
     );
-    const rep = await res.json();
-    if (rep && typeof rep === "object") {
-      if (typeof rep.progress === "number") progress = rep.progress;
-      if (Array.isArray(rep.updates)) {
-        updates = rep.updates
-          .filter((u) => u && u.date && u.note)
-          .map((u) => ({ date: String(u.date), note: String(u.note) }));
-      }
-    }
-  } catch { /* 없으면 무시 */ }
+    report = normalizeReport(await res.json());
+  } catch (e) {
+    if (e.status !== 404) warnings.push(`${repoPath}: dashboard.json 읽기 실패 (${e.message})`);
+  }
 
   const lastActivity = p.last_activity_at || null;
   const active = lastActivity
@@ -207,9 +231,10 @@ async function collectRepo(repoPath) {
     field,
     description,
     webUrl: p.web_url,
+    reference,
     active,
-    progress,
-    updates,
+    progress: report.progress,
+    updates: report.updates,
     gitlab: {
       commits: commits.length,
       weeklyCommits: weekly,
@@ -223,14 +248,21 @@ async function collectRepo(repoPath) {
   };
 }
 
+/* 수집 대상 목록: [{ repo, reference }]. 참고 저장소는 참가 목록과 겹치면 참가 쪽을 우선한다. */
 async function discoverRepos() {
+  let repos = PROJECT_REPOS.slice();
   if (GROUP_PATH) {
     const projs = await glAll(
       `/groups/${enc(GROUP_PATH)}/projects?include_subgroups=true&archived=false&order_by=path&sort=asc`,
     );
-    return projs.map((p) => p.path_with_namespace);
+    repos = projs.map((p) => p.path_with_namespace);
   }
-  return PROJECT_REPOS.slice();
+  const seen = new Set(repos);
+  const list = repos.map((repo) => ({ repo, reference: false }));
+  for (const repo of REFERENCE_REPOS) {
+    if (!seen.has(repo)) list.push({ repo, reference: true });
+  }
+  return list;
 }
 
 function writeOut(data) {
@@ -247,7 +279,7 @@ function buildSample() {
     return {
       repo, name, team, field, description: desc,
       webUrl: `https://gitlab.aigov.go.kr/${repo}`,
-      active: true, progress: prog,
+      reference: false, active: true, progress: prog,
       updates: prog != null ? [{ date: CONTEST.kickoff, note: "착수 준비 완료" }] : [],
       gitlab: { commits, weeklyCommits: weekly, openIssues: open, closedIssues: closed, stars, lastActivity: now },
       recentCommits: [{ title: "초기 저장소 구성", date: now, url: `https://gitlab.aigov.go.kr/${repo}` }],
@@ -261,43 +293,42 @@ function buildSample() {
   ];
   const weeklyCommits = weekBuckets();
   for (const p of projects) p.gitlab.weeklyCommits.forEach((v, i) => (weeklyCommits[i] += v));
-  return { generatedAt: now, sample: true, contest: CONTEST, weeklyCommits, projects, showcase: SHOWCASE };
+  return { generatedAt: now, sample: true, contest: CONTEST, weeklyCommits, projects, warnings: [], showcase: SHOWCASE };
 }
 
 /* 전체 수집: 대상 저장소를 병렬로 모아 data.json 객체를 반환한다.
- * 파일을 쓰지 않으므로 CLI(collect.mjs)와 Vercel 서버리스 함수(api/data.mjs)가 함께 재사용한다. */
-export async function collectAll() {
-  const repos = await discoverRepos();
-  console.log(`대상 저장소 ${repos.length}개: ${repos.join(", ") || "(없음)"}`);
+ * 저장소 단위 실패는 warnings에 기록하고 나머지는 계속 집계한다(화면 '기준시각' 옆에 경고 건수 표시). */
+async function collectAll() {
+  const targets = await discoverRepos();
+  console.log(`대상 저장소 ${targets.length}개: ${targets.map((t) => t.repo + (t.reference ? "(참고)" : "")).join(", ") || "(없음)"}`);
+  const warnings = [];
   const settled = await Promise.all(
-    repos.map(async (r) => {
+    targets.map(async (t) => {
       try {
-        return { ok: true, r, project: await collectRepo(r) };
+        return { ok: true, repo: t.repo, project: await collectRepo(t.repo, { reference: t.reference, warnings }) };
       } catch (e) {
-        return { ok: false, r, error: e.message };
+        return { ok: false, repo: t.repo, error: e.message };
       }
     }),
   );
   const projects = [];
-  const errors = [];
   for (const s of settled) {
     if (s.ok) projects.push(s.project);
-    else {
-      errors.push(`${s.r}: ${s.error}`);
-      console.error("WARN", s.r, s.error);
-    }
+    else warnings.push(`${s.repo}: 수집 실패 (${s.error})`);
   }
-  if (projects.length === 0 && repos.length > 0) {
-    throw new Error("수집된 과제가 없습니다 — " + errors.join(" | "));
+  const contestProjects = projects.filter((p) => !p.reference);
+  if (contestProjects.length === 0 && targets.some((t) => !t.reference)) {
+    throw new Error("수집된 과제가 없습니다 — " + warnings.join(" | "));
   }
   const weeklyCommits = weekBuckets();
-  for (const p of projects) p.gitlab.weeklyCommits.forEach((v, i) => (weeklyCommits[i] += v));
-  if (errors.length) console.error(`(경고 ${errors.length}건) ` + errors.join(" | "));
+  for (const p of contestProjects) p.gitlab.weeklyCommits.forEach((v, i) => (weeklyCommits[i] += v));
+  for (const w of warnings) console.error("WARN", w);
   return {
     generatedAt: new Date().toISOString(),
     contest: CONTEST,
     weeklyCommits,
     projects,
+    warnings,
     showcase: SHOWCASE,
   };
 }
@@ -321,13 +352,7 @@ async function main() {
   writeOut(await collectAll());
 }
 
-// 직접 실행(CLI)일 때만 main()을 돈다. import(서버리스 함수)될 때는 실행하지 않는다.
-const isMain = process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1];
-if (isMain) {
-  main().catch((e) => {
-    console.error("FATAL", e && e.stack ? e.stack : e);
-    process.exit(1);
-  });
-}
-
-export { CONTEST, collectRepo };
+main().catch((e) => {
+  console.error("FATAL", e && e.stack ? e.stack : e);
+  process.exit(1);
+});
