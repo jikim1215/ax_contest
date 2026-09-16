@@ -579,9 +579,49 @@ function esc(v) {
   return String(v ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
 }
+function toKstDate(s) {
+  return new Date(String(s).length <= 10 ? s + "T00:00:00+09:00" : s);
+}
+const MD_KST = new Intl.DateTimeFormat("en-US", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric" });
+const FULL_KST = new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Seoul", month: "long", day: "numeric", weekday: "short" });
 function fmtDateShort(s) {
-  const d = new Date(String(s).length <= 10 ? s + "T00:00:00+09:00" : s);
-  return (d.getMonth() + 1) + "/" + d.getDate();
+  return MD_KST.format(toKstDate(s));
+}
+function fmtDateFull(s) {
+  return FULL_KST.format(toKstDate(s));
+}
+
+/* 한국시간 기준 '며칠째'를 정수로 환산한다. 두 날짜의 차이가 곧 D-day 일수가 된다. */
+function kstDayIndex(d) {
+  return Math.floor((d.getTime() + 9 * 3600000) / DAY);
+}
+
+/* 공지(다음 일정) — data.json에 박아둔 문구 대신 마일스톤과 오늘 날짜로 매번 계산한다.
+ * 기준: 종료일(기간 일정은 end)이 아직 지나지 않은 첫 일정. 운영계획 로드맵의 현재 구간과 같은 규칙. */
+function nextNotice(milestones) {
+  const list = (milestones || []).filter((m) => m && m.date);
+  if (!list.length) return null;
+  const todayIdx = kstDayIndex(new Date());
+  const idxOf = (s) => kstDayIndex(toKstDate(s));
+  const m = list.find((x) => idxOf(x.end || x.date) >= todayIdx);
+  if (!m) {
+    const last = list[list.length - 1];
+    return { label: "일정 종료", text: last.label + " 완료", detail: "모든 일정이 종료되었습니다" };
+  }
+  const startIdx = idxOf(m.date);
+  const endIdx = idxOf(m.end || m.date);
+  const range = m.end ? fmtDateFull(m.date) + " ~ " + fmtDateShort(m.end) : fmtDateFull(m.date);
+  if (todayIdx < startIdx) {
+    return { label: "다음 일정", text: m.label, detail: range + " · D-" + (startIdx - todayIdx) };
+  }
+  if (todayIdx === startIdx) {
+    return { label: "오늘 일정", text: m.label, detail: m.end ? "오늘 시작 · ~ " + fmtDateFull(m.end) : "오늘 · " + fmtDateFull(m.date) };
+  }
+  return {
+    label: "진행 중",
+    text: m.label,
+    detail: "~ " + fmtDateFull(m.end) + " · " + (endIdx === todayIdx ? "오늘 마감" : "D-" + (endIdx - todayIdx)),
+  };
 }
 function fmtDateTime(iso) {
   if (!iso) return "-";
@@ -651,9 +691,11 @@ function renderAll(data) {
     "기준시각: " + fmtDateTime(data.generatedAt) + " · " + C.refreshNote + (data.sample ? " · 예시 데이터" : "");
   document.querySelector("#footNote").textContent = C.footnote;
   const noticeEl = document.querySelector("#notice");
-  if (C.notice && C.notice.text) {
+  const notice = nextNotice(C.milestones);
+  if (notice) {
     noticeEl.innerHTML =
-      '<span class="tag">' + esc(C.notice.label || "공지") + "</span><b>" + esc(C.notice.text) + "</b>";
+      '<span class="tag">' + esc(notice.label) + "</span><b>" + esc(notice.text) + "</b>" +
+      (notice.detail ? '<span class="muted">' + esc(notice.detail) + "</span>" : "");
   } else {
     noticeEl.hidden = true;
   }

@@ -144,8 +144,9 @@ schtasks /Create /TN "AX대시보드_0900" /TR "node D:\경로\collect.mjs" /SC 
 
 - `GROUP_PATH` — 공모전 그룹 경로를 지정하면 소속 저장소를 자동으로 찾습니다(권장).
   비워두면 `PROJECT_REPOS`에 나열한 저장소 경로를 사용합니다.
-- `CONTEST` — 대회명·부제, 킥오프·최종발표 일자, `activeDays`(활성 판정 일수), 마일스톤,
-  공지(`notice`), 자료실 링크(`resources`), 주차 수(`totalWeeks`) 등.
+- `CONTEST` — 대회명·부제, 킥오프·최종발표 일자, `activeDays`(활성 판정 일수), 마일스톤(`milestones`),
+  자료실 링크(`resources`), 주차 수(`totalWeeks`) 등.
+  상단 "다음 일정" 배너는 `milestones`와 접속 시점 날짜로 자동 계산되므로 따로 관리하지 않습니다.
 - `SHOWCASE` — 시연 가능한 PoC 목록. 비어 있으면 해당 패널이 표시되지 않습니다.
 
 `resources`의 URL을 `#`이 아닌 실제 링크로 바꾸면 운영계획 원문 열람·오픈채팅방 입장 버튼이

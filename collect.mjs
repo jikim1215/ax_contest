@@ -36,7 +36,7 @@ const CONTEST = {
   activeDays: 14,
   refreshNote: "매일 09:00 갱신",
   collectSince: "2026-08-01",
-  notice: { label: "다음 일정", text: "참가자 선정 발표" },
+  /* 공지(다음 일정) 문구는 index.html이 milestones + 오늘 날짜로 계산한다. 별도 설정 불필요. */
   milestones: [
     { date: "2026-08-24", end: "2026-09-04", label: "AX 공모전 접수" },
     { date: "2026-09-10", label: "참가자 선정 발표" },
