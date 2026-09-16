@@ -256,7 +256,14 @@
   .legend .dot{display:inline-block; width:11px; height:11px; border-radius:50%; margin-right:8px;}
 
   /* ===== Feed ===== */
-  .feed{display:grid; gap:13px;}
+  /* 과제가 늘어도 페이지가 세로로 길어지지 않도록 목록 안에서 스크롤한다.
+   * 그리드 행 높이를 피드가 끌고 가면 옆 '과제 상태 비율' 패널까지 같이 늘어난다. */
+  .feed{display:grid; gap:13px; align-content:start;
+    max-height:clamp(220px, 32vh, 340px); overflow-y:auto; overscroll-behavior:contain;
+    padding-right:10px; scrollbar-width:thin; scrollbar-color:var(--color-rule-2) transparent;}
+  .feed::-webkit-scrollbar{width:6px;}
+  .feed::-webkit-scrollbar-thumb{background:var(--color-rule-2); border-radius:3px;}
+  .feed::-webkit-scrollbar-track{background:transparent;}
   .feed .item{border-bottom:1px solid var(--color-rule); padding-bottom:12px; font-size:14px;}
   .feed .item:last-child{border-bottom:0; padding-bottom:0;}
   .feed .who{font-weight:600; color:var(--color-ink);}
@@ -533,7 +540,7 @@
         <div class="grid2">
           <section class="panel">
             <h2>최근 활동</h2>
-            <div class="feed" id="feed"></div>
+            <div class="feed" id="feed" tabindex="0" role="region" aria-label="최근 활동 목록"></div>
           </section>
           <section class="panel">
             <h2>과제 상태 비율</h2>
@@ -848,7 +855,7 @@ function renderAll(data) {
   const ts = (v) => { const t = Date.parse(v); return Number.isNaN(t) ? 0 : t; };
   const feed = commitItems.concat(issueItems, reportItems)
     .sort((a, b) => ts(b.sort) - ts(a.sort))
-    .slice(0, 10);
+    .slice(0, 20);
   document.querySelector("#feed").innerHTML = feed.map((it) =>
     '<div class="item"><span class="kind ' + it.kind + '">' + it.kind + "</span>" +
     '<span class="who">' + esc(it.team) + "</span>" +
