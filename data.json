@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T03:59:15.856Z",
+  "generatedAt": "2026-09-16T02:13:06.203Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 10개 과제 · 3개월",
@@ -72,7 +72,7 @@
     1,
     0,
     5,
-    1,
+    8,
     0,
     0,
     0,
@@ -133,6 +133,147 @@
           "title": "2단계 인증 QR 등록",
           "date": "2026-09-11T21:47:32.000+09:00",
           "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/21e5d2f62f83b1869dedc1688a9dc59fd6256c65"
+        }
+      ],
+      "recentIssues": []
+    },
+    {
+      "repo": "lmj6706/pr_kisa",
+      "name": "pr_kisa",
+      "team": "한국인터넷진흥원 국민소통팀 임민지",
+      "field": "미분류",
+      "description": "",
+      "webUrl": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa",
+      "active": true,
+      "progress": null,
+      "updates": [],
+      "gitlab": {
+        "commits": 2,
+        "weeklyCommits": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 0,
+        "closedIssues": 0,
+        "stars": 0,
+        "lastActivity": "2026-09-15T02:19:33.025Z"
+      },
+      "recentCommits": [
+        {
+          "title": "`.gitlab-ci.yml`에 SAST를 구성하고, 아직 존재하지 않는 경우 이 파일을 생성합니다.",
+          "date": "2026-09-15T02:19:42.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/ccbf05d4e274109f704ac59cac7be882ac0fe69e"
+        },
+        {
+          "title": "Initial commit",
+          "date": "2026-09-15T02:19:33.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/b2aeb676395d6edff6cd7583731cc158e84e0eca"
+        }
+      ],
+      "recentIssues": []
+    },
+    {
+      "repo": "118/118ai-agent",
+      "name": "AI 상담사 agent",
+      "team": "일일팔베개",
+      "field": "미분류",
+      "description": "",
+      "webUrl": "https://gitlab.aigov.go.kr/118/118ai-agent",
+      "active": true,
+      "progress": null,
+      "updates": [],
+      "gitlab": {
+        "commits": 1,
+        "weeklyCommits": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 0,
+        "closedIssues": 0,
+        "stars": 0,
+        "lastActivity": "2026-09-16T00:41:12.765Z"
+      },
+      "recentCommits": [
+        {
+          "title": "Initial commit",
+          "date": "2026-09-16T00:41:13.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/118/118ai-agent/-/commit/f4ea3626ddb87f81e5674abd5be73fdeb2b2407c"
+        }
+      ],
+      "recentIssues": []
+    },
+    {
+      "repo": "KISA_thkim/kisa_workmate",
+      "name": "KISA_WorkMate",
+      "team": "한국인터넷진흥원 김태현",
+      "field": "미분류",
+      "description": "",
+      "webUrl": "https://gitlab.aigov.go.kr/KISA_thkim/kisa_workmate",
+      "active": true,
+      "progress": null,
+      "updates": [],
+      "gitlab": {
+        "commits": 4,
+        "weeklyCommits": [
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 0,
+        "closedIssues": 0,
+        "stars": 0,
+        "lastActivity": "2026-09-15T05:42:11.322Z"
+      },
+      "recentCommits": [
+        {
+          "title": "Refactor: greet() 함수로 분리하고 main에서 호출",
+          "date": "2026-09-15T15:34:08.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/KISA_thkim/kisa_workmate/-/commit/53e896ddeeb90d478633509c8023267920c18d5d"
+        },
+        {
+          "title": "Merge remote-tracking branch 'origin/main'",
+          "date": "2026-09-15T15:08:23.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/KISA_thkim/kisa_workmate/-/commit/8fe124a96eeb5dc241ba6be44b8678ce78c014bb"
+        },
+        {
+          "title": "Initial commit: hello.py test",
+          "date": "2026-09-15T15:05:21.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/KISA_thkim/kisa_workmate/-/commit/a155be7a288b0c269c1056c9b76e963b1124e44d"
         }
       ],
       "recentIssues": []

@@ -26,7 +26,12 @@ const GITLAB_BASE = "https://gitlab.aigov.go.kr/api/v4";
  *  - 비워두면 PROJECT_REPOS 에 나열한 저장소 경로만 집계한다.
  * 참가팀 저장소가 개설되면 아래 목록(또는 GROUP_PATH)만 갱신하면 된다. */
 const GROUP_PATH = "";                       // 예: "ax-contest"
-const PROJECT_REPOS = ["jikim/rack"];        // 예: ["team1/proj", "team2/proj", ...]
+const PROJECT_REPOS = [                      // 예: ["team1/proj", "team2/proj", ...]
+  "jikim/rack",
+  "lmj6706/pr_kisa",
+  "118/118ai-agent",
+  "KISA_thkim/kisa_workmate",
+];
 
 const CONTEST = {
   title: "KISA AX 앰버서더 공모전 진행 현황",
