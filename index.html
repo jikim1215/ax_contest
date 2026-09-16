@@ -204,9 +204,6 @@
   .card--link:hover{border-color:var(--color-accent-2);}
   .card--link:hover h3 a{text-decoration:underline; text-underline-offset:3px;}
   .card--link:focus-within{outline:3px solid var(--color-focus); outline-offset:2px;}
-  .card-go{margin-top:auto; padding-top:6px; font-family:var(--font-label); font-size:12px; font-weight:600; color:var(--color-accent-2-deep); display:flex; align-items:center; gap:5px;}
-  .card-go span{transition:transform var(--dur-micro) var(--ease-push);}
-  .card--link:hover .card-go span{transform:translate(2px,-2px);}
   .card .top{display:flex; justify-content:space-between; align-items:flex-start; gap:10px;}
   .card h3{margin:0; font-family:var(--font-display); font-size:17px; font-weight:700; line-height:1.4; letter-spacing:-.01em; color:var(--color-ink);}
   .card h3 a{color:inherit; font-weight:700;}
@@ -788,7 +785,6 @@ function renderAll(data) {
         (latest
           ? '<div class="note"><span class="d">' + esc(latest.date) + "</span>" + esc(latest.note) + "</div>"
           : "") +
-        (hasLink ? '<div class="card-go" aria-hidden="true">GitLab에서 열기 <span>↗</span></div>' : "") +
         "</article>";
     }).join("") || '<div class="muted">조건에 맞는 과제가 없습니다.</div>';
   }
