@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T04:02:54.952Z",
+  "generatedAt": "2026-09-17T10:29:11.273Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -248,7 +248,7 @@
         ],
         "openIssues": 1,
         "closedIssues": 0,
-        "stars": 0,
+        "stars": 1,
         "lastActivity": "2026-09-16T10:13:26.881Z"
       },
       "recentCommits": [
@@ -338,6 +338,8 @@
       ]
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "sign-kids/kimart: 수집 실패 (GitLab 404 Not Found @ https://gitlab.aigov.go.kr/api/v4/projects/sign-kids%2Fkimart)"
+  ],
   "showcase": []
 }
