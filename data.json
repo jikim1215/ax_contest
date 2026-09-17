@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T12:37:45.638Z",
+  "generatedAt": "2026-09-17T04:02:54.952Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -60,7 +60,7 @@
     0,
     0,
     0,
-    7,
+    10,
     0,
     0,
     0,
@@ -104,7 +104,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 0,
+        "stars": 1,
         "lastActivity": "2026-09-15T02:19:33.025Z"
       },
       "recentCommits": [
@@ -152,7 +152,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 0,
+        "stars": 1,
         "lastActivity": "2026-09-16T00:41:12.765Z"
       },
       "recentCommits": [
@@ -195,7 +195,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 0,
+        "stars": 1,
         "lastActivity": "2026-09-15T05:42:11.322Z"
       },
       "recentCommits": [
@@ -218,11 +218,71 @@
       "recentIssues": []
     },
     {
+      "repo": "adms25/local-handover-ai",
+      "name": "local-handover-ai",
+      "team": "정리해듀오",
+      "field": "미분류",
+      "description": "로컬 AI 기반 업무 인수인계서 생성 서비스",
+      "webUrl": "https://gitlab.aigov.go.kr/adms25/local-handover-ai",
+      "reference": false,
+      "active": true,
+      "progress": null,
+      "updates": [],
+      "gitlab": {
+        "commits": 3,
+        "weeklyCommits": [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 1,
+        "closedIssues": 0,
+        "stars": 0,
+        "lastActivity": "2026-09-16T10:13:26.881Z"
+      },
+      "recentCommits": [
+        {
+          "title": "feat: Streamlit MVP 기본화면 생성",
+          "date": "2026-09-16T10:53:39.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/a9861f28da53e6642fa7a8c14c1662c7ee5230cf"
+        },
+        {
+          "title": "docs: 프로젝트 README 생성",
+          "date": "2026-09-16T10:48:04.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/4a780fdcc88acf6e8f3eaaea78f1d9ab68dd2ee1"
+        },
+        {
+          "title": "Initial commit",
+          "date": "2026-09-16T10:10:51.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/fdd3dfabdb470692025289edc6d1fda6be9cf822"
+        }
+      ],
+      "recentIssues": [
+        {
+          "title": "[MVP-02] 인수인계 7개 항목 입력화면 구현",
+          "date": "2026-09-16T23:25:44.387Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/work_items/1"
+        }
+      ]
+    },
+    {
       "repo": "jikim/rack",
       "name": "rack",
       "team": "한국인터넷진흥원 김주일",
-      "field": "미분류",
-      "description": "",
+      "field": "공공행정",
+      "description": "정보시스템의 메타정보, 랙실장도, 선반장을 관리하기 위한 시스템입니다. 외부 통신이 없는 환경에서도 구동가능하며, 예산이 '0'인 기관에서도 운영 가능하도록 제작하였습니다.",
       "webUrl": "https://gitlab.aigov.go.kr/jikim/rack",
       "reference": true,
       "active": true,
@@ -246,10 +306,10 @@
           0,
           0
         ],
-        "openIssues": 0,
+        "openIssues": 1,
         "closedIssues": 0,
         "stars": 0,
-        "lastActivity": "2026-09-14T14:05:28.118Z"
+        "lastActivity": "2026-09-16T13:53:15.975Z"
       },
       "recentCommits": [
         {
@@ -268,7 +328,14 @@
           "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/21e5d2f62f83b1869dedc1688a9dc59fd6256c65"
         }
       ],
-      "recentIssues": []
+      "recentIssues": [
+        {
+          "title": "1. issue title",
+          "date": "2026-09-16T13:49:01.737Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/work_items/1"
+        }
+      ]
     }
   ],
   "warnings": [],
