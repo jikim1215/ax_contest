@@ -31,7 +31,8 @@ const PROJECT_REPOS = [                      // 예: ["team1/proj", "team2/proj"
   "118/118ai-agent",
   "KISA_thkim/kisa_workmate",
   "adms25/local-handover-ai",
-  "sign-kids/kimart"
+  "sign-kids/kimart",
+  "skynet_b/complaint-radar"
 ];
 /* 참가 과제가 아닌 참고용 저장소(사무국 예시 등). GROUP_PATH 사용 여부와 무관하게 항상 수집한다.
  * 카드에 '참고' 표시가 붙고 과제 수·커밋·이슈·차트·최근활동 집계에서는 제외된다. */
