@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T03:49:24.494Z",
+  "generatedAt": "2026-09-18T10:05:39.709Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -278,6 +278,43 @@
       ]
     },
     {
+      "repo": "skynet_b/complaint-radar",
+      "name": "Complaint Radar",
+      "team": "skynet_b",
+      "field": "미분류",
+      "description": "",
+      "webUrl": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar",
+      "reference": false,
+      "active": true,
+      "progress": null,
+      "updates": [],
+      "gitlab": {
+        "commits": 0,
+        "weeklyCommits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 0,
+        "closedIssues": 0,
+        "stars": 1,
+        "lastActivity": "2026-09-18T04:37:06.358Z"
+      },
+      "recentCommits": [],
+      "recentIssues": []
+    },
+    {
       "repo": "jikim/rack",
       "name": "rack",
       "team": "한국인터넷진흥원 김주일",
@@ -339,6 +376,8 @@
     }
   ],
   "warnings": [
+    "skynet_b/complaint-radar: 커밋 조회 실패 (GitLab 404 Not Found @ https://gitlab.aigov.go.kr/api/v4/projects/1126/repository/commits?since=2026-07-31T15%3A00%3A00.000Z&ref_name=main&per_page=100&page=1)",
+    "skynet_b/complaint-radar: dashboard.json 읽기 실패 (GitLab 403 Forbidden @ https://gitlab.aigov.go.kr/api/v4/projects/1126/repository/files/dashboard.json/raw?ref=main)",
     "sign-kids/kimart: 수집 실패 (GitLab 404 Not Found @ https://gitlab.aigov.go.kr/api/v4/projects/sign-kids%2Fkimart)"
   ],
   "showcase": []
