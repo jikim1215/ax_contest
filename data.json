@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T10:29:11.273Z",
+  "generatedAt": "2026-09-18T03:49:24.494Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -282,7 +282,7 @@
       "name": "rack",
       "team": "한국인터넷진흥원 김주일",
       "field": "공공행정",
-      "description": "정보시스템의 메타정보, 랙실장도, 선반장을 관리하기 위한 시스템입니다. 외부 통신이 없는 환경에서도 구동가능하며, 예산이 '0'인 기관에서도 운영 가능하도록 제작하였습니다.",
+      "description": "정보시스템의 메타정보, 랙실장도, 선반장을 관리하기 위한 시스템입니다. 폐쇄망 환경에서도 구동 가능하며, 유휴 자산으로도 운영 가능하도록 제작하였습니다.",
       "webUrl": "https://gitlab.aigov.go.kr/jikim/rack",
       "reference": true,
       "active": true,
@@ -309,7 +309,7 @@
         "openIssues": 1,
         "closedIssues": 0,
         "stars": 0,
-        "lastActivity": "2026-09-16T13:53:15.975Z"
+        "lastActivity": "2026-09-17T14:14:21.301Z"
       },
       "recentCommits": [
         {
