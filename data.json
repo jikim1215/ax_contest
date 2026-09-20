@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T04:02:06.836Z",
+  "generatedAt": "2026-09-20T10:08:57.633Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -60,7 +60,7 @@
     0,
     0,
     0,
-    10,
+    16,
     0,
     0,
     0,
@@ -229,12 +229,12 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 3,
+        "commits": 8,
         "weeklyCommits": [
           0,
           0,
           0,
-          3,
+          8,
           0,
           0,
           0,
@@ -249,23 +249,23 @@
         "openIssues": 1,
         "closedIssues": 0,
         "stars": 1,
-        "lastActivity": "2026-09-16T10:13:26.881Z"
+        "lastActivity": "2026-09-20T10:04:29.861Z"
       },
       "recentCommits": [
         {
-          "title": "feat: Streamlit MVP 기본화면 생성",
-          "date": "2026-09-16T10:53:39.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/a9861f28da53e6642fa7a8c14c1662c7ee5230cf"
+          "title": "requirements.txt 편집",
+          "date": "2026-09-20T10:06:04.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/998b983aa506b7e1ab276971bfeeeeceec385ca8"
         },
         {
-          "title": "docs: 프로젝트 README 생성",
-          "date": "2026-09-16T10:48:04.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/4a780fdcc88acf6e8f3eaaea78f1d9ab68dd2ee1"
+          "title": "app.py 편집",
+          "date": "2026-09-20T10:05:43.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/a1a3965d8cd538f03a52c8691b2789918d08787d"
         },
         {
-          "title": "Initial commit",
-          "date": "2026-09-16T10:10:51.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/fdd3dfabdb470692025289edc6d1fda6be9cf822"
+          "title": "README.md 편집",
+          "date": "2026-09-20T10:05:02.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/8b7709d5b02346b1445633cf655b44affdce0d9d"
         }
       ],
       "recentIssues": [
@@ -276,6 +276,49 @@
           "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/work_items/1"
         }
       ]
+    },
+    {
+      "repo": "sign-kids/kimart",
+      "name": "kimart",
+      "team": "서명키즈",
+      "field": "미분류",
+      "description": "",
+      "webUrl": "https://gitlab.aigov.go.kr/sign-kids/kimart",
+      "reference": false,
+      "active": true,
+      "progress": null,
+      "updates": [],
+      "gitlab": {
+        "commits": 1,
+        "weeklyCommits": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 0,
+        "closedIssues": 0,
+        "stars": 0,
+        "lastActivity": "2026-09-17T08:05:21.015Z"
+      },
+      "recentCommits": [
+        {
+          "title": "Initial commit",
+          "date": "2026-09-17T08:05:21.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/19c6c9c327b63dbb930609803b434f0f7d7707f7"
+        }
+      ],
+      "recentIssues": []
     },
     {
       "repo": "skynet_b/complaint-radar",
@@ -377,8 +420,7 @@
   ],
   "warnings": [
     "skynet_b/complaint-radar: 커밋 조회 실패 (GitLab 404 Not Found @ https://gitlab.aigov.go.kr/api/v4/projects/1126/repository/commits?since=2026-07-31T15%3A00%3A00.000Z&ref_name=main&per_page=100&page=1)",
-    "skynet_b/complaint-radar: dashboard.json 읽기 실패 (GitLab 403 Forbidden @ https://gitlab.aigov.go.kr/api/v4/projects/1126/repository/files/dashboard.json/raw?ref=main)",
-    "sign-kids/kimart: 수집 실패 (GitLab 404 Not Found @ https://gitlab.aigov.go.kr/api/v4/projects/sign-kids%2Fkimart)"
+    "skynet_b/complaint-radar: dashboard.json 읽기 실패 (GitLab 403 Forbidden @ https://gitlab.aigov.go.kr/api/v4/projects/1126/repository/files/dashboard.json/raw?ref=main)"
   ],
   "showcase": []
 }
