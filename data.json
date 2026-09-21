@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T03:59:36.653Z",
+  "generatedAt": "2026-09-21T11:09:30.338Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -60,8 +60,8 @@
     0,
     0,
     0,
-    20,
-    7,
+    24,
+    30,
     0,
     0,
     0,
@@ -165,12 +165,12 @@
       "recentIssues": []
     },
     {
-      "repo": "KISA_thkim/kisa_workmate",
+      "repo": "morning-coffee/kisa_workmate",
       "name": "KISA_WorkMate",
-      "team": "한국인터넷진흥원 김태현",
+      "team": "모닝커피",
       "field": "미분류",
       "description": "",
-      "webUrl": "https://gitlab.aigov.go.kr/KISA_thkim/kisa_workmate",
+      "webUrl": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate",
       "reference": false,
       "active": true,
       "progress": null,
@@ -202,17 +202,17 @@
         {
           "title": "Refactor: greet() 함수로 분리하고 main에서 호출",
           "date": "2026-09-15T15:34:08.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/KISA_thkim/kisa_workmate/-/commit/53e896ddeeb90d478633509c8023267920c18d5d"
+          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/53e896ddeeb90d478633509c8023267920c18d5d"
         },
         {
           "title": "Merge remote-tracking branch 'origin/main'",
           "date": "2026-09-15T15:08:23.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/KISA_thkim/kisa_workmate/-/commit/8fe124a96eeb5dc241ba6be44b8678ce78c014bb"
+          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/8fe124a96eeb5dc241ba6be44b8678ce78c014bb"
         },
         {
           "title": "Initial commit: hello.py test",
           "date": "2026-09-15T15:05:21.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/KISA_thkim/kisa_workmate/-/commit/a155be7a288b0c269c1056c9b76e963b1124e44d"
+          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/a155be7a288b0c269c1056c9b76e963b1124e44d"
         }
       ],
       "recentIssues": []
@@ -308,7 +308,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 0,
+        "stars": 1,
         "lastActivity": "2026-09-17T08:05:21.015Z"
       },
       "recentCommits": [
@@ -325,20 +325,20 @@
       "name": "Complaint Radar",
       "team": "skynet_b",
       "field": "미분류",
-      "description": "",
+      "description": "기업이 제출한 침해사고 신고 자료(신고 메일 EML·HTML 신고서·증빙파일)를 분석해 정보통신망법상 인지시점 기준 24시간 초과 여부와 과태료 부과 대상 여부를 \"인정/불인정\"으로 분류하는 검증 파이프라인입니다. 정정신청·증빙검토·유선 콜백 질문 초안·과태료 의견제출서 검토까지 같은 구조로 처리하며, LLM은 사실 추출만 하고 최종판정은 코드가 결정론적으로 재계산합니다.",
       "webUrl": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar",
       "reference": false,
       "active": true,
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 0,
+        "commits": 16,
         "weeklyCommits": [
           0,
           0,
           0,
-          0,
-          0,
+          4,
+          12,
           0,
           0,
           0,
@@ -352,9 +352,25 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 1,
-        "lastActivity": "2026-09-18T04:37:06.358Z"
+        "lastActivity": "2026-09-21T06:37:25.873Z"
       },
-      "recentCommits": [],
+      "recentCommits": [
+        {
+          "title": "docs: README 재구성 — 화면 캡처·기술 스택 표·데이터 모델·빠른 시작 구조로 개편",
+          "date": "2026-09-21T14:53:18.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/f93101807482cffb3ba6c66a70c97b196d3fc3e6"
+        },
+        {
+          "title": "docs: README ELI5 섹션 추가 + 구동 수정(start.ps1 PS5.1 문법, wb-backend 다중 CORS origin)",
+          "date": "2026-09-21T14:43:37.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/7e8e5b89c0c4ef369ad1f2f8a2aba0689e90cac8"
+        },
+        {
+          "title": "Merge branch 'main' into 'master'",
+          "date": "2026-09-21T14:14:42.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/1c178fd54f852601b8f4b7b40d2a4adba2d853fa"
+        }
+      ],
       "recentIssues": []
     },
     {
@@ -422,13 +438,13 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 3,
+        "commits": 14,
         "weeklyCommits": [
           0,
           0,
           0,
           0,
-          3,
+          14,
           0,
           0,
           0,
@@ -441,24 +457,24 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 0,
+        "stars": 1,
         "lastActivity": "2026-09-21T03:38:29.583Z"
       },
       "recentCommits": [
         {
-          "title": "docs: README에 화면 예시를 포함한 사용자 매뉴얼 추가",
-          "date": "2026-09-21T11:50:59.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/60dd36a758e2bde05c7ab0689474557d68eca5f9"
+          "title": "fix(self-improvement): /api/runtime 상태 프로브를 single-flight 로 묶음",
+          "date": "2026-09-21T13:31:14.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/8ee8833eb7c2af2c0f0e0b6d6253632ceb6732c5"
         },
         {
-          "title": "feat: 개인정보자문 로컬 웹 앱 초기 등록",
-          "date": "2026-09-21T11:32:18.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/60a30afb36f222e84b8e26c2dde9f2d9a156af36"
+          "title": "fix(self-improvement): 초대형 PDF 페이지 렌더링 픽셀 상한",
+          "date": "2026-09-21T13:31:14.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/78ca0449be5c7d261c6b86543f654805a92ef870"
         },
         {
-          "title": "Initial commit",
-          "date": "2026-09-21T02:03:09.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/01a3ed2e924cd6dc62888373b45de72be3f30bbf"
+          "title": "fix(self-improvement): 업로드 ZIP 계열 문서의 압축 해제 한도 추가",
+          "date": "2026-09-21T13:31:13.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/40a0d8baeeb746160f5749d05121bd164b08f9b4"
         }
       ],
       "recentIssues": []
@@ -468,7 +484,7 @@
       "name": "rack",
       "team": "한국인터넷진흥원 김주일",
       "field": "공공행정",
-      "description": "정보시스템의 메타정보, 랙실장도, 선반장을 관리하기 위한 시스템입니다. 폐쇄망 환경에서도 구동 가능하며, 유휴 자산으로도 운영 가능하도록 제작하였습니다.",
+      "description": "정보시스템의 메타정보, 랙실장도, 선반장을 관리하기 위한 시스템입니다. 폐쇄망 환경과 유휴 자산으로도 운영 가능하도록 제작하였습니다.",
       "webUrl": "https://gitlab.aigov.go.kr/jikim/rack",
       "reference": true,
       "active": true,
@@ -495,7 +511,7 @@
         "openIssues": 1,
         "closedIssues": 0,
         "stars": 0,
-        "lastActivity": "2026-09-17T14:14:21.301Z"
+        "lastActivity": "2026-09-21T09:24:20.780Z"
       },
       "recentCommits": [
         {
@@ -524,9 +540,6 @@
       ]
     }
   ],
-  "warnings": [
-    "skynet_b/complaint-radar: 커밋 조회 실패 (GitLab 404 Not Found @ https://gitlab.aigov.go.kr/api/v4/projects/1126/repository/commits?since=2026-07-31T15%3A00%3A00.000Z&ref_name=main&per_page=100&page=1)",
-    "skynet_b/complaint-radar: dashboard.json 읽기 실패 (GitLab 403 Forbidden @ https://gitlab.aigov.go.kr/api/v4/projects/1126/repository/files/dashboard.json/raw?ref=main)"
-  ],
+  "warnings": [],
   "showcase": []
 }
