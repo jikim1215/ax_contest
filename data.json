@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T00:40:29.419Z",
+  "generatedAt": "2026-09-21T03:59:36.653Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -61,7 +61,7 @@
     0,
     0,
     20,
-    1,
+    7,
     0,
     0,
     0,
@@ -369,13 +369,13 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 1,
+        "commits": 4,
         "weeklyCommits": [
           0,
           0,
           0,
           0,
-          1,
+          4,
           0,
           0,
           0,
@@ -393,9 +393,72 @@
       },
       "recentCommits": [
         {
+          "title": "공개용 개념 문서 정리 (템플릿 잔여 내용 제거)",
+          "date": "2026-09-21T01:03:28.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/j30231/isds_check/-/commit/4b1d10776885e85ef63653647c95fdeefcb4dc9b"
+        },
+        {
+          "title": "공개용 개념 문서(README) 작성",
+          "date": "2026-09-21T01:01:57.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/j30231/isds_check/-/commit/690db7531390ba09b4b4b941da0a521ad9b18f8b"
+        },
+        {
+          "title": "README.md 편집",
+          "date": "2026-09-21T00:56:04.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/j30231/isds_check/-/commit/6c1c8ac3c9172d005e4d5e91d394e55ae17e741b"
+        }
+      ],
+      "recentIssues": []
+    },
+    {
+      "repo": "jh.noh/privacy",
+      "name": "개인정보자문시스템",
+      "team": "한국인터넷진흥원 노준현",
+      "field": "미분류",
+      "description": "",
+      "webUrl": "https://gitlab.aigov.go.kr/jh.noh/privacy",
+      "reference": false,
+      "active": true,
+      "progress": null,
+      "updates": [],
+      "gitlab": {
+        "commits": 3,
+        "weeklyCommits": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 0,
+        "closedIssues": 0,
+        "stars": 0,
+        "lastActivity": "2026-09-21T03:38:29.583Z"
+      },
+      "recentCommits": [
+        {
+          "title": "docs: README에 화면 예시를 포함한 사용자 매뉴얼 추가",
+          "date": "2026-09-21T11:50:59.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/60dd36a758e2bde05c7ab0689474557d68eca5f9"
+        },
+        {
+          "title": "feat: 개인정보자문 로컬 웹 앱 초기 등록",
+          "date": "2026-09-21T11:32:18.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/60a30afb36f222e84b8e26c2dde9f2d9a156af36"
+        },
+        {
           "title": "Initial commit",
-          "date": "2026-09-21T00:17:21.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/j30231/isds_check/-/commit/4fe2c4a407e54d7a614701120f36d878a1485287"
+          "date": "2026-09-21T02:03:09.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/01a3ed2e924cd6dc62888373b45de72be3f30bbf"
         }
       ],
       "recentIssues": []
