@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T10:08:57.633Z",
+  "generatedAt": "2026-09-21T00:40:29.419Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -60,8 +60,8 @@
     0,
     0,
     0,
-    16,
-    0,
+    20,
+    1,
     0,
     0,
     0,
@@ -229,12 +229,12 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 8,
+        "commits": 12,
         "weeklyCommits": [
           0,
           0,
           0,
-          8,
+          12,
           0,
           0,
           0,
@@ -253,19 +253,19 @@
       },
       "recentCommits": [
         {
-          "title": "requirements.txt 편집",
-          "date": "2026-09-20T10:06:04.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/998b983aa506b7e1ab276971bfeeeeceec385ca8"
+          "title": "Merge branch 'feature/integrated-mvp' into 'main'",
+          "date": "2026-09-20T10:41:05.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/07a9ef1fbf6e7d7718c60a75c77c363036a7dc2a"
         },
         {
-          "title": "app.py 편집",
-          "date": "2026-09-20T10:05:43.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/a1a3965d8cd538f03a52c8691b2789918d08787d"
+          "title": "fix: Ollama 로컬 통신 보안 강화",
+          "date": "2026-09-20T19:38:01.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/aa4e7e30bae1ca92abfd9a5dea5b496b430d001b"
         },
         {
-          "title": "README.md 편집",
-          "date": "2026-09-20T10:05:02.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/8b7709d5b02346b1445633cf655b44affdce0d9d"
+          "title": "fix: HWPX XML 보안 파서 적용",
+          "date": "2026-09-20T19:30:48.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/441171d33022d8bcf82bc46e5bfdcd8bf79e4bc1"
         }
       ],
       "recentIssues": [
@@ -355,6 +355,49 @@
         "lastActivity": "2026-09-18T04:37:06.358Z"
       },
       "recentCommits": [],
+      "recentIssues": []
+    },
+    {
+      "repo": "j30231/isds_check",
+      "name": "isds_check",
+      "team": "한국인터넷진흥원 이재식",
+      "field": "미분류",
+      "description": "",
+      "webUrl": "https://gitlab.aigov.go.kr/j30231/isds_check",
+      "reference": false,
+      "active": true,
+      "progress": null,
+      "updates": [],
+      "gitlab": {
+        "commits": 1,
+        "weeklyCommits": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 0,
+        "closedIssues": 0,
+        "stars": 1,
+        "lastActivity": "2026-09-21T00:17:21.273Z"
+      },
+      "recentCommits": [
+        {
+          "title": "Initial commit",
+          "date": "2026-09-21T00:17:21.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/j30231/isds_check/-/commit/4fe2c4a407e54d7a614701120f36d878a1485287"
+        }
+      ],
       "recentIssues": []
     },
     {
