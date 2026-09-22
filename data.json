@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T11:09:30.338Z",
+  "generatedAt": "2026-09-22T03:57:07.766Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -61,7 +61,7 @@
     0,
     0,
     24,
-    30,
+    51,
     0,
     0,
     0,
@@ -438,13 +438,13 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 14,
+        "commits": 35,
         "weeklyCommits": [
           0,
           0,
           0,
           0,
-          14,
+          35,
           0,
           0,
           0,
@@ -458,23 +458,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 1,
-        "lastActivity": "2026-09-21T03:38:29.583Z"
+        "lastActivity": "2026-09-22T00:41:03.172Z"
       },
       "recentCommits": [
         {
-          "title": "fix(self-improvement): /api/runtime 상태 프로브를 single-flight 로 묶음",
-          "date": "2026-09-21T13:31:14.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/8ee8833eb7c2af2c0f0e0b6d6253632ceb6732c5"
+          "title": "docs(self-improvement): 관리자 탭·사용자 관리·비밀번호 변경을 사용자 매뉴얼에 반영",
+          "date": "2026-09-22T09:38:43.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/af823e3681119e4e113217917c3198cc91fa5e40"
         },
         {
-          "title": "fix(self-improvement): 초대형 PDF 페이지 렌더링 픽셀 상한",
-          "date": "2026-09-21T13:31:14.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/78ca0449be5c7d261c6b86543f654805a92ef870"
+          "title": "perf(self-improvement): GET /api/settings 에서 클라이언트가 쓰지 않는 응답 필드 3개 제거",
+          "date": "2026-09-22T09:35:32.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/0f2ca2e7434b377f4b2dd2081f01d9159ac7dd6c"
         },
         {
-          "title": "fix(self-improvement): 업로드 ZIP 계열 문서의 압축 해제 한도 추가",
-          "date": "2026-09-21T13:31:13.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/40a0d8baeeb746160f5749d05121bd164b08f9b4"
+          "title": "feat(self-improvement): 내 계정 탭에 비밀번호 변경 추가",
+          "date": "2026-09-22T09:35:05.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/c267e6e51e1e8acc8547576137070c8dfc90e0f4"
         }
       ],
       "recentIssues": []
