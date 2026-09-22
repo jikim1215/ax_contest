@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T03:57:07.766Z",
+  "generatedAt": "2026-09-22T10:23:31.067Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -61,7 +61,7 @@
     0,
     0,
     24,
-    51,
+    64,
     0,
     0,
     0,
@@ -77,8 +77,8 @@
       "repo": "lmj6706/pr_kisa",
       "name": "pr_kisa",
       "team": "한국인터넷진흥원 국민소통팀 임민지",
-      "field": "미분류",
-      "description": "",
+      "field": "일반행정",
+      "description": "모두를 위한 보도자료 A-Z\r\nAI를 활용하여 기존 사업과 금년 사업과의 차별성, 언론보도의 필요성 등 효과적인 언론 홍보를 할 수 있도록 보도자료 작성 지원",
       "webUrl": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa",
       "reference": false,
       "active": true,
@@ -105,7 +105,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 1,
-        "lastActivity": "2026-09-15T02:19:33.025Z"
+        "lastActivity": "2026-09-22T07:32:39.115Z"
       },
       "recentCommits": [
         {
@@ -332,13 +332,13 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 16,
+        "commits": 23,
         "weeklyCommits": [
           0,
           0,
           0,
           4,
-          12,
+          19,
           0,
           0,
           0,
@@ -352,23 +352,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 1,
-        "lastActivity": "2026-09-21T06:37:25.873Z"
+        "lastActivity": "2026-09-22T09:52:26.874Z"
       },
       "recentCommits": [
         {
-          "title": "docs: README 재구성 — 화면 캡처·기술 스택 표·데이터 모델·빠른 시작 구조로 개편",
-          "date": "2026-09-21T14:53:18.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/f93101807482cffb3ba6c66a70c97b196d3fc3e6"
+          "title": "feat: 리포트 페이지 레이아웃 개편과 전역 줄간격 통일",
+          "date": "2026-09-22T18:52:04.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/deff2d315f1a7c4b01e92d2880d80128ff385c0f"
         },
         {
-          "title": "docs: README ELI5 섹션 추가 + 구동 수정(start.ps1 PS5.1 문법, wb-backend 다중 CORS origin)",
-          "date": "2026-09-21T14:43:37.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/7e8e5b89c0c4ef369ad1f2f8a2aba0689e90cac8"
+          "title": "feat: 관리자 단건 재실행 + 워크벤치 네비/매칭 정비 + 리포트 디자인 토큰 통일 + 문서 개편",
+          "date": "2026-09-22T13:01:03.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/2bca27d82cc9192cbe316b298b725b80bd701dcf"
         },
         {
-          "title": "Merge branch 'main' into 'master'",
-          "date": "2026-09-21T14:14:42.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/1c178fd54f852601b8f4b7b40d2a4adba2d853fa"
+          "title": "v2: 보고서 3표면 폰트/컬러/간격 디자인 토큰 통일",
+          "date": "2026-09-21T16:29:23.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/abdb82bc2a3e1a71a1e8a4ed467b44754e59974d"
         }
       ],
       "recentIssues": []
@@ -430,21 +430,21 @@
       "repo": "jh.noh/privacy",
       "name": "개인정보자문시스템",
       "team": "한국인터넷진흥원 노준현",
-      "field": "미분류",
-      "description": "",
+      "field": "공공행정",
+      "description": "개인정보 보호 관련 사건, 법률 질문 등에 AI를 활용하여 답해주는 자문 도우미.\r\n법령·판례·결정문 등을 검색해 출처 기반 답변과 보고서 작성까지 지원함.",
       "webUrl": "https://gitlab.aigov.go.kr/jh.noh/privacy",
       "reference": false,
       "active": true,
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 35,
+        "commits": 41,
         "weeklyCommits": [
           0,
           0,
           0,
           0,
-          35,
+          41,
           0,
           0,
           0,
@@ -458,23 +458,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 1,
-        "lastActivity": "2026-09-22T00:41:03.172Z"
+        "lastActivity": "2026-09-22T07:22:11.093Z"
       },
       "recentCommits": [
         {
-          "title": "docs(self-improvement): 관리자 탭·사용자 관리·비밀번호 변경을 사용자 매뉴얼에 반영",
-          "date": "2026-09-22T09:38:43.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/af823e3681119e4e113217917c3198cc91fa5e40"
+          "title": "fix(chunking): 결정문 첨부 중복 제거, 200자 미만 절 병합, 사례집 분할 개선",
+          "date": "2026-09-22T16:39:56.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/08451ded076a793f861d718fd50dd54626b648f5"
         },
         {
-          "title": "perf(self-improvement): GET /api/settings 에서 클라이언트가 쓰지 않는 응답 필드 3개 제거",
-          "date": "2026-09-22T09:35:32.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/0f2ca2e7434b377f4b2dd2081f01d9159ac7dd6c"
+          "title": "fix(chat): 후속 질문에 직전 답변 인용 근거 승계, 요약 실패 시 원문으로 계속",
+          "date": "2026-09-22T13:46:03.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/805bff6038f05bae022ed252974edb61bac3b90c"
         },
         {
-          "title": "feat(self-improvement): 내 계정 탭에 비밀번호 변경 추가",
-          "date": "2026-09-22T09:35:05.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/c267e6e51e1e8acc8547576137070c8dfc90e0f4"
+          "title": "feat(chat): 새 사실관계 후속 질문에도 되묻기 허용, 되묻기 질문 원문을 조사 질문에 승계",
+          "date": "2026-09-22T13:45:25.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/1cdb398db452a987de802828972484fc67c6f149"
         }
       ],
       "recentIssues": []
@@ -508,10 +508,10 @@
           0,
           0
         ],
-        "openIssues": 1,
-        "closedIssues": 0,
+        "openIssues": 0,
+        "closedIssues": 1,
         "stars": 0,
-        "lastActivity": "2026-09-21T09:24:20.780Z"
+        "lastActivity": "2026-09-22T06:45:14.021Z"
       },
       "recentCommits": [
         {
@@ -533,8 +533,8 @@
       "recentIssues": [
         {
           "title": "1. issue title",
-          "date": "2026-09-16T13:49:01.737Z",
-          "state": "opened",
+          "date": "2026-09-22T06:45:14.124Z",
+          "state": "closed",
           "url": "https://gitlab.aigov.go.kr/jikim/rack/-/work_items/1"
         }
       ]
