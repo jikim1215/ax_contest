@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T03:54:39.100Z",
+  "generatedAt": "2026-09-23T07:07:19.843Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -61,7 +61,7 @@
     0,
     0,
     24,
-    92,
+    104,
     0,
     0,
     0,
@@ -104,7 +104,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 1,
+        "stars": 2,
         "lastActivity": "2026-09-22T07:32:39.115Z"
       },
       "recentCommits": [
@@ -176,13 +176,13 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 4,
+        "commits": 11,
         "weeklyCommits": [
           0,
           0,
           0,
           4,
-          0,
+          7,
           0,
           0,
           0,
@@ -195,24 +195,24 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 1,
-        "lastActivity": "2026-09-15T05:42:11.322Z"
+        "stars": 2,
+        "lastActivity": "2026-09-23T06:06:50.581Z"
       },
       "recentCommits": [
         {
-          "title": "Refactor: greet() 함수로 분리하고 main에서 호출",
-          "date": "2026-09-15T15:34:08.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/53e896ddeeb90d478633509c8023267920c18d5d"
+          "title": "Add prototype README [skip ci]",
+          "date": "2026-09-23T06:39:07.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/8fbfe7b317ad3f4dc9be68d3e544abc36660359e"
         },
         {
-          "title": "Merge remote-tracking branch 'origin/main'",
-          "date": "2026-09-15T15:08:23.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/8fe124a96eeb5dc241ba6be44b8678ce78c014bb"
+          "title": "Add prototype preview image [skip ci]",
+          "date": "2026-09-23T06:38:08.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/23d863cffdc8ae8236b2b825535e63fa7e9f6c81"
         },
         {
-          "title": "Initial commit: hello.py test",
-          "date": "2026-09-15T15:05:21.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/a155be7a288b0c269c1056c9b76e963b1124e44d"
+          "title": "Add prototype HTML [skip ci]",
+          "date": "2026-09-23T06:36:48.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/56f11e23c6085b2501cf1f3256c7720a15266d35"
         }
       ],
       "recentIssues": []
@@ -351,7 +351,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 1,
+        "stars": 2,
         "lastActivity": "2026-09-22T10:59:49.239Z"
       },
       "recentCommits": [
@@ -438,13 +438,13 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 67,
+        "commits": 68,
         "weeklyCommits": [
           0,
           0,
           0,
           0,
-          67,
+          68,
           0,
           0,
           0,
@@ -457,10 +457,15 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 1,
+        "stars": 2,
         "lastActivity": "2026-09-23T03:54:08.915Z"
       },
       "recentCommits": [
+        {
+          "title": "실제 실행 검토로 조사결과 누락과 해결 후 재요청 수정",
+          "date": "2026-09-23T13:46:11.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/b37530a27dc465fb05edccd6e7a7abaf9ef48160"
+        },
         {
           "title": "신고자 중심 답변과 최초 질문 해결 결과 자동 반영",
           "date": "2026-09-23T12:53:56.000+09:00",
@@ -470,34 +475,29 @@
           "title": "관리자 로그인 실패 IP 차단 설정 추가",
           "date": "2026-09-23T12:53:56.000+09:00",
           "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/6879f5dbde5dbd152c4cd6edb6da8ba00aa5d203"
-        },
-        {
-          "title": "fix: 계정 관리 열림 오류와 비밀번호 확인 검증 보완",
-          "date": "2026-09-23T10:50:07.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/6f62a719b5ce2d80517bfe161f14c988e946b015"
         }
       ],
       "recentIssues": []
     },
     {
-      "repo": "dfdfhdfg1/doc_grading",
-      "name": "doc_grading",
-      "team": "낮잠자는호랑나비",
+      "repo": "kdw3479/quiz-lock",
+      "name": "Quiz-lock",
+      "team": "한국인터넷진흥원/AI보안분석팀 김대원",
       "field": "미분류",
       "description": "",
-      "webUrl": "https://gitlab.aigov.go.kr/dfdfhdfg1/doc_grading",
+      "webUrl": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock",
       "reference": false,
       "active": true,
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 1,
+        "commits": 5,
         "weeklyCommits": [
           0,
           0,
           0,
           0,
-          1,
+          5,
           0,
           0,
           0,
@@ -510,14 +510,24 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 0,
-        "lastActivity": "2026-09-23T01:59:24.143Z"
+        "stars": 2,
+        "lastActivity": "2026-09-23T06:38:12.376Z"
       },
       "recentCommits": [
         {
-          "title": "Initial commit",
-          "date": "2026-09-22T04:15:15.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/dfdfhdfg1/doc_grading/-/commit/9cc51b27bec488eb17b8989b390f7789a8d33a50"
+          "title": "퀴즈 원본 HTML 저장소에 포함",
+          "date": "2026-09-23T15:13:52.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/8720d0e21406f89239275dfa485d64e3e2e6385f"
+        },
+        {
+          "title": "퀴즈 HTML 경로를 상대경로로 전환",
+          "date": "2026-09-23T15:10:26.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/1286c9764a535cdb399efb4f9859d273e95cd172"
+        },
+        {
+          "title": "Merge branch 'main' of https://gitlab.aigov.go.kr/kdw3479/quiz-lock",
+          "date": "2026-09-23T15:03:13.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/fd882211932e2e0fa61a07572f21aa23fc64c8c0"
         }
       ],
       "recentIssues": []
@@ -553,7 +563,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 1,
-        "stars": 0,
+        "stars": 1,
         "lastActivity": "2026-09-22T06:45:14.021Z"
       },
       "recentCommits": [
@@ -583,6 +593,8 @@
       ]
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "dfdfhdfg1/doc_grading: 수집 실패 (GitLab 404 Not Found @ https://gitlab.aigov.go.kr/api/v4/projects/dfdfhdfg1%2Fdoc_grading)"
+  ],
   "showcase": []
 }
