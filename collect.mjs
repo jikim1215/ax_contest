@@ -35,7 +35,8 @@ const PROJECT_REPOS = [                      // 예: ["team1/proj", "team2/proj"
   "skynet_b/complaint-radar",
   "j30231/isds_check",
   "jh.noh/privacy",
-  "dfdfhdfg1/doc_grading"
+  "dfdfhdfg1/doc_grading",
+  "kdw3479/quiz-lock"
 ];
 /* 참가 과제가 아닌 참고용 저장소(사무국 예시 등). GROUP_PATH 사용 여부와 무관하게 항상 수집한다.
  * 카드에 '참고' 표시가 붙고 과제 수·커밋·이슈·차트·최근활동 집계에서는 제외된다. */
