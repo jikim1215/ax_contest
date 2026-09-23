@@ -29,7 +29,7 @@ const GROUP_PATH = "";                       // 예: "ax-contest"
 const PROJECT_REPOS = [                      // 예: ["team1/proj", "team2/proj", ...]
   "lmj6706/pr_kisa",
   "118/118ai-agent",
-  "KISA_thkim/kisa_workmate",
+  "morning-coffee/kisa_workmate",
   "adms25/local-handover-ai",
   "sign-kids/kimart",
   "skynet_b/complaint-radar",
