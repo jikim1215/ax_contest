@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T07:08:12.035Z",
+  "generatedAt": "2026-09-23T12:40:59.222Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -61,7 +61,7 @@
     0,
     0,
     24,
-    104,
+    115,
     0,
     0,
     0,
@@ -176,13 +176,13 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 11,
+        "commits": 19,
         "weeklyCommits": [
           0,
           0,
           0,
           4,
-          7,
+          15,
           0,
           0,
           0,
@@ -196,23 +196,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-23T06:06:50.581Z"
+        "lastActivity": "2026-09-23T08:07:23.777Z"
       },
       "recentCommits": [
         {
-          "title": "Add prototype README [skip ci]",
-          "date": "2026-09-23T06:39:07.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/8fbfe7b317ad3f4dc9be68d3e544abc36660359e"
+          "title": "Update project status: PoC 개발 착수",
+          "date": "2026-09-23T17:18:50.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/670371835ddcadcf34a64d2dc4adab1af676bfcb"
         },
         {
-          "title": "Add prototype preview image [skip ci]",
-          "date": "2026-09-23T06:38:08.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/23d863cffdc8ae8236b2b825535e63fa7e9f6c81"
+          "title": "README.md 오탈자 수정",
+          "date": "2026-09-23T08:16:53.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/9708a957f5f139b0ceeb0d075bfc6e1760fc2e28"
         },
         {
-          "title": "Add prototype HTML [skip ci]",
-          "date": "2026-09-23T06:36:48.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/56f11e23c6085b2501cf1f3256c7720a15266d35"
+          "title": "README.md 편집2",
+          "date": "2026-09-23T08:15:52.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/508acda1c2c9fcd16114e9d505bf27f341d3bd86"
         }
       ],
       "recentIssues": []
@@ -438,13 +438,13 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 68,
+        "commits": 71,
         "weeklyCommits": [
           0,
           0,
           0,
           0,
-          68,
+          71,
           0,
           0,
           0,
@@ -458,23 +458,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-23T03:54:08.915Z"
+        "lastActivity": "2026-09-23T07:46:47.834Z"
       },
       "recentCommits": [
         {
-          "title": "실제 실행 검토로 조사결과 누락과 해결 후 재요청 수정",
-          "date": "2026-09-23T13:46:11.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/b37530a27dc465fb05edccd6e7a7abaf9ef48160"
+          "title": "docs: 프로젝트 소개와 README 실행·사용 안내 정리",
+          "date": "2026-09-23T17:14:20.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/1d793e7ccdc9aa429dfe14186cd74d3804400405"
         },
         {
-          "title": "신고자 중심 답변과 최초 질문 해결 결과 자동 반영",
-          "date": "2026-09-23T12:53:56.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/be3d88fe2c62ab99351c1572301f36ba2f8a3da5"
+          "title": "보고서 버전 선택과 기존 문서 기반 부분 수정 지원",
+          "date": "2026-09-23T16:53:16.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/29f1da14d55bbcf906f6e5aedcc2a075f97c5a17"
         },
         {
-          "title": "관리자 로그인 실패 IP 차단 설정 추가",
-          "date": "2026-09-23T12:53:56.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/6879f5dbde5dbd152c4cd6edb6da8ba00aa5d203"
+          "title": "케이스노트 계정 검증과 일반·프로 검색 권한 구분",
+          "date": "2026-09-23T16:46:37.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/97c5e230400df6190b2a61df93f05d15888b6098"
         }
       ],
       "recentIssues": []
