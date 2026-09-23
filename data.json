@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T10:23:31.067Z",
+  "generatedAt": "2026-09-23T03:54:39.100Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -61,7 +61,7 @@
     0,
     0,
     24,
-    64,
+    92,
     0,
     0,
     0,
@@ -325,20 +325,20 @@
       "name": "Complaint Radar",
       "team": "skynet_b",
       "field": "미분류",
-      "description": "기업이 제출한 침해사고 신고 자료(신고 메일 EML·HTML 신고서·증빙파일)를 분석해 정보통신망법상 인지시점 기준 24시간 초과 여부와 과태료 부과 대상 여부를 \"인정/불인정\"으로 분류하는 검증 파이프라인입니다. 정정신청·증빙검토·유선 콜백 질문 초안·과태료 의견제출서 검토까지 같은 구조로 처리하며, LLM은 사실 추출만 하고 최종판정은 코드가 결정론적으로 재계산합니다.",
+      "description": "기업이 제출한 침해사고 신고 자료(신고 메일 EML·HTML 신고서·증빙파일)를 분석해 정보통신망법상 인지시점 기준 24시간 초과 여부와 과태료 부과 대상 여부를 \"인정/불인정\"으로 분류하는 검증 파이프라인입니다.",
       "webUrl": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar",
       "reference": false,
       "active": true,
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 23,
+        "commits": 24,
         "weeklyCommits": [
           0,
           0,
           0,
           4,
-          19,
+          20,
           0,
           0,
           0,
@@ -352,9 +352,14 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 1,
-        "lastActivity": "2026-09-22T09:52:26.874Z"
+        "lastActivity": "2026-09-22T10:59:49.239Z"
       },
       "recentCommits": [
+        {
+          "title": "feat: 담당자 대시보드 브랜딩 통일과 README 일반화 정비",
+          "date": "2026-09-22T19:57:29.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/f0c6872b44204e37baa590772e96ae003fe1106e"
+        },
         {
           "title": "feat: 리포트 페이지 레이아웃 개편과 전역 줄간격 통일",
           "date": "2026-09-22T18:52:04.000+09:00",
@@ -364,11 +369,6 @@
           "title": "feat: 관리자 단건 재실행 + 워크벤치 네비/매칭 정비 + 리포트 디자인 토큰 통일 + 문서 개편",
           "date": "2026-09-22T13:01:03.000+09:00",
           "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/2bca27d82cc9192cbe316b298b725b80bd701dcf"
-        },
-        {
-          "title": "v2: 보고서 3표면 폰트/컬러/간격 디자인 토큰 통일",
-          "date": "2026-09-21T16:29:23.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/abdb82bc2a3e1a71a1e8a4ed467b44754e59974d"
         }
       ],
       "recentIssues": []
@@ -438,13 +438,13 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 41,
+        "commits": 67,
         "weeklyCommits": [
           0,
           0,
           0,
           0,
-          41,
+          67,
           0,
           0,
           0,
@@ -458,23 +458,66 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 1,
-        "lastActivity": "2026-09-22T07:22:11.093Z"
+        "lastActivity": "2026-09-23T03:54:08.915Z"
       },
       "recentCommits": [
         {
-          "title": "fix(chunking): 결정문 첨부 중복 제거, 200자 미만 절 병합, 사례집 분할 개선",
-          "date": "2026-09-22T16:39:56.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/08451ded076a793f861d718fd50dd54626b648f5"
+          "title": "신고자 중심 답변과 최초 질문 해결 결과 자동 반영",
+          "date": "2026-09-23T12:53:56.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/be3d88fe2c62ab99351c1572301f36ba2f8a3da5"
         },
         {
-          "title": "fix(chat): 후속 질문에 직전 답변 인용 근거 승계, 요약 실패 시 원문으로 계속",
-          "date": "2026-09-22T13:46:03.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/805bff6038f05bae022ed252974edb61bac3b90c"
+          "title": "관리자 로그인 실패 IP 차단 설정 추가",
+          "date": "2026-09-23T12:53:56.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/6879f5dbde5dbd152c4cd6edb6da8ba00aa5d203"
         },
         {
-          "title": "feat(chat): 새 사실관계 후속 질문에도 되묻기 허용, 되묻기 질문 원문을 조사 질문에 승계",
-          "date": "2026-09-22T13:45:25.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/1cdb398db452a987de802828972484fc67c6f149"
+          "title": "fix: 계정 관리 열림 오류와 비밀번호 확인 검증 보완",
+          "date": "2026-09-23T10:50:07.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/6f62a719b5ce2d80517bfe161f14c988e946b015"
+        }
+      ],
+      "recentIssues": []
+    },
+    {
+      "repo": "dfdfhdfg1/doc_grading",
+      "name": "doc_grading",
+      "team": "낮잠자는호랑나비",
+      "field": "미분류",
+      "description": "",
+      "webUrl": "https://gitlab.aigov.go.kr/dfdfhdfg1/doc_grading",
+      "reference": false,
+      "active": true,
+      "progress": null,
+      "updates": [],
+      "gitlab": {
+        "commits": 1,
+        "weeklyCommits": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 0,
+        "closedIssues": 0,
+        "stars": 0,
+        "lastActivity": "2026-09-23T01:59:24.143Z"
+      },
+      "recentCommits": [
+        {
+          "title": "Initial commit",
+          "date": "2026-09-22T04:15:15.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/dfdfhdfg1/doc_grading/-/commit/9cc51b27bec488eb17b8989b390f7789a8d33a50"
         }
       ],
       "recentIssues": []
