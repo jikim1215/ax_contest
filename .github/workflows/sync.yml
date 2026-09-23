@@ -1,11 +1,22 @@
 name: sync-data
 
-# 매일 2회(09:00·15:00 KST) gitlab.aigov.go.kr에서 data.json을 수집해 main에 커밋한다.
+# gitlab.aigov.go.kr에서 data.json을 수집해 main에 커밋한다.
 # 커밋되면 GitHub Pages와 Vercel(Git 연동)이 main을 자동 재배포해 라이브에 반영된다.
+#
+# 라이브 화면의 내용은 오직 data.json에서 온다. collect.mjs만 고쳐 push하면
+# 재배포는 되지만 화면은 그대로다(수집이 다시 돌아야 data.json이 바뀐다).
+# 그래서 collect.mjs 변경 push를 수집 트리거로 잡는다 — 저장소 목록을
+# 고치면 몇 분 안에 화면에 반영된다.
 on:
+  push:
+    branches: [main]
+    paths:
+      - collect.mjs
+      - .github/workflows/sync.yml
   schedule:
-    - cron: "0 0 * * *"   # 00:00 UTC = 09:00 KST
-    - cron: "0 6 * * *"   # 06:00 UTC = 15:00 KST
+    # 정시(분 00)는 GitHub 스케줄러 혼잡 구간이라 수 시간씩 밀린다. 분을 흩어 잡는다.
+    - cron: "37 23 * * *"   # 23:37 UTC = 08:37 KST
+    - cron: "37 5 * * *"    # 05:37 UTC = 14:37 KST
   workflow_dispatch: {}    # 수동 실행 버튼
 
 permissions:

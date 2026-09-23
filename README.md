@@ -11,7 +11,7 @@ GitLab을 직접 호출하지 않습니다.
 [과제 저장소]  gitlab.aigov.go.kr
       │  REST API (커밋 · 이슈 · 설명 · Star · 최근활동)
       ▼
-[GitHub Actions  .github/workflows/sync.yml]   매일 09:00 · 15:00 KST
+[GitHub Actions  .github/workflows/sync.yml]   매일 2회 + collect.mjs 변경 시
       │  node collect.mjs → data.json 커밋 (main)
       ▼
 [main 브랜치]  index.html + data.json + guides/
@@ -21,6 +21,13 @@ GitLab을 직접 호출하지 않습니다.
 
 브랜치는 `main` 하나만 운영합니다. 사람이 코드를 고쳐 push하든, 봇이 `data.json`을
 커밋하든 같은 경로로 두 사이트가 자동 재배포됩니다.
+
+> **화면에 보이는 내용은 `data.json`이 전부입니다.** `collect.mjs`는 Actions 안에서만
+> 실행되는 수집 스크립트라, 배포 시에는 아예 돌지 않습니다(Build Command 없음).
+> 그래서 `collect.mjs`의 저장소 목록만 고쳐 push하면 Vercel·Pages는 즉시 재배포되지만
+> `data.json`이 그대로라 **화면은 그대로입니다**. 수집이 다시 돌아야 반영됩니다.
+> 지금은 `collect.mjs`가 바뀜 상태로 push되면 수집 워크플로가 자동으로 돌아
+> 몇 분 안에 라이브에 반영됩니다.
 
 ## 구성 파일
 
@@ -102,8 +109,18 @@ python -m http.server 5173     # http://127.0.0.1:5173
 
 ### 데이터 갱신 — GitHub Actions
 
-`.github/workflows/sync.yml`이 매일 09:00·15:00(KST)에 `collect.mjs`를 실행해 `data.json`을
-`main`에 커밋합니다(Actions 탭에서 `Run workflow`로 즉시 실행도 가능). 시크릿은 필요 없습니다.
+`.github/workflows/sync.yml`이 `collect.mjs`를 실행해 `data.json`을 `main`에 커밋합니다.
+시크릿은 필요 없습니다. 트리거는 세 가지입니다.
+
+| 트리거 | 시점 |
+| --- | --- |
+| `push` | `collect.mjs`(또는 워크플로 자체)가 `main`에 push될 때 — 저장소 목록 수정이 바로 반영됩니다 |
+| `schedule` | 매일 08:37·14:37 KST |
+| `workflow_dispatch` | Actions 탭 › `Run workflow` 버튼(수동 즉시 실행) |
+
+예약 실행 시각을 정시(분 00)가 아닌 `:37`로 둔 이유는, GitHub 공용 스케줄러가 정시에
+몰려 수 시간씩 밀리기 때문입니다(실측값 기준 약 4시간 지연). 예약은 어느 정도 늦어질 수
+있으니, 급하면 `Run workflow`를 누르세요.
 
 봇이 `main`에 커밋하므로 **로컬에서 작업을 시작하기 전에 `git pull --rebase`** 하세요.
 `data.json`이 충돌하면 어느 쪽을 택해도 됩니다 — 다음 수집 때 다시 생성됩니다.
