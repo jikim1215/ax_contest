@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T01:38:03.485Z",
+  "generatedAt": "2026-09-24T10:26:36.050Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -61,7 +61,7 @@
     0,
     0,
     24,
-    119,
+    121,
     0,
     0,
     0,
@@ -229,13 +229,13 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 13,
+        "commits": 15,
         "weeklyCommits": [
           0,
           0,
           0,
           12,
-          1,
+          3,
           0,
           0,
           0,
@@ -249,23 +249,23 @@
         "openIssues": 1,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-23T14:54:53.403Z"
+        "lastActivity": "2026-09-24T05:12:50.761Z"
       },
       "recentCommits": [
+        {
+          "title": "Merge branch 'feature/fts-search-cache' into 'main'",
+          "date": "2026-09-24T05:17:44.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/6ea9c46faca90759f8e2426ab5f0dbdfeb4a8250"
+        },
+        {
+          "title": "feat: FTS5 근거검색과 문서 캐시 적용",
+          "date": "2026-09-24T14:12:26.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/84c815fa08f1a93891985ead7dfb3e5d5c1740e0"
+        },
         {
           "title": "현재 개발버전 백업 2026-09-23",
           "date": "2026-09-23T23:54:07.000+09:00",
           "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/cf21c4986dda564102d711ea7d48de3ffe11e433"
-        },
-        {
-          "title": "Merge branch 'feature/integrated-mvp' into 'main'",
-          "date": "2026-09-20T10:41:05.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/07a9ef1fbf6e7d7718c60a75c77c363036a7dc2a"
-        },
-        {
-          "title": "fix: Ollama 로컬 통신 보안 강화",
-          "date": "2026-09-20T19:38:01.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/aa4e7e30bae1ca92abfd9a5dea5b496b430d001b"
         }
       ],
       "recentIssues": [
