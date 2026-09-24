@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T12:40:59.222Z",
+  "generatedAt": "2026-09-24T01:38:03.485Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -61,7 +61,7 @@
     0,
     0,
     24,
-    115,
+    119,
     0,
     0,
     0,
@@ -229,13 +229,13 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 12,
+        "commits": 13,
         "weeklyCommits": [
           0,
           0,
           0,
           12,
-          0,
+          1,
           0,
           0,
           0,
@@ -249,9 +249,14 @@
         "openIssues": 1,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-20T10:04:29.861Z"
+        "lastActivity": "2026-09-23T14:54:53.403Z"
       },
       "recentCommits": [
+        {
+          "title": "현재 개발버전 백업 2026-09-23",
+          "date": "2026-09-23T23:54:07.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/cf21c4986dda564102d711ea7d48de3ffe11e433"
+        },
         {
           "title": "Merge branch 'feature/integrated-mvp' into 'main'",
           "date": "2026-09-20T10:41:05.000+00:00",
@@ -261,11 +266,6 @@
           "title": "fix: Ollama 로컬 통신 보안 강화",
           "date": "2026-09-20T19:38:01.000+09:00",
           "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/aa4e7e30bae1ca92abfd9a5dea5b496b430d001b"
-        },
-        {
-          "title": "fix: HWPX XML 보안 파서 적용",
-          "date": "2026-09-20T19:30:48.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/441171d33022d8bcf82bc46e5bfdcd8bf79e4bc1"
         }
       ],
       "recentIssues": [
@@ -438,13 +438,13 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 71,
+        "commits": 74,
         "weeklyCommits": [
           0,
           0,
           0,
           0,
-          71,
+          74,
           0,
           0,
           0,
@@ -458,23 +458,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-23T07:46:47.834Z"
+        "lastActivity": "2026-09-23T19:31:52.675Z"
       },
       "recentCommits": [
         {
-          "title": "docs: 프로젝트 소개와 README 실행·사용 안내 정리",
-          "date": "2026-09-23T17:14:20.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/1d793e7ccdc9aa429dfe14186cd74d3804400405"
+          "title": "docs(self-improvement): 테스트 미추적 문제를 이월 항목 T1 로 남긴다",
+          "date": "2026-09-24T04:21:50.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/0f245cfad424bc5d50b11387851bab1cfe814629"
         },
         {
-          "title": "보고서 버전 선택과 기존 문서 기반 부분 수정 지원",
-          "date": "2026-09-23T16:53:16.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/29f1da14d55bbcf906f6e5aedcc2a075f97c5a17"
+          "title": "docs(self-improvement): 이월 항목에 A2·A4 재보류 사유와 S1 부분 강화 범위를 기록한다",
+          "date": "2026-09-24T04:20:15.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/63fc855396b13c39de3648ea570b54fe5282eeac"
         },
         {
-          "title": "케이스노트 계정 검증과 일반·프로 검색 권한 구분",
-          "date": "2026-09-23T16:46:37.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/97c5e230400df6190b2a61df93f05d15888b6098"
+          "title": "fix(self-improvement): request() 입구에서 차단 주소를 거부한다 (S1 부분 강화)",
+          "date": "2026-09-24T04:19:18.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/c7be3278018c5e817bd44efcc107c400f34d26ba"
         }
       ],
       "recentIssues": []
