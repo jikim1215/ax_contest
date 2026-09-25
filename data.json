@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T01:52:26.572Z",
+  "generatedAt": "2026-09-25T10:29:07.603Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -61,7 +61,7 @@
     0,
     0,
     24,
-    125,
+    131,
     0,
     0,
     0,
@@ -438,13 +438,13 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 74,
+        "commits": 80,
         "weeklyCommits": [
           0,
           0,
           0,
           0,
-          74,
+          80,
           0,
           0,
           0,
@@ -458,23 +458,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-23T19:31:52.675Z"
+        "lastActivity": "2026-09-25T07:53:08.605Z"
       },
       "recentCommits": [
         {
-          "title": "docs(self-improvement): 테스트 미추적 문제를 이월 항목 T1 로 남긴다",
-          "date": "2026-09-24T04:21:50.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/0f245cfad424bc5d50b11387851bab1cfe814629"
+          "title": "docs(self-improvement): 해결한 항목을 이월 목록에서 지우고 T1 실패와 새 항목을 기록한다",
+          "date": "2026-09-25T16:52:52.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/f22a4045246a0f9e7ec8dc99dea389368cf798e8"
         },
         {
-          "title": "docs(self-improvement): 이월 항목에 A2·A4 재보류 사유와 S1 부분 강화 범위를 기록한다",
-          "date": "2026-09-24T04:20:15.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/63fc855396b13c39de3648ea570b54fe5282eeac"
+          "title": "perf(self-improvement): 실제 요청 경로에서 쓰이지 않는 abort 타이머를 만들지 않는다",
+          "date": "2026-09-25T16:48:07.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/8ea4b01d1620edca0326c3ae7426943f2d00dcc0"
         },
         {
-          "title": "fix(self-improvement): request() 입구에서 차단 주소를 거부한다 (S1 부분 강화)",
-          "date": "2026-09-24T04:19:18.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/c7be3278018c5e817bd44efcc107c400f34d26ba"
+          "title": "perf(self-improvement): 보충 검색의 검색어 개수를 12개로 묶어 동기 전체 스캔이 쌓이지 않게 한다",
+          "date": "2026-09-25T16:48:07.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/cca7a3e0197988d243f5cb57d07f72e556524999"
         }
       ],
       "recentIssues": []
