@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T10:29:07.603Z",
+  "generatedAt": "2026-09-26T01:56:34.078Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -61,7 +61,7 @@
     0,
     0,
     24,
-    131,
+    134,
     0,
     0,
     0,
@@ -438,13 +438,13 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 80,
+        "commits": 83,
         "weeklyCommits": [
           0,
           0,
           0,
           0,
-          80,
+          83,
           0,
           0,
           0,
@@ -458,23 +458,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-25T07:53:08.605Z"
+        "lastActivity": "2026-09-25T19:40:58.772Z"
       },
       "recentCommits": [
         {
-          "title": "docs(self-improvement): 해결한 항목을 이월 목록에서 지우고 T1 실패와 새 항목을 기록한다",
-          "date": "2026-09-25T16:52:52.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/f22a4045246a0f9e7ec8dc99dea389368cf798e8"
+          "title": "docs(self-improvement): M1·M2 해결을 이월 목록에 반영하고 보류 항목의 착수 조건을 갱신한다",
+          "date": "2026-09-26T04:30:44.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/a7d2a0b5f595a5176df5415ebb72210223d5104e"
         },
         {
-          "title": "perf(self-improvement): 실제 요청 경로에서 쓰이지 않는 abort 타이머를 만들지 않는다",
-          "date": "2026-09-25T16:48:07.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/8ea4b01d1620edca0326c3ae7426943f2d00dcc0"
+          "title": "perf(self-improvement): LIKE 폴백에서 FTS 가 이미 찾은 긴 검색어의 body/summary 검사를 뺀다",
+          "date": "2026-09-26T04:29:31.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e1dea2d59db72f893229688123aa5139f569c1e6"
         },
         {
-          "title": "perf(self-improvement): 보충 검색의 검색어 개수를 12개로 묶어 동기 전체 스캔이 쌓이지 않게 한다",
-          "date": "2026-09-25T16:48:07.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/cca7a3e0197988d243f5cb57d07f72e556524999"
+          "title": "fix(self-improvement): 인용 검증용 조문 인덱스 병합에서 삭제 조문을 OR 로 합쳐 폐지 조문 인용이 통과하지 않게 한다",
+          "date": "2026-09-26T04:26:10.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/86efe2b0780a8edfc2f358b5ed3ba6480054d536"
         }
       ],
       "recentIssues": []
