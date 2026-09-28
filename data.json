@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T01:57:45.431Z",
+  "generatedAt": "2026-09-28T08:25:53.766Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -61,8 +61,8 @@
     0,
     0,
     24,
-    140,
-    3,
+    142,
+    7,
     0,
     0,
     0,
@@ -85,14 +85,14 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 2,
+        "commits": 3,
         "weeklyCommits": [
           0,
           0,
           0,
           2,
           0,
-          0,
+          1,
           0,
           0,
           0,
@@ -105,9 +105,14 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-22T07:32:39.115Z"
+        "lastActivity": "2026-09-28T02:05:29.902Z"
       },
       "recentCommits": [
+        {
+          "title": "test: verify push access",
+          "date": "2026-09-28T11:05:15.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/419f1aff2412cd67d7e6044ca92aab316273c156"
+        },
         {
           "title": "`.gitlab-ci.yml`에 SAST를 구성하고, 아직 존재하지 않는 경우 이 파일을 생성합니다.",
           "date": "2026-09-15T02:19:42.000+00:00",
@@ -133,14 +138,14 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 1,
+        "commits": 2,
         "weeklyCommits": [
           0,
           0,
           0,
           1,
           0,
-          0,
+          1,
           0,
           0,
           0,
@@ -153,9 +158,14 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 1,
-        "lastActivity": "2026-09-16T00:41:12.765Z"
+        "lastActivity": "2026-09-28T04:34:39.184Z"
       },
       "recentCommits": [
+        {
+          "title": "STT PoC 초기 커밋: Android 앱 및 상담 분석/RAG 스크립트",
+          "date": "2026-09-28T13:40:36.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/118/118ai-agent/-/commit/8b2898cfbf07acaf9e04b1ffd8bf8b6bed8c005c"
+        },
         {
           "title": "Initial commit",
           "date": "2026-09-16T00:41:13.000+00:00",
@@ -229,14 +239,14 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 23,
+        "commits": 25,
         "weeklyCommits": [
           0,
           0,
           0,
           12,
           11,
-          0,
+          2,
           0,
           0,
           0,
@@ -249,23 +259,23 @@
         "openIssues": 1,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-27T14:26:35.267Z"
+        "lastActivity": "2026-09-28T07:32:26.244Z"
       },
       "recentCommits": [
         {
           "title": "Merge branch 'feat/handover-ai-update' into 'main'",
-          "date": "2026-09-27T14:26:46.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/d3518d41b85932e8719035264d7d5420007ba73b"
+          "date": "2026-09-28T07:32:37.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/082ae1271c80654f0134a6ff4b04ef49a7a69890"
         },
         {
-          "title": "feat: 업무기억AI 오류 수정",
-          "date": "2026-09-27T23:26:07.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/1081417f0e53c9c9d45c7f24ab1c25096d1bfb69"
+          "title": "feat: 업무기억AI 핸드오프 생성",
+          "date": "2026-09-28T16:32:12.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/62e9e527d9fb5da4d03f24b71ce9555aa1505d4f"
         },
         {
           "title": "Merge branch 'feat/handover-ai-update' into 'main'",
-          "date": "2026-09-27T13:25:42.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/916bdfc20e1c0bd222c38f33a1e38e2ecf734dc7"
+          "date": "2026-09-27T14:26:46.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/d3518d41b85932e8719035264d7d5420007ba73b"
         }
       ],
       "recentIssues": [
@@ -309,7 +319,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 1,
-        "lastActivity": "2026-09-17T08:05:21.015Z"
+        "lastActivity": "2026-09-28T06:01:06.789Z"
       },
       "recentCommits": [
         {
@@ -480,6 +490,54 @@
       "recentIssues": []
     },
     {
+      "repo": "dfdfhdfg1/doc_grading",
+      "name": "doc_grading",
+      "team": "낮잠자는호랑나비",
+      "field": "미분류",
+      "description": "",
+      "webUrl": "https://gitlab.aigov.go.kr/dfdfhdfg1/doc_grading",
+      "reference": false,
+      "active": true,
+      "progress": null,
+      "updates": [],
+      "gitlab": {
+        "commits": 2,
+        "weeklyCommits": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "openIssues": 0,
+        "closedIssues": 0,
+        "stars": 1,
+        "lastActivity": "2026-09-23T04:22:46.297Z"
+      },
+      "recentCommits": [
+        {
+          "title": "새 파일 추가",
+          "date": "2026-09-23T04:22:39.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/dfdfhdfg1/doc_grading/-/commit/f3abad042c73a76b54a67edf6e14c681128d5059"
+        },
+        {
+          "title": "Initial commit",
+          "date": "2026-09-22T04:15:15.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/dfdfhdfg1/doc_grading/-/commit/9cc51b27bec488eb17b8989b390f7789a8d33a50"
+        }
+      ],
+      "recentIssues": []
+    },
+    {
       "repo": "kdw3479/quiz-lock",
       "name": "Quiz-lock",
       "team": "한국인터넷진흥원/AI보안분석팀 김대원",
@@ -593,8 +651,6 @@
       ]
     }
   ],
-  "warnings": [
-    "dfdfhdfg1/doc_grading: 수집 실패 (GitLab 404 Not Found @ https://gitlab.aigov.go.kr/api/v4/projects/dfdfhdfg1%2Fdoc_grading)"
-  ],
+  "warnings": [],
   "showcase": []
 }
