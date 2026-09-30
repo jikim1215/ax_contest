@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T02:21:04.887Z",
+  "generatedAt": "2026-09-30T11:19:33.132Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -62,7 +62,7 @@
     0,
     24,
     142,
-    62,
+    63,
     0,
     0,
     0,
@@ -85,14 +85,14 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 4,
+        "commits": 5,
         "weeklyCommits": [
           0,
           0,
           0,
           2,
           0,
-          2,
+          3,
           0,
           0,
           0,
@@ -109,6 +109,11 @@
       },
       "recentCommits": [
         {
+          "title": "docs: remove team section",
+          "date": "2026-09-30T11:22:24.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/549de5e59ee0149a259654d370f3d7ad808e4099"
+        },
+        {
           "title": "docs: update README",
           "date": "2026-09-30T11:09:49.000+09:00",
           "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/9362ec67cd976dd8ef3ccd139303107ff35d3285"
@@ -117,11 +122,6 @@
           "title": "test: verify push access",
           "date": "2026-09-28T11:05:15.000+09:00",
           "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/419f1aff2412cd67d7e6044ca92aab316273c156"
-        },
-        {
-          "title": "`.gitlab-ci.yml`에 SAST를 구성하고, 아직 존재하지 않는 경우 이 파일을 생성합니다.",
-          "date": "2026-09-15T02:19:42.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/ccbf05d4e274109f704ac59cac7be882ac0fe69e"
         }
       ],
       "recentIssues": []
@@ -316,10 +316,10 @@
           0,
           0
         ],
-        "openIssues": 0,
+        "openIssues": 1,
         "closedIssues": 0,
         "stars": 1,
-        "lastActivity": "2026-09-28T06:01:06.789Z"
+        "lastActivity": "2026-09-30T07:15:14.001Z"
       },
       "recentCommits": [
         {
@@ -328,7 +328,14 @@
           "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/19c6c9c327b63dbb930609803b434f0f7d7707f7"
         }
       ],
-      "recentIssues": []
+      "recentIssues": [
+        {
+          "title": "기능 명세 작성",
+          "date": "2026-09-30T07:02:47.428Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/1"
+        }
+      ]
     },
     {
       "repo": "skynet_b/complaint-radar",
