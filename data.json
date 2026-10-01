@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T11:19:33.132Z",
+  "generatedAt": "2026-10-01T02:22:56.334Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -62,7 +62,7 @@
     0,
     24,
     142,
-    63,
+    65,
     0,
     0,
     0,
@@ -105,7 +105,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-30T02:07:07.916Z"
+        "lastActivity": "2026-10-01T00:03:25.583Z"
       },
       "recentCommits": [
         {
@@ -455,14 +455,14 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 142,
+        "commits": 144,
         "weeklyCommits": [
           0,
           0,
           0,
           0,
           85,
-          57,
+          59,
           0,
           0,
           0,
@@ -475,23 +475,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-30T01:23:48.079Z"
+        "lastActivity": "2026-10-01T00:51:26.512Z"
       },
       "recentCommits": [
+        {
+          "title": "feat: require administrator approval for signup requests",
+          "date": "2026-10-01T09:58:12.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/fbf3c374808ab96877ff9020b298f27e0dba6f6b"
+        },
+        {
+          "title": "docs: 로그인 세션 스키마 오류의 서버 재시작 조치 안내",
+          "date": "2026-10-01T09:51:14.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/f7193d4b528a327ed5ff7bd1f9b373d9f6ef0227"
+        },
         {
           "title": "chore(security): multer 2.4.0으로 올리고 백로그 문서의 테스트 더미 키 문자열을 가린다",
           "date": "2026-09-30T10:23:35.000+09:00",
           "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/d255769116778645bd76e259fd0577c64d975443"
-        },
-        {
-          "title": "docs(loop_en): chat-revise-stop 루프 SUCCESS 기록과 실행 요약을 추가한다",
-          "date": "2026-09-30T10:18:38.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/ec59e3ee4d97bbd26a90b58473db414e76ad1561"
-        },
-        {
-          "title": "fix(jobs): 시작 기록 실패로 큐에 없는 대기 상태 잡은 협조 취소로 처리한다",
-          "date": "2026-09-30T10:12:32.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/5fc1050c89292982085097f174dd9f57c5f72aaa"
         }
       ],
       "recentIssues": []
