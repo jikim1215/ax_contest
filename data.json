@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T02:22:56.334Z",
+  "generatedAt": "2026-10-01T11:47:30.268Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -62,7 +62,7 @@
     0,
     24,
     142,
-    65,
+    66,
     0,
     0,
     0,
@@ -85,14 +85,14 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 5,
+        "commits": 6,
         "weeklyCommits": [
           0,
           0,
           0,
           2,
           0,
-          3,
+          4,
           0,
           0,
           0,
@@ -105,9 +105,14 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-10-01T00:03:25.583Z"
+        "lastActivity": "2026-10-01T04:11:30.496Z"
       },
       "recentCommits": [
+        {
+          "title": "docs: add press release reference materials",
+          "date": "2026-10-01T13:11:12.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/ce35ac5c6d544d089cc5bbf47d50d7b7b096df94"
+        },
         {
           "title": "docs: remove team section",
           "date": "2026-09-30T11:22:24.000+09:00",
@@ -117,11 +122,6 @@
           "title": "docs: update README",
           "date": "2026-09-30T11:09:49.000+09:00",
           "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/9362ec67cd976dd8ef3ccd139303107ff35d3285"
-        },
-        {
-          "title": "test: verify push access",
-          "date": "2026-09-28T11:05:15.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/419f1aff2412cd67d7e6044ca92aab316273c156"
         }
       ],
       "recentIssues": []
