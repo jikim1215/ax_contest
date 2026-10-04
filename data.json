@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T10:33:15.389Z",
+  "generatedAt": "2026-10-04T02:51:03.513Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -62,7 +62,7 @@
     0,
     24,
     142,
-    66,
+    95,
     0,
     0,
     0,
@@ -455,14 +455,14 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 144,
+        "commits": 173,
         "weeklyCommits": [
           0,
           0,
           0,
           0,
           85,
-          59,
+          88,
           0,
           0,
           0,
@@ -475,23 +475,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-10-01T00:51:26.512Z"
+        "lastActivity": "2026-10-04T00:59:50.578Z"
       },
       "recentCommits": [
         {
-          "title": "feat: require administrator approval for signup requests",
-          "date": "2026-10-01T09:58:12.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/fbf3c374808ab96877ff9020b298f27e0dba6f6b"
+          "title": "test(self-improvement): A5-b·U1 검토자 재수정 요청 반영 — 60개 초과 인용 목록·업로드 슬롯 오류 경로 테스트",
+          "date": "2026-10-04T09:45:08.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/8b4e957ad59313d36d1c565640ff57eccd3c0541"
         },
         {
-          "title": "docs: 로그인 세션 스키마 오류의 서버 재시작 조치 안내",
-          "date": "2026-10-01T09:51:14.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/f7193d4b528a327ed5ff7bd1f9b373d9f6ef0227"
+          "title": "docs(self-improvement): 2026-10-04 2차 실행 기록 — T1 완료 이동, PR1·PR2·E2 추가, PR1 원안 기각",
+          "date": "2026-10-04T09:38:24.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/fc380e63e657eb2deff73e5632afc90466529c09"
         },
         {
-          "title": "chore(security): multer 2.4.0으로 올리고 백로그 문서의 테스트 더미 키 문자열을 가린다",
-          "date": "2026-09-30T10:23:35.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/d255769116778645bd76e259fd0577c64d975443"
+          "title": "fix(self-improvement): 파일을 받고 있는 업로드도 작업 상한에 센다 (U1)",
+          "date": "2026-10-04T09:34:21.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e39fa6965fe1f4757553125ec906d61dd60752f9"
         }
       ],
       "recentIssues": []
