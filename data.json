@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T02:21:49.627Z",
+  "generatedAt": "2026-10-05T12:33:55.194Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -63,7 +63,7 @@
     24,
     142,
     95,
-    0,
+    12,
     0,
     0,
     0,
@@ -455,7 +455,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 173,
+        "commits": 185,
         "weeklyCommits": [
           0,
           0,
@@ -463,7 +463,7 @@
           0,
           85,
           88,
-          0,
+          12,
           0,
           0,
           0,
@@ -475,23 +475,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-10-04T00:59:50.578Z"
+        "lastActivity": "2026-10-05T07:36:07.492Z"
       },
       "recentCommits": [
         {
-          "title": "test(self-improvement): A5-b·U1 검토자 재수정 요청 반영 — 60개 초과 인용 목록·업로드 슬롯 오류 경로 테스트",
-          "date": "2026-10-04T09:45:08.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/8b4e957ad59313d36d1c565640ff57eccd3c0541"
+          "title": "feat(report): 보고서 패널에 수정 입력창을 두고 머리글을 정리한다",
+          "date": "2026-10-05T16:35:47.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/5a1c53299d9bd3b7e501df26e054215cb0c7b966"
         },
         {
-          "title": "docs(self-improvement): 2026-10-04 2차 실행 기록 — T1 완료 이동, PR1·PR2·E2 추가, PR1 원안 기각",
-          "date": "2026-10-04T09:38:24.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/fc380e63e657eb2deff73e5632afc90466529c09"
+          "title": "fix(prompt): 검토의견과 답변의 위반 판단을 \"위반\"으로 단정해 쓴다",
+          "date": "2026-10-05T16:35:47.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/1543084cc7db5e2fece9b59575ce66ff6ca9b488"
         },
         {
-          "title": "fix(self-improvement): 파일을 받고 있는 업로드도 작업 상한에 센다 (U1)",
-          "date": "2026-10-04T09:34:21.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e39fa6965fe1f4757553125ec906d61dd60752f9"
+          "title": "Revert \"fix(self-improvement): 답변 근거의 우선 조각 창을 52개에서 120개로 넓힌다 (A6)\"",
+          "date": "2026-10-05T04:53:52.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/c86fff3a0554fc7bd3e3d9f3f59b1cf80a43db1a"
         }
       ],
       "recentIssues": []
