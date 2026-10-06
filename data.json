@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T03:18:43.907Z",
+  "generatedAt": "2026-10-06T12:11:13.359Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -62,8 +62,8 @@
     0,
     24,
     142,
-    95,
-    12,
+    97,
+    30,
     0,
     0,
     0,
@@ -299,15 +299,15 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 1,
+        "commits": 21,
         "weeklyCommits": [
           0,
           0,
           0,
           1,
           0,
-          0,
-          0,
+          2,
+          18,
           0,
           0,
           0,
@@ -319,13 +319,23 @@
         "openIssues": 1,
         "closedIssues": 0,
         "stars": 1,
-        "lastActivity": "2026-10-06T01:12:26.430Z"
+        "lastActivity": "2026-10-06T06:49:54.263Z"
       },
       "recentCommits": [
         {
-          "title": "Initial commit",
-          "date": "2026-09-17T08:05:21.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/19c6c9c327b63dbb930609803b434f0f7d7707f7"
+          "title": "Merge branch 'docs/requirements-and-design' into 'main'",
+          "date": "2026-10-06T07:25:31.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/b151d5f124ce89ae8fdca3e2cb3d5300a5ee0055"
+        },
+        {
+          "title": "Merge remote-tracking branch 'origin/main' into docs/requirements-and-design",
+          "date": "2026-10-06T15:49:22.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/ce0aba8a1fe942d704ad95ab05d3609ae7d7be4e"
+        },
+        {
+          "title": "chore: 공통 에이전트 지침과 Codex Claude 역할 구성",
+          "date": "2026-10-06T15:49:17.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/b71a41b3103c2d1ed10023f622a78f31cb181b21"
         }
       ],
       "recentIssues": [
@@ -345,7 +355,7 @@
       "description": "기업이 제출한 침해사고 신고 자료(신고 메일 EML·HTML 신고서·증빙파일)를 분석해 정보통신망법상 인지시점 기준 24시간 초과 여부와 과태료 부과 대상 여부를 \"인정/불인정\"으로 분류하는 검증 파이프라인입니다.",
       "webUrl": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar",
       "reference": false,
-      "active": true,
+      "active": false,
       "progress": null,
       "updates": [],
       "gitlab": {
@@ -605,7 +615,7 @@
       "description": "정보시스템의 메타정보, 랙실장도, 선반장을 관리하기 위한 시스템입니다. 폐쇄망 환경과 유휴 자산으로도 운영 가능하도록 제작하였습니다.",
       "webUrl": "https://gitlab.aigov.go.kr/jikim/rack",
       "reference": true,
-      "active": true,
+      "active": false,
       "progress": null,
       "updates": [],
       "gitlab": {
