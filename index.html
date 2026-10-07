@@ -240,11 +240,12 @@
   #fieldDonut,#statusDonut{display:flex; align-items:center;}
 
   /* ===== Week chart ===== */
-  .weekchart{display:flex; align-items:flex-end; gap:8px; height:170px; padding-top:8px;}
+  .weekchart{display:flex; align-items:flex-end; gap:8px; height:190px; padding-top:24px;}
   .weekchart .col{flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; gap:7px; min-width:0; height:100%;}
-  .weekchart .bar{width:72%; max-width:36px; background:var(--color-accent-2); border-radius:9px 9px 3px 3px;}
+  .weekchart .track{flex:1; min-height:0; width:100%; display:flex; align-items:flex-end; justify-content:center;}
+  .weekchart .bar{position:relative; width:72%; max-width:36px; background:var(--color-accent-2); border-radius:9px 9px 3px 3px;}
   .weekchart .bar.future{background:var(--color-rule);}
-  .weekchart .cnt{font-family:var(--font-label); font-size:12px; font-weight:500; color:var(--color-accent-2-deep);}
+  .weekchart .cnt{position:absolute; bottom:100%; left:50%; transform:translateX(-50%); margin-bottom:5px; font-family:var(--font-label); font-size:12px; font-weight:500; color:var(--color-accent-2-deep);}
   .weekchart .wk{font-family:var(--font-label); font-size:11px; color:var(--color-muted); white-space:nowrap;}
 
   /* ===== Donut ===== */
@@ -836,9 +837,9 @@ function renderAll(data) {
   const bars = wc.map((c, i) => {
     const h = Math.max(4, Math.round((c / max) * 100));
     const future = i + 1 > weekNow;
-    return '<div class="col">' +
-      (future ? "" : '<span class="cnt">' + c + "</span>") +
-      '<div class="bar' + (future ? " future" : "") + '" style="height:' + (future ? 4 : h) + '%"></div>' +
+    return '<div class="col"><div class="track">' +
+      '<div class="bar' + (future ? " future" : "") + '" style="height:' + (future ? 4 : h) + '%">' +
+      (future ? "" : '<span class="cnt">' + c + "</span>") + "</div></div>" +
       '<span class="wk">' + (i + 1) + "주</span></div>";
   }).join("");
   const wkRows = wc.map((c, i) => (i + 1 <= weekNow)
