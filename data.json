@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T02:40:53.397Z",
+  "generatedAt": "2026-10-07T11:57:22.795Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -63,7 +63,7 @@
     24,
     142,
     97,
-    42,
+    56,
     0,
     0,
     0,
@@ -85,7 +85,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 6,
+        "commits": 8,
         "weeklyCommits": [
           0,
           0,
@@ -93,7 +93,7 @@
           2,
           0,
           4,
-          0,
+          2,
           0,
           0,
           0,
@@ -105,23 +105,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-10-01T04:11:30.496Z"
+        "lastActivity": "2026-10-07T08:02:46.872Z"
       },
       "recentCommits": [
+        {
+          "title": "docs: add research grounding artifacts",
+          "date": "2026-10-07T17:02:30.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/b8aa200c69f3ce6861fec652d423f5c578656875"
+        },
+        {
+          "title": "docs: add press release service planning artifacts",
+          "date": "2026-10-07T15:20:56.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/b76ace6ab1e9b9fae0e7c65679a3303070fc81b1"
+        },
         {
           "title": "docs: add press release reference materials",
           "date": "2026-10-01T13:11:12.000+09:00",
           "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/ce35ac5c6d544d089cc5bbf47d50d7b7b096df94"
-        },
-        {
-          "title": "docs: remove team section",
-          "date": "2026-09-30T11:22:24.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/549de5e59ee0149a259654d370f3d7ad808e4099"
-        },
-        {
-          "title": "docs: update README",
-          "date": "2026-09-30T11:09:49.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/9362ec67cd976dd8ef3ccd139303107ff35d3285"
         }
       ],
       "recentIssues": []
@@ -182,7 +182,7 @@
       "description": "",
       "webUrl": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate",
       "reference": false,
-      "active": true,
+      "active": false,
       "progress": null,
       "updates": [],
       "gitlab": {
@@ -299,7 +299,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 33,
+        "commits": 45,
         "weeklyCommits": [
           0,
           0,
@@ -307,7 +307,7 @@
           1,
           0,
           2,
-          30,
+          42,
           0,
           0,
           0,
@@ -316,58 +316,58 @@
           0,
           0
         ],
-        "openIssues": 4,
-        "closedIssues": 2,
+        "openIssues": 6,
+        "closedIssues": 4,
         "stars": 1,
-        "lastActivity": "2026-10-07T01:51:42.934Z"
+        "lastActivity": "2026-10-07T07:42:53.765Z"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'feat/project-board' into 'develop'",
-          "date": "2026-10-07T02:18:54.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/67fd502f51954fac58c927c0100fb4153608ed29"
+          "title": "Merge branch 'feat/document-drafting' into 'develop'",
+          "date": "2026-10-07T07:52:52.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/57766a1d70ecdca79e15e9d960842d42cb4b4073"
         },
         {
-          "title": "feat: 사업 보드와 목록 시연 화면 구현 (#5)",
-          "date": "2026-10-07T11:15:00.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/17f96643516b2e47901a26e4d7fa9650c044ab9b"
+          "title": "feat: 문서별 직접 작성과 초안 출력·임시 저장 구현",
+          "date": "2026-10-07T16:49:57.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/70e4208c9b8f8e23226acb5a424ee92be4b2f8d8"
         },
         {
-          "title": "Merge branch 'feat/4-frontend-publishing' into 'develop'",
-          "date": "2026-10-07T01:55:01.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/b90f0619c1da9b0f05b8cf4c47c5842dbfb18ecc"
+          "title": "Merge branch 'feat/lifecycle-documents' into 'develop'",
+          "date": "2026-10-07T07:42:47.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/dd7fc3a802d81f655e4858d2326be82332fae3f6"
         }
       ],
       "recentIssues": [
         {
+          "title": "feat: 할 일과 연결 문서의 데이터·작성 흐름 통합",
+          "date": "2026-10-07T08:40:32.120Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/10"
+        },
+        {
+          "title": "feat: 필요 서류의 직접 작성 흐름과 문서별 초안·출력 구현",
+          "date": "2026-10-07T07:53:01.425Z",
+          "state": "closed",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/9"
+        },
+        {
+          "title": "feat: 착수·검수·청구 서류 기준 조회 확장",
+          "date": "2026-10-07T07:42:54.563Z",
+          "state": "closed",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/8"
+        },
+        {
+          "title": "feat: 사업 상세의 단계별 업무와 서류 화면 구현",
+          "date": "2026-10-07T04:50:03.605Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/7"
+        },
+        {
           "title": "feat: 새 사업 입력과 확인 화면 구현",
-          "date": "2026-10-07T02:22:27.934Z",
+          "date": "2026-10-07T04:08:10.737Z",
           "state": "opened",
           "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/6"
-        },
-        {
-          "title": "feat: 사업 보드와 목록 화면 구현",
-          "date": "2026-10-07T02:15:35.325Z",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/5"
-        },
-        {
-          "title": "웹 화면 퍼블리싱",
-          "date": "2026-10-07T00:54:12.738Z",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/4"
-        },
-        {
-          "title": "AI 협업 규칙 세팅",
-          "date": "2026-10-07T00:54:03.700Z",
-          "state": "closed",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/3"
-        },
-        {
-          "title": "기능 명세 작성",
-          "date": "2026-10-07T00:53:14.804Z",
-          "state": "closed",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/1"
         }
       ]
     },
@@ -538,7 +538,7 @@
       "description": "",
       "webUrl": "https://gitlab.aigov.go.kr/dfdfhdfg1/doc_grading",
       "reference": false,
-      "active": true,
+      "active": false,
       "progress": null,
       "updates": [],
       "gitlab": {
