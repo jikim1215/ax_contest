@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T11:57:22.795Z",
+  "generatedAt": "2026-10-08T02:53:18.315Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -63,7 +63,7 @@
     24,
     142,
     97,
-    56,
+    138,
     0,
     0,
     0,
@@ -489,7 +489,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 185,
+        "commits": 267,
         "weeklyCommits": [
           0,
           0,
@@ -497,7 +497,7 @@
           0,
           85,
           88,
-          12,
+          94,
           0,
           0,
           0,
@@ -509,23 +509,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-10-05T07:36:07.492Z"
+        "lastActivity": "2026-10-08T00:32:03.527Z"
       },
       "recentCommits": [
         {
-          "title": "feat(report): 보고서 패널에 수정 입력창을 두고 머리글을 정리한다",
-          "date": "2026-10-05T16:35:47.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/5a1c53299d9bd3b7e501df26e054215cb0c7b966"
+          "title": "fix(ui): 게이지 캐시는 작업이 끝났을 때만 지운다 (자료실을 다녀와도 유지)",
+          "date": "2026-10-08T09:30:41.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/87801e22ea6483bc3beeac7103738f8342e1823e"
         },
         {
-          "title": "fix(prompt): 검토의견과 답변의 위반 판단을 \"위반\"으로 단정해 쓴다",
-          "date": "2026-10-05T16:35:47.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/1543084cc7db5e2fece9b59575ce66ff6ca9b488"
+          "title": "fix(ui): 게이지를 작업별로 보관하고 쟁점 정리 단계를 구분, 오류 안내 문구 정정",
+          "date": "2026-10-08T09:29:36.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/9195c03d84cae13efb381c3bc06ebacd4fba86c4"
         },
         {
-          "title": "Revert \"fix(self-improvement): 답변 근거의 우선 조각 창을 52개에서 120개로 넓힌다 (A6)\"",
-          "date": "2026-10-05T04:53:52.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/c86fff3a0554fc7bd3e3d9f3f59b1cf80a43db1a"
+          "title": "feat(ui): 조사 진행 게이지와 화면 오류 경계",
+          "date": "2026-10-08T09:28:17.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e75ee3104054c51e7412b9be71226be8b4f82685"
         }
       ],
       "recentIssues": []
