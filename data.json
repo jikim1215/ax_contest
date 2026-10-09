@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T12:12:13.233Z",
+  "generatedAt": "2026-10-09T03:03:47.420Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -63,7 +63,7 @@
     24,
     142,
     97,
-    143,
+    147,
     0,
     0,
     0,
@@ -489,7 +489,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 267,
+        "commits": 271,
         "weeklyCommits": [
           0,
           0,
@@ -497,7 +497,7 @@
           0,
           85,
           88,
-          94,
+          98,
           0,
           0,
           0,
@@ -509,23 +509,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-10-08T00:32:03.527Z"
+        "lastActivity": "2026-10-08T14:58:20.109Z"
       },
       "recentCommits": [
         {
-          "title": "fix(ui): 게이지 캐시는 작업이 끝났을 때만 지운다 (자료실을 다녀와도 유지)",
-          "date": "2026-10-08T09:30:41.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/87801e22ea6483bc3beeac7103738f8342e1823e"
+          "title": "docs(readme): 실행 절을 준비물·설치·수집·첫 설정 순서로 정리하고 보고서 양식 비공개 한계 명시",
+          "date": "2026-10-08T23:57:57.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/4fc9fec603256661c8900abd448aa1a751768dff"
         },
         {
-          "title": "fix(ui): 게이지를 작업별로 보관하고 쟁점 정리 단계를 구분, 오류 안내 문구 정정",
-          "date": "2026-10-08T09:29:36.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/9195c03d84cae13efb381c3bc06ebacd4fba86c4"
+          "title": "feat(research): 법령 API 요청 계층 — 동시 상한과 선행 요청",
+          "date": "2026-10-08T23:57:44.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/32dc30ffb0e54126d88c5c85bb562ce2dfee91d4"
         },
         {
-          "title": "feat(ui): 조사 진행 게이지와 화면 오류 경계",
-          "date": "2026-10-08T09:28:17.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e75ee3104054c51e7412b9be71226be8b4f82685"
+          "title": "docs(plan): 조사 병렬화 구현 계획",
+          "date": "2026-10-08T23:54:10.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/c719043bcc7b2b0c3a4e8f89a64bdbd395900104"
         }
       ],
       "recentIssues": []
