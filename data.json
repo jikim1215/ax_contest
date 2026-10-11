@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T11:20:07.559Z",
+  "generatedAt": "2026-10-11T02:09:35.455Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -63,7 +63,7 @@
     24,
     142,
     97,
-    147,
+    207,
     0,
     0,
     0,
@@ -489,7 +489,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 271,
+        "commits": 331,
         "weeklyCommits": [
           0,
           0,
@@ -497,7 +497,7 @@
           0,
           85,
           88,
-          98,
+          158,
           0,
           0,
           0,
@@ -509,23 +509,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-10-08T14:58:20.109Z"
+        "lastActivity": "2026-10-10T19:55:57.092Z"
       },
       "recentCommits": [
         {
-          "title": "docs(readme): 실행 절을 준비물·설치·수집·첫 설정 순서로 정리하고 보고서 양식 비공개 한계 명시",
-          "date": "2026-10-08T23:57:57.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/4fc9fec603256661c8900abd448aa1a751768dff"
+          "title": "docs(self-improvement): 2026-10-11 실행 기록 — C1·C2·C3·C5 해결, C4 보류·R1 신규, 기각 5건 추가",
+          "date": "2026-10-11T04:45:14.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/6d0315d197888c173c2d4a382318841242bc367b"
         },
         {
-          "title": "feat(research): 법령 API 요청 계층 — 동시 상한과 선행 요청",
-          "date": "2026-10-08T23:57:44.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/32dc30ffb0e54126d88c5c85bb562ce2dfee91d4"
+          "title": "test(self-improvement): 출처별 확인 사유 3개 상한을 서로 다른 사유 4개로 검증 (C5 3라운드)",
+          "date": "2026-10-11T04:44:41.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/4f9e51b637283133b5f03b8671aec69a7f562cb5"
         },
         {
-          "title": "docs(plan): 조사 병렬화 구현 계획",
-          "date": "2026-10-08T23:54:10.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/c719043bcc7b2b0c3a4e8f89a64bdbd395900104"
+          "title": "test(self-improvement): 보고서 조문 대조의 재귀속 표시·검토의견 상한 뒤 보존 테스트와 README 설명 (C2 보강)",
+          "date": "2026-10-11T04:41:23.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/7cc185f76e1d4817d0dee0f7ff7977814693d333"
         }
       ],
       "recentIssues": []
