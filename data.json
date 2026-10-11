@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T02:09:35.455Z",
+  "generatedAt": "2026-10-11T11:33:35.660Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -63,7 +63,7 @@
     24,
     142,
     97,
-    207,
+    209,
     0,
     0,
     0,
@@ -104,7 +104,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 2,
+        "stars": 3,
         "lastActivity": "2026-10-07T08:02:46.872Z"
       },
       "recentCommits": [
@@ -157,7 +157,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 1,
+        "stars": 2,
         "lastActivity": "2026-09-28T04:34:39.184Z"
       },
       "recentCommits": [
@@ -205,7 +205,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 2,
+        "stars": 3,
         "lastActivity": "2026-09-23T08:07:23.777Z"
       },
       "recentCommits": [
@@ -239,7 +239,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 25,
+        "commits": 27,
         "weeklyCommits": [
           0,
           0,
@@ -247,7 +247,7 @@
           12,
           11,
           2,
-          0,
+          2,
           0,
           0,
           0,
@@ -258,24 +258,24 @@
         ],
         "openIssues": 1,
         "closedIssues": 0,
-        "stars": 2,
-        "lastActivity": "2026-09-28T07:32:26.244Z"
+        "stars": 3,
+        "lastActivity": "2026-10-11T10:56:07.564Z"
       },
       "recentCommits": [
         {
           "title": "Merge branch 'feat/handover-ai-update' into 'main'",
-          "date": "2026-09-28T07:32:37.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/082ae1271c80654f0134a6ff4b04ef49a7a69890"
+          "date": "2026-10-11T10:56:37.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/e384917e81bc2e1a0a3da0a7f4960aadf9c2fff4"
         },
         {
-          "title": "feat: 업무기억AI 핸드오프 생성",
-          "date": "2026-09-28T16:32:12.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/62e9e527d9fb5da4d03f24b71ce9555aa1505d4f"
+          "title": "feat: 업무기억AI 모델 변경",
+          "date": "2026-10-11T19:55:53.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/c43c64bb434eba774e5bbce7cab1d11eec43f172"
         },
         {
           "title": "Merge branch 'feat/handover-ai-update' into 'main'",
-          "date": "2026-09-27T14:26:46.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/d3518d41b85932e8719035264d7d5420007ba73b"
+          "date": "2026-09-28T07:32:37.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/082ae1271c80654f0134a6ff4b04ef49a7a69890"
         }
       ],
       "recentIssues": [
@@ -318,7 +318,7 @@
         ],
         "openIssues": 6,
         "closedIssues": 5,
-        "stars": 1,
+        "stars": 2,
         "lastActivity": "2026-10-08T08:30:32.820Z"
       },
       "recentCommits": [
@@ -402,7 +402,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 2,
+        "stars": 3,
         "lastActivity": "2026-09-22T10:59:49.239Z"
       },
       "recentCommits": [
@@ -455,7 +455,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 1,
+        "stars": 2,
         "lastActivity": "2026-09-21T00:17:21.273Z"
       },
       "recentCommits": [
@@ -508,7 +508,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 2,
+        "stars": 3,
         "lastActivity": "2026-10-10T19:55:57.092Z"
       },
       "recentCommits": [
@@ -561,7 +561,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 1,
+        "stars": 2,
         "lastActivity": "2026-09-23T04:22:46.297Z"
       },
       "recentCommits": [
@@ -609,7 +609,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 2,
+        "stars": 3,
         "lastActivity": "2026-09-29T06:26:37.435Z"
       },
       "recentCommits": [
@@ -662,7 +662,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 1,
-        "stars": 1,
+        "stars": 2,
         "lastActivity": "2026-09-22T06:45:14.021Z"
       },
       "recentCommits": [
