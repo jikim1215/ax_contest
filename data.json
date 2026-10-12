@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T02:38:04.332Z",
+  "generatedAt": "2026-10-12T13:26:59.627Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -63,8 +63,8 @@
     24,
     142,
     97,
-    211,
-    1,
+    212,
+    15,
     0,
     0,
     0,
@@ -134,7 +134,7 @@
       "description": "",
       "webUrl": "https://gitlab.aigov.go.kr/118/118ai-agent",
       "reference": false,
-      "active": true,
+      "active": false,
       "progress": null,
       "updates": [],
       "gitlab": {
@@ -316,10 +316,10 @@
           0,
           0
         ],
-        "openIssues": 7,
+        "openIssues": 11,
         "closedIssues": 6,
         "stars": 2,
-        "lastActivity": "2026-10-12T01:56:38.682Z"
+        "lastActivity": "2026-10-12T06:39:04.314Z"
       },
       "recentCommits": [
         {
@@ -340,34 +340,34 @@
       ],
       "recentIssues": [
         {
-          "title": "feat: 문서 작성 결과 미리 보기와 DOCX·PDF 출력",
-          "date": "2026-10-12T02:35:27.174Z",
+          "title": "feat: 저장 문서 검토와 변경 후 재확인",
+          "date": "2026-10-12T06:55:19.923Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/17"
+        },
+        {
+          "title": "feat: 사업 정보 수정과 할 일 관리",
+          "date": "2026-10-12T05:31:48.069Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/16"
+        },
+        {
+          "title": "feat: 미저장 초안의 임시 보관과 복구",
+          "date": "2026-10-12T05:14:03.619Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/15"
+        },
+        {
+          "title": "feat: 사업 문서의 단계 간 공유와 작성 UX 개선",
+          "date": "2026-10-12T04:58:31.757Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/14"
+        },
+        {
+          "title": "feat: 내부 보고서 작성과 버전별 양식 출력",
+          "date": "2026-10-12T04:29:42.746Z",
           "state": "opened",
           "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/13"
-        },
-        {
-          "title": "feat: 단계별 서류 작성 공간과 초안 버전 조회",
-          "date": "2026-10-12T01:45:20.078Z",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/12"
-        },
-        {
-          "title": "feat: 사업·할 일·문서 초안 서버 저장",
-          "date": "2026-10-12T01:14:47.264Z",
-          "state": "closed",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/11"
-        },
-        {
-          "title": "feat: 할 일과 연결 문서의 데이터·작성 흐름 통합",
-          "date": "2026-10-08T06:52:09.602Z",
-          "state": "closed",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/10"
-        },
-        {
-          "title": "feat: 필요 서류의 직접 작성 흐름과 문서별 초안·출력 구현",
-          "date": "2026-10-07T07:53:01.425Z",
-          "state": "closed",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/9"
         }
       ]
     },
@@ -590,7 +590,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 5,
+        "commits": 20,
         "weeklyCommits": [
           0,
           0,
@@ -598,8 +598,8 @@
           0,
           5,
           0,
-          0,
-          0,
+          1,
+          14,
           0,
           0,
           0,
@@ -610,23 +610,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-11T15:58:14.576Z"
+        "lastActivity": "2026-10-12T11:49:39.588Z"
       },
       "recentCommits": [
         {
-          "title": "퀴즈 원본 HTML 저장소에 포함",
-          "date": "2026-09-23T15:13:52.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/8720d0e21406f89239275dfa485d64e3e2e6385f"
+          "title": "Merge branch 'feature/lock-comfort' into 'main'",
+          "date": "2026-10-12T12:45:00.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/a1729b12f603e165f3bf0efae673febc536a7344"
         },
         {
-          "title": "퀴즈 HTML 경로를 상대경로로 전환",
-          "date": "2026-09-23T15:10:26.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/1286c9764a535cdb399efb4f9859d273e95cd172"
+          "title": "feat: 시험공부 잠금 조절 — 미루기·자동/수동 보류·창 모드",
+          "date": "2026-10-12T21:41:44.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/2b85aa092228ee6790c1edd1750c170cbeac6907"
         },
         {
-          "title": "Merge branch 'main' of https://gitlab.aigov.go.kr/kdw3479/quiz-lock",
-          "date": "2026-09-23T15:03:13.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/fd882211932e2e0fa61a07572f21aa23fc64c8c0"
+          "title": "Merge branch 'chore/cleanup-legacy' into 'main'",
+          "date": "2026-10-12T12:23:28.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/30e0fb515d240854b26c84a5d3c7ef4a5d32c4a0"
         }
       ],
       "recentIssues": []
