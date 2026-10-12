@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T11:33:35.660Z",
+  "generatedAt": "2026-10-12T02:38:04.332Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -63,8 +63,8 @@
     24,
     142,
     97,
-    209,
-    0,
+    211,
+    1,
     0,
     0,
     0,
@@ -299,7 +299,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 50,
+        "commits": 53,
         "weeklyCommits": [
           0,
           0,
@@ -307,8 +307,8 @@
           1,
           0,
           2,
-          47,
-          0,
+          49,
+          1,
           0,
           0,
           0,
@@ -316,33 +316,45 @@
           0,
           0
         ],
-        "openIssues": 6,
-        "closedIssues": 5,
+        "openIssues": 7,
+        "closedIssues": 6,
         "stars": 2,
-        "lastActivity": "2026-10-08T08:30:32.820Z"
+        "lastActivity": "2026-10-12T01:56:38.682Z"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'feat/task-document-flow' into 'develop'",
-          "date": "2026-10-08T06:52:02.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/4493ae858893013fc2e9e2e4576d588f6e60e921"
+          "title": "Merge branch 'feat/server-project-storage' into 'develop'",
+          "date": "2026-10-12T01:14:40.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/8be5dbae09e630ea125667fd3b8c207c5314b0e4"
         },
         {
-          "title": "fix: 사업부서 작성과 업체 제출자료 등록 구분",
-          "date": "2026-10-07T17:40:15.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/aa8863612593e34f9e68ea87625f83a221e447d1"
+          "title": "feat: 할 일의 서류 안에서 초안 작성과 확인 연결",
+          "date": "2026-10-08T17:46:23.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/9c1946b6bca2597b15723dfa96f5908af45d0af6"
         },
         {
-          "title": "feat: 고정 사업 조건과 할 일 중심 서류 흐름 적용",
-          "date": "2026-10-07T17:30:45.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/349bdbc772854db84c56cbe37e2b36fac6a504e4"
+          "title": "feat: PostgreSQL 사업·업무·문서 초안 저장 구현",
+          "date": "2026-10-08T17:30:21.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/63ea777737fb88f5d299516176257a823fc8f783"
         }
       ],
       "recentIssues": [
         {
-          "title": "feat: 사업·할 일·문서 초안 서버 저장",
-          "date": "2026-10-08T07:57:29.644Z",
+          "title": "feat: 문서 작성 결과 미리 보기와 DOCX·PDF 출력",
+          "date": "2026-10-12T02:35:27.174Z",
           "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/13"
+        },
+        {
+          "title": "feat: 단계별 서류 작성 공간과 초안 버전 조회",
+          "date": "2026-10-12T01:45:20.078Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/12"
+        },
+        {
+          "title": "feat: 사업·할 일·문서 초안 서버 저장",
+          "date": "2026-10-12T01:14:47.264Z",
+          "state": "closed",
           "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/11"
         },
         {
@@ -356,18 +368,6 @@
           "date": "2026-10-07T07:53:01.425Z",
           "state": "closed",
           "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/9"
-        },
-        {
-          "title": "feat: 착수·검수·청구 서류 기준 조회 확장",
-          "date": "2026-10-07T07:42:54.563Z",
-          "state": "closed",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/8"
-        },
-        {
-          "title": "feat: 사업 상세의 단계별 업무와 서류 화면 구현",
-          "date": "2026-10-07T04:50:03.605Z",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/7"
         }
       ]
     },
@@ -610,7 +610,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-09-29T06:26:37.435Z"
+        "lastActivity": "2026-10-11T15:58:14.576Z"
       },
       "recentCommits": [
         {
