@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T13:26:59.627Z",
+  "generatedAt": "2026-10-13T03:50:00.439Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -64,7 +64,7 @@
     142,
     97,
     212,
-    15,
+    43,
     0,
     0,
     0,
@@ -489,7 +489,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 331,
+        "commits": 356,
         "weeklyCommits": [
           0,
           0,
@@ -498,7 +498,7 @@
           85,
           88,
           158,
-          0,
+          25,
           0,
           0,
           0,
@@ -509,23 +509,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-10T19:55:57.092Z"
+        "lastActivity": "2026-10-13T03:03:04.791Z"
       },
       "recentCommits": [
         {
-          "title": "docs(self-improvement): 2026-10-11 실행 기록 — C1·C2·C3·C5 해결, C4 보류·R1 신규, 기각 5건 추가",
-          "date": "2026-10-11T04:45:14.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/6d0315d197888c173c2d4a382318841242bc367b"
+          "title": "docs(loop_en): watson-rename 실행 기록 — GitLab 이름 변경만 사용자 조치 대기(BLOCKED)",
+          "date": "2026-10-13T12:03:14.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e280dfd279049292f0cf51ba1f420d65696cc123"
         },
         {
-          "title": "test(self-improvement): 출처별 확인 사유 3개 상한을 서로 다른 사유 4개로 검증 (C5 3라운드)",
-          "date": "2026-10-11T04:44:41.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/4f9e51b637283133b5f03b8671aec69a7f562cb5"
+          "title": "test(engine-chain): 더미 키를 gitleaks 오탐 없는 값으로 바꾼다",
+          "date": "2026-10-13T12:02:42.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/212498764feeab2b9167fdcbfc0069b4f1c137f3"
         },
         {
-          "title": "test(self-improvement): 보고서 조문 대조의 재귀속 표시·검토의견 상한 뒤 보존 테스트와 README 설명 (C2 보강)",
-          "date": "2026-10-11T04:41:23.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/7cc185f76e1d4817d0dee0f7ff7977814693d333"
+          "title": "feat(brand): 시스템 이름을 Watson 으로 확정하고 사용설명 스크린샷을 최신 화면으로 재촬영",
+          "date": "2026-10-13T11:54:17.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/ae958caff8512e67ae6547ce4538922af791d78d"
         }
       ],
       "recentIssues": []
@@ -590,7 +590,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 20,
+        "commits": 23,
         "weeklyCommits": [
           0,
           0,
@@ -599,7 +599,7 @@
           5,
           0,
           1,
-          14,
+          17,
           0,
           0,
           0,
@@ -607,29 +607,60 @@
           0,
           0
         ],
-        "openIssues": 0,
+        "openIssues": 13,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-12T11:49:39.588Z"
+        "lastActivity": "2026-10-13T00:40:07.603Z"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'feature/lock-comfort' into 'main'",
-          "date": "2026-10-12T12:45:00.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/a1729b12f603e165f3bf0efae673febc536a7344"
+          "title": "Merge branch 'feature/demo-env' into 'main'",
+          "date": "2026-10-12T13:58:57.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/cef9439dbca56ab24d791eeda04e63fe2b4e2408"
         },
         {
-          "title": "feat: 시험공부 잠금 조절 — 미루기·자동/수동 보류·창 모드",
-          "date": "2026-10-12T21:41:44.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/2b85aa092228ee6790c1edd1750c170cbeac6907"
+          "title": "fix: 트레이 메뉴가 5초마다 파괴되어 열린 메뉴에서 오류 나던 문제",
+          "date": "2026-10-12T22:50:39.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/03db5d1a597094ad0c2393592af758b528683f42"
         },
         {
-          "title": "Merge branch 'chore/cleanup-legacy' into 'main'",
-          "date": "2026-10-12T12:23:28.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/30e0fb515d240854b26c84a5d3c7ef4a5d32c4a0"
+          "title": "feat: 가상 데이터 시연 환경 생성 도구 (tools/make_demo.py)",
+          "date": "2026-10-12T22:00:57.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/94f9a21094ab6d015bd1d47c5967e61200741057"
         }
       ],
-      "recentIssues": []
+      "recentIssues": [
+        {
+          "title": "(UI) 리더보드 개선(이수현황, 순위게시 등)",
+          "date": "2026-10-13T01:05:32.922Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/9"
+        },
+        {
+          "title": "(UI) 풀기 전에 리더보드 표출 하기 (현재 같은 문제 푸는 사람들 현황 순위)",
+          "date": "2026-10-13T01:03:09.759Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/13"
+        },
+        {
+          "title": "(개선) 문제풀이 규칙 개선",
+          "date": "2026-10-13T00:48:34.305Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/12"
+        },
+        {
+          "title": "(고도화) 기록 내보내기&가져오기(PC를 옮겼을때)",
+          "date": "2026-10-13T00:43:45.173Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/11"
+        },
+        {
+          "title": "(UI) 문제풀이 후 결과 표출 화면 개선",
+          "date": "2026-10-13T00:42:37.071Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/10"
+        }
+      ]
     },
     {
       "repo": "jikim/rack",
