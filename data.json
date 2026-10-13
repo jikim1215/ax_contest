@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T03:50:00.439Z",
+  "generatedAt": "2026-10-13T12:54:27.334Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -64,7 +64,7 @@
     142,
     97,
     212,
-    43,
+    54,
     0,
     0,
     0,
@@ -85,7 +85,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 8,
+        "commits": 10,
         "weeklyCommits": [
           0,
           0,
@@ -94,7 +94,7 @@
           0,
           4,
           2,
-          0,
+          2,
           0,
           0,
           0,
@@ -105,23 +105,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-07T08:02:46.872Z"
+        "lastActivity": "2026-10-13T08:33:47.859Z"
       },
       "recentCommits": [
+        {
+          "title": "docs: add Korean language law and official orthographic standards",
+          "date": "2026-10-13T16:27:55.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/e3b07f95d8aaf475df5f09b0dfa6440a225919fd"
+        },
+        {
+          "title": "docs: add KRDS UI/UX design reference",
+          "date": "2026-10-13T16:05:42.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/56773aed013d0f31fa1d0ef7dcfe742d3100f12c"
+        },
         {
           "title": "docs: add research grounding artifacts",
           "date": "2026-10-07T17:02:30.000+09:00",
           "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/b8aa200c69f3ce6861fec652d423f5c578656875"
-        },
-        {
-          "title": "docs: add press release service planning artifacts",
-          "date": "2026-10-07T15:20:56.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/b76ace6ab1e9b9fae0e7c65679a3303070fc81b1"
-        },
-        {
-          "title": "docs: add press release reference materials",
-          "date": "2026-10-01T13:11:12.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/ce35ac5c6d544d089cc5bbf47d50d7b7b096df94"
         }
       ],
       "recentIssues": []
@@ -590,7 +590,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 23,
+        "commits": 32,
         "weeklyCommits": [
           0,
           0,
@@ -599,7 +599,7 @@
           5,
           0,
           1,
-          17,
+          26,
           0,
           0,
           0,
@@ -607,33 +607,39 @@
           0,
           0
         ],
-        "openIssues": 13,
-        "closedIssues": 0,
+        "openIssues": 11,
+        "closedIssues": 2,
         "stars": 3,
-        "lastActivity": "2026-10-13T00:40:07.603Z"
+        "lastActivity": "2026-10-13T07:44:09.066Z"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'feature/demo-env' into 'main'",
-          "date": "2026-10-12T13:58:57.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/cef9439dbca56ab24d791eeda04e63fe2b4e2408"
+          "title": "Merge branch 'feature/lock-buttons-theme' into main",
+          "date": "2026-10-13T17:06:31.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/c60584bd99174db8825649e8603dc14a0d02c524"
         },
         {
-          "title": "fix: 트레이 메뉴가 5초마다 파괴되어 열린 메뉴에서 오류 나던 문제",
-          "date": "2026-10-12T22:50:39.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/03db5d1a597094ad0c2393592af758b528683f42"
+          "title": "style: 잠금 화면 하단 버튼·기록조회 창을 게임 테마로 통일",
+          "date": "2026-10-13T17:06:31.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/8c66e14453e4ec0935418d3019ff1f6611e9e481"
         },
         {
-          "title": "feat: 가상 데이터 시연 환경 생성 도구 (tools/make_demo.py)",
-          "date": "2026-10-12T22:00:57.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/94f9a21094ab6d015bd1d47c5967e61200741057"
+          "title": "Merge branch 'feature/game-ui' into 'main'",
+          "date": "2026-10-13T07:59:01.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/ba7264fb7a758d91129957f55d5b89563a2ba783"
         }
       ],
       "recentIssues": [
         {
+          "title": "진단의날 만점 빵빠레, 아차상 등 애니메이션 표현",
+          "date": "2026-10-13T08:01:01.060Z",
+          "state": "closed",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/2"
+        },
+        {
           "title": "(UI) 리더보드 개선(이수현황, 순위게시 등)",
-          "date": "2026-10-13T01:05:32.922Z",
-          "state": "opened",
+          "date": "2026-10-13T08:00:19.665Z",
+          "state": "closed",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/9"
         },
         {
@@ -653,12 +659,6 @@
           "date": "2026-10-13T00:43:45.173Z",
           "state": "opened",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/11"
-        },
-        {
-          "title": "(UI) 문제풀이 후 결과 표출 화면 개선",
-          "date": "2026-10-13T00:42:37.071Z",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/10"
         }
       ]
     },
@@ -667,23 +667,23 @@
       "name": "rack",
       "team": "한국인터넷진흥원 김주일",
       "field": "공공행정",
-      "description": "정보시스템의 메타정보, 랙실장도, 선반장을 관리하기 위한 시스템입니다. 폐쇄망 환경과 유휴 자산으로도 운영 가능하도록 제작하였습니다.",
+      "description": "정보시스템의 IP, 랙실장도, 선반장 등을 관리하기 위한 시스템입니다. 폐쇄망 내 유휴 자산으로도 운영 가능하도록 제작하였습니다.",
       "webUrl": "https://gitlab.aigov.go.kr/jikim/rack",
       "reference": true,
-      "active": false,
+      "active": true,
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 7,
+        "commits": 26,
         "weeklyCommits": [
           1,
           0,
           5,
           1,
           0,
-          0,
-          0,
-          0,
+          12,
+          1,
+          6,
           0,
           0,
           0,
@@ -694,23 +694,23 @@
         "openIssues": 0,
         "closedIssues": 1,
         "stars": 2,
-        "lastActivity": "2026-09-22T06:45:14.021Z"
+        "lastActivity": "2026-10-13T07:41:22.457Z"
       },
       "recentCommits": [
         {
-          "title": "배포 절차 결함 수정 및 문서 현행화",
-          "date": "2026-09-14T09:55:18.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/4e569b29e67905deabb8c63c0ee715d73eeecbcf"
+          "title": "refactor(deps): xlsx(SheetJS) → exceljs 교체 — CVE-2023-30533·CVE-2024-22363 제거 (v1.2.3)",
+          "date": "2026-10-13T15:28:24.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/09928c7bb4aeea736695b80839a98f951e7a6158"
         },
         {
-          "title": "운영 결함 수정 및 현행화 기능 추가",
-          "date": "2026-09-13T23:48:48.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/b75287f2869d933a8477d85c0a8a8cb5b9e2dcd8"
+          "title": "fix(deps): source-map-js 1.2.2 업그레이드·xlsx OSV suppress 추가 (v1.2.3)",
+          "date": "2026-10-13T15:11:19.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/644cba90b34fcbf87566338862cc892e26eec854"
         },
         {
-          "title": "2단계 인증 QR 등록",
-          "date": "2026-09-11T21:47:32.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/21e5d2f62f83b1869dedc1688a9dc59fd6256c65"
+          "title": "ci(release): 반입 안내 자산을 ASCII 이름(deploy-guide.txt)으로 올림",
+          "date": "2026-10-12T23:38:55.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jikim/rack/-/commit/01e4b8cf127d167ce25bef769766663eedf8c6cf"
         }
       ],
       "recentIssues": [
