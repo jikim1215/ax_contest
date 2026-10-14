@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T02:08:29.324Z",
+  "generatedAt": "2026-10-14T10:31:15.367Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -64,7 +64,7 @@
     142,
     97,
     212,
-    61,
+    83,
     0,
     0,
     0,
@@ -105,7 +105,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-14T02:06:01.488Z"
+        "lastActivity": "2026-10-14T07:54:21.617Z"
       },
       "recentCommits": [
         {
@@ -299,7 +299,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 53,
+        "commits": 69,
         "weeklyCommits": [
           0,
           0,
@@ -308,7 +308,7 @@
           0,
           2,
           49,
-          1,
+          17,
           0,
           0,
           0,
@@ -316,58 +316,58 @@
           0,
           0
         ],
-        "openIssues": 11,
-        "closedIssues": 6,
+        "openIssues": 7,
+        "closedIssues": 10,
         "stars": 2,
-        "lastActivity": "2026-10-12T06:39:04.314Z"
+        "lastActivity": "2026-10-14T06:57:01.304Z"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'feat/server-project-storage' into 'develop'",
-          "date": "2026-10-12T01:14:40.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/8be5dbae09e630ea125667fd3b8c207c5314b0e4"
+          "title": "Merge branch 'feat/mobbin-design' into 'develop'",
+          "date": "2026-10-14T04:47:55.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/51ab32110326f6e93f2d13ca76612c49ba20e6d6"
         },
         {
-          "title": "feat: 할 일의 서류 안에서 초안 작성과 확인 연결",
-          "date": "2026-10-08T17:46:23.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/9c1946b6bca2597b15723dfa96f5908af45d0af6"
+          "title": "Merge branch 'feat/construction-workflow' into 'feat/mobbin-design'",
+          "date": "2026-10-14T04:45:15.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/6cdae294e6040384bffd2510480c23170e305349"
         },
         {
-          "title": "feat: PostgreSQL 사업·업무·문서 초안 저장 구현",
-          "date": "2026-10-08T17:30:21.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/63ea777737fb88f5d299516176257a823fc8f783"
+          "title": "Merge branch 'feat/document-review' into 'develop'",
+          "date": "2026-10-14T04:43:37.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/2e24951fc9629a01562f07f1aa93fd5de7833c1f"
         }
       ],
       "recentIssues": [
+        {
+          "title": "feat: 새 사업 입력과 확인 화면 구현",
+          "date": "2026-10-14T06:57:03.411Z",
+          "state": "closed",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/6"
+        },
+        {
+          "title": "feat: 사업 보드와 목록 화면 구현",
+          "date": "2026-10-14T06:57:02.755Z",
+          "state": "closed",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/5"
+        },
+        {
+          "title": "개발환경 세팅(Next.js)",
+          "date": "2026-10-14T06:57:02.186Z",
+          "state": "closed",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/2"
+        },
+        {
+          "title": "웹 화면 퍼블리싱",
+          "date": "2026-10-14T06:57:01.391Z",
+          "state": "closed",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/4"
+        },
         {
           "title": "feat: 저장 문서 검토와 변경 후 재확인",
           "date": "2026-10-12T06:55:19.923Z",
           "state": "opened",
           "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/17"
-        },
-        {
-          "title": "feat: 사업 정보 수정과 할 일 관리",
-          "date": "2026-10-12T05:31:48.069Z",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/16"
-        },
-        {
-          "title": "feat: 미저장 초안의 임시 보관과 복구",
-          "date": "2026-10-12T05:14:03.619Z",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/15"
-        },
-        {
-          "title": "feat: 사업 문서의 단계 간 공유와 작성 UX 개선",
-          "date": "2026-10-12T04:58:31.757Z",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/14"
-        },
-        {
-          "title": "feat: 내부 보고서 작성과 버전별 양식 출력",
-          "date": "2026-10-12T04:29:42.746Z",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/13"
         }
       ]
     },
@@ -489,7 +489,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 362,
+        "commits": 368,
         "weeklyCommits": [
           0,
           0,
@@ -498,7 +498,7 @@
           85,
           88,
           158,
-          31,
+          37,
           0,
           0,
           0,
@@ -508,24 +508,24 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 3,
-        "lastActivity": "2026-10-13T20:01:47.659Z"
+        "stars": 4,
+        "lastActivity": "2026-10-14T09:02:37.718Z"
       },
       "recentCommits": [
         {
-          "title": "docs(self-improvement): 백로그 2026-10-14 실행 기록 — R2·A11·C2·S1 완료, 미착수 11건 조건 그대로 보류",
-          "date": "2026-10-14T04:47:55.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/d1c07e2394f676eeec0b1a880da698691e65b0db"
+          "title": "Merge branch 'style/answer-table-readability' into 'main'",
+          "date": "2026-10-14T06:57:31.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/068f5c1902527228f9e4620186a9616f0e42eeaa"
         },
         {
-          "title": "fix(self-improvement): 항·호 꼬리 추출이 \"2항목\"·\"2호실\" 같은 합성어 앞부분을 항·호로 삼키지 않는다",
-          "date": "2026-10-14T04:47:03.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/8e74225b88d08a343267ff148d282c2431e79a03"
+          "title": "style(chat): 답변 표를 키우고 가운데 대화 영역을 넓힌다",
+          "date": "2026-10-14T15:55:55.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/6f7db10e8a013e99c49a112ef38cb92b7304328f"
         },
         {
-          "title": "perf(self-improvement): 근거 동결 때 같은 문서의 스냅샷 조회를 문서당 한 번으로 줄인다",
-          "date": "2026-10-14T04:38:31.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/79477287dce32190d81ab978e8664dca4745e0f1"
+          "title": "Merge branch 'fix/question-unknown-hint' into 'main'",
+          "date": "2026-10-14T06:29:53.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/3fddda8d2caf65a02f8fba421d7e93c9753e0d8e"
         }
       ],
       "recentIssues": []
