@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T12:54:27.334Z",
+  "generatedAt": "2026-10-14T02:08:29.324Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -64,7 +64,7 @@
     142,
     97,
     212,
-    54,
+    61,
     0,
     0,
     0,
@@ -105,7 +105,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-13T08:33:47.859Z"
+        "lastActivity": "2026-10-14T02:06:01.488Z"
       },
       "recentCommits": [
         {
@@ -489,7 +489,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 356,
+        "commits": 362,
         "weeklyCommits": [
           0,
           0,
@@ -498,7 +498,7 @@
           85,
           88,
           158,
-          25,
+          31,
           0,
           0,
           0,
@@ -509,23 +509,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-13T03:03:04.791Z"
+        "lastActivity": "2026-10-13T20:01:47.659Z"
       },
       "recentCommits": [
         {
-          "title": "docs(loop_en): watson-rename 실행 기록 — GitLab 이름 변경만 사용자 조치 대기(BLOCKED)",
-          "date": "2026-10-13T12:03:14.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e280dfd279049292f0cf51ba1f420d65696cc123"
+          "title": "docs(self-improvement): 백로그 2026-10-14 실행 기록 — R2·A11·C2·S1 완료, 미착수 11건 조건 그대로 보류",
+          "date": "2026-10-14T04:47:55.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/d1c07e2394f676eeec0b1a880da698691e65b0db"
         },
         {
-          "title": "test(engine-chain): 더미 키를 gitleaks 오탐 없는 값으로 바꾼다",
-          "date": "2026-10-13T12:02:42.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/212498764feeab2b9167fdcbfc0069b4f1c137f3"
+          "title": "fix(self-improvement): 항·호 꼬리 추출이 \"2항목\"·\"2호실\" 같은 합성어 앞부분을 항·호로 삼키지 않는다",
+          "date": "2026-10-14T04:47:03.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/8e74225b88d08a343267ff148d282c2431e79a03"
         },
         {
-          "title": "feat(brand): 시스템 이름을 Watson 으로 확정하고 사용설명 스크린샷을 최신 화면으로 재촬영",
-          "date": "2026-10-13T11:54:17.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/ae958caff8512e67ae6547ce4538922af791d78d"
+          "title": "perf(self-improvement): 근거 동결 때 같은 문서의 스냅샷 조회를 문서당 한 번으로 줄인다",
+          "date": "2026-10-14T04:38:31.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/79477287dce32190d81ab978e8664dca4745e0f1"
         }
       ],
       "recentIssues": []
@@ -538,11 +538,11 @@
       "description": "",
       "webUrl": "https://gitlab.aigov.go.kr/dfdfhdfg1/doc_grading",
       "reference": false,
-      "active": false,
+      "active": true,
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 2,
+        "commits": 3,
         "weeklyCommits": [
           0,
           0,
@@ -551,7 +551,7 @@
           2,
           0,
           0,
-          0,
+          1,
           0,
           0,
           0,
@@ -562,9 +562,14 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-23T04:22:46.297Z"
+        "lastActivity": "2026-10-13T14:50:13.489Z"
       },
       "recentCommits": [
+        {
+          "title": "feat: 문서 등급판정 프로토타입 및 CI 구성",
+          "date": "2026-10-14T00:06:02.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/dfdfhdfg1/doc_grading/-/commit/1b9f2d5e2af6aa348317fbbfd02e3ac5ae8575c4"
+        },
         {
           "title": "새 파일 추가",
           "date": "2026-09-23T04:22:39.000+00:00",
@@ -607,10 +612,10 @@
           0,
           0
         ],
-        "openIssues": 11,
+        "openIssues": 12,
         "closedIssues": 2,
         "stars": 3,
-        "lastActivity": "2026-10-13T07:44:09.066Z"
+        "lastActivity": "2026-10-14T02:05:24.325Z"
       },
       "recentCommits": [
         {
@@ -630,6 +635,12 @@
         }
       ],
       "recentIssues": [
+        {
+          "title": "작업 파일 목록 구조화",
+          "date": "2026-10-14T02:05:24.144Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/14"
+        },
         {
           "title": "진단의날 만점 빵빠레, 아차상 등 애니메이션 표현",
           "date": "2026-10-13T08:01:01.060Z",
@@ -653,12 +664,6 @@
           "date": "2026-10-13T00:48:34.305Z",
           "state": "opened",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/12"
-        },
-        {
-          "title": "(고도화) 기록 내보내기&가져오기(PC를 옮겼을때)",
-          "date": "2026-10-13T00:43:45.173Z",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/11"
         }
       ]
     },
