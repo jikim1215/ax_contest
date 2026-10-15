@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T10:31:15.367Z",
+  "generatedAt": "2026-10-15T01:48:06.579Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -64,7 +64,7 @@
     142,
     97,
     212,
-    83,
+    93,
     0,
     0,
     0,
@@ -489,7 +489,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 368,
+        "commits": 376,
         "weeklyCommits": [
           0,
           0,
@@ -498,7 +498,7 @@
           85,
           88,
           158,
-          37,
+          45,
           0,
           0,
           0,
@@ -509,23 +509,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-14T09:02:37.718Z"
+        "lastActivity": "2026-10-14T19:57:55.494Z"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'style/answer-table-readability' into 'main'",
-          "date": "2026-10-14T06:57:31.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/068f5c1902527228f9e4620186a9616f0e42eeaa"
+          "title": "docs(self-improvement): 백로그 2026-10-15 실행 기록 — Q3·P3·S3·Q5 완료, Q1·Q4 신규 이월, 미착수 11건 조건 그대로 보류",
+          "date": "2026-10-15T04:45:13.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/8d92a9b7aec865171f5834e204c506d813dbfe7f"
         },
         {
-          "title": "style(chat): 답변 표를 키우고 가운데 대화 영역을 넓힌다",
-          "date": "2026-10-14T15:55:55.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/6f7db10e8a013e99c49a112ef38cb92b7304328f"
+          "title": "docs(self-improvement): 사용자 매뉴얼의 작업 기록 절에 역할별 표시 범위를 적는다 (P3 2라운드 재수정)",
+          "date": "2026-10-15T04:44:01.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/f23f6bacbe176225fcbd423035bcfb66d64eb9e7"
         },
         {
-          "title": "Merge branch 'fix/question-unknown-hint' into 'main'",
-          "date": "2026-10-14T06:29:53.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/3fddda8d2caf65a02f8fba421d7e93c9753e0d8e"
+          "title": "fix(self-improvement): 요약 배치 격리를 엔진 호출로 좁히고 제목 생성의 취소를 삼키지 않는다 (S3 2라운드 재수정)",
+          "date": "2026-10-15T04:43:27.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/b72740c0e61c03ef5c79e38390d0cd867e47a88e"
         }
       ],
       "recentIssues": []
@@ -595,7 +595,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 32,
+        "commits": 34,
         "weeklyCommits": [
           0,
           0,
@@ -604,7 +604,7 @@
           5,
           0,
           1,
-          26,
+          28,
           0,
           0,
           0,
@@ -612,58 +612,58 @@
           0,
           0
         ],
-        "openIssues": 12,
-        "closedIssues": 2,
+        "openIssues": 13,
+        "closedIssues": 4,
         "stars": 3,
-        "lastActivity": "2026-10-14T02:05:24.325Z"
+        "lastActivity": "2026-10-15T01:02:59.831Z"
       },
       "recentCommits": [
+        {
+          "title": "Merge branch 'chore/project-structure' into 'main'",
+          "date": "2026-10-15T01:24:50.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/adda6142dc2ec1781f3d9a74efe57156cf8b2eb7"
+        },
+        {
+          "title": "chore: 프로젝트를 backend·frontend·data 구조로 정리",
+          "date": "2026-10-15T10:16:24.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/102e8f08efcea383619c022ca16d2548b939bc6f"
+        },
         {
           "title": "Merge branch 'feature/lock-buttons-theme' into main",
           "date": "2026-10-13T17:06:31.000+09:00",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/c60584bd99174db8825649e8603dc14a0d02c524"
-        },
-        {
-          "title": "style: 잠금 화면 하단 버튼·기록조회 창을 게임 테마로 통일",
-          "date": "2026-10-13T17:06:31.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/8c66e14453e4ec0935418d3019ff1f6611e9e481"
-        },
-        {
-          "title": "Merge branch 'feature/game-ui' into 'main'",
-          "date": "2026-10-13T07:59:01.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/ba7264fb7a758d91129957f55d5b89563a2ba783"
         }
       ],
       "recentIssues": [
         {
           "title": "작업 파일 목록 구조화",
-          "date": "2026-10-14T02:05:24.144Z",
-          "state": "opened",
+          "date": "2026-10-15T01:25:01.744Z",
+          "state": "closed",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/14"
+        },
+        {
+          "title": "파일구조 변경",
+          "date": "2026-10-15T01:25:01.737Z",
+          "state": "closed",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/16"
+        },
+        {
+          "title": "환경설정 화면",
+          "date": "2026-10-15T01:04:32.866Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/17"
+        },
+        {
+          "title": "화면보호기 모드(자리비움 상태일때) 개발",
+          "date": "2026-10-15T01:02:59.718Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/15"
         },
         {
           "title": "진단의날 만점 빵빠레, 아차상 등 애니메이션 표현",
           "date": "2026-10-13T08:01:01.060Z",
           "state": "closed",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/2"
-        },
-        {
-          "title": "(UI) 리더보드 개선(이수현황, 순위게시 등)",
-          "date": "2026-10-13T08:00:19.665Z",
-          "state": "closed",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/9"
-        },
-        {
-          "title": "(UI) 풀기 전에 리더보드 표출 하기 (현재 같은 문제 푸는 사람들 현황 순위)",
-          "date": "2026-10-13T01:03:09.759Z",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/13"
-        },
-        {
-          "title": "(개선) 문제풀이 규칙 개선",
-          "date": "2026-10-13T00:48:34.305Z",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/12"
         }
       ]
     },
