@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T01:48:06.579Z",
+  "generatedAt": "2026-10-15T10:15:14.329Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -64,7 +64,7 @@
     142,
     97,
     212,
-    93,
+    102,
     0,
     0,
     0,
@@ -595,7 +595,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 34,
+        "commits": 43,
         "weeklyCommits": [
           0,
           0,
@@ -604,7 +604,7 @@
           5,
           0,
           1,
-          28,
+          37,
           0,
           0,
           0,
@@ -612,58 +612,58 @@
           0,
           0
         ],
-        "openIssues": 13,
-        "closedIssues": 4,
+        "openIssues": 10,
+        "closedIssues": 10,
         "stars": 3,
-        "lastActivity": "2026-10-15T01:02:59.831Z"
+        "lastActivity": "2026-10-15T06:41:10.335Z"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'chore/project-structure' into 'main'",
-          "date": "2026-10-15T01:24:50.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/adda6142dc2ec1781f3d9a74efe57156cf8b2eb7"
+          "title": "Merge branch 'chore/design-md' into 'main'",
+          "date": "2026-10-15T06:50:44.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/742f128f60c63b58171144f4cb03e51e2eda9cb4"
         },
         {
-          "title": "chore: 프로젝트를 backend·frontend·data 구조로 정리",
-          "date": "2026-10-15T10:16:24.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/102e8f08efcea383619c022ca16d2548b939bc6f"
+          "title": "docs: 화면 디자인 기준 DESIGN.md 추가",
+          "date": "2026-10-15T15:49:11.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/a78e9e2958acc436044aff60bd89eeb5cd829586"
         },
         {
-          "title": "Merge branch 'feature/lock-buttons-theme' into main",
-          "date": "2026-10-13T17:06:31.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/c60584bd99174db8825649e8603dc14a0d02c524"
+          "title": "Merge branch 'feature/quiz-screen-cleanup' into 'main'",
+          "date": "2026-10-15T04:27:18.000+00:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/7482745d783b45022304859c3bd6e72dd7355a2f"
         }
       ],
       "recentIssues": [
         {
-          "title": "작업 파일 목록 구조화",
-          "date": "2026-10-15T01:25:01.744Z",
+          "title": "관리자 교육 현황 대시보드",
+          "date": "2026-10-15T06:41:59.848Z",
           "state": "closed",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/14"
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/5"
         },
         {
-          "title": "파일구조 변경",
-          "date": "2026-10-15T01:25:01.737Z",
+          "title": "발표자료 자동화",
+          "date": "2026-10-15T06:41:10.203Z",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/20"
+        },
+        {
+          "title": "preview.quiz 화면 개선",
+          "date": "2026-10-15T04:27:31.849Z",
           "state": "closed",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/16"
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/19"
         },
         {
           "title": "환경설정 화면",
-          "date": "2026-10-15T01:04:32.866Z",
-          "state": "opened",
+          "date": "2026-10-15T02:25:40.815Z",
+          "state": "closed",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/17"
         },
         {
           "title": "화면보호기 모드(자리비움 상태일때) 개발",
-          "date": "2026-10-15T01:02:59.718Z",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/15"
-        },
-        {
-          "title": "진단의날 만점 빵빠레, 아차상 등 애니메이션 표현",
-          "date": "2026-10-13T08:01:01.060Z",
+          "date": "2026-10-15T02:15:18.188Z",
           "state": "closed",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/2"
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/15"
         }
       ]
     },
