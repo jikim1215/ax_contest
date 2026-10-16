@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T10:15:14.329Z",
+  "generatedAt": "2026-10-16T01:37:48.651Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -64,7 +64,7 @@
     142,
     97,
     212,
-    102,
+    112,
     0,
     0,
     0,
@@ -182,7 +182,7 @@
       "description": "",
       "webUrl": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate",
       "reference": false,
-      "active": false,
+      "active": true,
       "progress": null,
       "updates": [],
       "gitlab": {
@@ -206,7 +206,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-09-23T08:07:23.777Z"
+        "lastActivity": "2026-10-16T00:00:06.697Z"
       },
       "recentCommits": [
         {
@@ -479,8 +479,8 @@
     },
     {
       "repo": "jh.noh/privacy",
-      "name": "개인정보자문시스템",
-      "team": "한국인터넷진흥원 노준현",
+      "name": "Watson",
+      "team": "GPT는 거들뿐",
       "field": "공공행정",
       "description": "개인정보 보호 관련 사건, 법률 질문 등에 AI를 활용하여 답해주는 자문 도우미.\r\n법령·판례·결정문 등을 검색해 출처 기반 답변과 보고서 작성까지 지원함.",
       "webUrl": "https://gitlab.aigov.go.kr/jh.noh/privacy",
@@ -489,7 +489,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 376,
+        "commits": 386,
         "weeklyCommits": [
           0,
           0,
@@ -498,7 +498,7 @@
           85,
           88,
           158,
-          45,
+          55,
           0,
           0,
           0,
@@ -509,23 +509,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-14T19:57:55.494Z"
+        "lastActivity": "2026-10-15T10:38:39.845Z"
       },
       "recentCommits": [
         {
-          "title": "docs(self-improvement): 백로그 2026-10-15 실행 기록 — Q3·P3·S3·Q5 완료, Q1·Q4 신규 이월, 미착수 11건 조건 그대로 보류",
-          "date": "2026-10-15T04:45:13.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/8d92a9b7aec865171f5834e204c506d813dbfe7f"
+          "title": "docs(loop_en): clone-parity 실행 기록 — SUCCESS",
+          "date": "2026-10-15T20:35:54.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/b822598caaa7169846c619ebc9122da91a906bdb"
         },
         {
-          "title": "docs(self-improvement): 사용자 매뉴얼의 작업 기록 절에 역할별 표시 범위를 적는다 (P3 2라운드 재수정)",
-          "date": "2026-10-15T04:44:01.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/f23f6bacbe176225fcbd423035bcfb66d64eb9e7"
+          "title": "fix(windows): Python 가상환경 경로를 OS 별로 고르고 설치 스크립트를 공용화한다",
+          "date": "2026-10-15T20:33:53.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/d078be3bc18e85920907a42c75797a71eec91d7e"
         },
         {
-          "title": "fix(self-improvement): 요약 배치 격리를 엔진 호출로 좁히고 제목 생성의 취소를 삼키지 않는다 (S3 2라운드 재수정)",
-          "date": "2026-10-15T04:43:27.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/b72740c0e61c03ef5c79e38390d0cd867e47a88e"
+          "title": "docs(readme): 가입 승인 대기와 .env 의 HOST·PORT 가 npm start 에서 무효인 점을 적는다",
+          "date": "2026-10-15T20:28:08.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/866820d5ed99769fda8a4dade408e59be80f7571"
         }
       ],
       "recentIssues": []
