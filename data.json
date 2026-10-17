@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T10:04:38.849Z",
+  "generatedAt": "2026-10-17T01:30:49.690Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -64,7 +64,7 @@
     142,
     97,
     212,
-    112,
+    116,
     0,
     0,
     0,
@@ -489,7 +489,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 386,
+        "commits": 390,
         "weeklyCommits": [
           0,
           0,
@@ -498,7 +498,7 @@
           85,
           88,
           158,
-          55,
+          59,
           0,
           0,
           0,
@@ -509,23 +509,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-16T06:27:30.569Z"
+        "lastActivity": "2026-10-16T19:52:19.381Z"
       },
       "recentCommits": [
         {
-          "title": "docs(loop_en): clone-parity 실행 기록 — SUCCESS",
-          "date": "2026-10-15T20:35:54.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/b822598caaa7169846c619ebc9122da91a906bdb"
+          "title": "docs(self-improvement): 백로그 2026-10-17 실행 기록 — Q4·Q1 완료, S4 기각, 미착수 11건 조건 그대로 보류",
+          "date": "2026-10-17T04:39:04.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/be197e8138c6e5a76a8c103140fbb1449fb11e68"
         },
         {
-          "title": "fix(windows): Python 가상환경 경로를 OS 별로 고르고 설치 스크립트를 공용화한다",
-          "date": "2026-10-15T20:33:53.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/d078be3bc18e85920907a42c75797a71eec91d7e"
+          "title": "fix(self-improvement): 작동 방식 설명만으로 이루어진 한계 항목을 서버가 전체 일치로 걸러낸다 (Q1 c)",
+          "date": "2026-10-17T04:37:04.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/87c141ae5cb0fc9656e9e969e0335347c944e93d"
         },
         {
-          "title": "docs(readme): 가입 승인 대기와 .env 의 HOST·PORT 가 npm start 에서 무효인 점을 적는다",
-          "date": "2026-10-15T20:28:08.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/866820d5ed99769fda8a4dade408e59be80f7571"
+          "title": "fix(self-improvement): 답변 프롬프트가 작동 방식 설명을 한계로 쓰지 말라고 지시하고, 추가 검색 실행 여부를 조사기록과 분리한다 (Q1 a·b)",
+          "date": "2026-10-17T04:31:19.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e342e45a625c87c4bd438b68e940d874c5a9c00c"
         }
       ],
       "recentIssues": []
