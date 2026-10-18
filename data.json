@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T09:37:19.501Z",
+  "generatedAt": "2026-10-18T01:30:14.462Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -64,7 +64,7 @@
     142,
     97,
     212,
-    116,
+    161,
     0,
     0,
     0,
@@ -489,7 +489,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 390,
+        "commits": 435,
         "weeklyCommits": [
           0,
           0,
@@ -498,7 +498,7 @@
           85,
           88,
           158,
-          59,
+          104,
           0,
           0,
           0,
@@ -509,23 +509,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-16T19:52:19.381Z"
+        "lastActivity": "2026-10-17T19:50:39.859Z"
       },
       "recentCommits": [
         {
-          "title": "docs(self-improvement): 백로그 2026-10-17 실행 기록 — Q4·Q1 완료, S4 기각, 미착수 11건 조건 그대로 보류",
-          "date": "2026-10-17T04:39:04.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/be197e8138c6e5a76a8c103140fbb1449fb11e68"
+          "title": "docs(self-improvement): 2026-10-18 실행 기록 — W1·W2·W3·W5 완료, W4 이월",
+          "date": "2026-10-18T04:37:07.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/d1773cfa13257bea52332f21722f33e8075b8f5a"
         },
         {
-          "title": "fix(self-improvement): 작동 방식 설명만으로 이루어진 한계 항목을 서버가 전체 일치로 걸러낸다 (Q1 c)",
-          "date": "2026-10-17T04:37:04.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/87c141ae5cb0fc9656e9e969e0335347c944e93d"
+          "title": "refactor(self-improvement): checkText 는 모듈 내부 전용이라 export 를 뺀다 (W1 재수정)",
+          "date": "2026-10-18T04:35:57.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/5e2017aea4a18246991bf8fa93bdcfbf306f2091"
         },
         {
-          "title": "fix(self-improvement): 답변 프롬프트가 작동 방식 설명을 한계로 쓰지 말라고 지시하고, 추가 검색 실행 여부를 조사기록과 분리한다 (Q1 a·b)",
-          "date": "2026-10-17T04:31:19.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e342e45a625c87c4bd438b68e940d874c5a9c00c"
+          "title": "fix(self-improvement): 브리핑·토의의 추가조사 판단 사유(reason)도 조문 대조를 거친다",
+          "date": "2026-10-18T04:34:07.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/423c409d0be9e783f15b3beda6f3a2fad0c89346"
         }
       ],
       "recentIssues": []
