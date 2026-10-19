@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T09:50:05.974Z",
+  "generatedAt": "2026-10-19T01:37:33.029Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -64,7 +64,7 @@
     142,
     97,
     212,
-    161,
+    174,
     0,
     0,
     0,
@@ -489,7 +489,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 435,
+        "commits": 448,
         "weeklyCommits": [
           0,
           0,
@@ -498,7 +498,7 @@
           85,
           88,
           158,
-          104,
+          117,
           0,
           0,
           0,
@@ -509,23 +509,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-17T19:50:39.859Z"
+        "lastActivity": "2026-10-18T14:41:45.199Z"
       },
       "recentCommits": [
         {
-          "title": "docs(self-improvement): 2026-10-18 실행 기록 — W1·W2·W3·W5 완료, W4 이월",
-          "date": "2026-10-18T04:37:07.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/d1773cfa13257bea52332f21722f33e8075b8f5a"
+          "title": "docs(loop_en): evidence-quality SUCCESS — 6회 반복, 코덱스 리뷰 통과",
+          "date": "2026-10-18T23:42:05.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/4bc1a4c084717050ad9ce0f6220ab44a4a6a9fdc"
         },
         {
-          "title": "refactor(self-improvement): checkText 는 모듈 내부 전용이라 export 를 뺀다 (W1 재수정)",
-          "date": "2026-10-18T04:35:57.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/5e2017aea4a18246991bf8fa93bdcfbf306f2091"
+          "title": "fix(evidence): 관련도 판정이 뺀 조각이 두 글자 검색으로 다시 들어오지 않게 한다",
+          "date": "2026-10-18T23:40:39.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/746723fe68ce70a73176a666a5236faddf018cc5"
         },
         {
-          "title": "fix(self-improvement): 브리핑·토의의 추가조사 판단 사유(reason)도 조문 대조를 거친다",
-          "date": "2026-10-18T04:34:07.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/423c409d0be9e783f15b3beda6f3a2fad0c89346"
+          "title": "fix(evidence): 관련도 판정 응답의 형식을 검증하고 후보 밖 id 는 경고로 남긴다",
+          "date": "2026-10-18T23:36:13.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/bb93268c5b9ffa1dd0b88d99c718941ec5f68eb0"
         }
       ],
       "recentIssues": []
