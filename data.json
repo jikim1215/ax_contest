@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T01:37:33.029Z",
+  "generatedAt": "2026-10-20T23:52:24.793Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -64,8 +64,8 @@
     142,
     97,
     212,
-    174,
-    0,
+    181,
+    21,
     0,
     0,
     0,
@@ -85,7 +85,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 10,
+        "commits": 18,
         "weeklyCommits": [
           0,
           0,
@@ -94,8 +94,8 @@
           0,
           4,
           2,
-          2,
-          0,
+          9,
+          1,
           0,
           0,
           0,
@@ -105,23 +105,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-14T07:54:21.617Z"
+        "lastActivity": "2026-10-20T08:22:07.404Z"
       },
       "recentCommits": [
         {
-          "title": "docs: add Korean language law and official orthographic standards",
-          "date": "2026-10-13T16:27:55.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/e3b07f95d8aaf475df5f09b0dfa6440a225919fd"
+          "title": "feat: add template-based HWP export and grounded Gemini drafts",
+          "date": "2026-10-19T17:47:29.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/a6a4d8bdadcf6d00a55c5d47d5a0c8ac614d6110"
         },
         {
-          "title": "docs: add KRDS UI/UX design reference",
-          "date": "2026-10-13T16:05:42.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/56773aed013d0f31fa1d0ef7dcfe742d3100f12c"
+          "title": "feat: analyze attachments and generate grounded AI drafts",
+          "date": "2026-10-14T17:23:14.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/6b2ea05574fc4910e33d78177f11e97fbbbcede3"
         },
         {
-          "title": "docs: add research grounding artifacts",
-          "date": "2026-10-07T17:02:30.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/b8aa200c69f3ce6861fec652d423f5c578656875"
+          "title": "feat: complete provider-gated AI review flow",
+          "date": "2026-10-14T16:54:05.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/7a4c5cd78d4c177fe726f5d9e218ccd7da0cfec6"
         }
       ],
       "recentIssues": []
@@ -489,7 +489,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 448,
+        "commits": 468,
         "weeklyCommits": [
           0,
           0,
@@ -499,7 +499,7 @@
           88,
           158,
           117,
-          0,
+          20,
           0,
           0,
           0,
@@ -509,23 +509,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-18T14:41:45.199Z"
+        "lastActivity": "2026-10-19T19:39:55.363Z"
       },
       "recentCommits": [
         {
-          "title": "docs(loop_en): evidence-quality SUCCESS — 6회 반복, 코덱스 리뷰 통과",
-          "date": "2026-10-18T23:42:05.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/4bc1a4c084717050ad9ce0f6220ab44a4a6a9fdc"
+          "title": "docs(self-improvement): 2026-10-20 실행 기록 — 10-19 되돌려진 V1(축소)·S5·Y4·A29 재반영, V1-b 신규, A42·V2·Y4-b 복원",
+          "date": "2026-10-20T04:27:08.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/55341b8c7ceb22b3db7ee0cbe941b1149a8832c1"
         },
         {
-          "title": "fix(evidence): 관련도 판정이 뺀 조각이 두 글자 검색으로 다시 들어오지 않게 한다",
-          "date": "2026-10-18T23:40:39.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/746723fe68ce70a73176a666a5236faddf018cc5"
+          "title": "fix(self-improvement): V1 재반영(축소) — 조사를 실행하지 않은 후속 턴만 직전 조사의 기준일 판본 한계를 이어받는다",
+          "date": "2026-10-20T04:25:49.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/44ad263f9e4793ccda6f8f26a6aa91239e3d81bd"
         },
         {
-          "title": "fix(evidence): 관련도 판정 응답의 형식을 검증하고 후보 밖 id 는 경고로 남긴다",
-          "date": "2026-10-18T23:36:13.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/bb93268c5b9ffa1dd0b88d99c718941ec5f68eb0"
+          "title": "fix(self-improvement): 근거 밖 식별자 링크를 라벨로 바꿀 때 앞 글자와 붙지 않게 공백을 보충한다",
+          "date": "2026-10-20T04:21:54.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/32994af3718fcd99148dff3fcb18fc9179404136"
         }
       ],
       "recentIssues": []
