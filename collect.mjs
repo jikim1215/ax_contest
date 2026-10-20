@@ -14,6 +14,8 @@
  * 환경변수
  *   GITLAB_TOKEN  비공개 저장소를 집계할 때만 필요한 read_api 토큰. 공개 저장소면 불필요.
  *   DATA_OUT      data.json 출력 경로. 기본값 ./data.json.
+ *   GITLAB_PROXY  GitLab API 중계 주소(api/gitlab.mjs, 예: https://ax-contest-1370.vercel.app/api/gitlab).
+ *                 gitlab.aigov.go.kr가 해외 IP를 차단하므로 해외 러너(GitHub Actions)에서는 필수. 국내 실행 시 비워 둔다.
  */
 
 import { writeFileSync } from "node:fs";
@@ -79,12 +81,13 @@ const SHOWCASE = []; // { name, team, desc, url }
 /* ============================ 내부 구현 ============================ */
 const TOKEN = process.env.GITLAB_TOKEN || "";
 const OUT = process.env.DATA_OUT || "./data.json";
+const PROXY = process.env.GITLAB_PROXY || "";
 const DAY = 24 * 3600 * 1000;
 const WEEK = 7 * DAY;
 const enc = encodeURIComponent;
 
 async function gl(path, { raw = false, tries = 3 } = {}) {
-  const url = path.startsWith("http") ? path : GITLAB_BASE + path;
+  const url = PROXY ? `${PROXY}?u=${enc(path)}` : GITLAB_BASE + path;
   const headers = { "User-Agent": "ax-contest-collector" };
   if (TOKEN) headers["PRIVATE-TOKEN"] = TOKEN;
   let lastErr;

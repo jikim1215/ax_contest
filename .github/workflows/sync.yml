@@ -44,6 +44,8 @@ jobs:
         env:
           # 공개 저장소면 불필요. 비공개 저장소 집계 시 리포 Secret에 등록.
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+          # gitlab.aigov.go.kr가 해외 IP(GitHub 러너 포함)를 차단하므로 서울 리전 Vercel 함수로 중계한다.
+          GITLAB_PROXY: https://ax-contest-1370.vercel.app/api/gitlab
         run: node collect.mjs
 
       - name: Commit & push

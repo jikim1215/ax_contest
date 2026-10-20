@@ -11,6 +11,9 @@ GitLab을 직접 호출하지 않습니다.
 [과제 저장소]  gitlab.aigov.go.kr
       │  REST API (커밋 · 이슈 · 설명 · Star · 최근활동)
       ▼
+      │  (해외 IP 차단 → 서울 리전 중계)
+[Vercel Function  api/gitlab.mjs · icn1]
+      ▲  GITLAB_PROXY
 [GitHub Actions  .github/workflows/sync.yml]   매일 2회 + collect.mjs 변경 시
       │  node collect.mjs → data.json 커밋 (main)
       ▼
@@ -35,6 +38,8 @@ GitLab을 직접 호출하지 않습니다.
 | --- | --- |
 | `index.html` | 대시보드 화면 전체(HTML+CSS+JS 단일 파일). 반응형·정적 안내 콘텐츠 포함. |
 | `collect.mjs` | GitLab 수집기 + 사무국 설정. `data.json`을 생성. |
+| `api/gitlab.mjs` | 서울(icn1) 리전 Vercel 함수. 해외 러너 대신 GitLab API를 GET으로만 중계. |
+| `vercel.json` | Vercel 함수 리전을 `icn1`(서울)로 고정. |
 | `data.json` | 수집 결과. 봇이 커밋하므로 손으로 고치지 않습니다. |
 | `.github/workflows/sync.yml` | 매일 2회 수집 → `main`에 커밋하는 GitHub Actions. |
 | `guides/*.html` | 참가자 자료 '열람·다운로드'용 문서(보안 2 · 윤리 1 · GitLab 사용법 1). |
@@ -104,6 +109,12 @@ python -m http.server 5173     # http://127.0.0.1:5173
 | --- | --- |
 | `GITLAB_TOKEN` | 비공개 저장소를 집계할 때만 필요한 `read_api` 토큰. 공개 저장소면 불필요. GitHub Actions에서는 리포 Secret으로 등록. |
 | `DATA_OUT` | `data.json` 출력 경로. 기본값 `./data.json`. |
+| `GITLAB_PROXY` | GitLab API 중계 주소(`https://ax-contest-1370.vercel.app/api/gitlab`). 해외 러너에서는 필수, 국내 PC에서 실행할 때는 비워 둡니다. |
+
+> **해외 IP 차단(2026-10-19~)**: gitlab.aigov.go.kr가 해외 IP 접속을 막아 GitHub 러너(미국)에서
+> `fetch failed`(연결 시간 초과)로 수집이 실패합니다. 그래서 워크플로는 `GITLAB_PROXY`로
+> 서울 리전 Vercel 함수(`api/gitlab.mjs`)를 거쳐 GitLab을 호출합니다. 함수는 대상 호스트가
+> 고정이고 GET만 중계합니다.
 
 ## 배포 (CI/CD)
 
@@ -137,7 +148,8 @@ Vercel에서 이 GitHub 저장소를 Import하면 됩니다.
 - Production Branch: `main`
 - Framework Preset: **Other**, Build Command: 비움, Output Directory: 비움(루트 서빙)
 
-별도 설정 파일이 없어도 `index.html`·`data.json`·`guides/`가 정적으로 서빙되며, `main`에
+`index.html`·`data.json`·`guides/`가 정적으로 서빙되고 `api/gitlab.mjs`는 `vercel.json`에 따라
+서울(icn1) 리전 함수로 배포됩니다. `main`에
 push될 때마다(봇의 `data.json` 커밋 포함) 자동 재배포됩니다. GitLab 공개 API를 쓰므로
 토큰·시크릿이 필요 없습니다. `GITLAB_TOKEN`으로 비공개 저장소를 집계하면 그 정보가 공개
 URL에 노출된다는 점에 유의하세요.
