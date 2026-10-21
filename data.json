@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T01:58:56.925Z",
+  "generatedAt": "2026-10-21T10:30:28.310Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -105,7 +105,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-20T08:22:07.404Z"
+        "lastActivity": "2026-10-21T18:04:52.863+09:00"
       },
       "recentCommits": [
         {
@@ -158,7 +158,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-28T04:34:39.184Z"
+        "lastActivity": "2026-09-28T13:34:39.184+09:00"
       },
       "recentCommits": [
         {
@@ -206,7 +206,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-16T00:00:06.697Z"
+        "lastActivity": "2026-10-16T09:00:06.697+09:00"
       },
       "recentCommits": [
         {
@@ -259,7 +259,7 @@
         "openIssues": 1,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-11T10:56:07.564Z"
+        "lastActivity": "2026-10-11T19:56:07.564+09:00"
       },
       "recentCommits": [
         {
@@ -281,7 +281,7 @@
       "recentIssues": [
         {
           "title": "[MVP-02] 인수인계 7개 항목 입력화면 구현",
-          "date": "2026-09-16T23:25:44.387Z",
+          "date": "2026-09-17T08:25:44.387+09:00",
           "state": "opened",
           "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/work_items/1"
         }
@@ -319,7 +319,7 @@
         "openIssues": 7,
         "closedIssues": 10,
         "stars": 2,
-        "lastActivity": "2026-10-14T06:57:01.304Z"
+        "lastActivity": "2026-10-21T13:32:09.699+09:00"
       },
       "recentCommits": [
         {
@@ -341,31 +341,31 @@
       "recentIssues": [
         {
           "title": "feat: 새 사업 입력과 확인 화면 구현",
-          "date": "2026-10-14T06:57:03.411Z",
+          "date": "2026-10-14T15:57:03.411+09:00",
           "state": "closed",
           "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/6"
         },
         {
           "title": "feat: 사업 보드와 목록 화면 구현",
-          "date": "2026-10-14T06:57:02.755Z",
+          "date": "2026-10-14T15:57:02.755+09:00",
           "state": "closed",
           "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/5"
         },
         {
           "title": "개발환경 세팅(Next.js)",
-          "date": "2026-10-14T06:57:02.186Z",
+          "date": "2026-10-14T15:57:02.186+09:00",
           "state": "closed",
           "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/2"
         },
         {
           "title": "웹 화면 퍼블리싱",
-          "date": "2026-10-14T06:57:01.391Z",
+          "date": "2026-10-14T15:57:01.391+09:00",
           "state": "closed",
           "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/4"
         },
         {
           "title": "feat: 저장 문서 검토와 변경 후 재확인",
-          "date": "2026-10-12T06:55:19.923Z",
+          "date": "2026-10-12T15:55:19.923+09:00",
           "state": "opened",
           "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/work_items/17"
         }
@@ -403,7 +403,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-09-22T10:59:49.239Z"
+        "lastActivity": "2026-09-22T19:59:49.239+09:00"
       },
       "recentCommits": [
         {
@@ -456,7 +456,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-21T00:17:21.273Z"
+        "lastActivity": "2026-09-21T09:17:21.273+09:00"
       },
       "recentCommits": [
         {
@@ -509,7 +509,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-19T19:39:55.363Z"
+        "lastActivity": "2026-10-20T04:39:55.363+09:00"
       },
       "recentCommits": [
         {
@@ -562,7 +562,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-10-13T14:50:13.489Z"
+        "lastActivity": "2026-10-13T23:50:13.489+09:00"
       },
       "recentCommits": [
         {
@@ -615,7 +615,7 @@
         "openIssues": 10,
         "closedIssues": 10,
         "stars": 4,
-        "lastActivity": "2026-10-15T06:41:10.335Z"
+        "lastActivity": "2026-10-15T15:41:10.335+09:00"
       },
       "recentCommits": [
         {
@@ -637,31 +637,31 @@
       "recentIssues": [
         {
           "title": "관리자 교육 현황 대시보드",
-          "date": "2026-10-15T06:41:59.848Z",
+          "date": "2026-10-15T15:41:59.848+09:00",
           "state": "closed",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/5"
         },
         {
           "title": "발표자료 자동화",
-          "date": "2026-10-15T06:41:10.203Z",
+          "date": "2026-10-15T15:41:10.203+09:00",
           "state": "opened",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/20"
         },
         {
           "title": "preview.quiz 화면 개선",
-          "date": "2026-10-15T04:27:31.849Z",
+          "date": "2026-10-15T13:27:31.849+09:00",
           "state": "closed",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/19"
         },
         {
           "title": "환경설정 화면",
-          "date": "2026-10-15T02:25:40.815Z",
+          "date": "2026-10-15T11:25:40.815+09:00",
           "state": "closed",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/17"
         },
         {
           "title": "화면보호기 모드(자리비움 상태일때) 개발",
-          "date": "2026-10-15T02:15:18.188Z",
+          "date": "2026-10-15T11:15:18.188+09:00",
           "state": "closed",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/15"
         }
@@ -699,7 +699,7 @@
         "openIssues": 0,
         "closedIssues": 1,
         "stars": 2,
-        "lastActivity": "2026-10-13T07:41:22.457Z"
+        "lastActivity": "2026-10-13T16:41:22.457+09:00"
       },
       "recentCommits": [
         {
@@ -721,7 +721,7 @@
       "recentIssues": [
         {
           "title": "1. issue title",
-          "date": "2026-09-22T06:45:14.124Z",
+          "date": "2026-09-22T15:45:14.124+09:00",
           "state": "closed",
           "url": "https://gitlab.aigov.go.kr/jikim/rack/-/work_items/1"
         }
