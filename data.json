@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T10:30:28.310Z",
+  "generatedAt": "2026-10-22T01:48:30.160Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -65,7 +65,7 @@
     97,
     212,
     181,
-    21,
+    22,
     0,
     0,
     0,
@@ -432,11 +432,11 @@
       "description": "",
       "webUrl": "https://gitlab.aigov.go.kr/j30231/isds_check",
       "reference": false,
-      "active": false,
+      "active": true,
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 4,
+        "commits": 5,
         "weeklyCommits": [
           0,
           0,
@@ -446,7 +446,7 @@
           0,
           0,
           0,
-          0,
+          1,
           0,
           0,
           0,
@@ -456,9 +456,14 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-21T09:17:21.273+09:00"
+        "lastActivity": "2026-10-21T20:04:34.684+09:00"
       },
       "recentCommits": [
+        {
+          "title": "공개 개념 문서 갱신: 로컬 우선 계층형 판정·평가 원칙·개발 AI 보호 원칙·현재 상태",
+          "date": "2026-10-21T18:06:28.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/j30231/isds_check/-/commit/08082e624e0ef809df6fa4001c1d258c4db988e0"
+        },
         {
           "title": "공개용 개념 문서 정리 (템플릿 잔여 내용 제거)",
           "date": "2026-09-21T01:03:28.000+00:00",
@@ -468,11 +473,6 @@
           "title": "공개용 개념 문서(README) 작성",
           "date": "2026-09-21T01:01:57.000+00:00",
           "url": "https://gitlab.aigov.go.kr/j30231/isds_check/-/commit/690db7531390ba09b4b4b941da0a521ad9b18f8b"
-        },
-        {
-          "title": "README.md 편집",
-          "date": "2026-09-21T00:56:04.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/j30231/isds_check/-/commit/6c1c8ac3c9172d005e4d5e91d394e55ae17e741b"
         }
       ],
       "recentIssues": []
