@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T01:48:30.160Z",
+  "generatedAt": "2026-10-22T10:31:55.479Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -65,7 +65,7 @@
     97,
     212,
     181,
-    22,
+    46,
     0,
     0,
     0,
@@ -85,7 +85,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 18,
+        "commits": 26,
         "weeklyCommits": [
           0,
           0,
@@ -95,7 +95,7 @@
           4,
           2,
           9,
-          1,
+          9,
           0,
           0,
           0,
@@ -105,23 +105,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-21T18:04:52.863+09:00"
+        "lastActivity": "2026-10-22T10:56:44.271+09:00"
       },
       "recentCommits": [
         {
-          "title": "feat: add template-based HWP export and grounded Gemini drafts",
-          "date": "2026-10-19T17:47:29.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/a6a4d8bdadcf6d00a55c5d47d5a0c8ac614d6110"
+          "title": "Generate policy-grounded quote candidates during AI context analysis",
+          "date": "2026-10-21T18:04:35.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/b1e366683df0be9624b9ecf98b22c0c40db791a0"
         },
         {
-          "title": "feat: analyze attachments and generate grounded AI drafts",
-          "date": "2026-10-14T17:23:14.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/6b2ea05574fc4910e33d78177f11e97fbbbcede3"
+          "title": "feat: ground quote candidates in policy goals with vacant speaker",
+          "date": "2026-10-20T17:21:59.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/7c2f4c5b2a04d2f3e9acea20b577f896f1355e33"
         },
         {
-          "title": "feat: complete provider-gated AI review flow",
-          "date": "2026-10-14T16:54:05.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/7a4c5cd78d4c177fe726f5d9e218ccd7da0cfec6"
+          "title": "feat: recommend source-grounded national policy tasks in drafts",
+          "date": "2026-10-20T14:46:24.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/ae27c5e953bfe8569bde140cc2de6728979ed5d7"
         }
       ],
       "recentIssues": []
@@ -299,7 +299,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 69,
+        "commits": 80,
         "weeklyCommits": [
           0,
           0,
@@ -309,7 +309,7 @@
           2,
           49,
           17,
-          0,
+          11,
           0,
           0,
           0,
@@ -319,23 +319,23 @@
         "openIssues": 7,
         "closedIssues": 10,
         "stars": 2,
-        "lastActivity": "2026-10-21T13:32:09.699+09:00"
+        "lastActivity": "2026-10-22T16:08:59.710+09:00"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'feat/mobbin-design' into 'develop'",
-          "date": "2026-10-14T04:47:55.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/51ab32110326f6e93f2d13ca76612c49ba20e6d6"
+          "title": "Merge branch 'feat/preparation-guide' into 'develop'",
+          "date": "2026-10-22T16:12:17.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/6a09e570e6c88540672087ce44c4b26dfb3a0344"
         },
         {
-          "title": "Merge branch 'feat/construction-workflow' into 'feat/mobbin-design'",
-          "date": "2026-10-14T04:45:15.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/6cdae294e6040384bffd2510480c23170e305349"
+          "title": "chore: 최신 develop 변경 병합",
+          "date": "2026-10-22T16:08:34.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/1b3a1588e9b8359ab85059f345150ea7324c2bd8"
         },
         {
-          "title": "Merge branch 'feat/document-review' into 'develop'",
-          "date": "2026-10-14T04:43:37.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/2e24951fc9629a01562f07f1aa93fd5de7833c1f"
+          "title": "feat: 순차 질문 기반 사업 준비 가이드와 저장 구현",
+          "date": "2026-10-22T16:08:34.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/e5c424c3f03f14cada96bf7f1b6b6a10f44315d6"
         }
       ],
       "recentIssues": [
@@ -436,7 +436,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 5,
+        "commits": 10,
         "weeklyCommits": [
           0,
           0,
@@ -446,7 +446,7 @@
           0,
           0,
           0,
-          1,
+          6,
           0,
           0,
           0,
@@ -456,23 +456,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-10-21T20:04:34.684+09:00"
+        "lastActivity": "2026-10-22T17:06:08.701+09:00"
       },
       "recentCommits": [
         {
-          "title": "공개 개념 문서 갱신: 로컬 우선 계층형 판정·평가 원칙·개발 AI 보호 원칙·현재 상태",
-          "date": "2026-10-21T18:06:28.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/j30231/isds_check/-/commit/08082e624e0ef809df6fa4001c1d258c4db988e0"
+          "title": "Pages 설정 제거(서버에 CI 러너 없음): HTML은 내려받아 보기로 안내",
+          "date": "2026-10-22T17:07:10.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/j30231/isds_check/-/commit/1ab32289b0976fab815707cadccddef0434b2305"
         },
         {
-          "title": "공개용 개념 문서 정리 (템플릿 잔여 내용 제거)",
-          "date": "2026-09-21T01:03:28.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/j30231/isds_check/-/commit/4b1d10776885e85ef63653647c95fdeefcb4dc9b"
+          "title": "가명 설명 문구 갱신: 고정 가명표(순서 의미 없음), 서비스소개·학습현황 원본과 동기화",
+          "date": "2026-10-22T16:43:54.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/j30231/isds_check/-/commit/0b5ed4ad5960163a7e7be2848828b55e2d2372c0"
         },
         {
-          "title": "공개용 개념 문서(README) 작성",
-          "date": "2026-09-21T01:01:57.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/j30231/isds_check/-/commit/690db7531390ba09b4b4b941da0a521ad9b18f8b"
+          "title": "GitLab Pages 게시 설정: docs/ HTML을 페이지로 공개, 첫 화면 index.html 추가",
+          "date": "2026-10-22T14:59:35.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/j30231/isds_check/-/commit/0546d4aa6dcfcf3e3d31441ae6460347ec9d873d"
         }
       ],
       "recentIssues": []
