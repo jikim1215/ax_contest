@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T01:53:47.076Z",
+  "generatedAt": "2026-10-24T01:56:21.397Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -65,7 +65,7 @@
     97,
     212,
     181,
-    46,
+    67,
     0,
     0,
     0,
@@ -76,7 +76,7 @@
     {
       "repo": "lmj6706/pr_kisa",
       "name": "pr_kisa",
-      "team": "한국인터넷진흥원 국민소통팀 임민지",
+      "team": "한국인터넷진흥원 국민소통팀",
       "field": "일반행정",
       "description": "모두를 위한 보도자료 A-Z\r\nAI를 활용하여 기존 사업과 금년 사업과의 차별성, 언론보도의 필요성 등 효과적인 언론 홍보를 할 수 있도록 보도자료 작성 지원",
       "webUrl": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa",
@@ -85,7 +85,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 26,
+        "commits": 32,
         "weeklyCommits": [
           0,
           0,
@@ -95,7 +95,7 @@
           4,
           2,
           9,
-          9,
+          15,
           0,
           0,
           0,
@@ -105,23 +105,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-22T10:56:44.271+09:00"
+        "lastActivity": "2026-10-23T16:50:31.354+09:00"
       },
       "recentCommits": [
         {
-          "title": "Generate policy-grounded quote candidates during AI context analysis",
-          "date": "2026-10-21T18:04:35.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/b1e366683df0be9624b9ecf98b22c0c40db791a0"
+          "title": "Populate HWP release headers and page counts with public-language normalization",
+          "date": "2026-10-23T17:24:48.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/c091e576c8b6342d8e770f1a805a8c635ebccca7"
         },
         {
-          "title": "feat: ground quote candidates in policy goals with vacant speaker",
-          "date": "2026-10-20T17:21:59.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/7c2f4c5b2a04d2f3e9acea20b577f896f1355e33"
+          "title": "Enforce KISA lead attribution and explicit announcement date",
+          "date": "2026-10-23T17:03:13.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/14dd60a49494e527d629f4ef1518bf5514278e8a"
         },
         {
-          "title": "feat: recommend source-grounded national policy tasks in drafts",
-          "date": "2026-10-20T14:46:24.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/ae27c5e953bfe8569bde140cc2de6728979ed5d7"
+          "title": "Redesign press release UI as a focused three-step workflow",
+          "date": "2026-10-23T16:50:20.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/64fc8c87bb111601b613f051f92c2e591ee9d6e1"
         }
       ],
       "recentIssues": []
@@ -489,7 +489,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 468,
+        "commits": 483,
         "weeklyCommits": [
           0,
           0,
@@ -499,7 +499,7 @@
           88,
           158,
           117,
-          20,
+          35,
           0,
           0,
           0,
@@ -509,23 +509,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-20T04:39:55.363+09:00"
+        "lastActivity": "2026-10-24T04:48:32.728+09:00"
       },
       "recentCommits": [
         {
-          "title": "docs(self-improvement): 2026-10-20 실행 기록 — 10-19 되돌려진 V1(축소)·S5·Y4·A29 재반영, V1-b 신규, A42·V2·Y4-b 복원",
-          "date": "2026-10-20T04:27:08.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/55341b8c7ceb22b3db7ee0cbe941b1149a8832c1"
+          "title": "docs(self-improvement): 2026-10-24 실행 기록 — A-5·S-2·S-3·S-5 완료, S-4 검토자 테스트 지침 추가",
+          "date": "2026-10-24T04:35:28.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e129ac89886f1fd8d2ed5f7d8dad6af1dc4fa8f8"
         },
         {
-          "title": "fix(self-improvement): V1 재반영(축소) — 조사를 실행하지 않은 후속 턴만 직전 조사의 기준일 판본 한계를 이어받는다",
-          "date": "2026-10-20T04:25:49.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/44ad263f9e4793ccda6f8f26a6aa91239e3d81bd"
+          "title": "fix(self-improvement): 케이스노트 확인 상태(관리자 계정 이메일)를 관리자에게만 돌려준다",
+          "date": "2026-10-24T04:34:11.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e78cb9278b6b2074a30605616055c23fefd36f36"
         },
         {
-          "title": "fix(self-improvement): 근거 밖 식별자 링크를 라벨로 바꿀 때 앞 글자와 붙지 않게 공백을 보충한다",
-          "date": "2026-10-20T04:21:54.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/32994af3718fcd99148dff3fcb18fc9179404136"
+          "title": "fix(self-improvement): 업로드 multipart 를 file 필드 하나로 제한한다",
+          "date": "2026-10-24T04:31:32.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/02b7e2435fdfb0b46e62ff63a64dd10972dbf258"
         }
       ],
       "recentIssues": []
