@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T10:04:29.755Z",
+  "generatedAt": "2026-10-26T01:39:38.174Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -65,8 +65,8 @@
     97,
     212,
     181,
-    67,
-    0,
+    71,
+    17,
     0,
     0,
     0,
@@ -85,7 +85,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 32,
+        "commits": 34,
         "weeklyCommits": [
           0,
           0,
@@ -96,7 +96,7 @@
           2,
           9,
           15,
-          0,
+          2,
           0,
           0,
           0,
@@ -105,23 +105,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-23T16:50:31.354+09:00"
+        "lastActivity": "2026-10-26T09:26:56.182+09:00"
       },
       "recentCommits": [
+        {
+          "title": "Align regression tests with administrative dates and verified export contacts",
+          "date": "2026-10-26T09:26:46.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/8e76b174209cfb99a6bd4dfb89a7af5e1f9e047d"
+        },
+        {
+          "title": "Validate KISA export contacts and normalize administrative dates",
+          "date": "2026-10-26T09:22:33.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/c0fcf6cff6ccd626e4c2320594e79e5e8410eebc"
+        },
         {
           "title": "Populate HWP release headers and page counts with public-language normalization",
           "date": "2026-10-23T17:24:48.000+09:00",
           "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/c091e576c8b6342d8e770f1a805a8c635ebccca7"
-        },
-        {
-          "title": "Enforce KISA lead attribution and explicit announcement date",
-          "date": "2026-10-23T17:03:13.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/14dd60a49494e527d629f4ef1518bf5514278e8a"
-        },
-        {
-          "title": "Redesign press release UI as a focused three-step workflow",
-          "date": "2026-10-23T16:50:20.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/64fc8c87bb111601b613f051f92c2e591ee9d6e1"
         }
       ],
       "recentIssues": []
@@ -235,7 +235,7 @@
       "description": "로컬 AI 기반 업무 인수인계서 생성 서비스",
       "webUrl": "https://gitlab.aigov.go.kr/adms25/local-handover-ai",
       "reference": false,
-      "active": true,
+      "active": false,
       "progress": null,
       "updates": [],
       "gitlab": {
@@ -489,7 +489,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 483,
+        "commits": 502,
         "weeklyCommits": [
           0,
           0,
@@ -499,8 +499,8 @@
           88,
           158,
           117,
-          35,
-          0,
+          39,
+          15,
           0,
           0,
           0,
@@ -509,23 +509,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-24T04:48:32.728+09:00"
+        "lastActivity": "2026-10-26T05:41:46.961+09:00"
       },
       "recentCommits": [
         {
-          "title": "docs(self-improvement): 2026-10-24 실행 기록 — A-5·S-2·S-3·S-5 완료, S-4 검토자 테스트 지침 추가",
-          "date": "2026-10-24T04:35:28.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e129ac89886f1fd8d2ed5f7d8dad6af1dc4fa8f8"
+          "title": "chore(deps): OSV 지적 의존성 갱신 — multer 2.5.0, body-parser 2.4.0(override), filelock 4.2.4, setuptools 84.2.1",
+          "date": "2026-10-26T05:41:08.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/d677562016f63b8d8975f541877a9b87b5b73e7b"
         },
         {
-          "title": "fix(self-improvement): 케이스노트 확인 상태(관리자 계정 이메일)를 관리자에게만 돌려준다",
-          "date": "2026-10-24T04:34:11.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e78cb9278b6b2074a30605616055c23fefd36f36"
+          "title": "docs(self-improvement): 2026-10-26 속도 개선 전후 측정 기록·L-1 해소",
+          "date": "2026-10-26T05:38:15.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/454aba1a5eb22ce724743101f509bd830986fd96"
         },
         {
-          "title": "fix(self-improvement): 업로드 multipart 를 file 필드 하나로 제한한다",
-          "date": "2026-10-24T04:31:32.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/02b7e2435fdfb0b46e62ff63a64dd10972dbf258"
+          "title": "fix(latency): 취소된 작업에서 단계 시간 로그가 정리 코드를 막지 않게 하고, 경량 모델 표기를 audit 에서 뺀다",
+          "date": "2026-10-26T04:55:16.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/a5393096db12c503a8d6b6dc092657930293936b"
         }
       ],
       "recentIssues": []
