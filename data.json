@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T02:24:05.792Z",
+  "generatedAt": "2026-10-27T10:51:03.908Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -66,7 +66,7 @@
     212,
     181,
     71,
-    23,
+    32,
     0,
     0,
     0,
@@ -85,7 +85,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 34,
+        "commits": 43,
         "weeklyCommits": [
           0,
           0,
@@ -96,7 +96,7 @@
           2,
           9,
           15,
-          2,
+          11,
           0,
           0,
           0,
@@ -105,23 +105,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-26T09:26:56.182+09:00"
+        "lastActivity": "2026-10-27T15:58:18.143+09:00"
       },
       "recentCommits": [
         {
-          "title": "Align regression tests with administrative dates and verified export contacts",
-          "date": "2026-10-26T09:26:46.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/8e76b174209cfb99a6bd4dfb89a7af5e1f9e047d"
+          "title": "Simplify plan upload screen and support individually removable attachments",
+          "date": "2026-10-27T16:26:59.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/05f6997ba2a8b9636d901d690bbccb4255778a21"
         },
         {
-          "title": "Validate KISA export contacts and normalize administrative dates",
-          "date": "2026-10-26T09:22:33.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/c0fcf6cff6ccd626e4c2320594e79e5e8410eebc"
+          "title": "Rename first workflow step to plan upload",
+          "date": "2026-10-27T16:21:28.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/091e1704d80f9f5cd08eb7baef1e3af04578f7d4"
         },
         {
-          "title": "Populate HWP release headers and page counts with public-language normalization",
-          "date": "2026-10-23T17:24:48.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/c091e576c8b6342d8e770f1a805a8c635ebccca7"
+          "title": "Simplify homepage header to service name",
+          "date": "2026-10-27T16:20:58.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/97a495bfbe425aeb9aeb21fe60698a12ce74ed29"
         }
       ],
       "recentIssues": []
@@ -235,7 +235,7 @@
       "description": "로컬 AI 기반 업무 인수인계서 생성 서비스",
       "webUrl": "https://gitlab.aigov.go.kr/adms25/local-handover-ai",
       "reference": false,
-      "active": false,
+      "active": true,
       "progress": null,
       "updates": [],
       "gitlab": {
@@ -259,7 +259,7 @@
         "openIssues": 1,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-11T19:56:07.564+09:00"
+        "lastActivity": "2026-10-27T12:39:29.475+09:00"
       },
       "recentCommits": [
         {
@@ -509,7 +509,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-27T00:59:30.777+09:00"
+        "lastActivity": "2026-10-27T18:25:40.026+09:00"
       },
       "recentCommits": [
         {
@@ -615,7 +615,7 @@
         "openIssues": 10,
         "closedIssues": 10,
         "stars": 4,
-        "lastActivity": "2026-10-15T15:41:10.335+09:00"
+        "lastActivity": "2026-10-27T14:48:11.527+09:00"
       },
       "recentCommits": [
         {
@@ -675,7 +675,7 @@
       "description": "정보시스템의 IP, 랙실장도, 선반장 등을 관리하기 위한 시스템입니다. 폐쇄망 내 유휴 자산으로도 운영 가능하도록 제작하였습니다.",
       "webUrl": "https://gitlab.aigov.go.kr/jikim/rack",
       "reference": true,
-      "active": true,
+      "active": false,
       "progress": null,
       "updates": [],
       "gitlab": {
