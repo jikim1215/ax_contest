@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T11:28:09.494Z",
+  "generatedAt": "2026-10-27T02:24:05.792Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -66,7 +66,7 @@
     212,
     181,
     71,
-    17,
+    23,
     0,
     0,
     0,
@@ -489,7 +489,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 502,
+        "commits": 508,
         "weeklyCommits": [
           0,
           0,
@@ -500,7 +500,7 @@
           158,
           117,
           39,
-          15,
+          21,
           0,
           0,
           0,
@@ -509,23 +509,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-26T05:41:46.961+09:00"
+        "lastActivity": "2026-10-27T00:59:30.777+09:00"
       },
       "recentCommits": [
         {
-          "title": "chore(deps): OSV 지적 의존성 갱신 — multer 2.5.0, body-parser 2.4.0(override), filelock 4.2.4, setuptools 84.2.1",
-          "date": "2026-10-26T05:41:08.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/d677562016f63b8d8975f541877a9b87b5b73e7b"
+          "title": "docs(self-improvement): 2026-10-27 실행 기록 — R-3·S-4'·S-2'·S-3' 완료, X-1·S-1' 신규, S-5' 현행 유지",
+          "date": "2026-10-27T00:48:38.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/de24331ce47bb03d37200b9a86976c6405620f5e"
         },
         {
-          "title": "docs(self-improvement): 2026-10-26 속도 개선 전후 측정 기록·L-1 해소",
-          "date": "2026-10-26T05:38:15.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/454aba1a5eb22ce724743101f509bd830986fd96"
+          "title": "fix(self-improvement): 보고서 파일 올리기(PUT)가 본문 수신 뒤 보고서 상태를 다시 보고 작성 중이면 409, 삭제됐으면 404",
+          "date": "2026-10-27T00:46:45.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/966f5b918a35f8cf29e7266b9216027123bb3540"
         },
         {
-          "title": "fix(latency): 취소된 작업에서 단계 시간 로그가 정리 코드를 막지 않게 하고, 경량 모델 표기를 audit 에서 뺀다",
-          "date": "2026-10-26T04:55:16.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/a5393096db12c503a8d6b6dc092657930293936b"
+          "title": "fix(self-improvement): 사건 답변의 같은 질문(index) 중복 항목은 첫 항목만 사실로 기록한다",
+          "date": "2026-10-27T00:43:35.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/880d8ac26dedeed0fc9634137686ddc60d73c9f2"
         }
       ],
       "recentIssues": []
