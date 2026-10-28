@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T02:33:45.367Z",
+  "generatedAt": "2026-10-28T11:33:06.591Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -66,7 +66,7 @@
     212,
     181,
     71,
-    46,
+    69,
     0,
     0,
     0,
@@ -244,7 +244,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 35,
+        "commits": 37,
         "weeklyCommits": [
           0,
           0,
@@ -255,7 +255,7 @@
           2,
           0,
           0,
-          8,
+          10,
           0,
           0,
           0,
@@ -264,23 +264,23 @@
         "openIssues": 1,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-28T01:59:17.541+09:00"
+        "lastActivity": "2026-10-28T16:38:41.263+09:00"
       },
       "recentCommits": [
+        {
+          "title": "Merge branch 'feat/public-document-hwpx' into 'main'",
+          "date": "2026-10-28T16:42:21.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/0260714e2b4930a5c881fd7f184b589347a3cdea"
+        },
+        {
+          "title": "feat: 공공문서 미리보기와 HWPX 2종 출력 및 외부 모델 시험 지원",
+          "date": "2026-10-28T16:37:36.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/3aff2b3f2ceba157f093bb5abb74779e156ef8d6"
+        },
         {
           "title": "Merge branch 'feat/upgrade-fast-draft-v2' into 'main'",
           "date": "2026-10-28T02:14:24.000+09:00",
           "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/32061fa3564e21d3709bd3f16d478ea0ba0afecf"
-        },
-        {
-          "title": "fix: 보안 스캔 지적 반영(SHA1 -> SHA256)",
-          "date": "2026-10-28T02:13:37.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/1c7ff252621694137869b077bb864291a599afad"
-        },
-        {
-          "title": "test: cover fast and legacy draft navigation paths",
-          "date": "2026-10-28T02:05:27.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/401955e01becb926c4fbf386243d2d43db279455"
         }
       ],
       "recentIssues": [
@@ -304,7 +304,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 80,
+        "commits": 85,
         "weeklyCommits": [
           0,
           0,
@@ -315,7 +315,7 @@
           49,
           17,
           11,
-          0,
+          5,
           0,
           0,
           0,
@@ -324,23 +324,23 @@
         "openIssues": 7,
         "closedIssues": 10,
         "stars": 2,
-        "lastActivity": "2026-10-22T16:08:59.710+09:00"
+        "lastActivity": "2026-10-28T15:05:21.224+09:00"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'feat/preparation-guide' into 'develop'",
-          "date": "2026-10-22T16:12:17.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/6a09e570e6c88540672087ce44c4b26dfb3a0344"
+          "title": "Merge branch 'feat/cooperation-memo' into 'develop'",
+          "date": "2026-10-28T15:07:52.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/eb790cdcbcd509c1cee7e39264c34c28cac45311"
         },
         {
-          "title": "chore: 최신 develop 변경 병합",
-          "date": "2026-10-22T16:08:34.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/1b3a1588e9b8359ab85059f345150ea7324c2bd8"
+          "title": "fix: Next.js와 Zod 보안 수정 버전 반영",
+          "date": "2026-10-28T15:05:03.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/58c29fedd83f04111f8ead0668388872955337b4"
         },
         {
-          "title": "feat: 순차 질문 기반 사업 준비 가이드와 저장 구현",
-          "date": "2026-10-22T16:08:34.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/e5c424c3f03f14cada96bf7f1b6b6a10f44315d6"
+          "title": "docs: 상세 시나리오 인용문 줄바꿈 정리",
+          "date": "2026-10-28T14:55:03.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/sign-kids/kimart/-/commit/139721d0c86fe08fda6217b6b3259a16583ae5bf"
         }
       ],
       "recentIssues": [
@@ -494,7 +494,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 513,
+        "commits": 529,
         "weeklyCommits": [
           0,
           0,
@@ -505,7 +505,7 @@
           158,
           117,
           39,
-          26,
+          42,
           0,
           0,
           0,
@@ -514,23 +514,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-28T11:32:05.163+09:00"
+        "lastActivity": "2026-10-28T15:03:08.006+09:00"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'feat/case-stepper' into 'main'",
-          "date": "2026-10-28T09:22:18.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/dd70df06d402515866ab3b1552986cafe99cbbb7"
+          "title": "Merge branch 'feat/case-tool-rail' into 'main'",
+          "date": "2026-10-28T15:47:48.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/4436c1596db8b94119007e423d841628cea158e5"
         },
         {
-          "title": "Merge branch 'feat/brand-home' into 'main'",
-          "date": "2026-10-28T09:21:07.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e023d79227c9e8f35438cb9d4102e8a7f1d4310f"
+          "title": "Merge branch 'feat/case-feed-sizing' into 'main'",
+          "date": "2026-10-28T15:47:13.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/82cc03ab1e5fdbb57d8f812ac8f113225920eb48"
         },
         {
-          "title": "feat(case): 사건 단계 표시를 아이콘 화살표 단계 바로 바꾸고 제목·버튼 줄을 정리한다",
-          "date": "2026-10-27T18:49:13.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/de037f56f448b85ab420b3f418dbd349efb431a2"
+          "title": "Merge branch 'feat/case-docs-tab' into 'main'",
+          "date": "2026-10-28T15:46:45.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/baa6fb17a4c44bd37a0247a4399b6947e7e71c82"
         }
       ],
       "recentIssues": []
