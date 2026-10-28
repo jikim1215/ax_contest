@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T10:51:03.908Z",
+  "generatedAt": "2026-10-28T02:33:45.367Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -66,7 +66,7 @@
     212,
     181,
     71,
-    32,
+    46,
     0,
     0,
     0,
@@ -134,11 +134,11 @@
       "description": "",
       "webUrl": "https://gitlab.aigov.go.kr/118/118ai-agent",
       "reference": false,
-      "active": false,
+      "active": true,
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 2,
+        "commits": 3,
         "weeklyCommits": [
           0,
           0,
@@ -149,7 +149,7 @@
           0,
           0,
           0,
-          0,
+          1,
           0,
           0,
           0,
@@ -158,9 +158,14 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 2,
-        "lastActivity": "2026-09-28T13:34:39.184+09:00"
+        "lastActivity": "2026-10-28T09:53:26.992+09:00"
       },
       "recentCommits": [
+        {
+          "title": "기존 STT PoC 파일을 모두 제거하고 118 실시간 상담지원 Agent 로 교체",
+          "date": "2026-10-28T09:53:05.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/118/118ai-agent/-/commit/e27640031dfbb366d569ae78958869fcade9d70f"
+        },
         {
           "title": "STT PoC 초기 커밋: Android 앱 및 상담 분석/RAG 스크립트",
           "date": "2026-09-28T13:40:36.000+09:00",
@@ -239,7 +244,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 27,
+        "commits": 35,
         "weeklyCommits": [
           0,
           0,
@@ -250,7 +255,7 @@
           2,
           0,
           0,
-          0,
+          8,
           0,
           0,
           0,
@@ -259,23 +264,23 @@
         "openIssues": 1,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-27T12:39:29.475+09:00"
+        "lastActivity": "2026-10-28T01:59:17.541+09:00"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'feat/handover-ai-update' into 'main'",
-          "date": "2026-10-11T10:56:37.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/e384917e81bc2e1a0a3da0a7f4960aadf9c2fff4"
+          "title": "Merge branch 'feat/upgrade-fast-draft-v2' into 'main'",
+          "date": "2026-10-28T02:14:24.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/32061fa3564e21d3709bd3f16d478ea0ba0afecf"
         },
         {
-          "title": "feat: 업무기억AI 모델 변경",
-          "date": "2026-10-11T19:55:53.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/c43c64bb434eba774e5bbce7cab1d11eec43f172"
+          "title": "fix: 보안 스캔 지적 반영(SHA1 -> SHA256)",
+          "date": "2026-10-28T02:13:37.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/1c7ff252621694137869b077bb864291a599afad"
         },
         {
-          "title": "Merge branch 'feat/handover-ai-update' into 'main'",
-          "date": "2026-09-28T07:32:37.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/082ae1271c80654f0134a6ff4b04ef49a7a69890"
+          "title": "test: cover fast and legacy draft navigation paths",
+          "date": "2026-10-28T02:05:27.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/401955e01becb926c4fbf386243d2d43db279455"
         }
       ],
       "recentIssues": [
@@ -489,7 +494,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 508,
+        "commits": 513,
         "weeklyCommits": [
           0,
           0,
@@ -500,7 +505,7 @@
           158,
           117,
           39,
-          21,
+          26,
           0,
           0,
           0,
@@ -509,23 +514,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-27T18:25:40.026+09:00"
+        "lastActivity": "2026-10-28T11:32:05.163+09:00"
       },
       "recentCommits": [
         {
-          "title": "docs(self-improvement): 2026-10-27 실행 기록 — R-3·S-4'·S-2'·S-3' 완료, X-1·S-1' 신규, S-5' 현행 유지",
-          "date": "2026-10-27T00:48:38.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/de24331ce47bb03d37200b9a86976c6405620f5e"
+          "title": "Merge branch 'feat/case-stepper' into 'main'",
+          "date": "2026-10-28T09:22:18.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/dd70df06d402515866ab3b1552986cafe99cbbb7"
         },
         {
-          "title": "fix(self-improvement): 보고서 파일 올리기(PUT)가 본문 수신 뒤 보고서 상태를 다시 보고 작성 중이면 409, 삭제됐으면 404",
-          "date": "2026-10-27T00:46:45.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/966f5b918a35f8cf29e7266b9216027123bb3540"
+          "title": "Merge branch 'feat/brand-home' into 'main'",
+          "date": "2026-10-28T09:21:07.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e023d79227c9e8f35438cb9d4102e8a7f1d4310f"
         },
         {
-          "title": "fix(self-improvement): 사건 답변의 같은 질문(index) 중복 항목은 첫 항목만 사실로 기록한다",
-          "date": "2026-10-27T00:43:35.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/880d8ac26dedeed0fc9634137686ddc60d73c9f2"
+          "title": "feat(case): 사건 단계 표시를 아이콘 화살표 단계 바로 바꾸고 제목·버튼 줄을 정리한다",
+          "date": "2026-10-27T18:49:13.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/de037f56f448b85ab420b3f418dbd349efb431a2"
         }
       ],
       "recentIssues": []
@@ -538,7 +543,7 @@
       "description": "",
       "webUrl": "https://gitlab.aigov.go.kr/dfdfhdfg1/doc_grading",
       "reference": false,
-      "active": true,
+      "active": false,
       "progress": null,
       "updates": [],
       "gitlab": {
