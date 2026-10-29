@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T02:48:53.926Z",
+  "generatedAt": "2026-10-29T11:41:15.174Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -66,7 +66,7 @@
     212,
     181,
     71,
-    109,
+    117,
     0,
     0,
     0,
@@ -85,7 +85,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 43,
+        "commits": 48,
         "weeklyCommits": [
           0,
           0,
@@ -96,7 +96,7 @@
           2,
           9,
           15,
-          11,
+          16,
           0,
           0,
           0,
@@ -105,23 +105,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-27T15:58:18.143+09:00"
+        "lastActivity": "2026-10-29T16:31:01.918+09:00"
       },
       "recentCommits": [
         {
-          "title": "Simplify plan upload screen and support individually removable attachments",
-          "date": "2026-10-27T16:26:59.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/05f6997ba2a8b9636d901d690bbccb4255778a21"
+          "title": "Preserve template text colors during HWP replacement and disable stale page caching",
+          "date": "2026-10-29T17:28:46.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/ccad42bd6652dd9b6ee141ccb15868642657192b"
         },
         {
-          "title": "Rename first workflow step to plan upload",
-          "date": "2026-10-27T16:21:28.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/091e1704d80f9f5cd08eb7baef1e3af04578f7d4"
+          "title": "Align web and HWP release timing and retain only template photo options",
+          "date": "2026-10-29T16:50:28.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/e25ae1acb6a10ea7d9d8179397c61311c6e32a31"
         },
         {
-          "title": "Simplify homepage header to service name",
-          "date": "2026-10-27T16:20:58.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/97a495bfbe425aeb9aeb21fe60698a12ce74ed29"
+          "title": "Format HWP release timing as next-day print and noon online publication",
+          "date": "2026-10-29T16:46:27.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/bfd94b2e9b9eb1a4a6748aeb80e258430e6cb550"
         }
       ],
       "recentIssues": []
@@ -408,7 +408,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-10-29T11:27:30.615+09:00"
+        "lastActivity": "2026-10-29T14:15:22.369+09:00"
       },
       "recentCommits": [
         {
@@ -494,7 +494,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 566,
+        "commits": 569,
         "weeklyCommits": [
           0,
           0,
@@ -505,7 +505,7 @@
           158,
           117,
           39,
-          79,
+          82,
           0,
           0,
           0,
@@ -513,24 +513,24 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 4,
-        "lastActivity": "2026-10-29T05:13:02.561+09:00"
+        "stars": 5,
+        "lastActivity": "2026-10-29T16:38:21.639+09:00"
       },
       "recentCommits": [
         {
-          "title": "docs(self-improvement): 2026-10-29 실행 기록 — X-1·F-2·F-1·T-A 완료, 신규 이월 10건",
-          "date": "2026-10-29T04:55:55.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/45449145a75759fbe3d6a94da18b7dd7dae07cc4"
+          "title": "Merge branch 'feat/case-summary-rail' into 'main'",
+          "date": "2026-10-29T15:00:01.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/98c3fff28b4cefcbac30b4bcc76a2c8f5e5f158f"
         },
         {
-          "title": "fix(self-improvement): 개인정보동향 피드 본문 1건으로 서버가 멈추지 않게 strip 선형화·수신 10MB 상한 (T-A)",
-          "date": "2026-10-29T04:52:35.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/1712944dd17ea0eabed4a30f0b2d5809ea58275d"
+          "title": "fix(case): 옆 패널이 열려 좁아지면 단계 바를 줄여 넘치지 않게, 조사 요약의 옛 '왓슨이의 점검' 목록을 뺀다",
+          "date": "2026-10-29T13:46:27.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/896067a3122037a729b569ec5ad6a59ad4db377b"
         },
         {
-          "title": "fix(self-improvement): 고시류 문맥 뒤 \"법/시행령 제N조\" 별칭을 고시 이름에 귀속하지 않음 (F-1)",
-          "date": "2026-10-29T04:47:31.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/dd5719628f14b6b7a32725dbe4c20cac9a0b7d4b"
+          "title": "feat(case): 결론·보고 마무리 카드, 사실확인 확인 사실 요약, 보고서 생성은 도구 막대로",
+          "date": "2026-10-29T13:43:37.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/444a6c29fc33035f0675521f48c2610645500e7a"
         }
       ],
       "recentIssues": []
