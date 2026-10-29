@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T11:33:06.591Z",
+  "generatedAt": "2026-10-29T02:48:53.926Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -66,7 +66,7 @@
     212,
     181,
     71,
-    69,
+    109,
     0,
     0,
     0,
@@ -384,11 +384,11 @@
       "description": "기업이 제출한 침해사고 신고 자료(신고 메일 EML·HTML 신고서·증빙파일)를 분석해 정보통신망법상 인지시점 기준 24시간 초과 여부와 과태료 부과 대상 여부를 \"인정/불인정\"으로 분류하는 검증 파이프라인입니다.",
       "webUrl": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar",
       "reference": false,
-      "active": false,
+      "active": true,
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 24,
+        "commits": 27,
         "weeklyCommits": [
           0,
           0,
@@ -399,7 +399,7 @@
           0,
           0,
           0,
-          0,
+          3,
           0,
           0,
           0,
@@ -408,23 +408,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-09-22T19:59:49.239+09:00"
+        "lastActivity": "2026-10-29T11:27:30.615+09:00"
       },
       "recentCommits": [
         {
-          "title": "feat: 담당자 대시보드 브랜딩 통일과 README 일반화 정비",
-          "date": "2026-09-22T19:57:29.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/f0c6872b44204e37baa590772e96ae003fe1106e"
+          "title": "chore(deps): certifi 플로어 추가 — 남은 OSV 2건 해소",
+          "date": "2026-10-29T11:27:06.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/b03a6267d9f785f0cdb8b1d7db5df7c45832e149"
         },
         {
-          "title": "feat: 리포트 페이지 레이아웃 개편과 전역 줄간격 통일",
-          "date": "2026-09-22T18:52:04.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/deff2d315f1a7c4b01e92d2880d80128ff385c0f"
+          "title": "chore(deps): 원격 pre-receive 보안게이트 통과 — 취약 의존성 플로어 상향",
+          "date": "2026-10-29T11:25:45.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/07fb1b546e8300b687ee84735517409b1ec4e9c3"
         },
         {
-          "title": "feat: 관리자 단건 재실행 + 워크벤치 네비/매칭 정비 + 리포트 디자인 토큰 통일 + 문서 개편",
-          "date": "2026-09-22T13:01:03.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/2bca27d82cc9192cbe316b298b725b80bd701dcf"
+          "title": "docs: Git 동기화 정책을 사내 GitLab 단일 origin으로 정정",
+          "date": "2026-10-29T11:11:47.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/69aae865cc6ebd4e981f8411e2a24cf549dca302"
         }
       ],
       "recentIssues": []
@@ -494,7 +494,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 529,
+        "commits": 566,
         "weeklyCommits": [
           0,
           0,
@@ -505,7 +505,7 @@
           158,
           117,
           39,
-          42,
+          79,
           0,
           0,
           0,
@@ -514,23 +514,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-28T15:03:08.006+09:00"
+        "lastActivity": "2026-10-29T05:13:02.561+09:00"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'feat/case-tool-rail' into 'main'",
-          "date": "2026-10-28T15:47:48.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/4436c1596db8b94119007e423d841628cea158e5"
+          "title": "docs(self-improvement): 2026-10-29 실행 기록 — X-1·F-2·F-1·T-A 완료, 신규 이월 10건",
+          "date": "2026-10-29T04:55:55.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/45449145a75759fbe3d6a94da18b7dd7dae07cc4"
         },
         {
-          "title": "Merge branch 'feat/case-feed-sizing' into 'main'",
-          "date": "2026-10-28T15:47:13.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/82cc03ab1e5fdbb57d8f812ac8f113225920eb48"
+          "title": "fix(self-improvement): 개인정보동향 피드 본문 1건으로 서버가 멈추지 않게 strip 선형화·수신 10MB 상한 (T-A)",
+          "date": "2026-10-29T04:52:35.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/1712944dd17ea0eabed4a30f0b2d5809ea58275d"
         },
         {
-          "title": "Merge branch 'feat/case-docs-tab' into 'main'",
-          "date": "2026-10-28T15:46:45.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/baa6fb17a4c44bd37a0247a4399b6947e7e71c82"
+          "title": "fix(self-improvement): 고시류 문맥 뒤 \"법/시행령 제N조\" 별칭을 고시 이름에 귀속하지 않음 (F-1)",
+          "date": "2026-10-29T04:47:31.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/dd5719628f14b6b7a32725dbe4c20cac9a0b7d4b"
         }
       ],
       "recentIssues": []
