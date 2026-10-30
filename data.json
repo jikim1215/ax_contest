@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T11:41:15.174Z",
+  "generatedAt": "2026-10-30T02:53:57.552Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -66,7 +66,7 @@
     212,
     181,
     71,
-    117,
+    123,
     0,
     0,
     0,
@@ -187,7 +187,7 @@
       "description": "",
       "webUrl": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate",
       "reference": false,
-      "active": true,
+      "active": false,
       "progress": null,
       "updates": [],
       "gitlab": {
@@ -494,7 +494,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 569,
+        "commits": 575,
         "weeklyCommits": [
           0,
           0,
@@ -505,7 +505,7 @@
           158,
           117,
           39,
-          82,
+          88,
           0,
           0,
           0,
@@ -514,23 +514,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 5,
-        "lastActivity": "2026-10-29T16:38:21.639+09:00"
+        "lastActivity": "2026-10-30T04:41:20.892+09:00"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'feat/case-summary-rail' into 'main'",
-          "date": "2026-10-29T15:00:01.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/98c3fff28b4cefcbac30b4bcc76a2c8f5e5f158f"
+          "title": "docs(self-improvement): 2026-10-30 실행 기록 — F-5·T-05·T-04·N-1 완료, F-6 샘플 확인 결과 기록",
+          "date": "2026-10-30T04:27:20.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/aa4b05c685c5c8efc2182b9d93d7c40352a4f321"
         },
         {
-          "title": "fix(case): 옆 패널이 열려 좁아지면 단계 바를 줄여 넘치지 않게, 조사 요약의 옛 '왓슨이의 점검' 목록을 뺀다",
-          "date": "2026-10-29T13:46:27.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/896067a3122037a729b569ec5ad6a59ad4db377b"
+          "title": "fix(self-improvement): 피드 일부 실패를 '정상 완료·특이사항 없음' 으로 저장하지 않고 기존 동향을 보존 (N-1)",
+          "date": "2026-10-30T04:26:02.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/c16521df0e522fbca78d524a9649276729d3e50f"
         },
         {
-          "title": "feat(case): 결론·보고 마무리 카드, 사실확인 확인 사실 요약, 보고서 생성은 도구 막대로",
-          "date": "2026-10-29T13:43:37.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/444a6c29fc33035f0675521f48c2610645500e7a"
+          "title": "fix(self-improvement): 전날 기사를 수동 수집하면 같은 날 스케줄러가 한 번 더 돌지 않게 (T-04)",
+          "date": "2026-10-30T04:21:41.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/1990cbd34058cfd69c76796dcddc4d5b1465cc84"
         }
       ],
       "recentIssues": []
