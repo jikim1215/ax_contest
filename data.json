@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T11:33:34.370Z",
+  "generatedAt": "2026-10-31T02:41:40.995Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -66,7 +66,7 @@
     212,
     181,
     71,
-    123,
+    132,
     0,
     0,
     0,
@@ -494,7 +494,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 575,
+        "commits": 584,
         "weeklyCommits": [
           0,
           0,
@@ -505,7 +505,7 @@
           158,
           117,
           39,
-          88,
+          97,
           0,
           0,
           0,
@@ -514,23 +514,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 5,
-        "lastActivity": "2026-10-30T18:04:49.673+09:00"
+        "lastActivity": "2026-10-31T08:30:01.580+09:00"
       },
       "recentCommits": [
         {
-          "title": "docs(self-improvement): 2026-10-30 실행 기록 — F-5·T-05·T-04·N-1 완료, F-6 샘플 확인 결과 기록",
-          "date": "2026-10-30T04:27:20.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/aa4b05c685c5c8efc2182b9d93d7c40352a4f321"
+          "title": "Merge branch 'feat/trends-ui' into 'main'",
+          "date": "2026-10-31T08:30:01.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/22eaadb034a5b7a7d8d39d8bc67283903847e189"
         },
         {
-          "title": "fix(self-improvement): 피드 일부 실패를 '정상 완료·특이사항 없음' 으로 저장하지 않고 기존 동향을 보존 (N-1)",
-          "date": "2026-10-30T04:26:02.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/c16521df0e522fbca78d524a9649276729d3e50f"
+          "title": "docs(self-improvement): 2026-10-31 실행 기록 — R-2·R-1·C-1·N-2 완료, R-3·R-4·R-5(10-31) 이월",
+          "date": "2026-10-31T04:46:54.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/3f62fd78c5055f4ef52bb46ee5f59c22f292f3e9"
         },
         {
-          "title": "fix(self-improvement): 전날 기사를 수동 수집하면 같은 날 스케줄러가 한 번 더 돌지 않게 (T-04)",
-          "date": "2026-10-30T04:21:41.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/1990cbd34058cfd69c76796dcddc4d5b1465cc84"
+          "title": "fix(self-improvement): 개인정보동향 Google News 검색을 대상 날짜 기준(after/before)으로 — 과거 날짜 수동 수집·전날 00~07시 누락 해소 (N-2)",
+          "date": "2026-10-31T04:44:31.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/3139cb6dda08e074203899938a8382791f7d1013"
         }
       ],
       "recentIssues": []
