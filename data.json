@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T11:59:13.985Z",
+  "generatedAt": "2026-11-02T02:43:39.338Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -617,10 +617,10 @@
           0,
           0
         ],
-        "openIssues": 10,
+        "openIssues": 18,
         "closedIssues": 10,
         "stars": 4,
-        "lastActivity": "2026-10-27T14:48:11.527+09:00"
+        "lastActivity": "2026-11-02T00:33:07.436+09:00"
       },
       "recentCommits": [
         {
@@ -641,34 +641,34 @@
       ],
       "recentIssues": [
         {
-          "title": "관리자 교육 현황 대시보드",
-          "date": "2026-10-15T15:41:59.848+09:00",
-          "state": "closed",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/5"
-        },
-        {
-          "title": "발표자료 자동화",
-          "date": "2026-10-15T15:41:10.203+09:00",
+          "title": "퀴즈 다음 버튼 하단 고정 및 차분한 선택·해설 전개 적용",
+          "date": "2026-11-02T00:33:26.587+09:00",
           "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/20"
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/28"
         },
         {
-          "title": "preview.quiz 화면 개선",
-          "date": "2026-10-15T13:27:31.849+09:00",
-          "state": "closed",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/19"
+          "title": "진단의날 중단한 문제풀이 이어하기",
+          "date": "2026-11-01T23:50:40.747+09:00",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/27"
         },
         {
-          "title": "환경설정 화면",
-          "date": "2026-10-15T11:25:40.815+09:00",
-          "state": "closed",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/17"
+          "title": "GitLab 보안 검사 통과를 위한 의존성 갱신",
+          "date": "2026-11-01T23:11:42.275+09:00",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/24"
         },
         {
-          "title": "화면보호기 모드(자리비움 상태일때) 개발",
-          "date": "2026-10-15T11:15:18.188+09:00",
-          "state": "closed",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/15"
+          "title": "버튼 반응·화면 전환·처리 상태 애니메이션 개선",
+          "date": "2026-11-01T23:11:19.759+09:00",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/23"
+        },
+        {
+          "title": "오류 로그 및 진단 정보 저장",
+          "date": "2026-11-01T23:05:00.910+09:00",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/26"
         }
       ]
     },
