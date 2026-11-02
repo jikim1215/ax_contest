@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T02:43:39.338Z",
+  "generatedAt": "2026-11-02T13:47:00.889Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -66,8 +66,8 @@
     212,
     181,
     71,
-    141,
-    0,
+    145,
+    4,
     0,
     0,
     0
@@ -388,7 +388,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 27,
+        "commits": 35,
         "weeklyCommits": [
           0,
           0,
@@ -399,32 +399,32 @@
           0,
           0,
           0,
-          3,
-          0,
+          7,
+          4,
           0,
           0,
           0
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 3,
-        "lastActivity": "2026-10-29T14:15:22.369+09:00"
+        "stars": 4,
+        "lastActivity": "2026-11-02T21:06:59.538+09:00"
       },
       "recentCommits": [
         {
-          "title": "chore(deps): certifi 플로어 추가 — 남은 OSV 2건 해소",
-          "date": "2026-10-29T11:27:06.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/b03a6267d9f785f0cdb8b1d7db5df7c45832e149"
+          "title": "chore: 폐기한 입력 폴더(thunderbird_emls·testsets) 흔적 정리 — 파이프라인 1-EML·2·3 배치 삭제",
+          "date": "2026-11-02T21:06:02.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/bfe23c04995561df58ec2cc6871d77afc13da85d"
         },
         {
-          "title": "chore(deps): 원격 pre-receive 보안게이트 통과 — 취약 의존성 플로어 상향",
-          "date": "2026-10-29T11:25:45.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/07fb1b546e8300b687ee84735517409b1ec4e9c3"
+          "title": "feat: 합성 데이터(data/) 허용 목록 추적 + 헤더 줄바꿈 수정·README 스크린샷 재촬영",
+          "date": "2026-11-02T20:27:30.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/ab85bbf04fe428442c31bc4add7de70799637ba4"
         },
         {
-          "title": "docs: Git 동기화 정책을 사내 GitLab 단일 origin으로 정정",
-          "date": "2026-10-29T11:11:47.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/69aae865cc6ebd4e981f8411e2a24cf549dca302"
+          "title": "chore: 실행·종료 스크립트를 PowerShell에서 파이썬으로 이전 (start.py / stop.py)",
+          "date": "2026-11-02T19:46:26.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/5cf1563abb131aa01ec0e725cd1fb2a856f7c99b"
         }
       ],
       "recentIssues": []
