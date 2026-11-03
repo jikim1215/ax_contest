@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T13:47:00.889Z",
+  "generatedAt": "2026-11-03T04:00:26.740Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -67,7 +67,7 @@
     181,
     71,
     145,
-    4,
+    26,
     0,
     0,
     0
@@ -494,7 +494,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 593,
+        "commits": 615,
         "weeklyCommits": [
           0,
           0,
@@ -506,7 +506,7 @@
           117,
           39,
           106,
-          0,
+          22,
           0,
           0,
           0
@@ -514,23 +514,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 5,
-        "lastActivity": "2026-11-01T08:30:02.375+09:00"
+        "lastActivity": "2026-11-03T04:49:57.974+09:00"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'feat/report-dialog-buttons' into 'main'",
-          "date": "2026-11-01T08:30:02.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/a37a6755ab19a5347f9bf316b1e3939bc53aa589"
+          "title": "docs(self-improvement): 2026-11-02 기록 복원(되돌림 경위 추가) + 2026-11-03 실행 기록 — N-1·N-4·N-3·N-2(11-02) 재반영 완료, N-2-b·G1 보강",
+          "date": "2026-11-03T04:37:40.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/5bc2259fb22132fa5926228629df92832174659d"
         },
         {
-          "title": "docs(self-improvement): 2026-11-01 실행 기록 — R-3·R-4·R-5(10-31) 완료, Trends.tsx 가드 테스트 수정 기록",
-          "date": "2026-11-01T04:35:17.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e9ce3bc86bf9941bdd9bb8b2c1586eb1bbf00a1e"
+          "title": "fix(self-improvement): 링크 꼬리 판정을 라벨 루프와 같은 전처리(「법령명 제N조」 분리·[시행 …] 제거) 뒤 라벨로 — N-2(11-02) 패치 검토 재수정",
+          "date": "2026-11-03T04:35:27.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/a34a39bd10c93960df5d5188dac5cdeb0099e4d1"
         },
         {
-          "title": "fix(self-improvement): 사건 보고서 입력의 분량 상한에서 근거를 먼저 버리지 않고 argument → 오래된 회신 → 근거 순으로 줄인다 (R-5(10-31))",
-          "date": "2026-11-01T04:33:15.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/fc0ba53a6246c010f0441a38a4c4c64b50231f19"
+          "title": "fix(self-improvement): 근거 링크 바로 뒤에 적은 항·호를 링크 조문의 인용으로 붙여 검증 — N-2(11-02) 재반영 + 조문 없는 라벨의 꼬리 소실 수정",
+          "date": "2026-11-03T04:29:30.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/f5f1c0617659bbd9d1adc4fdd3111de37466fe42"
         }
       ],
       "recentIssues": []
@@ -703,7 +703,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 1,
-        "stars": 2,
+        "stars": 3,
         "lastActivity": "2026-10-13T16:41:22.457+09:00"
       },
       "recentCommits": [
