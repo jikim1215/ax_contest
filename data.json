@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T04:00:26.740Z",
+  "generatedAt": "2026-11-03T12:57:42.501Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -66,8 +66,8 @@
     212,
     181,
     71,
-    145,
-    26,
+    149,
+    30,
     0,
     0,
     0
@@ -85,7 +85,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 48,
+        "commits": 49,
         "weeklyCommits": [
           0,
           0,
@@ -97,7 +97,7 @@
           9,
           15,
           16,
-          0,
+          1,
           0,
           0,
           0
@@ -105,9 +105,14 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-10-29T16:31:01.918+09:00"
+        "lastActivity": "2026-11-03T15:39:59.131+09:00"
       },
       "recentCommits": [
+        {
+          "title": "Redesign press workspace with blue dashboard navigation and attachment sidebar",
+          "date": "2026-11-03T15:39:16.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/fc05959fee19415f506f40591a8cbafd91f716fe"
+        },
         {
           "title": "Preserve template text colors during HWP replacement and disable stale page caching",
           "date": "2026-10-29T17:28:46.000+09:00",
@@ -117,11 +122,6 @@
           "title": "Align web and HWP release timing and retain only template photo options",
           "date": "2026-10-29T16:50:28.000+09:00",
           "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/e25ae1acb6a10ea7d9d8179397c61311c6e32a31"
-        },
-        {
-          "title": "Format HWP release timing as next-day print and noon online publication",
-          "date": "2026-10-29T16:46:27.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/lmj6706/pr_kisa/-/commit/bfd94b2e9b9eb1a4a6748aeb80e258430e6cb550"
         }
       ],
       "recentIssues": []
@@ -600,7 +600,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 43,
+        "commits": 50,
         "weeklyCommits": [
           0,
           0,
@@ -611,64 +611,64 @@
           1,
           37,
           0,
-          0,
-          0,
+          4,
+          3,
           0,
           0,
           0
         ],
-        "openIssues": 18,
-        "closedIssues": 10,
+        "openIssues": 14,
+        "closedIssues": 14,
         "stars": 4,
-        "lastActivity": "2026-11-02T00:33:07.436+09:00"
+        "lastActivity": "2026-11-03T16:40:45.243+09:00"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'chore/design-md' into 'main'",
-          "date": "2026-10-15T06:50:44.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/742f128f60c63b58171144f4cb03e51e2eda9cb4"
+          "title": "Merge branch 'feat/23-ui-motion-feedback' into 'main'",
+          "date": "2026-11-03T16:41:03.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/610e260b0a7e6f166560c9d37ff206b96bf8b798"
         },
         {
-          "title": "docs: 화면 디자인 기준 DESIGN.md 추가",
-          "date": "2026-10-15T15:49:11.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/a78e9e2958acc436044aff60bd89eeb5cd829586"
+          "title": "Merge branch 'fix/18-adaptive-window-layout' into 'main'",
+          "date": "2026-11-03T16:40:44.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/1780de9aeea010fac5c0cf4d85787a700f9d9c6b"
         },
         {
-          "title": "Merge branch 'feature/quiz-screen-cleanup' into 'main'",
-          "date": "2026-10-15T04:27:18.000+00:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/7482745d783b45022304859c3bd6e72dd7355a2f"
+          "title": "feat: 퀴즈 하단 고정과 차분한 선택·해설 전개 적용 (#28)",
+          "date": "2026-11-02T00:32:18.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/2a20e8c678a63585e6aa8933d732328fc84b6108"
         }
       ],
       "recentIssues": [
         {
+          "title": "GitLab 보안 검사 통과를 위한 의존성 갱신",
+          "date": "2026-11-03T16:41:05.700+09:00",
+          "state": "closed",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/24"
+        },
+        {
           "title": "퀴즈 다음 버튼 하단 고정 및 차분한 선택·해설 전개 적용",
-          "date": "2026-11-02T00:33:26.587+09:00",
-          "state": "opened",
+          "date": "2026-11-03T16:41:05.682+09:00",
+          "state": "closed",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/28"
+        },
+        {
+          "title": "버튼 반응·화면 전환·처리 상태 애니메이션 개선",
+          "date": "2026-11-03T16:41:05.609+09:00",
+          "state": "closed",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/23"
+        },
+        {
+          "title": "저해상도·고배율 PC의 화면 잘림과 가로 여백 개선",
+          "date": "2026-11-03T16:40:46.485+09:00",
+          "state": "closed",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/21"
         },
         {
           "title": "진단의날 중단한 문제풀이 이어하기",
           "date": "2026-11-01T23:50:40.747+09:00",
           "state": "opened",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/27"
-        },
-        {
-          "title": "GitLab 보안 검사 통과를 위한 의존성 갱신",
-          "date": "2026-11-01T23:11:42.275+09:00",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/24"
-        },
-        {
-          "title": "버튼 반응·화면 전환·처리 상태 애니메이션 개선",
-          "date": "2026-11-01T23:11:19.759+09:00",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/23"
-        },
-        {
-          "title": "오류 로그 및 진단 정보 저장",
-          "date": "2026-11-01T23:05:00.910+09:00",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/26"
         }
       ]
     },
