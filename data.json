@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T12:57:42.501Z",
+  "generatedAt": "2026-11-04T03:12:39.947Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -67,7 +67,7 @@
     181,
     71,
     149,
-    30,
+    35,
     0,
     0,
     0
@@ -105,7 +105,7 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 4,
-        "lastActivity": "2026-11-03T15:39:59.131+09:00"
+        "lastActivity": "2026-11-04T09:58:15.715+09:00"
       },
       "recentCommits": [
         {
@@ -494,7 +494,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 615,
+        "commits": 620,
         "weeklyCommits": [
           0,
           0,
@@ -506,7 +506,7 @@
           117,
           39,
           106,
-          22,
+          27,
           0,
           0,
           0
@@ -514,23 +514,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 5,
-        "lastActivity": "2026-11-03T04:49:57.974+09:00"
+        "lastActivity": "2026-11-04T04:47:26.212+09:00"
       },
       "recentCommits": [
         {
-          "title": "docs(self-improvement): 2026-11-02 기록 복원(되돌림 경위 추가) + 2026-11-03 실행 기록 — N-1·N-4·N-3·N-2(11-02) 재반영 완료, N-2-b·G1 보강",
-          "date": "2026-11-03T04:37:40.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/5bc2259fb22132fa5926228629df92832174659d"
+          "title": "docs(self-improvement): 2026-11-04 실행 기록 — C-1·C-2·C-3·S-A(11-02) 완료, N-2-b 남은 경로 2건 추가",
+          "date": "2026-11-04T04:35:29.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/ccd4d5bbd4b0180d2aba0b3a2cb8e6f037332235"
         },
         {
-          "title": "fix(self-improvement): 링크 꼬리 판정을 라벨 루프와 같은 전처리(「법령명 제N조」 분리·[시행 …] 제거) 뒤 라벨로 — N-2(11-02) 패치 검토 재수정",
-          "date": "2026-11-03T04:35:27.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/a34a39bd10c93960df5d5188dac5cdeb0099e4d1"
+          "title": "fix(self-improvement): JSON 본문 파서를 호스트·출처 검사 뒤로 옮겨 거절될 요청의 2 MB 파싱을 없앰 — S-A(11-02)",
+          "date": "2026-11-04T04:32:45.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e83a9b6e34816c83bb2a51099240aa8d00593381"
         },
         {
-          "title": "fix(self-improvement): 근거 링크 바로 뒤에 적은 항·호를 링크 조문의 인용으로 붙여 검증 — N-2(11-02) 재반영 + 조문 없는 라벨의 꼬리 소실 수정",
-          "date": "2026-11-03T04:29:30.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/f5f1c0617659bbd9d1adc4fdd3111de37466fe42"
+          "title": "fix(self-improvement): 명시한 \"제0항\"을 항 생략과 구별해 invalid 로 판정 — C-3(11-02)",
+          "date": "2026-11-04T04:29:39.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e3f8bb8b7a13f7d592c80242dc625fa56bcdc730"
         }
       ],
       "recentIssues": []
