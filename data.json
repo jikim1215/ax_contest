@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T03:12:39.947Z",
+  "generatedAt": "2026-11-04T13:13:33.097Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -67,7 +67,7 @@
     181,
     71,
     149,
-    35,
+    46,
     0,
     0,
     0
@@ -407,7 +407,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 4,
+        "stars": 5,
         "lastActivity": "2026-11-02T21:06:59.538+09:00"
       },
       "recentCommits": [
@@ -494,7 +494,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 620,
+        "commits": 631,
         "weeklyCommits": [
           0,
           0,
@@ -506,7 +506,7 @@
           117,
           39,
           106,
-          27,
+          38,
           0,
           0,
           0
@@ -514,23 +514,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 5,
-        "lastActivity": "2026-11-04T04:47:26.212+09:00"
+        "lastActivity": "2026-11-04T19:10:00.025+09:00"
       },
       "recentCommits": [
         {
-          "title": "docs(self-improvement): 2026-11-04 실행 기록 — C-1·C-2·C-3·S-A(11-02) 완료, N-2-b 남은 경로 2건 추가",
-          "date": "2026-11-04T04:35:29.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/ccd4d5bbd4b0180d2aba0b3a2cb8e6f037332235"
+          "title": "Merge branch 'feat/forms-from-samples' into 'main'",
+          "date": "2026-11-04T16:39:36.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/7f68703147d942d87810db619024f68dcf0937c0"
         },
         {
-          "title": "fix(self-improvement): JSON 본문 파서를 호스트·출처 검사 뒤로 옮겨 거절될 요청의 2 MB 파싱을 없앰 — S-A(11-02)",
-          "date": "2026-11-04T04:32:45.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e83a9b6e34816c83bb2a51099240aa8d00593381"
+          "title": "feat(form): 조사관 제공 샘플을 한글로 HWPX 변환한 조사결과보고서·사실확인서 양식",
+          "date": "2026-11-04T16:08:51.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/b723b77c51577f91b0dce9abe822b60446e4a7f2"
         },
         {
-          "title": "fix(self-improvement): 명시한 \"제0항\"을 항 생략과 구별해 invalid 로 판정 — C-3(11-02)",
-          "date": "2026-11-04T04:29:39.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/e3f8bb8b7a13f7d592c80242dc625fa56bcdc730"
+          "title": "Merge branch 'feat/report-form-v2' into 'main'",
+          "date": "2026-11-04T15:52:37.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/95048e73f77d082c4aa25f422144f251aeeefacf"
         }
       ],
       "recentIssues": []
