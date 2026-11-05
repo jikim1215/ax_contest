@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T13:13:33.097Z",
+  "generatedAt": "2026-11-05T03:42:16.253Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -67,7 +67,7 @@
     181,
     71,
     149,
-    46,
+    66,
     0,
     0,
     0
@@ -494,7 +494,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 631,
+        "commits": 651,
         "weeklyCommits": [
           0,
           0,
@@ -506,7 +506,7 @@
           117,
           39,
           106,
-          38,
+          58,
           0,
           0,
           0
@@ -514,23 +514,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 5,
-        "lastActivity": "2026-11-04T19:10:00.025+09:00"
+        "lastActivity": "2026-11-05T09:46:10.887+09:00"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'feat/forms-from-samples' into 'main'",
-          "date": "2026-11-04T16:39:36.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/7f68703147d942d87810db619024f68dcf0937c0"
+          "title": "Merge branch 'feat/report-lesson1' into 'main'",
+          "date": "2026-11-05T09:46:14.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/521800e9cd67be50faa3b986e542e182f61ce771"
         },
         {
-          "title": "feat(form): 조사관 제공 샘플을 한글로 HWPX 변환한 조사결과보고서·사실확인서 양식",
-          "date": "2026-11-04T16:08:51.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/b723b77c51577f91b0dce9abe822b60446e4a7f2"
+          "title": "Merge branch 'feat/project-menu' into 'main'",
+          "date": "2026-11-05T09:46:10.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/ace12d1af3fa0d520a4bc90f2f8fa50141e8ba91"
         },
         {
-          "title": "Merge branch 'feat/report-form-v2' into 'main'",
-          "date": "2026-11-04T15:52:37.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/95048e73f77d082c4aa25f422144f251aeeefacf"
+          "title": "Merge branch 'feat/report-kinds-fact' into 'main'",
+          "date": "2026-11-05T08:30:04.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/66bc5b7ffaee36d6cdb59bac46906d7927b4dc0c"
         }
       ],
       "recentIssues": []
