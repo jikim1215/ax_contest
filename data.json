@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T13:26:39.522Z",
+  "generatedAt": "2026-11-06T03:38:31.581Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -67,7 +67,7 @@
     181,
     71,
     149,
-    83,
+    85,
     0,
     0,
     0
@@ -494,7 +494,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 657,
+        "commits": 659,
         "weeklyCommits": [
           0,
           0,
@@ -506,7 +506,7 @@
           117,
           39,
           106,
-          64,
+          66,
           0,
           0,
           0
@@ -514,23 +514,23 @@
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 5,
-        "lastActivity": "2026-11-05T15:00:03.111+09:00"
+        "lastActivity": "2026-11-06T08:30:02.634+09:00"
       },
       "recentCommits": [
+        {
+          "title": "Merge branch 'feat/request-lesson1' into 'main'",
+          "date": "2026-11-06T08:30:02.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/351c51385807d1be31599c33e39743c8bb0df070"
+        },
+        {
+          "title": "feat(reports): 피신고인 자료제출요구서에 조사관 첨삭 레슨 반영",
+          "date": "2026-11-05T15:05:09.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/f24fc446108c9ab2b13a963a835353d4feed157e"
+        },
         {
           "title": "Merge branch 'feat/request-reason' into 'main'",
           "date": "2026-11-05T15:00:13.000+09:00",
           "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/11803c7792166c0d2014b323cbb60297c5370967"
-        },
-        {
-          "title": "Merge branch 'feat/sidebar-no-dots' into 'main'",
-          "date": "2026-11-05T15:00:04.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/66b05c7ce74a4305c6a3db8eb52cff4326566d1f"
-        },
-        {
-          "title": "Merge branch 'feat/rename-singo-gaeyo' into 'main'",
-          "date": "2026-11-05T15:00:02.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/2c7da6e6b1ba2b634bcc0c85c1d6c77dd5a5311b"
         }
       ],
       "recentIssues": []
