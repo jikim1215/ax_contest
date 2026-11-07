@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T13:10:30.086Z",
+  "generatedAt": "2026-11-07T03:11:17.343Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -617,10 +617,10 @@
           0,
           0
         ],
-        "openIssues": 14,
+        "openIssues": 15,
         "closedIssues": 14,
         "stars": 4,
-        "lastActivity": "2026-11-06T15:48:59.371+09:00"
+        "lastActivity": "2026-11-07T09:16:40.814+09:00"
       },
       "recentCommits": [
         {
@@ -640,6 +640,12 @@
         }
       ],
       "recentIssues": [
+        {
+          "title": "내 몬스터 진화 외형과 바탕화면 펫 연동",
+          "date": "2026-11-07T09:16:40.711+09:00",
+          "state": "opened",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/29"
+        },
         {
           "title": "GitLab 보안 검사 통과를 위한 의존성 갱신",
           "date": "2026-11-03T16:41:05.700+09:00",
@@ -663,12 +669,6 @@
           "date": "2026-11-03T16:40:46.485+09:00",
           "state": "closed",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/21"
-        },
-        {
-          "title": "진단의날 중단한 문제풀이 이어하기",
-          "date": "2026-11-01T23:50:40.747+09:00",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/27"
         }
       ]
     },
