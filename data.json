@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T03:11:17.343Z",
+  "generatedAt": "2026-11-07T11:53:13.662Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -60,14 +60,14 @@
     0,
     0,
     0,
-    24,
-    142,
+    20,
+    122,
     97,
     212,
     181,
     71,
-    149,
-    88,
+    142,
+    84,
     0,
     0,
     0
@@ -377,59 +377,6 @@
       ]
     },
     {
-      "repo": "skynet_b/complaint-radar",
-      "name": "Complaint Radar",
-      "team": "skynet_b",
-      "field": "미분류",
-      "description": "기업이 제출한 침해사고 신고 자료(신고 메일 EML·HTML 신고서·증빙파일)를 분석해 정보통신망법상 인지시점 기준 24시간 초과 여부와 과태료 부과 대상 여부를 \"인정/불인정\"으로 분류하는 검증 파이프라인입니다.",
-      "webUrl": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar",
-      "reference": false,
-      "active": true,
-      "progress": null,
-      "updates": [],
-      "gitlab": {
-        "commits": 35,
-        "weeklyCommits": [
-          0,
-          0,
-          0,
-          4,
-          20,
-          0,
-          0,
-          0,
-          0,
-          7,
-          4,
-          0,
-          0,
-          0
-        ],
-        "openIssues": 0,
-        "closedIssues": 0,
-        "stars": 5,
-        "lastActivity": "2026-11-02T21:06:59.538+09:00"
-      },
-      "recentCommits": [
-        {
-          "title": "chore: 폐기한 입력 폴더(thunderbird_emls·testsets) 흔적 정리 — 파이프라인 1-EML·2·3 배치 삭제",
-          "date": "2026-11-02T21:06:02.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/bfe23c04995561df58ec2cc6871d77afc13da85d"
-        },
-        {
-          "title": "feat: 합성 데이터(data/) 허용 목록 추적 + 헤더 줄바꿈 수정·README 스크린샷 재촬영",
-          "date": "2026-11-02T20:27:30.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/ab85bbf04fe428442c31bc4add7de70799637ba4"
-        },
-        {
-          "title": "chore: 실행·종료 스크립트를 PowerShell에서 파이썬으로 이전 (start.py / stop.py)",
-          "date": "2026-11-02T19:46:26.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/skynet_b/complaint-radar/-/commit/5cf1563abb131aa01ec0e725cd1fb2a856f7c99b"
-        }
-      ],
-      "recentIssues": []
-    },
-    {
       "repo": "j30231/isds_check",
       "name": "isds_check",
       "team": "한국인터넷진흥원 이재식",
@@ -620,7 +567,7 @@
         "openIssues": 15,
         "closedIssues": 14,
         "stars": 4,
-        "lastActivity": "2026-11-07T09:16:40.814+09:00"
+        "lastActivity": "2026-11-07T15:15:52.815+09:00"
       },
       "recentCommits": [
         {
@@ -642,7 +589,7 @@
       "recentIssues": [
         {
           "title": "내 몬스터 진화 외형과 바탕화면 펫 연동",
-          "date": "2026-11-07T09:16:40.711+09:00",
+          "date": "2026-11-07T15:15:52.728+09:00",
           "state": "opened",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/29"
         },
@@ -733,6 +680,8 @@
       ]
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "skynet_b/complaint-radar: 수집 실패 (GitLab 404 Not Found @ https://ax-contest-1370.vercel.app/api/gitlab?u=%2Fprojects%2Fskynet_b%252Fcomplaint-radar)"
+  ],
   "showcase": []
 }
