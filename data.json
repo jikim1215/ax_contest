@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T11:53:13.662Z",
+  "generatedAt": "2026-11-08T02:40:47.571Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -567,7 +567,7 @@
         "openIssues": 15,
         "closedIssues": 14,
         "stars": 4,
-        "lastActivity": "2026-11-07T15:15:52.815+09:00"
+        "lastActivity": "2026-11-08T01:45:24.066+09:00"
       },
       "recentCommits": [
         {
@@ -589,7 +589,7 @@
       "recentIssues": [
         {
           "title": "내 몬스터 진화 외형과 바탕화면 펫 연동",
-          "date": "2026-11-07T15:15:52.728+09:00",
+          "date": "2026-11-08T00:50:17.184+09:00",
           "state": "opened",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/29"
         },
