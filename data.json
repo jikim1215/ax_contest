@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T12:08:03.286Z",
+  "generatedAt": "2026-11-09T02:57:15.201Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -67,8 +67,8 @@
     181,
     71,
     142,
-    84,
-    0,
+    101,
+    3,
     0,
     0
   ],
@@ -441,7 +441,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 659,
+        "commits": 679,
         "weeklyCommits": [
           0,
           0,
@@ -453,31 +453,31 @@
           117,
           39,
           106,
-          66,
-          0,
+          83,
+          3,
           0,
           0
         ],
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 5,
-        "lastActivity": "2026-11-06T08:30:02.634+09:00"
+        "lastActivity": "2026-11-09T04:51:07.716+09:00"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'feat/request-lesson1' into 'main'",
-          "date": "2026-11-06T08:30:02.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/351c51385807d1be31599c33e39743c8bb0df070"
+          "title": "docs(self-improvement): 2026-11-09 실행 기록 — RP-1·RT-1 완료, X-2 이월 유지(검토자 동의), RP-1 원안 기각 기록",
+          "date": "2026-11-09T04:38:50.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/5bca59710e4c6c45d87cec3995173b94111c1118"
         },
         {
-          "title": "feat(reports): 피신고인 자료제출요구서에 조사관 첨삭 레슨 반영",
-          "date": "2026-11-05T15:05:09.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/f24fc446108c9ab2b13a963a835353d4feed157e"
+          "title": "fix(self-improvement): 보고서 종류·결론 유형 검증이 프로토타입 키·배열을 통과시키던 것을 자기 키 문자열만 받게 하고 등록·생성 진입부에서도 거절한다 (RT-1)",
+          "date": "2026-11-09T04:35:34.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/049db9f2537b8d83e3c385511744d3e53c5c69cc"
         },
         {
-          "title": "Merge branch 'feat/request-reason' into 'main'",
-          "date": "2026-11-05T15:00:13.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/11803c7792166c0d2014b323cbb60297c5370967"
+          "title": "fix(self-improvement): 조사결과보고서 약칭 대조가 양식의 괄호 쟁점 표제·\"해당 행위는\"·문장 끝 뒤의 \"법 제N조\" 도 전개해 검증하게 한다 (RP-1)",
+          "date": "2026-11-09T04:32:31.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/14434e9dc3f6b2457b18336134530abd93e0160e"
         }
       ],
       "recentIssues": []
