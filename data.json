@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T02:57:15.201Z",
+  "generatedAt": "2026-11-09T14:14:40.050Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -460,7 +460,7 @@
         ],
         "openIssues": 0,
         "closedIssues": 0,
-        "stars": 5,
+        "stars": 6,
         "lastActivity": "2026-11-09T04:51:07.716+09:00"
       },
       "recentCommits": [
@@ -567,7 +567,7 @@
         "openIssues": 15,
         "closedIssues": 14,
         "stars": 4,
-        "lastActivity": "2026-11-08T01:45:24.066+09:00"
+        "lastActivity": "2026-11-09T16:33:26.640+09:00"
       },
       "recentCommits": [
         {
