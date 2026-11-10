@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T04:46:18.871Z",
+  "generatedAt": "2026-11-10T13:42:53.727Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -66,9 +66,9 @@
     212,
     181,
     71,
-    142,
-    101,
-    3,
+    144,
+    107,
+    24,
     0,
     0
   ],
@@ -234,8 +234,8 @@
     },
     {
       "repo": "adms25/local-handover-ai",
-      "name": "local-handover-ai",
-      "team": "정리해듀오",
+      "name": "BAT_ON",
+      "team": "바톤걸즈",
       "field": "미분류",
       "description": "로컬 AI 기반 업무 인수인계서 생성 서비스",
       "webUrl": "https://gitlab.aigov.go.kr/adms25/local-handover-ai",
@@ -244,7 +244,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 44,
+        "commits": 47,
         "weeklyCommits": [
           0,
           0,
@@ -257,30 +257,30 @@
           0,
           10,
           7,
-          0,
+          3,
           0,
           0
         ],
         "openIssues": 1,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-11-05T21:36:15.588+09:00"
+        "lastActivity": "2026-11-10T17:01:45.698+09:00"
       },
       "recentCommits": [
         {
+          "title": "README.md 편집",
+          "date": "2026-11-10T17:16:47.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/f4f760f546be93d2ca88d2d227693bfe6a9f5370"
+        },
+        {
           "title": "Merge branch 'feat/handover-quality-ui' into 'main'",
-          "date": "2026-11-05T21:36:29.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/525163f6adae6dd9cba3641234c2225686b7041c"
+          "date": "2026-11-10T17:08:47.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/71c049ace9c715560c37056b1cdf1b4a63286923"
         },
         {
-          "title": "feat: 보완질문 품질 개선, 플랫폼형 상단바, 로고 애니메이션 및 외부 API 제거",
-          "date": "2026-11-05T21:35:22.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/67c59b7d72c90dfb27f68987c5d7a76f46d3439f"
-        },
-        {
-          "title": "Merge branch 'chore/remove-external-api' into 'main'",
-          "date": "2026-11-05T19:17:51.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/f7a37fc02d66f32b634377a661b7e1156614fe15"
+          "title": "인수인계 AI 기능 개선",
+          "date": "2026-11-10T17:02:35.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/810da5deabe8f40cf3d545d93ccc3511c5cc0736"
         }
       ],
       "recentIssues": [
@@ -547,7 +547,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 50,
+        "commits": 76,
         "weeklyCommits": [
           0,
           0,
@@ -558,40 +558,46 @@
           1,
           37,
           0,
-          4,
-          3,
-          0,
+          6,
+          9,
+          18,
           0,
           0
         ],
-        "openIssues": 15,
-        "closedIssues": 14,
+        "openIssues": 13,
+        "closedIssues": 16,
         "stars": 5,
-        "lastActivity": "2026-11-09T16:33:26.640+09:00"
+        "lastActivity": "2026-11-10T16:33:31.553+09:00"
       },
       "recentCommits": [
         {
-          "title": "Merge branch 'feat/23-ui-motion-feedback' into 'main'",
-          "date": "2026-11-03T16:41:03.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/610e260b0a7e6f166560c9d37ff206b96bf8b798"
+          "title": "Merge branch 'chore/contest-readme' into 'main'",
+          "date": "2026-11-10T16:42:00.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/4c1d58779aca698abc9a4d34a0975cb8a8856f07"
         },
         {
-          "title": "Merge branch 'fix/18-adaptive-window-layout' into 'main'",
-          "date": "2026-11-03T16:40:44.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/1780de9aeea010fac5c0cf4d85787a700f9d9c6b"
+          "title": "chore: README를 대회 제출용으로 재작성",
+          "date": "2026-11-10T16:32:38.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/08972290a28ecfffdd1541fd1e8d1a77b153d086"
         },
         {
-          "title": "feat: 퀴즈 하단 고정과 차분한 선택·해설 전개 적용 (#28)",
-          "date": "2026-11-02T00:32:18.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/2a20e8c678a63585e6aa8933d732328fc84b6108"
+          "title": "Merge branch 'chore/docs-refresh' into 'main'",
+          "date": "2026-11-10T15:01:19.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/commit/79d0243e48bc348a8e641739bcddea77aea381f0"
         }
       ],
       "recentIssues": [
         {
           "title": "내 몬스터 진화 외형과 바탕화면 펫 연동",
-          "date": "2026-11-08T00:50:17.184+09:00",
-          "state": "opened",
+          "date": "2026-11-10T14:07:04.008+09:00",
+          "state": "closed",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/29"
+        },
+        {
+          "title": "진단의날 중단한 문제풀이 이어하기",
+          "date": "2026-11-10T13:57:45.389+09:00",
+          "state": "closed",
+          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/27"
         },
         {
           "title": "GitLab 보안 검사 통과를 위한 의존성 갱신",
@@ -610,12 +616,6 @@
           "date": "2026-11-03T16:41:05.609+09:00",
           "state": "closed",
           "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/23"
-        },
-        {
-          "title": "저해상도·고배율 PC의 화면 잘림과 가로 여백 개선",
-          "date": "2026-11-03T16:40:46.485+09:00",
-          "state": "closed",
-          "url": "https://gitlab.aigov.go.kr/kdw3479/quiz-lock/-/work_items/21"
         }
       ]
     },
