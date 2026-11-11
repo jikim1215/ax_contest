@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T02:58:54.868Z",
+  "generatedAt": "2026-11-11T12:54:29.520Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -68,7 +68,7 @@
     32,
     28,
     17,
-    18,
+    19,
     0,
     0
   ],
@@ -191,7 +191,7 @@
       "progress": null,
       "updates": [],
       "gitlab": {
-        "commits": 26,
+        "commits": 27,
         "weeklyCommits": [
           0,
           0,
@@ -204,16 +204,21 @@
           0,
           0,
           7,
-          0,
+          1,
           0,
           0
         ],
         "openIssues": 0,
         "closedIssues": 0,
         "stars": 3,
-        "lastActivity": "2026-11-06T17:56:23.949+09:00"
+        "lastActivity": "2026-11-11T13:50:08.898+09:00"
       },
       "recentCommits": [
+        {
+          "title": "Add docs/진행현황.md (진행 현황·재개 방법·남은 일 정리, README 현재 상태 갱신)",
+          "date": "2026-11-11T13:49:04.000+09:00",
+          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/9cd9d9a6d3fe356b8690860ade6c81986d969ecf"
+        },
         {
           "title": "Update 메일 AI 추천: 출처 드롭다운·게시판/드라이브 탭·카드 기본 접힘",
           "date": "2026-11-06T17:55:26.000+09:00",
@@ -223,11 +228,6 @@
           "title": "Update 메일 AI 결과·대시보드 정리 (출처 아이콘, 드롭다운, 짧은 이유, 정적 파일 버전)",
           "date": "2026-11-06T15:55:07.000+09:00",
           "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/33e1e2c032f59da0c776dad05bdf70d8c47d6cff"
-        },
-        {
-          "title": "메일 목록 AI 준비 표시, GPT-OSS 120B 실측과 응답 보정",
-          "date": "2026-11-06T14:10:08.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/morning-coffee/kisa_workmate/-/commit/7dce40d2997c5e8cd280664472a81f52416144e8"
         }
       ],
       "recentIssues": []
@@ -240,7 +240,7 @@
       "description": "",
       "webUrl": "https://gitlab.aigov.go.kr/sign-kids/kimart",
       "reference": false,
-      "active": true,
+      "active": false,
       "progress": null,
       "updates": [],
       "gitlab": {
