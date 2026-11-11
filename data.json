@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T13:42:53.727Z",
+  "generatedAt": "2026-11-11T02:58:54.868Z",
   "contest": {
     "title": "KISA AX 앰버서더 공모전 진행 현황",
     "subtitle": "AI 활용 혁신PoC 트랙 · 11개 과제 · 3개월",
@@ -60,15 +60,15 @@
     0,
     0,
     0,
-    20,
-    122,
-    97,
-    212,
-    181,
-    71,
-    144,
-    107,
-    24,
+    8,
+    26,
+    7,
+    52,
+    64,
+    32,
+    28,
+    17,
+    18,
     0,
     0
   ],
@@ -134,7 +134,7 @@
       "description": "",
       "webUrl": "https://gitlab.aigov.go.kr/118/118ai-agent",
       "reference": false,
-      "active": true,
+      "active": false,
       "progress": null,
       "updates": [],
       "gitlab": {
@@ -231,66 +231,6 @@
         }
       ],
       "recentIssues": []
-    },
-    {
-      "repo": "adms25/local-handover-ai",
-      "name": "BAT_ON",
-      "team": "바톤걸즈",
-      "field": "미분류",
-      "description": "로컬 AI 기반 업무 인수인계서 생성 서비스",
-      "webUrl": "https://gitlab.aigov.go.kr/adms25/local-handover-ai",
-      "reference": false,
-      "active": true,
-      "progress": null,
-      "updates": [],
-      "gitlab": {
-        "commits": 47,
-        "weeklyCommits": [
-          0,
-          0,
-          0,
-          12,
-          11,
-          2,
-          2,
-          0,
-          0,
-          10,
-          7,
-          3,
-          0,
-          0
-        ],
-        "openIssues": 1,
-        "closedIssues": 0,
-        "stars": 3,
-        "lastActivity": "2026-11-10T17:01:45.698+09:00"
-      },
-      "recentCommits": [
-        {
-          "title": "README.md 편집",
-          "date": "2026-11-10T17:16:47.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/f4f760f546be93d2ca88d2d227693bfe6a9f5370"
-        },
-        {
-          "title": "Merge branch 'feat/handover-quality-ui' into 'main'",
-          "date": "2026-11-10T17:08:47.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/71c049ace9c715560c37056b1cdf1b4a63286923"
-        },
-        {
-          "title": "인수인계 AI 기능 개선",
-          "date": "2026-11-10T17:02:35.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/commit/810da5deabe8f40cf3d545d93ccc3511c5cc0736"
-        }
-      ],
-      "recentIssues": [
-        {
-          "title": "[MVP-02] 인수인계 7개 항목 입력화면 구현",
-          "date": "2026-09-17T08:25:44.387+09:00",
-          "state": "opened",
-          "url": "https://gitlab.aigov.go.kr/adms25/local-handover-ai/-/work_items/1"
-        }
-      ]
     },
     {
       "repo": "sign-kids/kimart",
@@ -425,59 +365,6 @@
           "title": "GitLab Pages 게시 설정: docs/ HTML을 페이지로 공개, 첫 화면 index.html 추가",
           "date": "2026-10-22T14:59:35.000+09:00",
           "url": "https://gitlab.aigov.go.kr/j30231/isds_check/-/commit/0546d4aa6dcfcf3e3d31441ae6460347ec9d873d"
-        }
-      ],
-      "recentIssues": []
-    },
-    {
-      "repo": "jh.noh/privacy",
-      "name": "Watson",
-      "team": "GPT는 거들뿐",
-      "field": "공공행정",
-      "description": "개인정보 보호 관련 사건, 법률 질문 등에 AI를 활용하여 답해주는 자문 도우미.\r\n법령·판례·결정문 등을 검색해 출처 기반 답변과 보고서 작성까지 지원함.",
-      "webUrl": "https://gitlab.aigov.go.kr/jh.noh/privacy",
-      "reference": false,
-      "active": true,
-      "progress": null,
-      "updates": [],
-      "gitlab": {
-        "commits": 679,
-        "weeklyCommits": [
-          0,
-          0,
-          0,
-          0,
-          85,
-          88,
-          158,
-          117,
-          39,
-          106,
-          83,
-          3,
-          0,
-          0
-        ],
-        "openIssues": 0,
-        "closedIssues": 0,
-        "stars": 6,
-        "lastActivity": "2026-11-09T04:51:07.716+09:00"
-      },
-      "recentCommits": [
-        {
-          "title": "docs(self-improvement): 2026-11-09 실행 기록 — RP-1·RT-1 완료, X-2 이월 유지(검토자 동의), RP-1 원안 기각 기록",
-          "date": "2026-11-09T04:38:50.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/5bca59710e4c6c45d87cec3995173b94111c1118"
-        },
-        {
-          "title": "fix(self-improvement): 보고서 종류·결론 유형 검증이 프로토타입 키·배열을 통과시키던 것을 자기 키 문자열만 받게 하고 등록·생성 진입부에서도 거절한다 (RT-1)",
-          "date": "2026-11-09T04:35:34.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/049db9f2537b8d83e3c385511744d3e53c5c69cc"
-        },
-        {
-          "title": "fix(self-improvement): 조사결과보고서 약칭 대조가 양식의 괄호 쟁점 표제·\"해당 행위는\"·문장 끝 뒤의 \"법 제N조\" 도 전개해 검증하게 한다 (RP-1)",
-          "date": "2026-11-09T04:32:31.000+09:00",
-          "url": "https://gitlab.aigov.go.kr/jh.noh/privacy/-/commit/14434e9dc3f6b2457b18336134530abd93e0160e"
         }
       ],
       "recentIssues": []
@@ -681,7 +568,9 @@
     }
   ],
   "warnings": [
-    "skynet_b/complaint-radar: 수집 실패 (GitLab 404 Not Found @ https://ax-contest-1370.vercel.app/api/gitlab?u=%2Fprojects%2Fskynet_b%252Fcomplaint-radar)"
+    "adms25/local-handover-ai: 수집 실패 (GitLab 404 Not Found @ https://ax-contest-1370.vercel.app/api/gitlab?u=%2Fprojects%2Fadms25%252Flocal-handover-ai)",
+    "skynet_b/complaint-radar: 수집 실패 (GitLab 404 Not Found @ https://ax-contest-1370.vercel.app/api/gitlab?u=%2Fprojects%2Fskynet_b%252Fcomplaint-radar)",
+    "jh.noh/privacy: 수집 실패 (GitLab 404 Not Found @ https://ax-contest-1370.vercel.app/api/gitlab?u=%2Fprojects%2Fjh.noh%252Fprivacy)"
   ],
   "showcase": []
 }
